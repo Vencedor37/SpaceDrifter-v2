@@ -11,31 +11,49 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
     rigidBody = GetComponent<Rigidbody2D>();
-
 	}
 
 	// Update is called once per frame
 	void Update ()
   {
+    
+	}
+
+
+	void FixedUpdate ()
+  {
+    Transform transform = GetComponent<Transform>();
+
     if (isInputPressed()) {
       pressPosition = Input.mousePosition;
     }
 
     if (isInputCurrentlyDown()) {
       currentPosition = Input.mousePosition;
+
+      Vector3 dir = currentPosition;
+      float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+      transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
-
-
     if (isInputReleased()) {
       releasePosition = Input.mousePosition;
       Vector3 impulse = releasePosition - pressPosition;
       impulse *= -1;
       rigidBody.AddForce(impulse);
     }
-    Transform transform = GetComponent<Transform>();
-    Debug.Log("player at: " + transform.position.x + ", " + transform.position.y);
+  }
 
-	}
+  void OnTriggerEnter(Collider other)
+  {
+    Debug.Log("entered trigger");
+    if (other.gameObject.name == "HealthPickup") {
+      Destroy(other.gameObject);
+    }
+
+    if (other.gameObject.name == "MovementPickup") {
+      Destroy(other.gameObject);
+    }
+  }
 
   public bool isInputPressed()
   {
@@ -52,6 +70,7 @@ public class PlayerController : MonoBehaviour {
     }
     return false;
   }
+
 
   public bool isInputCurrentlyDown()
   {
@@ -78,6 +97,8 @@ public class PlayerController : MonoBehaviour {
     points[1] = currentPosition;
     return points;
   }
+
+
 
 
 }

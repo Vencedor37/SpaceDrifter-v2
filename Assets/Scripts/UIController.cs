@@ -1,8 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LineController : MonoBehaviour {
+public class UIController : MonoBehaviour {
   private LineRenderer lineRenderer;
+  private const float LEFT_BOUNDARY   = -100;
+  private const float RIGHT_BOUNDARY  =  100;
+  private const float TOP_BOUNDARY    =  100;
+  private const float BOTTOM_BOUNDARY = -100;
+
+  private const float LEFT_SAFETY     = -10;
+  private const float RIGHT_SAFETY    =  10;
+  private const float TOP_SAFETY      =  10;
+  private const float BOTTOM_SAFETY   = -10;
+
+
   public PlayerController playerController;
   public Camera mainCamera;
   public Color c1 = Color.red;
@@ -33,4 +44,44 @@ public class LineController : MonoBehaviour {
       lineRenderer.SetWidth(0.0F, 0.0F);
     }
 	}
+
+  public float getLeftBoundary()
+  {
+    return LEFT_BOUNDARY;
+  }
+
+  public float getRightBoundary()
+  {
+    return RIGHT_BOUNDARY;
+  }
+
+  public float getTopBoundary()
+  {
+    return TOP_BOUNDARY;
+  }
+
+  public float getBottomBoundary()
+  {
+    return BOTTOM_BOUNDARY;
+  }
+
+  public float getLeftSafety()
+  {
+    return LEFT_SAFETY;
+  }
+
+  public float getRightSafety()
+  {
+    return RIGHT_SAFETY;
+  }
+
+  public float getTopSafety()
+  {
+    return TOP_SAFETY;
+  }
+
+  public float getBottomSafety()
+  {
+    return BOTTOM_SAFETY;
+  }
 }
