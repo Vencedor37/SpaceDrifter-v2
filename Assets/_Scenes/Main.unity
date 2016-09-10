@@ -151,6 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2629d2a3072be425d836b0482be1231a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ENEMY_COUNT: 100
+  standardDamage: 20
   enemy: {fileID: 1000012078122726, guid: 63a06adf54141457b8558d5b8bf3d2f1, type: 2}
 --- !u!4 &370729153
 Transform:
@@ -376,7 +378,7 @@ MonoBehaviour:
   maxSpeed: 10
   startingMoveCapacity: 100
   maxMoveCapacity: 100
-  moveCost: 5
+  moveCost: 1
   maxHealth: 100
   startingHealth: 100
   healthLossRate: 5

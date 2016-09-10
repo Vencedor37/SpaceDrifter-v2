@@ -55,7 +55,9 @@ public class PlayerController : MonoBehaviour {
 
       Vector3 dir = currentPosition;
       float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-      transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+      if (currentMoveCapacity > 0) {
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+      }
     }
     if (isInputReleased()) {
       releasePosition = Input.mousePosition;
@@ -70,11 +72,16 @@ public class PlayerController : MonoBehaviour {
     healthLossCounter += Time.deltaTime;
     if (healthLossCounter >= (healthLossRate)) {
       healthLossCounter = 0;
-      if ((currentHealth - healthLossAmount) >= 0) {
-        currentHealth -= healthLossAmount;
-      } else {
-        currentHealth = 0;
-      }
+      TakeDamage(healthLossAmount);
+    }
+  }
+
+  private void TakeDamage(float damage)
+  {
+    if ((currentHealth - damage) >= 0) {
+      currentHealth -= damage;
+    } else {
+      currentHealth = 0;
     }
   }
 
@@ -84,11 +91,13 @@ public class PlayerController : MonoBehaviour {
     if (currentMoveCapacity - moveCostAmount >= 0) {
       rigidBody.AddForce(movement);
       currentMoveCapacity -= moveCostAmount;
+      rigidBody.angularVelocity = 0.0f;
     } else if (currentMoveCapacity > 0) {
       float reducedMovementMagnitude = moveCostAmountToMagnitude(currentMoveCapacity);
       Vector3 reducedMovement = Vector3.ClampMagnitude(movement, reducedMovementMagnitude);
       rigidBody.AddForce(reducedMovement);
       currentMoveCapacity = 0;
+      rigidBody.angularVelocity = 0.0f;
     }
   }
 
@@ -127,6 +136,24 @@ public class PlayerController : MonoBehaviour {
     }
   }
 
+  void OnCollisionEnter2D(Collision2D other)
+  {
+    if (other.gameObject.CompareTag("Enemy")) {
+      EnemyCollision(other);
+    }
+  }
+
+  void EnemyCollision(Collision2D other)
+  {
+    float force = 50;
+    Transform transform = GetComponent<Transform>();
+    Vector3 dir = (Vector3)other.contacts[0].point - (Vector3)transform.position;
+    dir = -dir.normalized;
+    GetComponent<Rigidbody2D>().AddForce(dir*force);
+    Enemy enemyControl = other.gameObject.GetComponent<Enemy>();
+    TakeDamage(enemyControl.getDamage());
+  }
+
   public bool isInputPressed()
   {
     if (Input.GetMouseButtonDown(0)) {
@@ -142,7 +169,6 @@ public class PlayerController : MonoBehaviour {
     }
     return false;
   }
-
 
   public bool isInputCurrentlyDown()
   {
@@ -180,8 +206,4 @@ public class PlayerController : MonoBehaviour {
     return currentMoveCapacity;
   }
 
-
-
-
 }
-
