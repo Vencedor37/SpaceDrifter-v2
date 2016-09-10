@@ -5,7 +5,7 @@ public class EnemyController : MonoBehaviour {
 
   private const int ENEMY_COUNT = 40;
   private UIController UI;
-  public Transform enemy;
+  public GameObject enemy;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +18,7 @@ public class EnemyController : MonoBehaviour {
       x = RandomHorizontalCoordinates()[Random.Range(0,1)];
       y = RandomHorizontalCoordinates()[Random.Range(0,1)];
       var newEnemy = Instantiate(enemy, new Vector3(x, y, 0), Quaternion.identity) as GameObject;
+      newEnemy.transform.parent = GetComponent<Transform>();
     }
 
 

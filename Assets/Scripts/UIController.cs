@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class UIController : MonoBehaviour {
@@ -16,17 +17,25 @@ public class UIController : MonoBehaviour {
 
   public PlayerController playerController;
   public Camera mainCamera;
-  public Color c1 = Color.red;
-  public Color c2 = Color.white;
+  public Color lineColour1;
+  public Color lineColour2;
+  public Slider healthSlider;
+  public Image healthFill;
+
+  public Slider movementSlider;
+  public Image movementFill;
+
+
 
 	// Use this for initialization
 	void Start () {
-    LineRenderer lineRenderer = gameObject.AddComponent<LineRenderer>();
-    lineRenderer.SetColors(c1, c2);
+    lineRenderer = gameObject.AddComponent<LineRenderer>();
+    lineRenderer.SetColors(lineColour1, lineColour2);
     lineRenderer.material = new Material(Shader.Find("Particles/Additive"));
     lineRenderer.SetVertexCount(2);
     lineRenderer.useWorldSpace = true;
     lineRenderer.sortingLayerName = "UI";
+
 	}
 
 	// Update is called once per frame
@@ -43,7 +52,36 @@ public class UIController : MonoBehaviour {
     } else {
       lineRenderer.SetWidth(0.0F, 0.0F);
     }
+
+    UpdateHealthSlider();
+    UpdateMovementSlider();
 	}
+
+  private void UpdateHealthSlider()
+  {
+    healthSlider.value = playerController.getCurrentHealth();
+    if (healthSlider.value <= 50 && healthSlider.value > 30) {
+      healthFill.color = Color.yellow;
+    } else if (healthSlider.value < 30) {
+      healthFill.color = Color.red;
+    }
+    if (healthSlider.value <= 0) {
+      healthFill.enabled = false;
+    } else {
+      healthFill.enabled = true;
+    }
+  }
+
+  private void UpdateMovementSlider()
+  {
+    movementSlider.value = playerController.getCurrentMoveCapacity();
+    movementFill.enabled = (movementSlider.value > 0);
+    if (playerController.getCurrentMoveCapacity() <= 0) {
+      lineColour1 = Color.red;
+      lineColour2 = Color.black;
+    }
+    lineRenderer.SetColors(lineColour1, lineColour2);
+  }
 
   public float getLeftBoundary()
   {

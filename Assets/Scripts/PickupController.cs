@@ -3,10 +3,12 @@ using System.Collections;
 
 public class PickupController : MonoBehaviour {
 
-  private const int HEALTH_COUNT = 10;
-  private const int MOVEMENT_COUNT = 10;
-  public Transform health;
-  public Transform movement;
+  public int HEALTH_COUNT;
+  public int MOVEMENT_COUNT;
+  public float standardHealthBonus;
+  public float standardMovementBonus;
+  public GameObject health;
+  public GameObject movement;
 
   private UIController UI;
 
@@ -21,12 +23,16 @@ public class PickupController : MonoBehaviour {
       x = RandomHorizontalCoordinates()[Random.Range(0,1)];
       y = RandomHorizontalCoordinates()[Random.Range(0,1)];
       var newHealth = Instantiate(health, new Vector3(x, y, 0), Quaternion.identity) as GameObject;
+      newHealth.transform.parent = GetComponent<Transform>();
+      newHealth.GetComponent<HealthController>().setHealthBonus(standardHealthBonus);
     }
 
     for (int i = 0; i < MOVEMENT_COUNT; i++) {
       x = RandomHorizontalCoordinates()[Random.Range(0,1)];
       y = RandomHorizontalCoordinates()[Random.Range(0,1)];
       var newMovement = Instantiate(movement, new Vector3(x, y, 0), Quaternion.identity) as GameObject;
+      newMovement.transform.parent = GetComponent<Transform>();
+      newMovement.GetComponent<MovementPickupController>().setMovementBonus(standardMovementBonus);
     }
 
 	}
