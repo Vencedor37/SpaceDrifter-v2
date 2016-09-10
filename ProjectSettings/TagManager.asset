@@ -8,6 +8,7 @@ TagManager:
   - MovementPickup
   - HealthUnit
   - Enemy
+  - ShowOnGameOver
   layers:
   - Default
   - TransparentFX

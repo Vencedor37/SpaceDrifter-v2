@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
+  public bool alive;
   public float maxSpeed;
   public float startingMoveCapacity;
   public float maxMoveCapacity;
@@ -30,6 +31,8 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+    Time.timeScale = 1.0F;
+    alive = true;
     rigidBody = GetComponent<Rigidbody2D>();
     currentHealth = startingHealth;
     currentMoveCapacity = startingMoveCapacity;
@@ -106,6 +109,9 @@ public class PlayerController : MonoBehaviour {
     } else {
       currentHealth = 0;
     }
+    if (currentHealth <= 0) {
+      alive = false;
+    }
   }
 
   private void UpdateMovement(Vector3 movement)
@@ -175,6 +181,11 @@ public class PlayerController : MonoBehaviour {
     GetComponent<Rigidbody2D>().AddForce(dir*force);
     Enemy enemyControl = other.gameObject.GetComponent<Enemy>();
     TakeDamage(enemyControl.getDamage());
+  }
+
+  void GameOver()
+  {
+    Time.timeScale = 0;
   }
 
   public bool isInputPressed()

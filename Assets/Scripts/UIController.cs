@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class UIController : MonoBehaviour {
@@ -13,6 +14,8 @@ public class UIController : MonoBehaviour {
   private const float RIGHT_SAFETY    =  10;
   private const float TOP_SAFETY      =  10;
   private const float BOTTOM_SAFETY   = -10;
+
+  private GameObject[] gameOverUI;
 
 
   public PlayerController playerController;
@@ -37,26 +40,37 @@ public class UIController : MonoBehaviour {
     lineRenderer.SetVertexCount(2);
     lineRenderer.useWorldSpace = true;
     lineRenderer.sortingLayerName = "UI";
+
+    gameOverUI = GameObject.FindGameObjectsWithTag("ShowOnGameOver");
+    HideGameOverUI();
 	}
 
 	// Update is called once per frame
-	void Update () {
-    LineRenderer lineRenderer = GetComponent<LineRenderer>();
-    if (playerController.isInputCurrentlyDown()) {
-      lineRenderer.SetWidth(0.03F, 0.001F);
-      Vector3[] points = playerController.getLinePoints();
-      points[0].z = 1;
-      points[1].z = 1;
-      points[0] = mainCamera.ScreenToWorldPoint(points[0]);
-      points[1] = mainCamera.ScreenToWorldPoint(points[1]);
-      lineRenderer.SetPositions(points);
-    } else {
-      lineRenderer.SetWidth(0.0F, 0.0F);
+  void Update () {
+    if (playerController.alive) {
+      LineRenderer lineRenderer = GetComponent<LineRenderer>();
+      if (playerController.isInputCurrentlyDown()) {
+        lineRenderer.SetWidth(0.03F, 0.001F);
+        Vector3[] points = playerController.getLinePoints();
+        points[0].z = 1;
+        points[1].z = 1;
+        points[0] = mainCamera.ScreenToWorldPoint(points[0]);
+        points[1] = mainCamera.ScreenToWorldPoint(points[1]);
+        lineRenderer.SetPositions(points);
+      } else {
+        lineRenderer.SetWidth(0.0F, 0.0F);
+      }
+
+      UpdateHealthSlider();
+      UpdateMovementSlider();
+      UpdateScoreText();
     }
 
-    UpdateHealthSlider();
-    UpdateMovementSlider();
-    UpdateScoreText();
+    if (!playerController.alive) {
+      Time.timeScale = 0;
+      ShowGameOverUI();
+    }
+
 	}
 
   private void UpdateHealthSlider()
@@ -83,6 +97,25 @@ public class UIController : MonoBehaviour {
       lineColour2 = Color.black;
     }
     lineRenderer.SetColors(lineColour1, lineColour2);
+  }
+
+  public void HideGameOverUI()
+  {
+    foreach (GameObject gameObject in gameOverUI) {
+      gameObject.SetActive(false);
+    }
+  }
+
+  public void ShowGameOverUI()
+  {
+    foreach (GameObject gameObject in gameOverUI) {
+      gameObject.SetActive(true);
+    }
+  }
+
+  public void RestartGame()
+  {
+    SceneManager.LoadScene("Main");
   }
 
   private void UpdateScoreText()
