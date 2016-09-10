@@ -2,14 +2,12 @@
 using System.Collections;
 
 public class ScreenWrap : MonoBehaviour {
-  private UIController UI;
+  public UIController UI;
   private bool isWrappingX;
   private  bool isWrappingY;
 
 	// Use this for initialization
 	void Start () {
-    GameObject UIControl = GameObject.Find("UIController");
-    UI = UIControl.GetComponent<UIController>();
 	}
 
 	// Update is called once per frame

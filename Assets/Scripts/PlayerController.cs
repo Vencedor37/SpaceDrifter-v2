@@ -29,6 +29,12 @@ public class PlayerController : MonoBehaviour {
   private Vector3 currentPosition;
   private float currentMoveCapacity;
 
+  private bool releaseOccurred = false;
+
+  void Awake() {
+    Application.targetFrameRate = 60;
+  }
+
 	// Use this for initialization
 	void Start () {
     Time.timeScale = 1.0F;
@@ -42,22 +48,6 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
   {
-    UpdateHealth();
-    UpdateScore();
-	}
-
-
-	void FixedUpdate ()
-  {
-    Transform transform = GetComponent<Transform>();
-    if (rigidBody.velocity.magnitude > maxSpeed) {
-      float breaksMagnitude = rigidBody.velocity.magnitude - maxSpeed;
-      Vector3 breaksForce = Vector3.ClampMagnitude(rigidBody.velocity, breaksMagnitude);
-      breaksForce *= -1;
-      rigidBody.AddForce(breaksForce);
-    }
-
-
     if (isInputPressed()) {
       pressPosition = Input.mousePosition;
     }
@@ -71,11 +61,31 @@ public class PlayerController : MonoBehaviour {
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
       }
     }
+
     if (isInputReleased()) {
       releasePosition = Input.mousePosition;
+      releaseOccurred = true;
+    }
+
+    UpdateHealth();
+    UpdateScore();
+	}
+
+
+	void FixedUpdate ()
+  {
+    if (rigidBody.velocity.magnitude > maxSpeed) {
+      float breaksMagnitude = rigidBody.velocity.magnitude - maxSpeed;
+      Vector3 breaksForce = Vector3.ClampMagnitude(rigidBody.velocity, breaksMagnitude);
+      breaksForce *= -1;
+      rigidBody.AddForce(breaksForce);
+    }
+
+    if (releaseOccurred) {
       Vector3 impulse = releasePosition - pressPosition;
       impulse *= -1;
       UpdateMovement(impulse);
+      releaseOccurred = false;
     }
   }
 
@@ -116,17 +126,18 @@ public class PlayerController : MonoBehaviour {
 
   private void UpdateMovement(Vector3 movement)
   {
+    Vector3 force = movement;
     float moveCostAmount = magnitudeToMoveCostAmount(movement.magnitude);
     if (currentMoveCapacity - moveCostAmount >= 0) {
-      rigidBody.AddForce(movement);
       currentMoveCapacity -= moveCostAmount;
       rigidBody.angularVelocity = 0.0f;
+      rigidBody.AddForce(force);
     } else if (currentMoveCapacity > 0) {
       float reducedMovementMagnitude = moveCostAmountToMagnitude(currentMoveCapacity);
-      Vector3 reducedMovement = Vector3.ClampMagnitude(movement, reducedMovementMagnitude);
-      rigidBody.AddForce(reducedMovement);
+      force = Vector3.ClampMagnitude(movement, reducedMovementMagnitude);
       currentMoveCapacity = 0;
       rigidBody.angularVelocity = 0.0f;
+      rigidBody.AddForce(force);
     }
   }
 

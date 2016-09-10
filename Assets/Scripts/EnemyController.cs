@@ -5,14 +5,12 @@ public class EnemyController : MonoBehaviour {
 
   public int ENEMY_COUNT;
   public float standardDamage;
-  private UIController UI;
+  public UIController UI;
   public GameObject enemy;
 
 
 	// Use this for initialization
 	void Start () {
-    GameObject UIControl = GameObject.Find("UIController");
-    UI = UIControl.GetComponent<UIController>();
     AddEnemies();
 	}
 

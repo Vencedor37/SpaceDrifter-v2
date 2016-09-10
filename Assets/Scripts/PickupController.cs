@@ -10,12 +10,10 @@ public class PickupController : MonoBehaviour {
   public GameObject health;
   public GameObject movement;
 
-  private UIController UI;
+  public UIController UI;
 
 	// Use this for initialization
 	void Start () {
-    GameObject UIControl = GameObject.Find("UIController");
-    UI = UIControl.GetComponent<UIController>();
     float x;
     float y;
 
