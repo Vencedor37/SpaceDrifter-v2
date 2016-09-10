@@ -29,6 +29,7 @@ public class UIController : MonoBehaviour {
   public Image movementFill;
 
   public Text scoreText;
+  public Text highScoreText;
 
 
 
@@ -60,14 +61,12 @@ public class UIController : MonoBehaviour {
       } else {
         lineRenderer.SetWidth(0.0F, 0.0F);
       }
-
-      UpdateHealthSlider();
-      UpdateMovementSlider();
-      UpdateScoreText();
     }
+    UpdateHealthSlider();
+    UpdateMovementSlider();
+    UpdateScoreText();
 
     if (!playerController.alive) {
-      Time.timeScale = 0;
       ShowGameOverUI();
     }
 
@@ -108,6 +107,11 @@ public class UIController : MonoBehaviour {
 
   public void ShowGameOverUI()
   {
+    if (playerController.getBeatHighScore()) {
+      highScoreText.text = "New High Score!";
+    } else {
+      highScoreText.text = "High Score: " + playerController.getHighScore();
+    }
     foreach (GameObject gameObject in gameOverUI) {
       gameObject.SetActive(true);
     }

@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour {
   public int scoreIncreaseAmount;
   private float scoreIncreaseCounter = 0;
   private int currentScore;
+  private int highScore;
+  string highScoreKey = "HighScore";
 
 
   private Rigidbody2D rigidBody;
@@ -28,6 +30,7 @@ public class PlayerController : MonoBehaviour {
   private Vector3 releasePosition;
   private Vector3 currentPosition;
   private float currentMoveCapacity;
+  private bool beatHighScore = false;
 
   private bool releaseOccurred = false;
 
@@ -43,6 +46,7 @@ public class PlayerController : MonoBehaviour {
     currentHealth = startingHealth;
     currentMoveCapacity = startingMoveCapacity;
     currentScore = startingScore;
+    highScore = PlayerPrefs.GetInt(highScoreKey,0);
 	}
 
 	// Update is called once per frame
@@ -121,6 +125,7 @@ public class PlayerController : MonoBehaviour {
     }
     if (currentHealth <= 0) {
       alive = false;
+      GameOver();
     }
   }
 
@@ -194,8 +199,14 @@ public class PlayerController : MonoBehaviour {
     TakeDamage(enemyControl.getDamage());
   }
 
-  void GameOver()
+  public void GameOver()
   {
+    if (currentScore > highScore) {
+      beatHighScore = true;
+      highScore = currentScore;
+      PlayerPrefs.SetInt(highScoreKey, highScore);
+      PlayerPrefs.Save();
+    }
     Time.timeScale = 0;
   }
 
@@ -254,6 +265,16 @@ public class PlayerController : MonoBehaviour {
   public int getCurrentScore()
   {
     return currentScore;
+  }
+
+  public int getHighScore()
+  {
+    return highScore;
+  }
+
+  public bool getBeatHighScore()
+  {
+    return beatHighScore;
   }
 
 }
