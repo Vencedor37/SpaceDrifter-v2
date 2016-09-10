@@ -12,26 +12,35 @@ public class PlayerController : MonoBehaviour {
   public float startingHealth;
   public float healthLossRate;
   public float healthLossAmount;
+  private float healthLossCounter = 0;
+  private float currentHealth;
+
+  public int startingScore;
+  public float scoreIncreaseRate;
+  public int scoreIncreaseAmount;
+  private float scoreIncreaseCounter = 0;
+  private int currentScore;
+
 
   private Rigidbody2D rigidBody;
   private Vector3 pressPosition;
   private Vector3 releasePosition;
   private Vector3 currentPosition;
-  private float healthLossCounter;
   private float currentMoveCapacity;
-  private float currentHealth;
 
 	// Use this for initialization
 	void Start () {
     rigidBody = GetComponent<Rigidbody2D>();
     currentHealth = startingHealth;
     currentMoveCapacity = startingMoveCapacity;
+    currentScore = startingScore;
 	}
 
 	// Update is called once per frame
 	void Update ()
   {
     UpdateHealth();
+    UpdateScore();
 	}
 
 
@@ -70,10 +79,24 @@ public class PlayerController : MonoBehaviour {
   private void UpdateHealth()
   {
     healthLossCounter += Time.deltaTime;
-    if (healthLossCounter >= (healthLossRate)) {
+    if (healthLossCounter >= healthLossRate) {
       healthLossCounter = 0;
       TakeDamage(healthLossAmount);
     }
+  }
+
+  private void UpdateScore()
+  {
+    scoreIncreaseCounter += Time.deltaTime;
+    if (scoreIncreaseCounter >= scoreIncreaseRate) {
+      scoreIncreaseCounter = 0;
+      IncreaseScore(scoreIncreaseAmount);
+    }
+  }
+
+  private void IncreaseScore(int amount)
+  {
+    currentScore += amount;
   }
 
   private void TakeDamage(float damage)
@@ -204,6 +227,11 @@ public class PlayerController : MonoBehaviour {
   public float getCurrentMoveCapacity()
   {
     return currentMoveCapacity;
+  }
+
+  public int getCurrentScore()
+  {
+    return currentScore;
   }
 
 }

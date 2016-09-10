@@ -25,6 +25,8 @@ public class UIController : MonoBehaviour {
   public Slider movementSlider;
   public Image movementFill;
 
+  public Text scoreText;
+
 
 
 	// Use this for initialization
@@ -35,7 +37,6 @@ public class UIController : MonoBehaviour {
     lineRenderer.SetVertexCount(2);
     lineRenderer.useWorldSpace = true;
     lineRenderer.sortingLayerName = "UI";
-
 	}
 
 	// Update is called once per frame
@@ -55,6 +56,7 @@ public class UIController : MonoBehaviour {
 
     UpdateHealthSlider();
     UpdateMovementSlider();
+    UpdateScoreText();
 	}
 
   private void UpdateHealthSlider()
@@ -81,6 +83,12 @@ public class UIController : MonoBehaviour {
       lineColour2 = Color.black;
     }
     lineRenderer.SetColors(lineColour1, lineColour2);
+  }
+
+  private void UpdateScoreText()
+  {
+    int score = playerController.getCurrentScore();
+    scoreText.text = "Score: " + score;
   }
 
   public float getLeftBoundary()
