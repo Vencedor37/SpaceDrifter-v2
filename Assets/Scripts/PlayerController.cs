@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
+  public bool debugMode;
   public bool alive;
   public float maxSpeed;
   public float startingMoveCapacity;
@@ -34,6 +35,9 @@ public class PlayerController : MonoBehaviour {
 
   private bool releaseOccurred = false;
 
+  public GameObject itemDrawZone;
+  public GameObject safetyZone;
+
   void Awake() {
     Application.targetFrameRate = 60;
   }
@@ -47,6 +51,18 @@ public class PlayerController : MonoBehaviour {
     currentMoveCapacity = startingMoveCapacity;
     currentScore = startingScore;
     highScore = PlayerPrefs.GetInt(highScoreKey,0);
+
+    GameObject[] debugVisible = GameObject.FindGameObjectsWithTag("VisibleInDebugMode");
+    if (!debugMode) {
+      foreach (GameObject debugObject in debugVisible) {
+        debugObject.GetComponent<SpriteRenderer>().enabled = false;
+      }
+    } else {
+      foreach (GameObject debugObject in debugVisible) {
+        debugObject.GetComponent<SpriteRenderer>().enabled = true;
+      }
+
+    }
 	}
 
 	// Update is called once per frame
@@ -73,6 +89,7 @@ public class PlayerController : MonoBehaviour {
 
     UpdateHealth();
     UpdateScore();
+    getRandomAcceptablePosition();
 	}
 
 
@@ -159,25 +176,35 @@ public class PlayerController : MonoBehaviour {
 
   void OnTriggerEnter2D(Collider2D other)
   {
+    bool setInactive = false;
     if (other.gameObject.CompareTag("HealthPickup")) {
-      HealthController healthController = other.gameObject.GetComponent<HealthController>();
+      SpaceObject healthController = other.gameObject.GetComponent<SpaceObject>();
+      setInactive = healthController.destroyOnCollision;
       if (currentHealth + healthController.getHealthBonus() <= maxHealth) {
         currentHealth += healthController.getHealthBonus();
       } else {
         currentHealth = maxHealth;
       }
       healthLossCounter = 0;
-      Destroy(other.gameObject);
     }
 
     if (other.gameObject.CompareTag("MovementPickup")) {
-      MovementPickupController movementPickupController = other.gameObject.GetComponent<MovementPickupController>();
+      SpaceObject movementPickupController = other.gameObject.GetComponent<SpaceObject>();
+      setInactive = movementPickupController.destroyOnCollision;
       if (currentMoveCapacity + movementPickupController.getMovementBonus() <= maxMoveCapacity) {
         currentMoveCapacity += movementPickupController.getMovementBonus();
       } else {
         currentMoveCapacity = maxMoveCapacity;
       }
-      Destroy(other.gameObject);
+    }
+
+    if (other.gameObject.CompareTag("PointsPickup")) {
+      SpaceObject pointsPickupController = other.gameObject.GetComponent<SpaceObject>();
+      setInactive = pointsPickupController.destroyOnCollision;
+      currentScore += pointsPickupController.getPointsBonus();
+    }
+    if (setInactive) {
+      other.gameObject.SetActive(false);
     }
   }
 
@@ -195,7 +222,7 @@ public class PlayerController : MonoBehaviour {
     Vector3 dir = (Vector3)other.contacts[0].point - (Vector3)transform.position;
     dir = -dir.normalized;
     GetComponent<Rigidbody2D>().AddForce(dir*force);
-    Enemy enemyControl = other.gameObject.GetComponent<Enemy>();
+    SpaceObject enemyControl = other.gameObject.GetComponent<SpaceObject>();
     TakeDamage(enemyControl.getDamage());
   }
 
@@ -276,5 +303,52 @@ public class PlayerController : MonoBehaviour {
   {
     return beatHighScore;
   }
+
+  public Bounds getDrawBounds()
+  {
+    return itemDrawZone.GetComponent<SpriteRenderer>().bounds;
+  }
+
+  public Vector3 getRandomAcceptablePosition()
+  {
+    Bounds drawBounds = itemDrawZone.GetComponent<SpriteRenderer>().bounds;
+    Vector3 drawMin = drawBounds.min;
+    Vector3 drawMax = drawBounds.max;
+
+    Bounds safeBounds = safetyZone.GetComponent<SpriteRenderer>().bounds;
+    Vector3 safeMin = safeBounds.min;
+    Vector3 safeMax = safeBounds.max;
+
+    bool goAboveOrBelowSafety = (Random.Range(0,2) == 1);
+    float x;
+    float y;
+    float z = 0;
+    if (goAboveOrBelowSafety) {
+      // don't need to worry about x
+      x = Random.Range(drawMin.x, drawMax.x);
+      bool goAbove = (Random.Range(0,2) == 1);
+      if (goAbove) {
+        y = Random.Range(safeMax.y, drawMax.y);
+      } else {
+        //go below
+        y = Random.Range(drawMin.y, safeMin.y);
+      }
+    } else {
+      // goLeftOrRightOfSafety
+      // don't need to worry about y
+      y = Random.Range(drawMin.y, drawMax.y);
+      bool goLeft = (Random.Range(0,2) == 1);
+      if (goLeft) {
+        x = Random.Range(drawMin.x, safeMin.x);
+      } else {
+        // go right
+        x = Random.Range(safeMax.x, drawMax.x);
+      }
+    }
+    Vector3 pos = new Vector3(x, y, z);
+
+    return pos;
+  }
+
 
 }

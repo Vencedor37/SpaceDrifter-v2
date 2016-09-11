@@ -420,7 +420,7 @@ MonoBehaviour:
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_ForceModuleActive: 1
 --- !u!114 &114000010156292206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -743,10 +743,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90640f9feebad46e8b30b169c36a69a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LEFT_BOUNDARY: -1000
+  RIGHT_BOUNDARY: 1000
+  TOP_BOUNDARY: 1000
+  BOTTOM_BOUNDARY: -1000
+  LEFT_SAFETY: -5
+  RIGHT_SAFETY: 5
+  TOP_SAFETY: 5
+  BOTTOM_SAFETY: -5
   playerController: {fileID: 0}
   mainCamera: {fileID: 0}
   lineColour1: {r: 1, g: 1, b: 1, a: 1}
   lineColour2: {r: 0.9852941, g: 0.7954301, b: 0.29703718, a: 1}
+  lineShader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
   healthSlider: {fileID: 114000010428104218}
   healthFill: {fileID: 114000013068568564}
   movementSlider: {fileID: 114000011431640274}

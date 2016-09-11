@@ -9,6 +9,8 @@ TagManager:
   - HealthUnit
   - Enemy
   - ShowOnGameOver
+  - PointsPickup
+  - VisibleInDebugMode
   layers:
   - Default
   - TransparentFX

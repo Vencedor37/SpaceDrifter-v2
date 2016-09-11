@@ -5,15 +5,15 @@ using System.Collections;
 
 public class UIController : MonoBehaviour {
   private LineRenderer lineRenderer;
-  private const float LEFT_BOUNDARY   = -100;
-  private const float RIGHT_BOUNDARY  =  100;
-  private const float TOP_BOUNDARY    =  100;
-  private const float BOTTOM_BOUNDARY = -100;
+  public float LEFT_BOUNDARY   = -100;
+  public float RIGHT_BOUNDARY  =  100;
+  public float TOP_BOUNDARY    =  100;
+  public float BOTTOM_BOUNDARY = -100;
 
-  private const float LEFT_SAFETY     = -10;
-  private const float RIGHT_SAFETY    =  10;
-  private const float TOP_SAFETY      =  10;
-  private const float BOTTOM_SAFETY   = -10;
+  public float LEFT_SAFETY     = -10;
+  public float RIGHT_SAFETY    =  10;
+  public float TOP_SAFETY      =  10;
+  public float BOTTOM_SAFETY   = -10;
 
   private GameObject[] gameOverUI;
 
@@ -22,6 +22,7 @@ public class UIController : MonoBehaviour {
   public Camera mainCamera;
   public Color lineColour1;
   public Color lineColour2;
+  public Shader lineShader;
   public Slider healthSlider;
   public Image healthFill;
 
@@ -37,7 +38,7 @@ public class UIController : MonoBehaviour {
 	void Start () {
     lineRenderer = gameObject.AddComponent<LineRenderer>();
     lineRenderer.SetColors(lineColour1, lineColour2);
-    lineRenderer.material = new Material(Shader.Find("Particles/Additive"));
+    lineRenderer.material = new Material(lineShader);
     lineRenderer.SetVertexCount(2);
     lineRenderer.useWorldSpace = true;
     lineRenderer.sortingLayerName = "UI";

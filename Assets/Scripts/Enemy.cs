@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Enemy : MonoBehaviour {
-  private float damage;
+public class Enemy : SpaceObject {
 
 	// Use this for initialization
 	void Start () {
@@ -14,13 +13,4 @@ public class Enemy : MonoBehaviour {
 
 	}
 
-  public void setDamage(float value)
-  {
-    damage = value;
-  }
-
-  public float getDamage()
-  {
-    return damage;
-  }
 }
