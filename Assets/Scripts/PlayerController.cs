@@ -10,6 +10,11 @@ public class PlayerController : MonoBehaviour {
   public float maxMoveCapacity;
   public float moveCost;
 
+  public SpaceObjectController healthPickupController;
+  public int activeHealthCount;
+  public SpaceObjectController movementPickupController;
+  public int activeMovementCount;
+
   public float maxHealth;
   public float startingHealth;
   public float healthLossRate;
@@ -20,8 +25,12 @@ public class PlayerController : MonoBehaviour {
   public int startingScore;
   public float scoreIncreaseRate;
   public int scoreIncreaseAmount;
+  public int scoreCheckpoint;
+  public int checkPointHealthBonus;
+  public int checkPointMovementBonus;
   private float scoreIncreaseCounter = 0;
   private int currentScore;
+  private int scoreCheckpointTracker = 0;
   private int highScore;
   string highScoreKey = "HighScore";
 
@@ -51,6 +60,8 @@ public class PlayerController : MonoBehaviour {
     currentMoveCapacity = startingMoveCapacity;
     currentScore = startingScore;
     highScore = PlayerPrefs.GetInt(highScoreKey,0);
+    activeHealthCount = healthPickupController.activeCount;
+    activeMovementCount = movementPickupController.activeCount;
 
     GameObject[] debugVisible = GameObject.FindGameObjectsWithTag("VisibleInDebugMode");
     if (!debugMode) {
@@ -61,7 +72,6 @@ public class PlayerController : MonoBehaviour {
       foreach (GameObject debugObject in debugVisible) {
         debugObject.GetComponent<SpriteRenderer>().enabled = true;
       }
-
     }
 	}
 
@@ -131,6 +141,17 @@ public class PlayerController : MonoBehaviour {
   private void IncreaseScore(int amount)
   {
     currentScore += amount;
+    IncreaseScoreCheckpointTracker(amount);
+  }
+
+  private void IncreaseScoreCheckpointTracker(int amount)
+  {
+    scoreCheckpointTracker += amount;
+    if (scoreCheckpointTracker >= scoreCheckpoint) {
+      scoreCheckpointTracker = 0;
+      activeHealthCount = healthPickupController.AddActive(checkPointHealthBonus);
+      activeMovementCount = movementPickupController.AddActive(checkPointMovementBonus);
+    }
   }
 
   private void TakeDamage(float damage)
@@ -176,10 +197,12 @@ public class PlayerController : MonoBehaviour {
 
   void OnTriggerEnter2D(Collider2D other)
   {
-    bool setInactive = false;
     if (other.gameObject.CompareTag("HealthPickup")) {
       SpaceObject healthController = other.gameObject.GetComponent<SpaceObject>();
-      setInactive = healthController.destroyOnCollision;
+      if (healthController.destroyOnCollision) {
+        other.gameObject.SetActive(false);
+        activeHealthCount --;
+      }
       if (currentHealth + healthController.getHealthBonus() <= maxHealth) {
         currentHealth += healthController.getHealthBonus();
       } else {
@@ -190,7 +213,10 @@ public class PlayerController : MonoBehaviour {
 
     if (other.gameObject.CompareTag("MovementPickup")) {
       SpaceObject movementPickupController = other.gameObject.GetComponent<SpaceObject>();
-      setInactive = movementPickupController.destroyOnCollision;
+      if (movementPickupController.destroyOnCollision) {
+        other.gameObject.SetActive(false);
+        activeMovementCount --;
+      }
       if (currentMoveCapacity + movementPickupController.getMovementBonus() <= maxMoveCapacity) {
         currentMoveCapacity += movementPickupController.getMovementBonus();
       } else {
@@ -200,11 +226,10 @@ public class PlayerController : MonoBehaviour {
 
     if (other.gameObject.CompareTag("PointsPickup")) {
       SpaceObject pointsPickupController = other.gameObject.GetComponent<SpaceObject>();
-      setInactive = pointsPickupController.destroyOnCollision;
+      if (pointsPickupController.destroyOnCollision) {
+        other.gameObject.SetActive(false);
+      }
       currentScore += pointsPickupController.getPointsBonus();
-    }
-    if (setInactive) {
-      other.gameObject.SetActive(false);
     }
   }
 

@@ -17,6 +17,11 @@ public class UIController : MonoBehaviour {
 
   private GameObject[] gameOverUI;
 
+  public bool isFastForward = false;
+  public float fastSpeed = 2.0f;
+  public float normalSpeed = 1.0f;
+  public bool quickHealthLoss = false;
+
 
   public PlayerController playerController;
   public Camera mainCamera;
@@ -26,12 +31,15 @@ public class UIController : MonoBehaviour {
   public Slider healthSlider;
   public Image healthFill;
 
+
   public Slider movementSlider;
   public Image movementFill;
 
   public Text scoreText;
   public Text highScoreText;
 
+  public Text movementCountText;
+  public Text healthCountText;
 
 
 	// Use this for initialization
@@ -66,9 +74,12 @@ public class UIController : MonoBehaviour {
     UpdateHealthSlider();
     UpdateMovementSlider();
     UpdateScoreText();
+    UpdateCounterText();
 
     if (!playerController.alive) {
       ShowGameOverUI();
+    } else {
+      CheckSpeed();
     }
 
 	}
@@ -79,6 +90,11 @@ public class UIController : MonoBehaviour {
     if (healthSlider.value <= 50 && healthSlider.value > 30) {
       healthFill.color = Color.yellow;
     } else if (healthSlider.value < 30) {
+      if (!quickHealthLoss) {
+        playerController.healthLossRate *= .4f;
+        playerController.healthLossAmount *= .4f;
+        quickHealthLoss = true;
+      }
       healthFill.color = Color.red;
     }
     if (healthSlider.value <= 0) {
@@ -93,10 +109,16 @@ public class UIController : MonoBehaviour {
     movementSlider.value = playerController.getCurrentMoveCapacity();
     movementFill.enabled = (movementSlider.value > 0);
     if (playerController.getCurrentMoveCapacity() <= 0) {
-      lineColour1 = Color.red;
-      lineColour2 = Color.black;
+      lineRenderer.SetColors(Color.red, Color.black);
+    } else {
+      lineRenderer.SetColors(lineColour1, lineColour2);
     }
-    lineRenderer.SetColors(lineColour1, lineColour2);
+  }
+
+  public void UpdateCounterText()
+  {
+    healthCountText.text = "X " + playerController.activeHealthCount;
+    movementCountText.text = "X " + playerController.activeMovementCount;
   }
 
   public void HideGameOverUI()
@@ -116,6 +138,20 @@ public class UIController : MonoBehaviour {
     foreach (GameObject gameObject in gameOverUI) {
       gameObject.SetActive(true);
     }
+  }
+
+  public void CheckSpeed()
+  {
+    if (isFastForward) {
+      Time.timeScale = fastSpeed;
+    } else {
+      Time.timeScale = normalSpeed;
+    }
+  }
+
+  public void toggleSpeed()
+  {
+    isFastForward = !isFastForward;
   }
 
   public void RestartGame()

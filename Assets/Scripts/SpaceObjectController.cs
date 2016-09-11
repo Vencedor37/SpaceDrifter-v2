@@ -70,7 +70,9 @@ public class SpaceObjectController : MonoBehaviour {
       }
     }
 
-    if (replaceActive) {
+    if (!replaceActive) {
+      activeCount = activeSpaceObjects.Count;
+    } else {
       BuildActiveList();
     }
   }
@@ -105,6 +107,13 @@ public class SpaceObjectController : MonoBehaviour {
         activeObject.GetComponent<Transform>().position = newPosition;
       }
     }
+  }
+
+  public int AddActive(int number)
+  {
+    activeCount += number;
+    BuildActiveList();
+    return activeCount;
   }
 
 }
