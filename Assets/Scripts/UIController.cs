@@ -5,6 +5,8 @@ using System.Collections;
 
 public class UIController : MonoBehaviour {
   private LineRenderer lineRenderer;
+  public float lineBaseWidth;
+  public float lineTopWidth;
   public float LEFT_BOUNDARY   = -100;
   public float RIGHT_BOUNDARY  =  100;
   public float TOP_BOUNDARY    =  100;
@@ -18,6 +20,7 @@ public class UIController : MonoBehaviour {
   private GameObject[] gameOverUI;
 
   public bool isFastForward = false;
+  public bool isPaused = false;
   public float fastSpeed = 2.0f;
   public float normalSpeed = 1.0f;
   public bool quickHealthLoss = false;
@@ -60,7 +63,7 @@ public class UIController : MonoBehaviour {
     if (playerController.alive) {
       LineRenderer lineRenderer = GetComponent<LineRenderer>();
       if (playerController.isInputCurrentlyDown()) {
-        lineRenderer.SetWidth(0.03F, 0.001F);
+        lineRenderer.SetWidth(lineBaseWidth, lineTopWidth);
         Vector3[] points = playerController.getLinePoints();
         points[0].z = 1;
         points[1].z = 1;
@@ -142,7 +145,9 @@ public class UIController : MonoBehaviour {
 
   public void CheckSpeed()
   {
-    if (isFastForward) {
+    if (isPaused) {
+      Time.timeScale = 0.0f;
+    } else if (isFastForward) {
       Time.timeScale = fastSpeed;
     } else {
       Time.timeScale = normalSpeed;
@@ -152,6 +157,11 @@ public class UIController : MonoBehaviour {
   public void toggleSpeed()
   {
     isFastForward = !isFastForward;
+  }
+
+  public void togglePause()
+  {
+    isPaused = !isPaused;
   }
 
   public void RestartGame()
@@ -204,4 +214,5 @@ public class UIController : MonoBehaviour {
   {
     return BOTTOM_SAFETY;
   }
+
 }

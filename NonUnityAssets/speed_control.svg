@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="-263.4642"
+     inkscape:cx="136.98889"
      inkscape:cy="116.85344"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -55,7 +55,10 @@
      id="layer1"
      transform="translate(0,-698.0315)">
     <g
-       id="g4279">
+       id="g4279"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/NonUnityAssets/Images/speed_control_fast.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          y="729.50507"
          x="34.285717"
@@ -77,7 +80,10 @@
          sodipodi:nodetypes="ccccc" />
     </g>
     <g
-       id="g4284">
+       id="g4288"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/NonUnityAssets/Images/speed_control_normal.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          style="fill:#292e75;fill-opacity:1;stroke:#c8c8c8;stroke-width:15;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect4273"
@@ -87,7 +93,7 @@
          y="812.33759" />
       <path
          style="fill:#dddddd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:5.2737093;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 606.93882,838.9728 147.44924,121.20456 -147.71112,123.01824 0,-243.70389 z"
+         d="m 594.81699,838.9728 147.44924,121.20456 -147.71112,123.01824 0,-243.70389 z"
          id="path4275"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccc" />

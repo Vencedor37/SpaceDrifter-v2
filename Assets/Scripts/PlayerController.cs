@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour {
 
       Vector3 dir = currentPosition;
       float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-      if (currentMoveCapacity > 0) {
+      if (currentMoveCapacity > 0 && alive) {
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
       }
     }
@@ -151,8 +151,12 @@ public class PlayerController : MonoBehaviour {
       scoreCheckpointTracker = 0;
       activeHealthCount = healthPickupController.AddActive(checkPointHealthBonus);
       activeMovementCount = movementPickupController.AddActive(checkPointMovementBonus);
+      currentHealth = maxHealth;
+      currentMoveCapacity = maxMoveCapacity;
+      healthLossCounter = 0;
     }
   }
+
 
   private void TakeDamage(float damage)
   {
