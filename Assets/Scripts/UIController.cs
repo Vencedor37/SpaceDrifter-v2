@@ -39,6 +39,7 @@ public class UIController : MonoBehaviour {
   public Image movementFill;
 
   public Text scoreText;
+  public Text bonusText;
   public Text highScoreText;
 
   public Text movementCountText;
@@ -55,6 +56,7 @@ public class UIController : MonoBehaviour {
     lineRenderer.sortingLayerName = "UI";
 
     gameOverUI = GameObject.FindGameObjectsWithTag("ShowOnGameOver");
+    bonusText.enabled = false;
     HideGameOverUI();
 	}
 
@@ -78,6 +80,7 @@ public class UIController : MonoBehaviour {
     UpdateMovementSlider();
     UpdateScoreText();
     UpdateCounterText();
+    UpdateBonusText();
 
     if (!playerController.alive) {
       ShowGameOverUI();
@@ -173,6 +176,16 @@ public class UIController : MonoBehaviour {
   {
     int score = playerController.getCurrentScore();
     scoreText.text = "Score: " + score;
+  }
+
+  public void UpdateBonusText()
+  {
+    if (playerController.showBonus) {
+      bonusText.text = playerController.bonusType + " +" + playerController.bonusAmount;
+      bonusText.enabled = true;
+    } else {
+      bonusText.enabled = false;
+    }
   }
 
   public float getLeftBoundary()

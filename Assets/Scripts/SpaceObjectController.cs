@@ -49,7 +49,7 @@ public class SpaceObjectController : MonoBehaviour {
     pool = new SpaceObject[poolCount];
     for (int i = 0; i < poolCount; i++) {
       SpaceObject newObject = Instantiate(type, new Vector3(0, 0, 0), Quaternion.identity) as SpaceObject;
-      newObject.transform.parent = GetComponent<Transform>();
+      newObject.transform.SetParent(GetComponent<Transform>(), false);
       setInitialValues(newObject);
       newObject.gameObject.SetActive(false);
       pool[i] = newObject;

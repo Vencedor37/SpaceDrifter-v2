@@ -47,6 +47,10 @@ public class PlayerController : MonoBehaviour {
   public GameObject itemDrawZone;
   public GameObject safetyZone;
 
+  public bool showBonus = false;
+  public int bonusAmount;
+  public string bonusType;
+
   void Awake() {
     Application.targetFrameRate = 60;
   }
@@ -134,14 +138,19 @@ public class PlayerController : MonoBehaviour {
     scoreIncreaseCounter += Time.deltaTime;
     if (scoreIncreaseCounter >= scoreIncreaseRate) {
       scoreIncreaseCounter = 0;
-      IncreaseScore(scoreIncreaseAmount);
+      if (!showBonus) {
+        StartCoroutine(IncreaseScore(scoreIncreaseAmount, 0));
+      }
     }
   }
 
-  private void IncreaseScore(int amount)
+  private IEnumerator IncreaseScore(int amount, float time)
   {
+    yield return new WaitForSeconds(time);
     currentScore += amount;
     IncreaseScoreCheckpointTracker(amount);
+    showBonus = false;
+    yield return null;
   }
 
   private void IncreaseScoreCheckpointTracker(int amount)
@@ -233,8 +242,16 @@ public class PlayerController : MonoBehaviour {
       if (pointsPickupController.destroyOnCollision) {
         other.gameObject.SetActive(false);
       }
-      currentScore += pointsPickupController.getPointsBonus();
+      StartBonus(pointsPickupController.getPointsBonus(), "Star Dust");
     }
+  }
+
+  public void StartBonus(int amount, string type)
+  {
+    showBonus = true;
+    bonusAmount = amount;
+    bonusType = type;
+    StartCoroutine(IncreaseScore(bonusAmount, 1f));
   }
 
   void OnCollisionEnter2D(Collision2D other)
@@ -243,6 +260,7 @@ public class PlayerController : MonoBehaviour {
       EnemyCollision(other);
     }
   }
+
 
   void EnemyCollision(Collision2D other)
   {
