@@ -77,11 +77,13 @@ public class PlayerController : MonoBehaviour {
         debugObject.GetComponent<SpriteRenderer>().enabled = true;
       }
     }
+
 	}
 
 	// Update is called once per frame
 	void Update ()
   {
+
     if (isInputPressed()) {
       pressPosition = Input.mousePosition;
     }

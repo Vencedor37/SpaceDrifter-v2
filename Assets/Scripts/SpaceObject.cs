@@ -6,8 +6,8 @@ public class SpaceObject : MonoBehaviour {
   public int   pointsBonus   = 0;
   public float damage        = 0;
   public float movementBonus = 0;
-  public float MAX_SPEED = 6.0f;
-  public float MIN_SPEED = 2.5f;
+  public float MAX_SPEED;
+  public float MIN_SPEED;
   public bool destroyOnCollision;
 
 	// Use this for initialization
@@ -62,7 +62,9 @@ public class SpaceObject : MonoBehaviour {
 
   public void startMoving()
   {
-    GetComponent<Rigidbody2D>().velocity = Random.onUnitSphere * Random.Range(MIN_SPEED, MAX_SPEED);
+    if (MAX_SPEED > 0) {
+      GetComponent<Rigidbody2D>().velocity = Random.onUnitSphere * Random.Range(MIN_SPEED, MAX_SPEED);
+    }
   }
 
 

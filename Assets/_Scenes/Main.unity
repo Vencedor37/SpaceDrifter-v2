@@ -807,6 +807,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 370729153}
   - 114: {fileID: 370729152}
+  - 114: {fileID: 370729154}
   m_Layer: 0
   m_Name: Enemies
   m_TagString: Untagged
@@ -828,16 +829,16 @@ MonoBehaviour:
   pool: []
   activeSpaceObjects: []
   type: {fileID: 114000011210211580, guid: 63a06adf54141457b8558d5b8bf3d2f1, type: 2}
-  poolCount: 150
-  activeCount: 100
+  poolCount: 300
+  activeCount: 50
   playerController: {fileID: 778002976}
   UI: {fileID: 2016584744}
-  replaceActive: 1
+  replaceActive: 0
   avoidCentreDuringGeneration: 1
-  needsCleaning: 1
+  needsCleaning: 0
   needsPositionCheck: 1
   cleanFrequency: 1
-  positionCheckFrequency: 4
+  positionCheckFrequency: 2
 --- !u!4 &370729153
 Transform:
   m_ObjectHideFlags: 0
@@ -851,6 +852,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &370729154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370729151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18420dcab66f04a9d803d98d6acc2c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 370729152}
+  incrementTime: 10
+  incrementAmount: 5
 --- !u!1 &422851523
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,12 +2333,12 @@ Prefab:
     - target: {fileID: 114000011120559524, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
         type: 2}
       propertyPath: scoreCheckpoint
-      value: 300400
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 114000011120559524, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
         type: 2}
       propertyPath: maxSpeed
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ca7cbb53b98b4276aed4e4e377b92d9, type: 2}
@@ -2689,8 +2704,8 @@ MonoBehaviour:
   avoidCentreDuringGeneration: 1
   needsCleaning: 1
   needsPositionCheck: 1
-  cleanFrequency: 10
-  positionCheckFrequency: 10
+  cleanFrequency: 5
+  positionCheckFrequency: 5
 --- !u!1 &1600837659
 GameObject:
   m_ObjectHideFlags: 0

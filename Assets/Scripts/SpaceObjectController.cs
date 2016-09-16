@@ -90,11 +90,23 @@ public class SpaceObjectController : MonoBehaviour {
           Vector3 newPos = playerController.getRandomPosition(!(firstBuild && !avoidCentreDuringGeneration));
           spaceObject.GetComponent<Transform>().position = newPos;
           spaceObject.gameObject.SetActive(true);
+          spaceObject.startMoving();
           activeSpaceObjects.Add(spaceObject);
           activeRequired --;
         }
       } else {
         break;
+      }
+    }
+
+    GameObject[] debugVisible = GameObject.FindGameObjectsWithTag("VisibleInDebugMode");
+    if (!playerController.debugMode) {
+      foreach (GameObject debugObject in debugVisible) {
+        debugObject.GetComponent<SpriteRenderer>().enabled = false;
+      }
+    } else {
+      foreach (GameObject debugObject in debugVisible) {
+        debugObject.GetComponent<SpriteRenderer>().enabled = true;
       }
     }
     firstBuild = false;
@@ -108,6 +120,7 @@ public class SpaceObjectController : MonoBehaviour {
       if (!bounds.Intersects(playerController.getDrawBounds())) {
         Vector3 newPosition = playerController.getRandomPosition(true);
         activeObject.GetComponent<Transform>().position = newPosition;
+        activeObject.startMoving();
       }
     }
   }
