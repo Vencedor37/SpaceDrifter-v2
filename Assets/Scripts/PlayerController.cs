@@ -103,7 +103,6 @@ public class PlayerController : MonoBehaviour {
 
     UpdateHealth();
     UpdateScore();
-    getRandomAcceptablePosition();
 	}
 
 
@@ -356,40 +355,48 @@ public class PlayerController : MonoBehaviour {
     return itemDrawZone.GetComponent<SpriteRenderer>().bounds;
   }
 
-  public Vector3 getRandomAcceptablePosition()
+  public Vector3 getRandomPosition(bool avoidCentre)
   {
+    float x;
+    float y;
+    float z = 0;
+
     Bounds drawBounds = itemDrawZone.GetComponent<SpriteRenderer>().bounds;
     Vector3 drawMin = drawBounds.min;
     Vector3 drawMax = drawBounds.max;
 
-    Bounds safeBounds = safetyZone.GetComponent<SpriteRenderer>().bounds;
-    Vector3 safeMin = safeBounds.min;
-    Vector3 safeMax = safeBounds.max;
-
-    bool goAboveOrBelowSafety = (Random.Range(0,2) == 1);
-    float x;
-    float y;
-    float z = 0;
-    if (goAboveOrBelowSafety) {
-      // don't need to worry about x
+    if (!avoidCentre) {
       x = Random.Range(drawMin.x, drawMax.x);
-      bool goAbove = (Random.Range(0,2) == 1);
-      if (goAbove) {
-        y = Random.Range(safeMax.y, drawMax.y);
-      } else {
-        //go below
-        y = Random.Range(drawMin.y, safeMin.y);
-      }
+      y = Random.Range(drawMin.y, drawMax.y);  
+
     } else {
-      // goLeftOrRightOfSafety
-      // don't need to worry about y
-      y = Random.Range(drawMin.y, drawMax.y);
-      bool goLeft = (Random.Range(0,2) == 1);
-      if (goLeft) {
-        x = Random.Range(drawMin.x, safeMin.x);
+
+      Bounds safeBounds = safetyZone.GetComponent<SpriteRenderer>().bounds;
+      Vector3 safeMin = safeBounds.min;
+      Vector3 safeMax = safeBounds.max;
+
+      bool goAboveOrBelowSafety = (Random.Range(0,2) == 1);
+      if (goAboveOrBelowSafety) {
+        // don't need to worry about x
+        x = Random.Range(drawMin.x, drawMax.x);
+        bool goAbove = (Random.Range(0,2) == 1);
+        if (goAbove) {
+          y = Random.Range(safeMax.y, drawMax.y);
+        } else {
+          //go below
+          y = Random.Range(drawMin.y, safeMin.y);
+        }
       } else {
-        // go right
-        x = Random.Range(safeMax.x, drawMax.x);
+        // goLeftOrRightOfSafety
+        // don't need to worry about y
+        y = Random.Range(drawMin.y, drawMax.y);
+        bool goLeft = (Random.Range(0,2) == 1);
+        if (goLeft) {
+          x = Random.Range(drawMin.x, safeMin.x);
+        } else {
+          // go right
+          x = Random.Range(safeMax.x, drawMax.x);
+        }
       }
     }
     Vector3 pos = new Vector3(x, y, z);

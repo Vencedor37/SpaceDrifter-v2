@@ -833,6 +833,7 @@ MonoBehaviour:
   playerController: {fileID: 778002976}
   UI: {fileID: 2016584744}
   replaceActive: 1
+  avoidCentre: 1
   needsCleaning: 1
   needsPositionCheck: 1
   cleanFrequency: 1
@@ -1634,6 +1635,7 @@ MonoBehaviour:
   playerController: {fileID: 778002976}
   UI: {fileID: 2016584744}
   replaceActive: 0
+  avoidCentre: 1
   needsCleaning: 1
   needsPositionCheck: 1
   cleanFrequency: 1
@@ -1987,9 +1989,9 @@ RectTransform:
   - {fileID: 257476039}
   m_Father: {fileID: 214891203}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -730, y: 565}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 270, y: -94}
   m_SizeDelta: {x: 450, y: 100}
   m_Pivot: {x: 0.4999997, y: 0.5}
 --- !u!1 &1035422797
@@ -2359,10 +2361,11 @@ MonoBehaviour:
   playerController: {fileID: 778002976}
   UI: {fileID: 2016584744}
   replaceActive: 0
+  avoidCentre: 0
   needsCleaning: 0
   needsPositionCheck: 1
   cleanFrequency: 1
-  positionCheckFrequency: 1
+  positionCheckFrequency: 3
 --- !u!1 &1336726907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2615,6 +2618,7 @@ MonoBehaviour:
   playerController: {fileID: 778002976}
   UI: {fileID: 2016584744}
   replaceActive: 0
+  avoidCentre: 1
   needsCleaning: 1
   needsPositionCheck: 1
   cleanFrequency: 1
@@ -2667,6 +2671,7 @@ MonoBehaviour:
   playerController: {fileID: 778002976}
   UI: {fileID: 2016584744}
   replaceActive: 1
+  avoidCentre: 1
   needsCleaning: 1
   needsPositionCheck: 1
   cleanFrequency: 10
@@ -3112,7 +3117,7 @@ MonoBehaviour:
   mainCamera: {fileID: 953049245}
   lineColour1: {r: 1, g: 1, b: 1, a: 1}
   lineColour2: {r: 0.9852941, g: 0.7954301, b: 0.29703718, a: 1}
-  fullHealthColour: {r: 0.11435091, g: 0.4044118, b: 0, a: 0}
+  fullHealthColour: {r: 0.11435091, g: 0.4044118, b: 0, a: 1}
   lineShader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
   healthSlider: {fileID: 1810988899}
   healthFill: {fileID: 663746321}

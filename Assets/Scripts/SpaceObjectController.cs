@@ -12,10 +12,12 @@ public class SpaceObjectController : MonoBehaviour {
   public PlayerController playerController;
   public UIController UI;
   public bool replaceActive = false;
+  public bool avoidCentreDuringGeneration = true;
   public bool needsCleaning = false;
   public bool needsPositionCheck = true;
   public float cleanFrequency = 1;
   public float positionCheckFrequency = 1;
+  private bool firstBuild = true;
 
 	// Use this for initialization
 	void Start () {
@@ -85,7 +87,7 @@ public class SpaceObjectController : MonoBehaviour {
       if (activeRequired > 0) {
         SpaceObject spaceObject = pool[i];
         if (!spaceObject.gameObject.activeInHierarchy) {
-          Vector3 newPos = playerController.getRandomAcceptablePosition();
+          Vector3 newPos = playerController.getRandomPosition(firstBuild && !avoidCentreDuringGeneration);
           spaceObject.GetComponent<Transform>().position = newPos;
           spaceObject.gameObject.SetActive(true);
           activeSpaceObjects.Add(spaceObject);
@@ -95,6 +97,7 @@ public class SpaceObjectController : MonoBehaviour {
         break;
       }
     }
+    firstBuild = false;
   }
 
   void CheckObjectPositioning()
@@ -103,7 +106,7 @@ public class SpaceObjectController : MonoBehaviour {
       SpriteRenderer spriteRenderer = activeObject.GetComponent<SpriteRenderer>();
       Bounds bounds = spriteRenderer.bounds;
       if (!bounds.Intersects(playerController.getDrawBounds())) {
-        Vector3 newPosition = playerController.getRandomAcceptablePosition();
+        Vector3 newPosition = playerController.getRandomPosition(true);
         activeObject.GetComponent<Transform>().position = newPosition;
       }
     }
