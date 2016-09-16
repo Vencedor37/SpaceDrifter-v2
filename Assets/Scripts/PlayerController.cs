@@ -147,8 +147,8 @@ public class PlayerController : MonoBehaviour {
   {
     yield return new WaitForSeconds(time);
     currentScore += amount;
-    IncreaseScoreCheckpointTracker(amount);
     showBonus = false;
+    IncreaseScoreCheckpointTracker(amount);
     yield return null;
   }
 
@@ -156,6 +156,7 @@ public class PlayerController : MonoBehaviour {
   {
     scoreCheckpointTracker += amount;
     if (scoreCheckpointTracker >= scoreCheckpoint) {
+      StartBonus(0, "Level Up!");
       scoreCheckpointTracker = 0;
       activeHealthCount = healthPickupController.AddActive(checkPointHealthBonus);
       activeMovementCount = movementPickupController.AddActive(checkPointMovementBonus);
@@ -220,6 +221,9 @@ public class PlayerController : MonoBehaviour {
       } else {
         currentHealth = maxHealth;
       }
+      if (healthController.getPointsBonus() > 0) {
+        StartBonus(healthController.getPointsBonus(), "Oxygen");
+      }
       healthLossCounter = 0;
     }
 
@@ -233,6 +237,10 @@ public class PlayerController : MonoBehaviour {
         currentMoveCapacity += movementPickupController.getMovementBonus();
       } else {
         currentMoveCapacity = maxMoveCapacity;
+      }
+
+      if (movementPickupController.getPointsBonus() > 0) {
+        StartBonus(movementPickupController.getPointsBonus(), "Fuel");
       }
     }
 
@@ -367,7 +375,7 @@ public class PlayerController : MonoBehaviour {
 
     if (!avoidCentre) {
       x = Random.Range(drawMin.x, drawMax.x);
-      y = Random.Range(drawMin.y, drawMax.y);  
+      y = Random.Range(drawMin.y, drawMax.y);
 
     } else {
 

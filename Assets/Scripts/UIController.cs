@@ -103,7 +103,7 @@ public class UIController : MonoBehaviour {
         quickHealthLoss = true;
       }
       healthFill.color = Color.red;
-    } else {
+    } else if (healthSlider.value > 50) {
       healthFill.color = fullHealthColour;
     }
     if (healthSlider.value <= 0) {
@@ -184,7 +184,11 @@ public class UIController : MonoBehaviour {
   public void UpdateBonusText()
   {
     if (playerController.showBonus) {
-      bonusText.text = playerController.bonusType + " +" + playerController.bonusAmount;
+      if (playerController.bonusAmount > 0) {
+        bonusText.text = playerController.bonusType + " +" + playerController.bonusAmount;
+      } else {
+        bonusText.text = playerController.bonusType;
+      }
       bonusText.enabled = true;
     } else {
       bonusText.enabled = false;

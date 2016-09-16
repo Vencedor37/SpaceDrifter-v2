@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBonus: 0
-  pointsBonus: 0
+  pointsBonus: 5
   damage: 0
   movementBonus: 30
   MAX_SPEED: 6

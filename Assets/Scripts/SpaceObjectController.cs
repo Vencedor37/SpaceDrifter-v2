@@ -87,7 +87,7 @@ public class SpaceObjectController : MonoBehaviour {
       if (activeRequired > 0) {
         SpaceObject spaceObject = pool[i];
         if (!spaceObject.gameObject.activeInHierarchy) {
-          Vector3 newPos = playerController.getRandomPosition(firstBuild && !avoidCentreDuringGeneration);
+          Vector3 newPos = playerController.getRandomPosition(!(firstBuild && !avoidCentreDuringGeneration));
           spaceObject.GetComponent<Transform>().position = newPos;
           spaceObject.gameObject.SetActive(true);
           activeSpaceObjects.Add(spaceObject);
