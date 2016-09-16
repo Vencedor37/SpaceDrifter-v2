@@ -3112,6 +3112,7 @@ MonoBehaviour:
   mainCamera: {fileID: 953049245}
   lineColour1: {r: 1, g: 1, b: 1, a: 1}
   lineColour2: {r: 0.9852941, g: 0.7954301, b: 0.29703718, a: 1}
+  fullHealthColour: {r: 0.11435091, g: 0.4044118, b: 0, a: 0}
   lineShader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
   healthSlider: {fileID: 1810988899}
   healthFill: {fileID: 663746321}

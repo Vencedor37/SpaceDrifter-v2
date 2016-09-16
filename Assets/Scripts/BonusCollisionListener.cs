@@ -10,9 +10,6 @@ public class BonusCollisionListener : MonoBehaviour {
   public float highScale;
   public float mediumScale;
 
-  private float mediumTimer = 0;
-  private float highTimer = 0;
-
   public bool recentDamage = false;
   public bool recentPoints = false;
 

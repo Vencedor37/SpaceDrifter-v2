@@ -30,6 +30,7 @@ public class UIController : MonoBehaviour {
   public Camera mainCamera;
   public Color lineColour1;
   public Color lineColour2;
+  public Color fullHealthColour;
   public Shader lineShader;
   public Slider healthSlider;
   public Image healthFill;
@@ -102,6 +103,8 @@ public class UIController : MonoBehaviour {
         quickHealthLoss = true;
       }
       healthFill.color = Color.red;
+    } else {
+      healthFill.color = fullHealthColour;
     }
     if (healthSlider.value <= 0) {
       healthFill.enabled = false;
