@@ -185,7 +185,7 @@ public class UIController : MonoBehaviour {
   {
     if (playerController.showBonus) {
       if (playerController.bonusAmount > 0) {
-        bonusText.text = playerController.bonusType + " +" + playerController.bonusAmount;
+        bonusText.text = playerController.bonusType + " +" + playerController.bonusAmount * playerController.scoreMultiplier;
       } else {
         bonusText.text = playerController.bonusType;
       }

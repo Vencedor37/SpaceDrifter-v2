@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
+  public Camera mainCamera;
   public bool debugMode;
   public bool alive;
   public float maxSpeed;
@@ -14,6 +15,8 @@ public class PlayerController : MonoBehaviour {
   public int activeHealthCount;
   public SpaceObjectController movementPickupController;
   public int activeMovementCount;
+  public SpaceObjectController enemyController;
+  public int enemiesPerLevel;
 
   public float maxHealth;
   public float startingHealth;
@@ -26,6 +29,8 @@ public class PlayerController : MonoBehaviour {
   public float scoreIncreaseRate;
   public int scoreIncreaseAmount;
   public int scoreCheckpoint;
+  public int scoreMultiplier = 1;
+
   public int checkPointHealthBonus;
   public int checkPointMovementBonus;
   private float scoreIncreaseCounter = 0;
@@ -90,11 +95,27 @@ public class PlayerController : MonoBehaviour {
 
     if (isInputCurrentlyDown()) {
       currentPosition = Input.mousePosition;
+      Vector3 dir = mainCamera.ScreenToWorldPoint(currentPosition) - transform.position;
+      Debug.Log("current: " + dir.x + ", player: " + transform.position.x);
+      float xDiff = currentPosition.x - pressPosition.x;
+      if (Mathf.Abs(xDiff) > 20) {
+        if (currentPosition.x - pressPosition.x > 0) {
+          GetComponent<SpriteRenderer>().flipX = false;
+        } else {
+          GetComponent<SpriteRenderer>().flipX = true;
+        }
+        Quaternion newRotation = Quaternion.LookRotation(transform.position - currentPosition);
+        newRotation.y = 0.0f;
+        newRotation.x = 0.0f;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        if (GetComponent<SpriteRenderer>().flipX) {
+          angle -= 180;
+        }
 
-      Vector3 dir = currentPosition;
-      float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-      if (currentMoveCapacity > 0 && alive) {
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        if (currentMoveCapacity > 0 && alive) {
+          transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+          //        transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 8f);
+        }
       }
     }
 
@@ -147,21 +168,24 @@ public class PlayerController : MonoBehaviour {
 
   private IEnumerator IncreaseScore(int amount, float time)
   {
+    int modifiedScore = amount * scoreMultiplier;
     yield return new WaitForSeconds(time);
-    currentScore += amount;
+    currentScore += modifiedScore;
     showBonus = false;
-    IncreaseScoreCheckpointTracker(amount);
+    IncreaseScoreCheckpointTracker(modifiedScore);
     yield return null;
   }
 
   private void IncreaseScoreCheckpointTracker(int amount)
   {
     scoreCheckpointTracker += amount;
-    if (scoreCheckpointTracker >= scoreCheckpoint) {
+    if (scoreCheckpointTracker >= scoreCheckpoint * scoreMultiplier) {
       StartBonus(0, "Level Up!");
       scoreCheckpointTracker = 0;
+      scoreMultiplier ++;
       activeHealthCount = healthPickupController.AddActive(checkPointHealthBonus);
       activeMovementCount = movementPickupController.AddActive(checkPointMovementBonus);
+      enemyController.AddActive(enemiesPerLevel);
       currentHealth = maxHealth;
       currentMoveCapacity = maxMoveCapacity;
       healthLossCounter = 0;
@@ -363,6 +387,11 @@ public class PlayerController : MonoBehaviour {
   public Bounds getDrawBounds()
   {
     return itemDrawZone.GetComponent<SpriteRenderer>().bounds;
+  }
+
+  public Bounds getSafetyBounds()
+  {
+    return safetyZone.GetComponent<SpriteRenderer>().bounds;
   }
 
   public Vector3 getRandomPosition(bool avoidCentre)

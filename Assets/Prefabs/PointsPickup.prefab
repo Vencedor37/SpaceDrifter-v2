@@ -102,7 +102,7 @@ MonoBehaviour:
   pointsBonus: 20
   damage: 0
   movementBonus: 0
-  MAX_SPEED: 20
+  MAX_SPEED: 15
   MIN_SPEED: 5
   destroyOnCollision: 1
 --- !u!114 &114000014114338790

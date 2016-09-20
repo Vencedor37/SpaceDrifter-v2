@@ -18,6 +18,10 @@ public class SpaceObjectController : MonoBehaviour {
   public float cleanFrequency = 1;
   public float positionCheckFrequency = 1;
   private bool firstBuild = true;
+  public bool needsSpeedCheck = true;
+  public float speedCheckFrequency = 1;
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -29,11 +33,14 @@ public class SpaceObjectController : MonoBehaviour {
     if (needsPositionCheck) {
       InvokeRepeating("CheckObjectPositioning", 0.2f, positionCheckFrequency);
     }
+    if (needsSpeedCheck) {
+      InvokeRepeating("CheckObjectSpeed", 0.2f, speedCheckFrequency);
+    }
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
   float RandomHorizontalCoordinates()
@@ -120,6 +127,18 @@ public class SpaceObjectController : MonoBehaviour {
       if (!bounds.Intersects(playerController.getDrawBounds())) {
         Vector3 newPosition = playerController.getRandomPosition(true);
         activeObject.GetComponent<Transform>().position = newPosition;
+        activeObject.startMoving();
+      }
+    }
+  }
+
+  void CheckObjectSpeed()
+  {
+    foreach (SpaceObject activeObject in activeSpaceObjects) {
+      SpriteRenderer spriteRenderer = activeObject.GetComponent<SpriteRenderer>();
+      Bounds bounds = spriteRenderer.bounds;
+      if (!bounds.Intersects(playerController.getSafetyBounds()) && activeObject.GetComponent<Rigidbody2D>().velocity.magnitude < activeObject.MIN_SPEED) {
+//        Debug.Log("moving object");
         activeObject.startMoving();
       }
     }
