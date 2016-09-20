@@ -1,0 +1,10 @@
+14. Need universal high scores at some point -- low priority
+17. Improve coroutine handling for points.
+18. Camera should be used for safety bounds - no reason to make this a different rectangle.
+19. Portrait mode should be more zoomed out, like landscape mode.
+20. Game gets pretty clunky when run at high speed on a mobile device.
+21. Test on iOS.
+22. Should be able to see the score multiplier.
+23. Bug with player sprite rotation when you swipe behind him
+24. Want more variety in space background (should have stars of different brightness and size at least)
+
