@@ -109,11 +109,15 @@ public class SpaceObjectController : MonoBehaviour {
     GameObject[] debugVisible = GameObject.FindGameObjectsWithTag("VisibleInDebugMode");
     if (!playerController.debugMode) {
       foreach (GameObject debugObject in debugVisible) {
-        debugObject.GetComponent<SpriteRenderer>().enabled = false;
+        if (debugObject.GetComponent<SpriteRenderer>() != null) {
+          debugObject.GetComponent<SpriteRenderer>().enabled = false;
+        }
       }
     } else {
       foreach (GameObject debugObject in debugVisible) {
-        debugObject.GetComponent<SpriteRenderer>().enabled = true;
+        if (debugObject.GetComponent<SpriteRenderer>() != null) {
+          debugObject.GetComponent<SpriteRenderer>().enabled = true;
+        }
       }
     }
     firstBuild = false;

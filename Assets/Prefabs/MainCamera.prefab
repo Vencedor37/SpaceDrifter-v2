@@ -696,7 +696,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014141165184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -151568.23, y: 306953.3, z: -50}
+  m_LocalPosition: {x: -151577.33, y: 306955.56, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1565,6 +1565,7 @@ MonoBehaviour:
   highScoreText: {fileID: 114000011541036544}
   movementCountText: {fileID: 114000010965409340}
   healthCountText: {fileID: 114000010809817870}
+  fastForwardToggle: {fileID: 0}
 --- !u!114 &114000012940666552
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -46,6 +46,8 @@ public class UIController : MonoBehaviour {
   public Text movementCountText;
   public Text healthCountText;
 
+  public Toggle fastForwardToggle;
+
 
 	// Use this for initialization
 	void Start () {
@@ -168,6 +170,9 @@ public class UIController : MonoBehaviour {
   public void togglePause()
   {
     isPaused = !isPaused;
+    if (isPaused && isFastForward) {
+      fastForwardToggle.isOn = false;  
+    }
   }
 
   public void RestartGame()
