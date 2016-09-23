@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour {
   private int highScore;
   string highScoreKey = "HighScore";
 
+  public Transform spraySprite;
+  public Animator sprayAnimator;
 
   private Rigidbody2D rigidBody;
   private Vector3 pressPosition;
@@ -62,6 +64,7 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+    sprayAnimator = GetComponent<Animator>();
     Time.timeScale = 1.0F;
     alive = true;
     rigidBody = GetComponent<Rigidbody2D>();
@@ -96,13 +99,23 @@ public class PlayerController : MonoBehaviour {
     if (isInputCurrentlyDown()) {
       currentPosition = Input.mousePosition;
       Vector3 dir = mainCamera.ScreenToWorldPoint(currentPosition) - transform.position;
-      Debug.Log("current: " + dir.x + ", player: " + transform.position.x);
+//      Debug.Log("current: " + dir.x + ", player: " + transform.position.x);
       float xDiff = currentPosition.x - pressPosition.x;
-      if (Mathf.Abs(xDiff) > 20) {
+      if (Mathf.Abs(xDiff) > 10 && currentMoveCapacity > 0 && alive) {
         if (currentPosition.x - pressPosition.x > 0) {
           GetComponent<SpriteRenderer>().flipX = false;
+          if (spraySprite.localScale.x < 0) {
+            Vector3 newScale = spraySprite.localScale;
+            newScale.x *= -1;
+            spraySprite.localScale = newScale;
+          }
         } else {
           GetComponent<SpriteRenderer>().flipX = true;
+          if (spraySprite.localScale.x > 0) {
+            Vector3 newScale = spraySprite.localScale;
+            newScale.x *= -1;
+            spraySprite.localScale = newScale;
+          }
         }
         Quaternion newRotation = Quaternion.LookRotation(transform.position - currentPosition);
         newRotation.y = 0.0f;
@@ -112,10 +125,7 @@ public class PlayerController : MonoBehaviour {
           angle -= 180;
         }
 
-        if (currentMoveCapacity > 0 && alive) {
-          transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-          //        transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 8f);
-        }
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
       }
     }
 
@@ -209,18 +219,35 @@ public class PlayerController : MonoBehaviour {
   private void UpdateMovement(Vector3 movement)
   {
     Vector3 force = movement;
+    bool canMove = false;
     float moveCostAmount = magnitudeToMoveCostAmount(movement.magnitude);
     if (currentMoveCapacity - moveCostAmount >= 0) {
+      canMove = true;
       currentMoveCapacity -= moveCostAmount;
       rigidBody.angularVelocity = 0.0f;
-      rigidBody.AddForce(force);
     } else if (currentMoveCapacity > 0) {
+      canMove = true;
       float reducedMovementMagnitude = moveCostAmountToMagnitude(currentMoveCapacity);
       force = Vector3.ClampMagnitude(movement, reducedMovementMagnitude);
       currentMoveCapacity = 0;
       rigidBody.angularVelocity = 0.0f;
-      rigidBody.AddForce(force);
     }
+    if (canMove) {
+      float forceUsed = force.magnitude / 50;
+      Debug.Log("force: " + forceUsed);
+      sprayAnimator.SetFloat("forceUsed", forceUsed);
+      sprayAnimator.SetTrigger("StartSpray");
+
+      StartCoroutine(DelayedForce(force, 0.15f));
+    }
+
+  }
+
+  private IEnumerator DelayedForce(Vector3 force, float time)
+  {
+    yield return new WaitForSeconds(time);
+    rigidBody.AddForce(force);
+    yield return null;
   }
 
   private float magnitudeToMoveCostAmount(float magnitude)

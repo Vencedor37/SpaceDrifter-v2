@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: ebbd9537b9883412c832103b73587d9a
+timeCreated: 1474628960
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fire_extinguisher_spray_0
+    21300002: fire_extinguisher_spray_1
+    21300004: fire_extinguisher_spray_2
+    21300006: fire_extinguisher_spray_3
+    21300008: fire_extinguisher_spray_4
+    21300010: fire_extinguisher_spray_5
+    21300012: fire_extinguisher_spray_6
+    21300014: fire_extinguisher_spray_7
+    21300016: fire_extinguisher_spray_8
+    21300018: fire_extinguisher_spray_9
+    21300020: fire_extinguisher_spray_10
+    21300022: fire_extinguisher_spray_11
+    21300024: fire_extinguisher_spray_12
+    21300026: fire_extinguisher_spray_13
+    21300028: fire_extinguisher_spray_14
+    21300030: fire_extinguisher_spray_15
+    21300032: fire_extinguisher_spray_16
+    21300034: fire_extinguisher_spray_17
+    21300036: fire_extinguisher_spray_18
+    21300038: fire_extinguisher_spray_19
+    21300040: fire_extinguisher_spray_20
+    21300042: fire_extinguisher_spray_21
+    21300044: fire_extinguisher_spray_22
+    21300046: fire_extinguisher_spray_23
+    21300048: fire_extinguisher_spray_24
+    21300050: fire_extinguisher_spray_25
+    21300052: fire_extinguisher_spray_26
+    21300054: fire_extinguisher_spray_27
+    21300056: fire_extinguisher_spray_28
+    21300058: fire_extinguisher_spray_29
+    21300060: fire_extinguisher_spray_30
+    21300062: fire_extinguisher_spray_31
+    21300064: fire_extinguisher_spray_32
+    21300066: fire_extinguisher_spray_33
+    21300068: fire_extinguisher_spray_34
+    21300070: fire_extinguisher_spray_35
+    21300072: fire_extinguisher_spray_36
+    21300074: fire_extinguisher_spray_37
+    21300076: fire_extinguisher_spray_38
+    21300078: fire_extinguisher_spray_39
+    21300080: fire_extinguisher_spray_40
+    21300082: fire_extinguisher_spray_41
+    21300084: fire_extinguisher_spray_42
+    21300086: fire_extinguisher_spray_43
+    21300088: fire_extinguisher_spray_44
+    21300090: fire_extinguisher_spray_45
+    21300092: fire_extinguisher_spray_46
+    21300094: fire_extinguisher_spray_47
+    21300096: fire_extinguisher_spray_48
+    21300098: fire_extinguisher_spray_49
+    21300100: fire_extinguisher_spray_50
+    21300102: fire_extinguisher_spray_51
+    21300104: fire_extinguisher_spray_52
+    21300106: fire_extinguisher_spray_53
+    21300108: fire_extinguisher_spray_54
+    21300110: fire_extinguisher_spray_55
+    21300112: fire_extinguisher_spray_56
+    21300114: fire_extinguisher_spray_57
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fire_extinguisher_spray_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 173
+        width: 81
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fire_extinguisher_spray_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 162
+        width: 118
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fire_extinguisher_spray_2
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 159
+        width: 125
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fire_extinguisher_spray_3
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1
+        width: 165
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fire_extinguisher_spray_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2
+        width: 194
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fire_extinguisher_spray_5
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 273
+        width: 250
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -19,6 +19,17 @@
    sodipodi:docname="spaceman.svg">
   <defs
      id="defs4">
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6370"
+       id="radialGradient6376"
+       cx="541.43207"
+       cy="406.90567"
+       fx="541.43207"
+       fy="406.90567"
+       r="91.172188"
+       gradientTransform="matrix(0.74100541,-0.16411431,0.15953244,0.72031743,82.439653,200.17111)"
+       gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
        id="linearGradient6370">
@@ -31,17 +42,28 @@
          offset="1"
          id="stop6374" />
     </linearGradient>
-    <radialGradient
+    <linearGradient
+       gradientTransform="matrix(1.0073623,0,0,0.62584162,29.9181,339.38894)"
        inkscape:collect="always"
-       xlink:href="#linearGradient6370"
-       id="radialGradient6376"
-       cx="541.43207"
-       cy="406.90567"
-       fx="541.43207"
-       fy="406.90567"
-       r="91.172191"
-       gradientTransform="matrix(0.74100541,-0.16411431,0.15953244,0.72031743,352.43965,-8.4003201)"
+       xlink:href="#linearGradient5413"
+       id="linearGradient5419"
+       x1="304.93979"
+       y1="392.76413"
+       x2="360.1825"
+       y2="391.65927"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5413">
+      <stop
+         style="stop-color:#acacac;stop-opacity:1;"
+         offset="0"
+         id="stop5415" />
+      <stop
+         style="stop-color:#acacac;stop-opacity:0;"
+         offset="1"
+         id="stop5417" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -50,9 +72,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="316.8592"
-     inkscape:cy="614.70045"
+     inkscape:zoom="0.35"
+     inkscape:cx="480.65424"
+     inkscape:cy="782.00526"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -69,21 +91,20 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:groupmode="layer"
      id="layer13"
-     inkscape:label="Fire Existinguisher"
-     sodipodi:insensitive="true">
+     inkscape:label="Fire Existinguisher">
     <path
        style="opacity:1;fill:#a40000;fill-opacity:0.99607843;stroke:#020202;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 652.50595,507.86231 c -1.04938,-0.38926 -2.20656,0.1417 -2.59583,1.19108 l -5.28344,14.24304 c -10.87431,-1.91348 -21.87981,1.1251 -29.22313,8.44158 -0.47625,0.21376 -0.87224,0.61047 -1.06898,1.14083 l -0.0149,0.0403 c -2.32906,2.57933 -4.1347,5.5366 -5.33979,8.74547 -1.18186,3.2217 1.42917,-3.28053 0.25782,-0.004 l -49.00636,137.06964 c -0.37677,1.05393 0.3422,1.86919 1.19291,2.59651 12.10683,10.35084 24.94334,20.28308 54.93037,20.37635 1.11924,0.003 2.18489,-0.15005 2.59766,-1.1904 l 50.68067,-127.73465 c 1.603,-4.04017 1.20898,-3.62312 2.69894,-7.61275 5.15974,-13.91214 -1.74212,-29.62735 -15.60627,-37.51585 l 5.23928,-14.12402 c 0.38927,-1.04937 -0.14353,-2.20724 -1.19291,-2.5965 l -8.26602,-3.06627 z"
        id="rect6402"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -92,7 +113,7 @@
        id="path6425"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -100,7 +121,7 @@
        d="m 661.83537,512.84572 6.75605,-16.15909 -64.04747,-14.23524 -6.37255,18.20595 z"
        id="path6430"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -109,22 +130,21 @@
        id="path6432"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer11"
-     inkscape:label="Left Leg Lower"
-     sodipodi:insensitive="true">
+     inkscape:label="Left Leg Lower">
     <path
-       style="fill:#bdbdbd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.89310932px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.89310932px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 505.84433,660.0821 7.89217,50.5926 35.6578,8.29703 12.24484,-46.91134 z"
        id="path6214-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -133,18 +153,17 @@
        id="path6220-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccccc"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer12"
-     inkscape:label="Oxygen"
-     sodipodi:insensitive="true">
+     inkscape:label="Oxygen">
     <g
        id="g6396"
-       transform="matrix(0.77183399,0,0,0.79953387,209.94986,127.43655)"
+       transform="matrix(0.77183399,0,0,0.79953387,-11.273547,-258.44172)"
        inkscape:export-filename="/Users/campbelldavis/path5740.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -167,24 +186,82 @@
          d="m 269.28571,635.84921 c -0.57916,-47.46459 -13.0133,-151.07529 2.14286,-159.28572 7.45141,-13.78207 57.14286,-2.85714 57.14286,-2.85714 l 14.28571,165 z"
          style="opacity:0.50199998;fill:#444444;fill-opacity:0.99607843;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
+    <rect
+       style="display:inline;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5475"
+       width="12.487185"
+       height="18.465406"
+       x="350.56354"
+       y="480.56744"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,0)" />
+    <path
+       style="display:inline;opacity:1;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.47653231;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5472"
+       sodipodi:type="arc"
+       sodipodi:cx="356.40009"
+       sodipodi:cy="654.65967"
+       sodipodi:rx="41.423279"
+       sodipodi:ry="12.700582"
+       sodipodi:start="0"
+       sodipodi:end="3.1354601"
+       d="m 397.82336,654.65967 a 41.423279,12.700582 0 0 1 -41.29626,12.70052 41.423279,12.700582 0 0 1 -41.54951,-12.62264 l 41.4225,-0.0779 z"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,0)" />
+    <ellipse
+       style="display:inline;opacity:1;fill:#448560;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.47689775;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5409"
+       cx="356.09076"
+       cy="515.36353"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       rx="40.837696"
+       ry="25.426819"
+       transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,0)" />
+    <rect
+       style="display:inline;opacity:1;fill:#555555;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5411-7"
+       width="81.675392"
+       height="138.81668"
+       x="316.08081"
+       y="516.73798"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,0)" />
+    <rect
+       style="display:inline;opacity:1;fill:url(#linearGradient5419);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.47689775;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5411"
+       width="82.361168"
+       height="139.6757"
+       x="314.84317"
+       y="516.05072"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,0)" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer10"
-     inkscape:label="Left Leg Upper"
-     sodipodi:insensitive="true">
+     inkscape:label="Left Leg Upper">
     <path
-       style="fill:#b4b4b4;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.83581954px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.83581954px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 494.99269,610.50105 c -0.3547,40.01608 9.99262,48.15477 15.99828,63.3629 l 50.30054,1.99307 4.38714,-44.23785 c -2.72742,-9.11486 -4.84789,-19.43171 -10.08995,-25.04364 z"
        id="path6210-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccc"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
        id="g6382"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <ellipse
@@ -201,21 +278,20 @@
          rx="21.418476"
          ry="13.14416"
          id="path6212-8"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.45891297;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="opacity:1;fill:#6c6969;fill-opacity:1;stroke:#000000;stroke-width:1.45891297;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer9"
-     inkscape:label="Right Leg Lower"
-     sodipodi:insensitive="true">
+     inkscape:label="Right Leg Lower">
     <path
-       style="fill:#bdbdbd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.89310932px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.89310932px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 451.62341,671.78333 11.3121,48.84119 36.51923,3.98724 9.2449,-47.57734 z"
        id="path6214"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -224,27 +300,26 @@
        id="path6220"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccccc"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer8"
-     inkscape:label="Right Leg Upper"
-     sodipodi:insensitive="true">
+     inkscape:label="Right Leg Upper">
     <path
-       style="fill:#b4b4b4;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.83581954px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.83581954px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 444.59149,607.4291 c -6.5608,39.67429 2.44439,48.76946 6.04434,64.45233 l 56.24846,3.53275 6.57926,-39.86956 c -1.29226,-9.31352 -3.80055,-19.95899 -8.13167,-26.04407 z"
        id="path6210"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccc"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
        id="g6378"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <ellipse
@@ -262,42 +337,41 @@
          rx="24.346478"
          ry="13.04149"
          id="path6212"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.6639744;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="opacity:1;fill:#6c6969;fill-opacity:1;stroke:#000000;stroke-width:1.6639744;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer7"
-     inkscape:label="Left Arm"
-     sodipodi:insensitive="true">
+     inkscape:label="Left Arm">
     <g
        id="g6201"
        transform="matrix(1.6831051,0,0,1.8423727,-428.45294,-442.20863)"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
          inkscape:connector-curvature="0"
          id="path6056-2"
          d="m 605.03122,513.64119 8.25721,-0.98063 1.54823,9.47943 -7.74113,0.32688 z"
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.81319004px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.81319004px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
          id="path6058-1"
          d="m 615.19838,521.46712 -7.60959,-7.91976 29.4964,-17.52456 10.69419,10.48945 z"
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.93201226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.93201226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="scccs"
          inkscape:connector-curvature="0"
          id="path6060-7"
          d="m 616.39421,511.19441 16.20811,-0.39006 0.69486,6.46497 -15.58888,2.71306 c -5.98841,-1.43462 -4.25582,-8.71717 -1.31409,-8.78797 z"
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.87434226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.87434226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
     <g
        id="g6031-9"
        transform="matrix(0.57855168,-0.77805552,1.0017212,0.71367502,-291.34724,345.71809)"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
@@ -317,76 +391,74 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="Torso"
-     sodipodi:insensitive="true">
+     inkscape:label="Torso">
     <path
-       style="fill:#bdbdbd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.55498093px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.55498093px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 444.20289,619.38534 c 43.35211,11.42904 77.16093,3.78792 117.73891,-3.07513 3.51137,-38.21857 0.47164,-123.93259 10.5341,-114.6557 -50.13311,29.33282 -100.30199,21.94389 -140.86309,0.49764 z"
        id="path5943"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer6"
-     inkscape:label="Right Arm"
-     sodipodi:insensitive="true">
+     inkscape:label="Right Arm">
     <path
        style="fill:#e9e9e9;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.70744717px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 467.03209,570.73205 45.02832,34.27479 9.57919,-38.33596 -48.54706,-42.31777"
        id="path5948"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <ellipse
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.70959234;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#6c6969;fill-opacity:1;stroke:#000000;stroke-width:1.70959234;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path5946"
        cx="545.6618"
        cy="502.07654"
        rx="17.943901"
        ry="24.899483"
        transform="matrix(0.99567296,0.09292665,-0.14582163,0.9893109,0,0)"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
        id="g6093"
        transform="matrix(1.5087578,0,0,1.4162932,-292.13805,-250.4011)"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
          inkscape:connector-curvature="0"
          id="path6056"
          d="m 567.70573,591.25083 8.08122,-1.51523 1.51523,14.64721 -7.57614,0.50508 z"
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
          id="path6058"
          d="m 577.30218,606.40311 -2.0203,-18.68782 22.22335,-3.53553 3.03046,25.25381 z"
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="scccs"
          inkscape:connector-curvature="0"
          id="path6060"
          d="m 581.7831,585.21593 3.83798,-15.75199 6.42326,1.01015 -1.43388,15.7581 c -2.94245,5.40936 -9.52394,1.84268 -8.82736,-1.01626 z"
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.87434226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.87434226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
          id="path6062"
          d="m 595.16914,584.96321 17.38021,-5.86837 7.86594,27.89148 -18.84093,2.22356 z"
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39656723px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39656723px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
     <g
        id="g6031"
        transform="matrix(0.96367735,-0.25834344,0.32557028,1.2144481,-23.397664,-100.8424)"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
@@ -408,7 +480,7 @@
        id="path6014"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>
@@ -423,19 +495,19 @@
        id="rect4316"
        width="251.13979"
        height="226.85405"
-       x="650.14435"
-       y="85.363747"
+       x="964.43005"
+       y="-97.493393"
        ry="2.1974034"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <ellipse
-       style="opacity:1;fill:#c7c7c7;fill-opacity:1;stroke:#000000;stroke-width:6.10956764;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#e2e2e2;fill-opacity:0.98823529;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4151"
-       cx="778.42743"
-       cy="198.95386"
+       cx="508.42743"
+       cy="407.5253"
        rx="115.68092"
        ry="103.43895"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>
@@ -510,22 +582,32 @@
      inkscape:label="Visor"
      style="display:inline">
     <ellipse
-       style="opacity:1;fill:url(#radialGradient6376);fill-opacity:1;stroke:#000000;stroke-width:6.73525095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4136"
-       cx="793.30457"
-       cy="209.98633"
+       style="display:inline;opacity:1;fill:#44438f;fill-opacity:1;stroke:none;stroke-width:6.73525095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4136-1"
+       cx="522.75397"
+       cy="420.03006"
        rx="87.804565"
        ry="89.242134"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="display:inline;opacity:1;fill:url(#radialGradient6376);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4136"
+       cx="523.30457"
+       cy="418.55777"
+       rx="87.804565"
+       ry="89.242134"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.68617463;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 681.46427,267.10478 c -8.47705,-3.4018 -19.63239,46.01233 -0.60136,55.85594 l 96.59499,-25.48571 c 0.93429,-20.50855 -14.60187,-23.10312 -14.87035,-23.62095 -22.68427,6.21604 -49.38927,13.05369 -58.24219,19.26972 -4.9179,-5.61638 0,0 -22.88109,-26.019 z"
+       style="opacity:1;fill:#448560;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 411.46427,475.67621 c -8.47705,-3.4018 -19.63239,46.01233 -0.60136,55.85594 l 96.59499,-25.48571 c 0.93429,-20.50855 -14.60187,-23.10312 -14.87035,-23.62095 -22.68427,6.21604 -49.38927,13.05369 -58.24219,19.26972 -4.9179,-5.61638 0,0 -22.88109,-26.019 z"
        id="path5740"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccc"
-       inkscape:export-filename="/Users/campbelldavis/path5740.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>
