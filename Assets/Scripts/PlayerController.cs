@@ -98,10 +98,10 @@ public class PlayerController : MonoBehaviour {
 
     if (isInputCurrentlyDown()) {
       currentPosition = Input.mousePosition;
-      Vector3 dir = mainCamera.ScreenToWorldPoint(currentPosition) - transform.position;
+      Vector3 dir = mainCamera.ScreenToWorldPoint(currentPosition) - mainCamera.ScreenToWorldPoint(pressPosition);
 //      Debug.Log("current: " + dir.x + ", player: " + transform.position.x);
-      float xDiff = currentPosition.x - pressPosition.x;
-      if (Mathf.Abs(xDiff) > 10 && currentMoveCapacity > 0 && alive) {
+      float dirMagnitude = dir.magnitude;
+      if (dirMagnitude > 0.75 && currentMoveCapacity > 0 && alive) {
         if (currentPosition.x - pressPosition.x > 0) {
           GetComponent<SpriteRenderer>().flipX = false;
           if (spraySprite.localScale.x < 0) {
