@@ -873,7 +873,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!114 &370729154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1776,7 +1776,7 @@ Transform:
   - {fileID: 1343130332}
   - {fileID: 1308929311}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &935727275
 GameObject:
   m_ObjectHideFlags: 0
@@ -3756,7 +3756,7 @@ Transform:
   - {fileID: 1563592272}
   - {fileID: 1574294076}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &1555521507
 GameObject:
   m_ObjectHideFlags: 0
