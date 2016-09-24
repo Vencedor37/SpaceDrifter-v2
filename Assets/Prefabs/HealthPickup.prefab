@@ -25,6 +25,7 @@ GameObject:
   - 50: {fileID: 50000012295352674}
   - 114: {fileID: 114000014040127116}
   - 60: {fileID: 60000010386411672}
+  - 61: {fileID: 61000012616307778}
   m_Layer: 0
   m_Name: HealthPickup
   m_TagString: HealthPickup
@@ -39,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014257577606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.876, y: -34.133, z: 0}
+  m_LocalPosition: {x: 11.415152, y: -0.37656766, z: 0}
   m_LocalScale: {x: 1.25, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -92,6 +93,20 @@ PolygonCollider2D:
       - {x: 0.29, y: -1.54}
       - {x: 0.42, y: -1.4399999}
       - {x: 0.42, y: 0.98999995}
+--- !u!61 &61000012616307778
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014257577606}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.00000076293946, y: -0.17597055}
+  serializedVersion: 2
+  m_Size: {x: 0.7305075, y: 2.4747744}
 --- !u!114 &114000013919855728
 MonoBehaviour:
   m_ObjectHideFlags: 1

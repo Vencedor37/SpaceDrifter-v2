@@ -178,7 +178,7 @@ public class UIController : MonoBehaviour {
   {
     isPaused = !isPaused;
     if (isPaused && isFastForward) {
-      fastForwardToggle.isOn = false;  
+      fastForwardToggle.isOn = false;
     }
   }
 
@@ -191,7 +191,7 @@ public class UIController : MonoBehaviour {
   {
     int score = playerController.getCurrentScore();
     scoreText.text = "Score: " + score;
-    levelText.text = "Level " + playerController.scoreMultiplier;
+    levelText.text = "Bonus: x" + playerController.scoreMultiplier;
   }
 
   public void UpdateBonusText()

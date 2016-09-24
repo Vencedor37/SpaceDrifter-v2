@@ -25,6 +25,7 @@ GameObject:
   - 114: {fileID: 114000011623503734}
   - 50: {fileID: 50000012795715370}
   - 60: {fileID: 60000012078367138}
+  - 61: {fileID: 61000010683765246}
   m_Layer: 0
   m_Name: MovementPickup
   m_TagString: MovementPickup
@@ -39,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011630484364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.916864, y: -0.13322268, z: 0}
+  m_LocalPosition: {x: 10.564626, y: -0.5623147, z: 0}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -76,28 +77,37 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: 0.38, y: 1.095}
-      - {x: 0.21, y: 1.135}
-      - {x: 0.19999999, y: 1.4549999}
-      - {x: -0.26, y: 1.4549999}
-      - {x: -0.47, y: 1.425}
-      - {x: -0.45, y: 1.185}
-      - {x: -0.049999997, y: 1.235}
-      - {x: -0.06, y: 1.165}
-      - {x: -0.34, y: 0.955}
-      - {x: -0.35, y: 0.465}
-      - {x: -0.44, y: 0.114999995}
-      - {x: -0.48999998, y: -0.024999999}
-      - {x: -0.48999998, y: -0.105}
-      - {x: -0.41, y: -0.125}
-      - {x: -0.28, y: -0.095}
-      - {x: -0.28, y: -1.295}
-      - {x: -0.19, y: -1.405}
-      - {x: -0.07, y: -1.4549999}
-      - {x: 0.31, y: -1.4549999}
-      - {x: 0.42999998, y: -1.405}
-      - {x: 0.48999998, y: -1.3249999}
-      - {x: 0.48999998, y: 0.955}
+    - - {x: 0.38, y: 1.025}
+      - {x: 0.28, y: 1.0649999}
+      - {x: 0.17999999, y: 1.095}
+      - {x: 0.12, y: 1.375}
+      - {x: -0.24, y: 1.375}
+      - {x: -0.35999998, y: 1.365}
+      - {x: -0.39, y: 1.345}
+      - {x: -0.37, y: 1.105}
+      - {x: -0.44, y: 0.935}
+      - {x: -0.44, y: -1.225}
+      - {x: -0.42999998, y: -1.245}
+      - {x: -0.37, y: -1.355}
+      - {x: -0.25, y: -1.375}
+      - {x: 0.28, y: -1.375}
+      - {x: 0.35, y: -1.345}
+      - {x: 0.44, y: -1.235}
+      - {x: 0.44, y: 0.945}
+--- !u!61 &61000010683765246
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011630484364}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.0088865105, y: -0.15552998}
+  serializedVersion: 2
+  m_Size: {x: 0.7733512, y: 2.1900918}
 --- !u!114 &114000011623503734
 MonoBehaviour:
   m_ObjectHideFlags: 1
