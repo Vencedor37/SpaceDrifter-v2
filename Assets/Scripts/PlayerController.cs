@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour {
 
   public Camera mainCamera;
   public bool debugMode;
+  public StatTracker stats;
   public bool alive;
   public float maxSpeed;
   public float startingMoveCapacity;
@@ -57,6 +58,7 @@ public class PlayerController : MonoBehaviour {
   public bool showBonus = false;
   public int bonusAmount;
   public string bonusType;
+  public string causeOfDeath;
 
   void Awake() {
     Application.targetFrameRate = 60;
@@ -91,6 +93,7 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
   {
+    IncreaseGeneralStats();
 
     if (isInputPressed()) {
       pressPosition = Input.mousePosition;
@@ -99,7 +102,7 @@ public class PlayerController : MonoBehaviour {
     if (isInputCurrentlyDown()) {
       currentPosition = Input.mousePosition;
       Vector3 dir = mainCamera.ScreenToWorldPoint(currentPosition) - mainCamera.ScreenToWorldPoint(pressPosition);
-//      Debug.Log("current: " + dir.x + ", player: " + transform.position.x);
+
       float dirMagnitude = dir.magnitude;
       if (dirMagnitude > 0.75 && currentMoveCapacity > 0 && alive) {
         if (currentPosition.x - pressPosition.x > 0) {
@@ -161,7 +164,7 @@ public class PlayerController : MonoBehaviour {
     healthLossCounter += Time.deltaTime;
     if (healthLossCounter >= healthLossRate) {
       healthLossCounter = 0;
-      TakeDamage(healthLossAmount);
+      TakeDamage(healthLossAmount, "oxygen");
     }
   }
 
@@ -190,9 +193,9 @@ public class PlayerController : MonoBehaviour {
   {
     scoreCheckpointTracker += amount;
     if (scoreCheckpointTracker >= scoreCheckpoint * scoreMultiplier) {
+      scoreMultiplier ++;
       StartBonus(0, "Level Up!");
       scoreCheckpointTracker = 0;
-      scoreMultiplier ++;
       activeHealthCount = healthPickupController.AddActive(checkPointHealthBonus);
       activeMovementCount = movementPickupController.AddActive(checkPointMovementBonus);
       enemyController.AddActive(enemiesPerLevel);
@@ -203,7 +206,7 @@ public class PlayerController : MonoBehaviour {
   }
 
 
-  private void TakeDamage(float damage)
+  private void TakeDamage(float damage, string cause)
   {
     if ((currentHealth - damage) >= 0) {
       currentHealth -= damage;
@@ -212,6 +215,7 @@ public class PlayerController : MonoBehaviour {
     }
     if (currentHealth <= 0) {
       alive = false;
+      causeOfDeath = cause;
       GameOver();
     }
   }
@@ -234,7 +238,6 @@ public class PlayerController : MonoBehaviour {
     }
     if (canMove) {
       float forceUsed = force.magnitude / 50;
-      Debug.Log("force: " + forceUsed);
       sprayAnimator.SetFloat("forceUsed", forceUsed);
       sprayAnimator.SetTrigger("StartSpray");
 
@@ -308,10 +311,46 @@ public class PlayerController : MonoBehaviour {
 
   public void StartBonus(int amount, string type)
   {
+    IncreaseBonusStats(type);
     showBonus = true;
     bonusAmount = amount;
     bonusType = type;
     StartCoroutine(IncreaseScore(bonusAmount, 1f));
+  }
+
+
+  private void IncreaseBonusStats(string type)
+  {
+    switch (type)
+    {
+      case "Fuel":
+        stats.movementPickupsCollected ++;
+        break;
+      case "Oxygen":
+        stats.healthPickupsCollected ++;
+        break;
+      case "Star Dust":
+        stats.pointsPickupsCollected ++;
+        break;
+      case "Close Call":
+        stats.closeCallsMedium ++;
+        break;
+      case "Tight Squeeze":
+        stats.closeCallsHigh ++;
+        break;
+      case "Level Up!":
+        stats.highestLevel ++;
+        break;
+      default:
+        Debug.Log("unknown bonus: " + type);
+        break;
+    }
+  }
+
+  private void IncreaseGeneralStats()
+  {
+    stats.timeLasted += Time.deltaTime;
+    stats.score = currentScore;
   }
 
   void OnCollisionEnter2D(Collision2D other)
@@ -330,7 +369,7 @@ public class PlayerController : MonoBehaviour {
     dir = -dir.normalized;
     GetComponent<Rigidbody2D>().AddForce(dir*force);
     SpaceObject enemyControl = other.gameObject.GetComponent<SpaceObject>();
-    TakeDamage(enemyControl.getDamage());
+    TakeDamage(enemyControl.getDamage(), "enemy");
   }
 
   public void GameOver()

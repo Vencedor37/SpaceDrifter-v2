@@ -42,6 +42,8 @@ public class UIController : MonoBehaviour {
   public Text scoreText;
   public Text bonusText;
   public Text highScoreText;
+  public Text levelText;
+  public Text gameOverSubtitle;
 
   public Text movementCountText;
   public Text healthCountText;
@@ -87,6 +89,11 @@ public class UIController : MonoBehaviour {
 
     if (!playerController.alive) {
       ShowGameOverUI();
+      if (playerController.causeOfDeath == "oxygen") {
+        gameOverSubtitle.text = "Ran out of oxygen";
+      } else if (playerController.causeOfDeath == "enemy") {
+        gameOverSubtitle.text = "Hit by an asteroid";
+      }
     } else {
       CheckSpeed();
     }
@@ -184,6 +191,7 @@ public class UIController : MonoBehaviour {
   {
     int score = playerController.getCurrentScore();
     scoreText.text = "Score: " + score;
+    levelText.text = "Level " + playerController.scoreMultiplier;
   }
 
   public void UpdateBonusText()

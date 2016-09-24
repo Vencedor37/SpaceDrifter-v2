@@ -35,16 +35,15 @@ public class BonusCollisionListener : MonoBehaviour {
   }
 
   public void onChildTriggerExit2D(Collider2D other, string name) {
-    string bonusType = "Close Call!";
     if (other.gameObject.CompareTag("Player")) {
       PlayerController player = other.gameObject.GetComponent<PlayerController>();
       if (!recentDamage && !recentPoints) {
         if (name == "Bonus_High") {
           recentPoints = true;
-          player.StartBonus(highBonus, bonusType);
+          player.StartBonus(highBonus, "Tight Squeeze");
         } else if (name == "Bonus_Medium") {
           recentPoints = true;
-          player.StartBonus(mediumBonus, bonusType);
+          player.StartBonus(mediumBonus, "Close Call");
         }
       }
       if (name == outerLayer) {
