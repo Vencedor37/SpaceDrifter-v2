@@ -1884,6 +1884,7 @@ MonoBehaviour:
   checkPointMovementBonus: 0
   spraySprite: {fileID: 966687860}
   sprayAnimator: {fileID: 0}
+  isGameOver: 0
   itemDrawZone: {fileID: 606478405}
   safetyZone: {fileID: 1040689806}
   showBonus: 0
@@ -5747,7 +5748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1926306212
 RectTransform:
   m_ObjectHideFlags: 0

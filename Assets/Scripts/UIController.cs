@@ -89,7 +89,7 @@ public class UIController : MonoBehaviour {
     UpdateCounterText();
     UpdateBonusText();
 
-    if (!playerController.alive) {
+    if (playerController.isGameOver) {
       ShowGameOverUI();
       if (playerController.causeOfDeath == "oxygen") {
         gameOverSubtitle.text = "Ran out of oxygen";
@@ -164,7 +164,7 @@ public class UIController : MonoBehaviour {
 
   public void CheckSpeed()
   {
-    if (isPaused) {
+    if (isPaused || !playerController.alive) {
       Time.timeScale = 0.0f;
     } else if (isFastForward) {
       Time.timeScale = fastSpeed;

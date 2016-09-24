@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour {
   private Vector3 currentPosition;
   private float currentMoveCapacity;
   private bool beatHighScore = false;
+  public bool isGameOver = false;
 
   private bool releaseOccurred = false;
 
@@ -208,15 +209,17 @@ public class PlayerController : MonoBehaviour {
 
   private void TakeDamage(float damage, string cause)
   {
-    if ((currentHealth - damage) >= 0) {
-      currentHealth -= damage;
-    } else {
-      currentHealth = 0;
-    }
-    if (currentHealth <= 0) {
-      alive = false;
-      causeOfDeath = cause;
-      GameOver();
+    if (alive) {
+      if ((currentHealth - damage) >= 0) {
+        currentHealth -= damage;
+      } else {
+        currentHealth = 0;
+      }
+      if (currentHealth <= 0) {
+        causeOfDeath = cause;
+        alive = false;
+        StartCoroutine(GameOver());
+      }
     }
   }
 
@@ -372,15 +375,21 @@ public class PlayerController : MonoBehaviour {
     TakeDamage(enemyControl.getDamage(), "enemy");
   }
 
-  public void GameOver()
+  public IEnumerator GameOver()
   {
+    float time = 2f;
+    float start = Time.realtimeSinceStartup;
+    while (Time.realtimeSinceStartup < start + time) {
+      yield return null;
+    }
+    isGameOver = true;
     if (currentScore > highScore) {
       beatHighScore = true;
       highScore = currentScore;
       PlayerPrefs.SetInt(highScoreKey, highScore);
       PlayerPrefs.Save();
     }
-    Time.timeScale = 0;
+    yield return null;
   }
 
   public bool isInputPressed()

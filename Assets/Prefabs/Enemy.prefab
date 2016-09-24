@@ -44,7 +44,6 @@ GameObject:
   - 60: {fileID: 60000013315510282}
   - 114: {fileID: 114000012789753742}
   - 114: {fileID: 114000013297208306}
-  - 114: {fileID: 114000011654982402}
   - 114: {fileID: 114000010822789082}
   - 58: {fileID: 58000012861015748}
   m_Layer: 0
@@ -255,21 +254,6 @@ MonoBehaviour:
   destroyOnCollision: 0
   myWidth: 100
   myHeight: 100
---- !u!114 &114000011654982402
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012078122726}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09c83559010db445c8fc4c61c8308b11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 20000010176335144, guid: 11666b40f85a3406b950887ef0c066c7,
-    type: 2}
-  duration: 5
-  magnitude: 5
 --- !u!114 &114000012789753742
 MonoBehaviour:
   m_ObjectHideFlags: 1
