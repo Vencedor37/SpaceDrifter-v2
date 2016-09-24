@@ -25,7 +25,6 @@ public class UIController : MonoBehaviour {
   public float normalSpeed = 1.0f;
   public bool quickHealthLoss = false;
 
-
   public PlayerController playerController;
   public Camera mainCamera;
   public Color lineColour1;
@@ -117,11 +116,6 @@ public class UIController : MonoBehaviour {
       healthFill.color = Color.red;
     } else if (healthSlider.value > 50) {
       healthFill.color = fullHealthColour;
-    }
-    if (healthSlider.value <= 0) {
-      healthFill.enabled = false;
-    } else {
-      healthFill.enabled = true;
     }
   }
 

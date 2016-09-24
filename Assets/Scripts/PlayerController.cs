@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour {
   public string bonusType;
   public string causeOfDeath;
 
+  public AudioTracks audioTracks;
   void Awake() {
     Application.targetFrameRate = 60;
   }
@@ -196,6 +197,7 @@ public class PlayerController : MonoBehaviour {
     if (scoreCheckpointTracker >= scoreCheckpoint * scoreMultiplier) {
       scoreMultiplier ++;
       StartBonus(0, "Level Up!");
+      audioTracks.levelUpSource.Play();
       scoreCheckpointTracker = 0;
       activeHealthCount = healthPickupController.AddActive(checkPointHealthBonus);
       activeMovementCount = movementPickupController.AddActive(checkPointMovementBonus);
@@ -245,9 +247,26 @@ public class PlayerController : MonoBehaviour {
       sprayAnimator.SetTrigger("StartSpray");
 
       StartCoroutine(DelayedForce(force, 0.15f));
+      PlaySprayAudio(force.magnitude);
     }
 
   }
+
+  private void PlaySprayAudio(float magnitude)
+  {
+    Debug.Log("spray magnitude: " + magnitude);
+    float time = magnitude/350f;
+    Debug.Log("time: " + time);
+    audioTracks.spraySource.Play();
+    StartCoroutine(StopSprayAudio(time));
+  }
+
+  private IEnumerator StopSprayAudio(float time)
+  {
+    yield return new WaitForSeconds(time);
+    audioTracks.spraySource.Stop();
+  }
+
 
   private IEnumerator DelayedForce(Vector3 force, float time)
   {
@@ -270,6 +289,7 @@ public class PlayerController : MonoBehaviour {
   void OnTriggerEnter2D(Collider2D other)
   {
     if (other.gameObject.CompareTag("HealthPickup")) {
+      audioTracks.oxygenSource.Play();
       SpaceObject healthController = other.gameObject.GetComponent<SpaceObject>();
       if (healthController.destroyOnCollision) {
         other.gameObject.SetActive(false);
@@ -287,6 +307,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     if (other.gameObject.CompareTag("MovementPickup")) {
+      audioTracks.fuelSource.Play();
       SpaceObject movementPickupController = other.gameObject.GetComponent<SpaceObject>();
       if (movementPickupController.destroyOnCollision) {
         other.gameObject.SetActive(false);
@@ -304,6 +325,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     if (other.gameObject.CompareTag("PointsPickup")) {
+      audioTracks.pointsSource.Play();
       SpaceObject pointsPickupController = other.gameObject.GetComponent<SpaceObject>();
       if (pointsPickupController.destroyOnCollision) {
         other.gameObject.SetActive(false);
@@ -359,6 +381,7 @@ public class PlayerController : MonoBehaviour {
   void OnCollisionEnter2D(Collision2D other)
   {
     if (other.gameObject.CompareTag("Enemy")) {
+      audioTracks.enemySource.Play();
       EnemyCollision(other);
     }
   }
@@ -377,7 +400,7 @@ public class PlayerController : MonoBehaviour {
 
   public IEnumerator GameOver()
   {
-    float time = 2f;
+    float time = 1.5f;
     float start = Time.realtimeSinceStartup;
     while (Time.realtimeSinceStartup < start + time) {
       yield return null;
