@@ -11,7 +11,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Visigames
-  productName: SpaceDrifter
+  productName: Untethered
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenStyle: 0
@@ -179,7 +179,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 42806d4c2eee34e2696f8f7de4006730, type: 3}
+      m_Icon: {fileID: 2800000, guid: a71cfefbcf9bc4c50aa20dc84ec5e319, type: 3}
       m_Width: 128
       m_Height: 128
   m_BuildTargetBatching: []

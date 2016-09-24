@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour {
   public int bonusAmount;
   public string bonusType;
   public string causeOfDeath;
+  public UIController UI;
 
   public AudioTracks audioTracks;
   void Awake() {
@@ -101,7 +102,7 @@ public class PlayerController : MonoBehaviour {
       pressPosition = Input.mousePosition;
     }
 
-    if (isInputCurrentlyDown()) {
+    if (isInputCurrentlyDown() && !UI.isPaused) {
       currentPosition = Input.mousePosition;
       Vector3 dir = mainCamera.ScreenToWorldPoint(currentPosition) - mainCamera.ScreenToWorldPoint(pressPosition);
 
@@ -220,6 +221,7 @@ public class PlayerController : MonoBehaviour {
       if (currentHealth <= 0) {
         causeOfDeath = cause;
         alive = false;
+        audioTracks.spraySource.Stop();
         StartCoroutine(GameOver());
       }
     }
@@ -254,9 +256,7 @@ public class PlayerController : MonoBehaviour {
 
   private void PlaySprayAudio(float magnitude)
   {
-    Debug.Log("spray magnitude: " + magnitude);
-    float time = magnitude/350f;
-    Debug.Log("time: " + time);
+    float time = magnitude/400f;
     audioTracks.spraySource.Play();
     StartCoroutine(StopSprayAudio(time));
   }

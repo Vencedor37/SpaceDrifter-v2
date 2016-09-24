@@ -45,11 +45,13 @@ public class UIController : MonoBehaviour {
   public Text highScoreText;
   public Text levelText;
   public Text gameOverSubtitle;
+  public Text pauseText;
 
   public Text movementCountText;
   public Text healthCountText;
 
   public Toggle fastForwardToggle;
+  public Toggle pauseToggle;
 
 
 	// Use this for initialization
@@ -68,7 +70,7 @@ public class UIController : MonoBehaviour {
 
 	// Update is called once per frame
   void Update () {
-    if (playerController.alive) {
+    if (playerController.alive && !isPaused) {
       LineRenderer lineRenderer = GetComponent<LineRenderer>();
       if (playerController.isInputCurrentlyDown()) {
         lineRenderer.SetWidth(lineBaseWidth, lineTopWidth);
@@ -87,6 +89,7 @@ public class UIController : MonoBehaviour {
     UpdateScoreText();
     UpdateCounterText();
     UpdateBonusText();
+    UpdatePauseDisplay();
 
     if (playerController.isGameOver) {
       ShowGameOverUI();
@@ -100,6 +103,16 @@ public class UIController : MonoBehaviour {
     }
 
 	}
+
+  private void UpdatePauseDisplay()
+  {
+    if (isPaused && !playerController.isGameOver) {
+      pauseText.enabled = true;
+    } else {
+      pauseText.enabled = false;
+    }
+
+  }
 
   private void UpdateHealthSlider()
   {
@@ -155,6 +168,14 @@ public class UIController : MonoBehaviour {
       gameObject.SetActive(true);
     }
   }
+
+  void OnApplicationFocus( bool focusStatus )
+	{
+    if (!focusStatus && !isPaused) {
+      pauseToggle.isOn = true;
+    }
+	}
+
 
   public void CheckSpeed()
   {
