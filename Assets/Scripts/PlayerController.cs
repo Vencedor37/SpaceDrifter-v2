@@ -509,5 +509,30 @@ public class PlayerController : MonoBehaviour {
     return pos;
   }
 
+  public void Resize(float screenWidth, float screenHeight)
+  {
+    Vector3 itemDrawZoneScale = itemDrawZone.transform.localScale;
+    Vector3 safetyZoneScale = safetyZone.transform.localScale;
+
+    //player dimensions are 293w x 436h (4/6)
+    Vector3 newScale = transform.localScale;
+    float oldWidth = newScale.x;
+    float oldHeight = newScale.y;
+    float newWidth = oldWidth * 293.0f/436.0f * screenWidth/screenHeight;
+    float newHeight = oldHeight * 293.0f/436.0f * screenWidth/screenHeight;
+    newScale.x = newWidth;
+    newScale.y = newHeight;
+    transform.localScale = newScale;
+
+
+    safetyZoneScale.x = safetyZoneScale.x * (oldWidth/newWidth);
+    safetyZoneScale.y = safetyZoneScale.y * (oldHeight/newHeight);
+    safetyZone.transform.localScale = safetyZoneScale;
+
+    itemDrawZoneScale.x = itemDrawZoneScale.x * (oldWidth/newWidth);
+    itemDrawZoneScale.y = itemDrawZoneScale.y * (oldHeight/newHeight);
+    itemDrawZone.transform.localScale = itemDrawZoneScale;
+  }
+
 
 }

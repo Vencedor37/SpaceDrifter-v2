@@ -34,10 +34,12 @@ public class UIController : MonoBehaviour {
   public Shader lineShader;
   public Slider healthSlider;
   public Image healthFill;
+  public Animator healthAnimator;
 
 
   public Slider movementSlider;
   public Image movementFill;
+  public Animator movementAnimator;
 
   public Text scoreText;
   public Text bonusText;
@@ -103,6 +105,7 @@ public class UIController : MonoBehaviour {
   private void UpdateHealthSlider()
   {
     healthSlider.value = playerController.getCurrentHealth();
+    healthAnimator.SetFloat("Health", playerController.getCurrentHealth());
     if (healthSlider.value <= 50 && healthSlider.value > 30) {
       healthFill.color = Color.yellow;
     } else if (healthSlider.value < 30) {
@@ -125,6 +128,7 @@ public class UIController : MonoBehaviour {
   private void UpdateMovementSlider()
   {
     movementSlider.value = playerController.getCurrentMoveCapacity();
+    movementAnimator.SetFloat("Movement", playerController.getCurrentMoveCapacity());
     movementFill.enabled = (movementSlider.value > 0);
     if (playerController.getCurrentMoveCapacity() <= 0) {
       lineRenderer.SetColors(Color.red, Color.black);

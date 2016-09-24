@@ -11,6 +11,8 @@ public class SpaceObject : MonoBehaviour {
   public bool destroyOnCollision;
   private bool overlapping = false;
   private float overlapTime = 0;
+  public float myWidth;
+  public float myHeight;
 
 	// Use this for initialization
 	void Start () {
@@ -78,6 +80,18 @@ public class SpaceObject : MonoBehaviour {
     if (overlapTime > 2) {
       GetComponent<GameObject>().SetActive(false);  
     }
+  }
+
+  public void Resize(float screenWidth, float screenHeight)
+  {
+    Vector3 scale = transform.localScale;
+    float oldWidth = scale.x;
+    float oldHeight = scale.y;
+    float newWidth = oldWidth * myWidth/myHeight * screenWidth/screenHeight;
+    float newHeight = oldHeight * myWidth/myHeight * screenWidth/screenHeight;
+    scale.x = newWidth;
+    scale.y = newHeight;
+    transform.localScale = scale;
   }
 
 

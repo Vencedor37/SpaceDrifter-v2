@@ -21,6 +21,7 @@ public class SpaceObjectController : MonoBehaviour {
   public bool needsSpeedCheck = true;
   public float speedCheckFrequency = 1;
   public bool randomiseTransparency = false;
+  public bool randomiseScale = false;
 
 
 
@@ -80,6 +81,13 @@ public class SpaceObjectController : MonoBehaviour {
       float newAlpha = Random.Range(.4f, 1f);
       newColor.a = newColor.a * newAlpha;
       spriteRenderer.color = newColor;
+    }
+    if (randomiseScale) {
+      Vector3 scale = spaceObject.transform.localScale;
+      float newScale = Random.Range(.5f, 1f);
+      scale.x *= newScale;
+      scale.y *= newScale;
+      spaceObject.transform.localScale = scale;
     }
   }
 

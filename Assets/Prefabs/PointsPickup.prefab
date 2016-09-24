@@ -256,6 +256,8 @@ MonoBehaviour:
   MAX_SPEED: 2
   MIN_SPEED: 1
   destroyOnCollision: 1
+  myWidth: 200
+  myHeight: 200
 --- !u!114 &114000014114338790
 MonoBehaviour:
   m_ObjectHideFlags: 1
