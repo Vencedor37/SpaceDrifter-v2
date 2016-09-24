@@ -28,21 +28,27 @@ public class SpaceObjectController : MonoBehaviour {
 	void Start () {
     InitialisePool();
     BuildActiveList();
-    if (needsCleaning) {
-      InvokeRepeating("CleanActiveList", 0.2f, cleanFrequency);
-    }
-    if (needsPositionCheck) {
-      InvokeRepeating("CheckObjectPositioning", 0.2f, positionCheckFrequency);
-    }
-    if (needsSpeedCheck) {
-      InvokeRepeating("CheckObjectSpeed", 0.2f, speedCheckFrequency);
-    }
+    InvokeRepeating("RunChecks", 0.2f, cleanFrequency);
 	}
 
 	// Update is called once per frame
 	void Update () {
-
 	}
+
+  void RunChecks()
+  {
+    if (playerController.alive) {
+      if (needsCleaning) {
+        StartCoroutine("CleanActiveList");
+      }
+      if (needsPositionCheck) {
+        StartCoroutine("CheckObjectPositioning");
+      }
+      if (needsSpeedCheck) {
+        StartCoroutine("CheckObjectSpeed");
+      }
+    }
+  }
 
   float RandomHorizontalCoordinates()
   {
@@ -77,10 +83,10 @@ public class SpaceObjectController : MonoBehaviour {
     }
   }
 
-  void CleanActiveList()
+  IEnumerator CleanActiveList()
   {
     // remove all that are not active
-    for (int i = 0; i < activeSpaceObjects.Count; i++) {
+    for (int i = activeSpaceObjects.Count - 1; i >= 0; i--) {
       SpaceObject spaceObject = activeSpaceObjects[i];
       if (!spaceObject.gameObject.activeInHierarchy) {
         activeSpaceObjects.RemoveAt(i);
@@ -92,6 +98,7 @@ public class SpaceObjectController : MonoBehaviour {
     } else {
       BuildActiveList();
     }
+    yield return null;
   }
 
   void BuildActiveList()
@@ -131,9 +138,11 @@ public class SpaceObjectController : MonoBehaviour {
     firstBuild = false;
   }
 
-  void CheckObjectPositioning()
+  IEnumerator CheckObjectPositioning()
   {
-    foreach (SpaceObject activeObject in activeSpaceObjects) {
+    List<SpaceObject> currentActiveSpaceObjects = new List<SpaceObject>(activeSpaceObjects);
+    foreach (SpaceObject activeObject in currentActiveSpaceObjects) {
+      yield return null;
       SpriteRenderer spriteRenderer = activeObject.GetComponent<SpriteRenderer>();
       Bounds bounds = spriteRenderer.bounds;
       if (!bounds.Intersects(playerController.getDrawBounds())) {
@@ -144,13 +153,14 @@ public class SpaceObjectController : MonoBehaviour {
     }
   }
 
-  void CheckObjectSpeed()
+  IEnumerator CheckObjectSpeed()
   {
-    foreach (SpaceObject activeObject in activeSpaceObjects) {
+    List<SpaceObject> currentActiveSpaceObjects = new List<SpaceObject>(activeSpaceObjects);
+    foreach (SpaceObject activeObject in currentActiveSpaceObjects) {
+      yield return null;
       SpriteRenderer spriteRenderer = activeObject.GetComponent<SpriteRenderer>();
       Bounds bounds = spriteRenderer.bounds;
       if (!bounds.Intersects(playerController.getSafetyBounds()) && activeObject.GetComponent<Rigidbody2D>().velocity.magnitude < activeObject.MIN_SPEED) {
-//        Debug.Log("moving object");
         activeObject.startMoving();
       }
     }
