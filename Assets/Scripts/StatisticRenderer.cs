@@ -36,7 +36,7 @@ public class StatisticRenderer : MonoBehaviour {
       pointsText.text = "x " + stats.pointsPickupsCollected;
       closeCallText.text = "Close Calls: " + stats.closeCallsMedium;
       tightSqueezeText.text = "Tight Squeezes: " + stats.closeCallsHigh;
-      string row1 = "Time: " + formattedTime + pad + "Bonus: " + stats.highestLevel + pad + "Score: " + stats.score;
+      string row1 = "Time: " + formattedTime + pad + "Bonus: x" + stats.highestLevel + pad + "Score: " + stats.score;
       string row3 = "Close Calls: " + stats.closeCallsMedium + pad + "Tight Squeezes: " + stats.closeCallsHigh;
       timeText.text = row1;
       closeCallText.text = row3;

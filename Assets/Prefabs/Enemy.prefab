@@ -45,6 +45,8 @@ GameObject:
   - 114: {fileID: 114000012789753742}
   - 114: {fileID: 114000013297208306}
   - 114: {fileID: 114000011654982402}
+  - 114: {fileID: 114000010822789082}
+  - 58: {fileID: 58000012861015748}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -127,6 +129,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!58 &58000012861015748
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012078122726}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.920846
 --- !u!58 &58000014062377674
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -147,7 +163,7 @@ PolygonCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012078122726}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -207,6 +223,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 114000011801932624, guid: f3e7c7468dfc448f5b39351c4845ee59, type: 2}
+--- !u!114 &114000010822789082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012078122726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28511b277f3544c19d253c3ff0de84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 30
 --- !u!114 &114000011210211580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -402,7 +430,7 @@ RectTransform:
   m_GameObject: {fileID: 1000012078122726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.7, y: 2, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000010018933832}
@@ -411,6 +439,6 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 45.86417, y: -24.659939}
-  m_SizeDelta: {x: 1, y: 1}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 34.397957, y: -5.26}
+  m_SizeDelta: {x: 1.1, y: 1.1}
+  m_Pivot: {x: 0.7172523, y: 0.5}

@@ -26,6 +26,7 @@ GameObject:
   - 114: {fileID: 114000014040127116}
   - 60: {fileID: 60000010386411672}
   - 61: {fileID: 61000012616307778}
+  - 114: {fileID: 114000011572261270}
   m_Layer: 0
   m_Name: HealthPickup
   m_TagString: HealthPickup
@@ -107,6 +108,18 @@ BoxCollider2D:
   m_Offset: {x: 0.00000076293946, y: -0.17597055}
   serializedVersion: 2
   m_Size: {x: 0.7305075, y: 2.4747744}
+--- !u!114 &114000011572261270
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014257577606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28511b277f3544c19d253c3ff0de84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 30
 --- !u!114 &114000013919855728
 MonoBehaviour:
   m_ObjectHideFlags: 1

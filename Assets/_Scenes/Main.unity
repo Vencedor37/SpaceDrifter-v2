@@ -1718,10 +1718,10 @@ MonoBehaviour:
   activeSpaceObjects: []
   type: {fileID: 114000014040127116, guid: 54eb68da6322542af8eb0746ad2b34ad, type: 2}
   poolCount: 50
-  activeCount: 10
+  activeCount: 8
   playerController: {fileID: 778002976}
   UI: {fileID: 2016584744}
-  replaceActive: 0
+  replaceActive: 1
   avoidCentreDuringGeneration: 1
   needsCleaning: 1
   needsPositionCheck: 1
@@ -2829,6 +2829,16 @@ Prefab:
       propertyPath: safetyZone
       value: 
       objectReference: {fileID: 1040689806}
+    - target: {fileID: 114000011120559524, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: checkPointHealthBonus
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011120559524, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: checkPointMovementBonus
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ca7cbb53b98b4276aed4e4e377b92d9, type: 2}
   m_IsPrefabParent: 0
@@ -3807,10 +3817,10 @@ MonoBehaviour:
   activeSpaceObjects: []
   type: {fileID: 114000011623503734, guid: 9859d07d76c784332b13f02af9346b00, type: 2}
   poolCount: 50
-  activeCount: 10
+  activeCount: 8
   playerController: {fileID: 778002976}
   UI: {fileID: 2016584744}
-  replaceActive: 0
+  replaceActive: 1
   avoidCentreDuringGeneration: 1
   needsCleaning: 1
   needsPositionCheck: 1
@@ -4816,7 +4826,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1926306212
 RectTransform:
   m_ObjectHideFlags: 0

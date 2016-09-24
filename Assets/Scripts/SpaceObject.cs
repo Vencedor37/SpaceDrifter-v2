@@ -9,6 +9,8 @@ public class SpaceObject : MonoBehaviour {
   public float MAX_SPEED;
   public float MIN_SPEED;
   public bool destroyOnCollision;
+  private bool overlapping = false;
+  private float overlapTime = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -64,6 +66,17 @@ public class SpaceObject : MonoBehaviour {
   {
     if (MAX_SPEED > 0) {
       GetComponent<Rigidbody2D>().velocity = Random.onUnitSphere * Random.Range(MIN_SPEED, MAX_SPEED);
+    }
+  }
+
+  void OnCollisionStay(Collision collisionInfo)
+  {
+    if (!overlapping) {
+      overlapping = true;
+    }
+    overlapTime += Time.deltaTime;
+    if (overlapTime > 2) {
+      GetComponent<GameObject>().SetActive(false);  
     }
   }
 

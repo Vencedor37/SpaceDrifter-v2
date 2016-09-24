@@ -24,8 +24,8 @@ GameObject:
   - 114: {fileID: 114000012248531524}
   - 50: {fileID: 50000011165789998}
   - 95: {fileID: 95000011872619392}
-  - 58: {fileID: 58000012337753134}
   - 212: {fileID: 212000013164696568}
+  - 60: {fileID: 60000013224258338}
   m_Layer: 0
   m_Name: PointsPickup
   m_TagString: PointsPickup
@@ -117,7 +117,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010269632496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -59.31189, y: -37.73285, z: 0}
+  m_LocalPosition: {x: 35.640472, y: -5.8457584, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -183,8 +183,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58000012337753134
-CircleCollider2D:
+--- !u!60 &60000013224258338
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -195,8 +195,21 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.4470215
+  m_Points:
+    m_Paths:
+    - - {x: 1.7408173, y: -0.30740473}
+      - {x: 1.2622131, y: 0.30480385}
+      - {x: 0.8008087, y: 0.8052067}
+      - {x: -0.105, y: 0.36499998}
+      - {x: -0.7894074, y: 0.023400499}
+      - {x: -1.9438232, y: -1.1568154}
+      - {x: -1.6686219, y: -1.6344212}
+      - {x: -1.1368103, y: -2.176825}
+      - {x: -1.0316162, y: -2.0548234}
+      - {x: -0.07860108, y: -1.2070118}
+      - {x: 0.45580444, y: -0.7908093}
+      - {x: -1.0326172, y: -2.0898285}
+      - {x: 0.4286011, y: -0.7960106}
 --- !u!95 &95000011872619392
 Animator:
   serializedVersion: 3

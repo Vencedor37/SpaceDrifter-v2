@@ -20,6 +20,7 @@ public class SpaceObjectController : MonoBehaviour {
   private bool firstBuild = true;
   public bool needsSpeedCheck = true;
   public float speedCheckFrequency = 1;
+  public bool randomiseTransparency = false;
 
 
 
@@ -67,6 +68,13 @@ public class SpaceObjectController : MonoBehaviour {
 
   public void setInitialValues(SpaceObject spaceObject)
   {
+    if (randomiseTransparency) {
+      SpriteRenderer spriteRenderer = spaceObject.GetComponent<SpriteRenderer>();
+      Color newColor = spriteRenderer.color;
+      float newAlpha = Random.Range(.4f, 1f);
+      newColor.a = newColor.a * newAlpha;
+      spriteRenderer.color = newColor;
+    }
   }
 
   void CleanActiveList()

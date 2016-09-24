@@ -26,6 +26,7 @@ GameObject:
   - 50: {fileID: 50000012795715370}
   - 60: {fileID: 60000012078367138}
   - 61: {fileID: 61000010683765246}
+  - 114: {fileID: 114000013321076916}
   m_Layer: 0
   m_Name: MovementPickup
   m_TagString: MovementPickup
@@ -126,6 +127,18 @@ MonoBehaviour:
   MAX_SPEED: 6
   MIN_SPEED: 2.5
   destroyOnCollision: 1
+--- !u!114 &114000013321076916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011630484364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28511b277f3544c19d253c3ff0de84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 30
 --- !u!114 &114000013667590992
 MonoBehaviour:
   m_ObjectHideFlags: 1
