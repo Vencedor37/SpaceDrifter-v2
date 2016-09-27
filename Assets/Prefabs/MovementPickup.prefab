@@ -21,7 +21,6 @@ GameObject:
   - 4: {fileID: 4000012351687836}
   - 212: {fileID: 212000014139375346}
   - 114: {fileID: 114000013667590992}
-  - 114: {fileID: 114000014232717312}
   - 114: {fileID: 114000011623503734}
   - 50: {fileID: 50000012795715370}
   - 60: {fileID: 60000012078367138}
@@ -153,17 +152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 114000011801932624, guid: f3e7c7468dfc448f5b39351c4845ee59, type: 2}
---- !u!114 &114000014232717312
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011630484364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6e7f6e807d28489c90c2cb7b8034e52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212000014139375346
 SpriteRenderer:
   m_ObjectHideFlags: 1

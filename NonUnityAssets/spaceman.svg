@@ -111,7 +111,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
      inkscape:cx="889.90532"
-     inkscape:cy="779.20557"
+     inkscape:cy="950.63414"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -527,17 +527,6 @@
      id="layer1"
      transform="translate(0,10.629921)"
      style="opacity:1">
-    <rect
-       style="opacity:1;fill:#000000;fill-opacity:0.99607843;stroke:#020202;stroke-width:4.34352684;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4316"
-       width="454.28104"
-       height="451.6582"
-       x="881.4397"
-       y="-248.98309"
-       ry="4.3749504"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"
-       inkscape:export-filename="/Users/campbelldavis/Desktop/spaceman_head_large.png" />
     <ellipse
        style="opacity:1;fill:#e2e2e2;fill-opacity:0.98823529;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4151"
@@ -649,221 +638,240 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
-       id="g7725"
-       transform="matrix(1.8088772,0,0,1.9909638,-455.62091,-505.85894)"
+       id="g7794"
+       transform="matrix(1.0013483,0,0,0.99764478,-1.1632064,0.55682387)"
+       inkscape:export-filename="/Users/campbelldavis/Desktop/spaceman_head_large.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"
-       inkscape:export-filename="/Users/campbelldavis/Desktop/spaceman_head_large.png">
+       inkscape:export-ydpi="90">
       <rect
-         transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,10.629921)"
+         inkscape:export-filename="/Users/campbelldavis/Desktop/spaceman_head_large.png"
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
-         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
-         y="326.88297"
-         x="730.17871"
-         height="18.465406"
-         width="12.487185"
-         id="rect5475-9"
-         style="display:inline;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <ellipse
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
-         ry="103.43895"
-         rx="115.68092"
-         cy="233.07649"
-         cx="866.19202"
-         id="path4151-1"
-         style="opacity:1;fill:#e2e2e2;fill-opacity:0.98823529;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         ry="4.3749504"
+         y="-248.98309"
+         x="881.4397"
+         height="451.6582"
+         width="454.28104"
+         id="rect4316"
+         style="opacity:1;fill:#000000;fill-opacity:0.99607843;stroke:#020202;stroke-width:4.34352684;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          transform="translate(0,10.629921)" />
-      <ellipse
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
-         ry="89.242134"
-         rx="87.804565"
-         cy="234.95132"
-         cx="880.51855"
-         id="path4136-1-2"
-         style="display:inline;opacity:1;fill:#44438f;fill-opacity:1;stroke:none;stroke-width:6.73525095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         transform="translate(0,10.629921)" />
-      <ellipse
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
-         ry="89.242134"
-         rx="87.804565"
-         cy="233.47903"
-         cx="881.06915"
-         id="path4136-8"
-         style="display:inline;opacity:1;fill:url(#radialGradient6376-3);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         transform="translate(0,10.629921)" />
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
-         sodipodi:nodetypes="cccccc"
-         inkscape:connector-curvature="0"
-         id="path5740-4"
-         d="m 770.36736,300.12854 c -8.47705,-3.4018 -19.63239,46.01233 -0.60136,55.85594 l 96.59499,-25.48571 c 0.93429,-20.50855 -14.60187,-23.10312 -14.87035,-23.62095 -22.68427,6.21604 -49.38927,13.05369 -58.24219,19.26972 -4.9179,-5.61638 0,0 -22.88109,-26.019 z"
-         style="display:inline;opacity:1;fill:#448560;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
-    <g
-       id="g5758-0"
-       transform="matrix(1.1673419,0,0,1.2848499,656.1476,-470.19813)"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"
-       inkscape:export-filename="/Users/campbelldavis/Desktop/spaceman_head_large.png">
       <g
-         id="g5721-5">
+         inkscape:export-filename="/Users/campbelldavis/Desktop/spaceman_head_large.png"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         transform="matrix(1.8088772,0,0,1.9909638,-455.62091,-505.85894)"
+         id="g7725">
+        <rect
+           style="display:inline;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect5475-9"
+           width="12.487185"
+           height="18.465406"
+           x="730.17871"
+           y="326.88297"
+           inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90"
+           transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,10.629921)" />
+        <ellipse
+           transform="translate(0,10.629921)"
+           style="opacity:1;fill:#e2e2e2;fill-opacity:0.98823529;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path4151-1"
+           cx="866.19202"
+           cy="233.07649"
+           rx="115.68092"
+           ry="103.43895"
+           inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
+        <ellipse
+           transform="translate(0,10.629921)"
+           style="display:inline;opacity:1;fill:#44438f;fill-opacity:1;stroke:none;stroke-width:6.73525095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path4136-1-2"
+           cx="880.51855"
+           cy="234.95132"
+           rx="87.804565"
+           ry="89.242134"
+           inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
+        <ellipse
+           transform="translate(0,10.629921)"
+           style="display:inline;opacity:1;fill:url(#radialGradient6376-3);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path4136-8"
+           cx="881.06915"
+           cy="233.47903"
+           rx="87.804565"
+           ry="89.242134"
+           inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
         <path
-           sodipodi:type="star"
-           style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path5704-3"
-           sodipodi:sides="4"
-           sodipodi:cx="231.25"
-           sodipodi:cy="199.23718"
-           sodipodi:r1="149.75771"
-           sodipodi:r2="6.402791"
-           sodipodi:arg1="0.75957365"
-           sodipodi:arg2="1.2640305"
-           inkscape:flatsided="false"
-           inkscape:rounded="0"
-           inkscape:randomized="0"
-           d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
-           transform="matrix(0.17150523,0,0,0.20602936,177.22632,171.17048)" />
-        <path
-           sodipodi:type="star"
-           style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path5704-2-8"
-           sodipodi:sides="4"
-           sodipodi:cx="231.25"
-           sodipodi:cy="199.23718"
-           sodipodi:r1="149.75771"
-           sodipodi:r2="6.402791"
-           sodipodi:arg1="0.75957365"
-           sodipodi:arg2="1.2640305"
-           inkscape:flatsided="false"
-           inkscape:rounded="0"
-           inkscape:randomized="0"
-           d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
-           transform="matrix(0.19831622,-0.24397808,0.19831621,0.2439781,131.51432,220.02961)" />
+           style="display:inline;opacity:1;fill:#448560;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 770.36736,300.12854 c -8.47705,-3.4018 -19.63239,46.01233 -0.60136,55.85594 l 96.59499,-25.48571 c 0.93429,-20.50855 -14.60187,-23.10312 -14.87035,-23.62095 -22.68427,6.21604 -49.38927,13.05369 -58.24219,19.26972 -4.9179,-5.61638 0,0 -22.88109,-26.019 z"
+           id="path5740-4"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccc"
+           inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
       </g>
       <g
-         style="filter:url(#filter5754-9)"
-         id="g5721-0-1"
-         transform="translate(4.4571446e-6,-4.6496621e-6)">
-        <path
-           sodipodi:type="star"
-           style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path5704-7-7"
-           sodipodi:sides="4"
-           sodipodi:cx="231.25"
-           sodipodi:cy="199.23718"
-           sodipodi:r1="149.75771"
-           sodipodi:r2="6.402791"
-           sodipodi:arg1="0.75957365"
-           sodipodi:arg2="1.2640305"
-           inkscape:flatsided="false"
-           inkscape:rounded="0"
-           inkscape:randomized="0"
-           d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
-           transform="matrix(0.17150523,0,0,0.20602936,177.22632,171.17048)" />
-        <path
-           sodipodi:type="star"
-           style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path5704-2-4-6"
-           sodipodi:sides="4"
-           sodipodi:cx="231.25"
-           sodipodi:cy="199.23718"
-           sodipodi:r1="149.75771"
-           sodipodi:r2="6.402791"
-           sodipodi:arg1="0.75957365"
-           sodipodi:arg2="1.2640305"
-           inkscape:flatsided="false"
-           inkscape:rounded="0"
-           inkscape:randomized="0"
-           d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
-           transform="matrix(0.19831622,-0.24397808,0.19831621,0.2439781,131.51432,220.02961)" />
+         inkscape:export-filename="/Users/campbelldavis/Desktop/spaceman_head_large.png"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         transform="matrix(1.1673419,0,0,1.2848499,656.1476,-470.19813)"
+         id="g5758-0">
+        <g
+           id="g5721-5">
+          <path
+             transform="matrix(0.17150523,0,0,0.20602936,177.22632,171.17048)"
+             d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
+             inkscape:randomized="0"
+             inkscape:rounded="0"
+             inkscape:flatsided="false"
+             sodipodi:arg2="1.2640305"
+             sodipodi:arg1="0.75957365"
+             sodipodi:r2="6.402791"
+             sodipodi:r1="149.75771"
+             sodipodi:cy="199.23718"
+             sodipodi:cx="231.25"
+             sodipodi:sides="4"
+             id="path5704-3"
+             style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             sodipodi:type="star" />
+          <path
+             transform="matrix(0.19831622,-0.24397808,0.19831621,0.2439781,131.51432,220.02961)"
+             d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
+             inkscape:randomized="0"
+             inkscape:rounded="0"
+             inkscape:flatsided="false"
+             sodipodi:arg2="1.2640305"
+             sodipodi:arg1="0.75957365"
+             sodipodi:r2="6.402791"
+             sodipodi:r1="149.75771"
+             sodipodi:cy="199.23718"
+             sodipodi:cx="231.25"
+             sodipodi:sides="4"
+             id="path5704-2-8"
+             style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             sodipodi:type="star" />
+        </g>
+        <g
+           transform="translate(4.4571446e-6,-4.6496621e-6)"
+           id="g5721-0-1"
+           style="filter:url(#filter5754-9)">
+          <path
+             transform="matrix(0.17150523,0,0,0.20602936,177.22632,171.17048)"
+             d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
+             inkscape:randomized="0"
+             inkscape:rounded="0"
+             inkscape:flatsided="false"
+             sodipodi:arg2="1.2640305"
+             sodipodi:arg1="0.75957365"
+             sodipodi:r2="6.402791"
+             sodipodi:r1="149.75771"
+             sodipodi:cy="199.23718"
+             sodipodi:cx="231.25"
+             sodipodi:sides="4"
+             id="path5704-7-7"
+             style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             sodipodi:type="star" />
+          <path
+             transform="matrix(0.19831622,-0.24397808,0.19831621,0.2439781,131.51432,220.02961)"
+             d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
+             inkscape:randomized="0"
+             inkscape:rounded="0"
+             inkscape:flatsided="false"
+             sodipodi:arg2="1.2640305"
+             sodipodi:arg1="0.75957365"
+             sodipodi:r2="6.402791"
+             sodipodi:r1="149.75771"
+             sodipodi:cy="199.23718"
+             sodipodi:cx="231.25"
+             sodipodi:sides="4"
+             id="path5704-2-4-6"
+             style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             sodipodi:type="star" />
+        </g>
       </g>
-    </g>
-    <g
-       id="g5758-0-3"
-       transform="matrix(1.1673419,0,0,1.2848499,1056.3134,-104.16389)"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"
-       inkscape:export-filename="/Users/campbelldavis/Desktop/spaceman_head_large.png">
       <g
-         id="g5721-5-2">
-        <path
-           sodipodi:type="star"
-           style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path5704-3-5"
-           sodipodi:sides="4"
-           sodipodi:cx="231.25"
-           sodipodi:cy="199.23718"
-           sodipodi:r1="149.75771"
-           sodipodi:r2="6.402791"
-           sodipodi:arg1="0.75957365"
-           sodipodi:arg2="1.2640305"
-           inkscape:flatsided="false"
-           inkscape:rounded="0"
-           inkscape:randomized="0"
-           d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
-           transform="matrix(0.17150523,0,0,0.20602936,177.22632,171.17048)" />
-        <path
-           sodipodi:type="star"
-           style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path5704-2-8-0"
-           sodipodi:sides="4"
-           sodipodi:cx="231.25"
-           sodipodi:cy="199.23718"
-           sodipodi:r1="149.75771"
-           sodipodi:r2="6.402791"
-           sodipodi:arg1="0.75957365"
-           sodipodi:arg2="1.2640305"
-           inkscape:flatsided="false"
-           inkscape:rounded="0"
-           inkscape:randomized="0"
-           d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
-           transform="matrix(0.19831622,-0.24397808,0.19831621,0.2439781,131.51432,220.02961)" />
-      </g>
-      <g
-         style="filter:url(#filter5754-9-4)"
-         id="g5721-0-1-9"
-         transform="translate(4.4571446e-6,-4.6496621e-6)">
-        <path
-           sodipodi:type="star"
-           style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path5704-7-7-4"
-           sodipodi:sides="4"
-           sodipodi:cx="231.25"
-           sodipodi:cy="199.23718"
-           sodipodi:r1="149.75771"
-           sodipodi:r2="6.402791"
-           sodipodi:arg1="0.75957365"
-           sodipodi:arg2="1.2640305"
-           inkscape:flatsided="false"
-           inkscape:rounded="0"
-           inkscape:randomized="0"
-           d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
-           transform="matrix(0.17150523,0,0,0.20602936,177.22632,171.17048)" />
-        <path
-           sodipodi:type="star"
-           style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path5704-2-4-6-2"
-           sodipodi:sides="4"
-           sodipodi:cx="231.25"
-           sodipodi:cy="199.23718"
-           sodipodi:r1="149.75771"
-           sodipodi:r2="6.402791"
-           sodipodi:arg1="0.75957365"
-           sodipodi:arg2="1.2640305"
-           inkscape:flatsided="false"
-           inkscape:rounded="0"
-           inkscape:randomized="0"
-           d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
-           transform="matrix(0.19831622,-0.24397808,0.19831621,0.2439781,131.51432,220.02961)" />
+         inkscape:export-filename="/Users/campbelldavis/Desktop/spaceman_head_large.png"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         transform="matrix(1.1673419,0,0,1.2848499,1056.3134,-104.16389)"
+         id="g5758-0-3">
+        <g
+           id="g5721-5-2">
+          <path
+             transform="matrix(0.17150523,0,0,0.20602936,177.22632,171.17048)"
+             d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
+             inkscape:randomized="0"
+             inkscape:rounded="0"
+             inkscape:flatsided="false"
+             sodipodi:arg2="1.2640305"
+             sodipodi:arg1="0.75957365"
+             sodipodi:r2="6.402791"
+             sodipodi:r1="149.75771"
+             sodipodi:cy="199.23718"
+             sodipodi:cx="231.25"
+             sodipodi:sides="4"
+             id="path5704-3-5"
+             style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             sodipodi:type="star" />
+          <path
+             transform="matrix(0.19831622,-0.24397808,0.19831621,0.2439781,131.51432,220.02961)"
+             d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
+             inkscape:randomized="0"
+             inkscape:rounded="0"
+             inkscape:flatsided="false"
+             sodipodi:arg2="1.2640305"
+             sodipodi:arg1="0.75957365"
+             sodipodi:r2="6.402791"
+             sodipodi:r1="149.75771"
+             sodipodi:cy="199.23718"
+             sodipodi:cx="231.25"
+             sodipodi:sides="4"
+             id="path5704-2-8-0"
+             style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             sodipodi:type="star" />
+        </g>
+        <g
+           transform="translate(4.4571446e-6,-4.6496621e-6)"
+           id="g5721-0-1-9"
+           style="filter:url(#filter5754-9-4)">
+          <path
+             transform="matrix(0.17150523,0,0,0.20602936,177.22632,171.17048)"
+             d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
+             inkscape:randomized="0"
+             inkscape:rounded="0"
+             inkscape:flatsided="false"
+             sodipodi:arg2="1.2640305"
+             sodipodi:arg1="0.75957365"
+             sodipodi:r2="6.402791"
+             sodipodi:r1="149.75771"
+             sodipodi:cy="199.23718"
+             sodipodi:cx="231.25"
+             sodipodi:sides="4"
+             id="path5704-7-7-4"
+             style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             sodipodi:type="star" />
+          <path
+             transform="matrix(0.19831622,-0.24397808,0.19831621,0.2439781,131.51432,220.02961)"
+             d="M 339.84376,302.36219 233.1835,205.34106 128.12499,307.83094 225.14612,201.17068 122.65624,96.112177 229.3165,193.1333 334.37501,90.643427 237.35388,197.30369 Z"
+             inkscape:randomized="0"
+             inkscape:rounded="0"
+             inkscape:flatsided="false"
+             sodipodi:arg2="1.2640305"
+             sodipodi:arg1="0.75957365"
+             sodipodi:r2="6.402791"
+             sodipodi:r1="149.75771"
+             sodipodi:cy="199.23718"
+             sodipodi:cx="231.25"
+             sodipodi:sides="4"
+             id="path5704-2-4-6-2"
+             style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             sodipodi:type="star" />
+        </g>
       </g>
     </g>
   </g>

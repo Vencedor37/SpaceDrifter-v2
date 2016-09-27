@@ -66,8 +66,9 @@ public class SpaceObject : MonoBehaviour {
 
   public void startMoving()
   {
-    if (MAX_SPEED > 0) {
-      GetComponent<Rigidbody2D>().velocity = Random.onUnitSphere * Random.Range(MIN_SPEED, MAX_SPEED);
+    if (GetComponent<Rigidbody2D>() != null) {
+      Vector3 newVelocity = Random.onUnitSphere * Random.Range(MIN_SPEED, MAX_SPEED);
+      GetComponent<Rigidbody2D>().velocity = newVelocity;
     }
   }
 
@@ -82,16 +83,25 @@ public class SpaceObject : MonoBehaviour {
     }
   }
 
-  public void Resize(float screenWidth, float screenHeight)
-  {
+  public void AdjustSize(float xScale, float yScale) {
     Vector3 scale = transform.localScale;
-    float oldWidth = scale.x;
-    float oldHeight = scale.y;
-    float newWidth = oldWidth * myWidth/myHeight * screenWidth/screenHeight;
-    float newHeight = oldHeight * myWidth/myHeight * screenWidth/screenHeight;
-    scale.x = newWidth;
-    scale.y = newHeight;
+    scale.x *= xScale;
+    scale.y *= yScale;
     transform.localScale = scale;
+  }
+
+  public void AdjustSize(float scale) {
+    AdjustSize(scale, scale);
+  }
+
+  public void AdjustSpeed(float minSpeed, float maxSpeed) {
+    MAX_SPEED = maxSpeed;
+    MIN_SPEED = minSpeed;
+
+  }
+
+  public void AdjustMass(float mass) {
+    GetComponent<Rigidbody2D>().mass = mass;
   }
 
 

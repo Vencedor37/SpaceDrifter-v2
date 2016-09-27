@@ -3,33 +3,36 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class SpaceObjectController : MonoBehaviour {
-
-  public SpaceObject[] pool;
-  public List<SpaceObject> activeSpaceObjects;
   public SpaceObject type;
+  public UIController UI;
+  public bool spawnImmediately;
   public int poolCount = 0;
   public int activeCount = 0;
   public PlayerController playerController;
-  public UIController UI;
   public bool replaceActive = false;
   public bool avoidCentreDuringGeneration = true;
   public bool needsCleaning = false;
   public bool needsPositionCheck = true;
   public float cleanFrequency = 1;
   public float positionCheckFrequency = 1;
-  private bool firstBuild = true;
   public bool needsSpeedCheck = true;
   public float speedCheckFrequency = 1;
   public bool randomiseTransparency = false;
   public bool randomiseScale = false;
+  public SpaceObject[] pool;
+  public List<SpaceObject> activeSpaceObjects;
+
+  private bool firstBuild = true;
+  private bool initialised = false;
+
 
 
 
 	// Use this for initialization
-	void Start () {
-    InitialisePool();
-    BuildActiveList();
-    InvokeRepeating("RunChecks", 0.2f, cleanFrequency);
+	public void Start () {
+    if (spawnImmediately) {
+      Spawn();
+    }
 	}
 
 	// Update is called once per frame
@@ -48,6 +51,16 @@ public class SpaceObjectController : MonoBehaviour {
       if (needsSpeedCheck) {
         StartCoroutine("CheckObjectSpeed");
       }
+    }
+  }
+
+  public void Spawn()
+  {
+    if (!initialised) {
+      InitialisePool();
+      BuildActiveList();
+      InvokeRepeating("RunChecks", 0.2f, cleanFrequency);
+      initialised = true;
     }
   }
 
@@ -73,7 +86,7 @@ public class SpaceObjectController : MonoBehaviour {
     }
   }
 
-  public void setInitialValues(SpaceObject spaceObject)
+  virtual public void setInitialValues(SpaceObject spaceObject)
   {
     if (randomiseTransparency) {
       SpriteRenderer spriteRenderer = spaceObject.GetComponent<SpriteRenderer>();
@@ -83,13 +96,11 @@ public class SpaceObjectController : MonoBehaviour {
       spriteRenderer.color = newColor;
     }
     if (randomiseScale) {
-      Vector3 scale = spaceObject.transform.localScale;
       float newScale = Random.Range(.5f, 1f);
-      scale.x *= newScale;
-      scale.y *= newScale;
-      spaceObject.transform.localScale = scale;
+      spaceObject.AdjustSize(newScale);
     }
   }
+
 
   IEnumerator CleanActiveList()
   {
@@ -180,5 +191,7 @@ public class SpaceObjectController : MonoBehaviour {
     BuildActiveList();
     return activeCount;
   }
+
+
 
 }

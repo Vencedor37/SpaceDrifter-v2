@@ -415,7 +415,7 @@ Transform:
   - {fileID: 1323997949}
   - {fileID: 1811415778}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1 &88825845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,7 +1145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &370729152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1154,16 +1154,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 370729151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2629d2a3072be425d836b0482be1231a, type: 3}
+  m_Script: {fileID: 11500000, guid: b173d5aa75817428c96177a42cb9b2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: []
-  activeSpaceObjects: []
   type: {fileID: 114000011210211580, guid: 63a06adf54141457b8558d5b8bf3d2f1, type: 2}
+  UI: {fileID: 2016584744}
+  spawnImmediately: 0
   poolCount: 300
   activeCount: 70
   playerController: {fileID: 778002976}
-  UI: {fileID: 2016584744}
   replaceActive: 0
   avoidCentreDuringGeneration: 1
   needsCleaning: 0
@@ -1174,6 +1173,8 @@ MonoBehaviour:
   speedCheckFrequency: 5
   randomiseTransparency: 0
   randomiseScale: 1
+  pool: []
+  activeSpaceObjects: []
 --- !u!4 &370729153
 Transform:
   m_ObjectHideFlags: 0
@@ -1332,6 +1333,127 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
+--- !u!1 &468606411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 468606413}
+  - 114: {fileID: 468606412}
+  m_Layer: 0
+  m_Name: TimeKeeper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &468606412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468606411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f02afa54635346fd9d586d7e517b12a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnableObjects:
+  - {fileID: 476417460}
+  - {fileID: 1563592273}
+  - {fileID: 851514724}
+  - {fileID: 1720012994}
+  - {fileID: 1574294077}
+  - {fileID: 1431707436}
+  - {fileID: 1652221082}
+  - {fileID: 1751870582}
+  objectSpawnTimes:
+  - 1
+  - 5
+  - 15
+  - 45
+  - 45
+  - 90
+  - 120
+  - 240
+--- !u!4 &468606413
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468606411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 50}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1763516251}
+  - {fileID: 1555049710}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+--- !u!1 &476417458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 476417459}
+  - 114: {fileID: 476417460}
+  m_Layer: 0
+  m_Name: LargeAsteroids
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &476417459
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 476417458}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1763516251}
+  m_RootOrder: 0
+--- !u!114 &476417460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 476417458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 775bfd76cd047412a95c5df5d03effba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: {fileID: 114000011210211580, guid: 63a06adf54141457b8558d5b8bf3d2f1, type: 2}
+  UI: {fileID: 2016584744}
+  spawnImmediately: 0
+  poolCount: 100
+  activeCount: 10
+  playerController: {fileID: 778002976}
+  replaceActive: 0
+  avoidCentreDuringGeneration: 1
+  needsCleaning: 0
+  needsPositionCheck: 1
+  cleanFrequency: 1
+  positionCheckFrequency: 1
+  needsSpeedCheck: 1
+  speedCheckFrequency: 1
+  randomiseTransparency: 0
+  randomiseScale: 0
+  pool: []
+  activeSpaceObjects: []
+  scale: 2
+  minSpeed: 0.5
+  maxSpeed: 1
 --- !u!1 &480903033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,7 +1813,7 @@ RectTransform:
   m_GameObject: {fileID: 606478405}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 140, y: 100, z: 1}
+  m_LocalScale: {x: 100, y: 80, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 778002975}
@@ -1908,7 +2030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.38893867, b: 0.7725491, a: 1}
+  m_Color: {r: 0.050980393, g: 0.4627451, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2539,13 +2661,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b173d5aa75817428c96177a42cb9b2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: []
-  activeSpaceObjects: []
   type: {fileID: 114000014040127116, guid: 54eb68da6322542af8eb0746ad2b34ad, type: 2}
-  poolCount: 50
-  activeCount: 8
-  playerController: {fileID: 778002976}
   UI: {fileID: 2016584744}
+  spawnImmediately: 0
+  poolCount: 50
+  activeCount: 3
+  playerController: {fileID: 778002976}
   replaceActive: 1
   avoidCentreDuringGeneration: 1
   needsCleaning: 1
@@ -2556,6 +2677,8 @@ MonoBehaviour:
   speedCheckFrequency: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  pool: []
+  activeSpaceObjects: []
 --- !u!1 &867728519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2587,7 +2710,7 @@ Transform:
   - {fileID: 1614217611}
   - {fileID: 968001649}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1 &935727275
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,13 +2935,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b173d5aa75817428c96177a42cb9b2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: []
-  activeSpaceObjects: []
   type: {fileID: 114000013897309794, guid: ff8ef0b0c703e44538bba54c4fec2fcc, type: 2}
+  UI: {fileID: 2016584744}
+  spawnImmediately: 1
   poolCount: 2
   activeCount: 2
   playerController: {fileID: 778002976}
-  UI: {fileID: 2016584744}
   replaceActive: 0
   avoidCentreDuringGeneration: 1
   needsCleaning: 0
@@ -2829,6 +2951,8 @@ MonoBehaviour:
   speedCheckFrequency: 1
   randomiseTransparency: 1
   randomiseScale: 0
+  pool: []
+  activeSpaceObjects: []
 --- !u!1 &1024193722
 GameObject:
   m_ObjectHideFlags: 0
@@ -2902,7 +3026,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!114 &1024193728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3580,7 +3704,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!1 &1213148186
 GameObject:
   m_ObjectHideFlags: 0
@@ -3695,7 +3819,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -67, y: 84.5}
+  m_AnchoredPosition: {x: -185, y: 84.5}
   m_SizeDelta: {x: 21, y: 17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1214803555
@@ -3905,7 +4029,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 13.999985, y: -0.5000057}
+  m_AnchoredPosition: {x: 49.7, y: 0.49999}
   m_SizeDelta: {x: -28, y: -0.99998856}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266246779
@@ -4184,13 +4308,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b173d5aa75817428c96177a42cb9b2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: []
-  activeSpaceObjects: []
   type: {fileID: 114000011661854600, guid: 68d3c82fca08840a88a5e454a787177a, type: 2}
+  UI: {fileID: 2016584744}
+  spawnImmediately: 1
   poolCount: 300
   activeCount: 300
   playerController: {fileID: 778002976}
-  UI: {fileID: 2016584744}
   replaceActive: 0
   avoidCentreDuringGeneration: 0
   needsCleaning: 0
@@ -4201,6 +4324,8 @@ MonoBehaviour:
   speedCheckFrequency: 1
   randomiseTransparency: 1
   randomiseScale: 0
+  pool: []
+  activeSpaceObjects: []
 --- !u!1 &1323997947
 GameObject:
   m_ObjectHideFlags: 0
@@ -4822,6 +4947,67 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1430977906}
+--- !u!1 &1431707434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1431707435}
+  - 114: {fileID: 1431707436}
+  m_Layer: 0
+  m_Name: SmallAsteroids
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1431707435
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1431707434}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1763516251}
+  m_RootOrder: 2
+--- !u!114 &1431707436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1431707434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 775bfd76cd047412a95c5df5d03effba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: {fileID: 114000011210211580, guid: 63a06adf54141457b8558d5b8bf3d2f1, type: 2}
+  UI: {fileID: 2016584744}
+  spawnImmediately: 0
+  poolCount: 100
+  activeCount: 15
+  playerController: {fileID: 778002976}
+  replaceActive: 0
+  avoidCentreDuringGeneration: 1
+  needsCleaning: 0
+  needsPositionCheck: 1
+  cleanFrequency: 1
+  positionCheckFrequency: 1
+  needsSpeedCheck: 1
+  speedCheckFrequency: 1
+  randomiseTransparency: 0
+  randomiseScale: 0
+  pool: []
+  activeSpaceObjects: []
+  scale: 0.5
+  minSpeed: 8
+  maxSpeed: 10
 --- !u!1 &1447439963
 GameObject:
   m_ObjectHideFlags: 0
@@ -4982,7 +5168,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1555049710}
   m_Layer: 0
-  m_Name: Pickups
+  m_Name: PickupController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4995,15 +5181,15 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555049709}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 851514723}
   - {fileID: 1563592272}
-  - {fileID: 1574294076}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  - {fileID: 1685053547}
+  m_Father: {fileID: 468606413}
+  m_RootOrder: 1
 --- !u!1 &1555521507
 GameObject:
   m_ObjectHideFlags: 0
@@ -5079,13 +5265,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b173d5aa75817428c96177a42cb9b2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: []
-  activeSpaceObjects: []
   type: {fileID: 114000011623503734, guid: 9859d07d76c784332b13f02af9346b00, type: 2}
-  poolCount: 50
-  activeCount: 8
-  playerController: {fileID: 778002976}
   UI: {fileID: 2016584744}
+  spawnImmediately: 0
+  poolCount: 50
+  activeCount: 3
+  playerController: {fileID: 778002976}
   replaceActive: 1
   avoidCentreDuringGeneration: 1
   needsCleaning: 1
@@ -5096,6 +5281,8 @@ MonoBehaviour:
   speedCheckFrequency: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  pool: []
+  activeSpaceObjects: []
 --- !u!1 &1574294075
 GameObject:
   m_ObjectHideFlags: 0
@@ -5106,7 +5293,7 @@ GameObject:
   - 4: {fileID: 1574294076}
   - 114: {fileID: 1574294077}
   m_Layer: 0
-  m_Name: PointsPickups
+  m_Name: Level1Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5123,8 +5310,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 1555049710}
-  m_RootOrder: 2
+  m_Father: {fileID: 1685053547}
+  m_RootOrder: 0
 --- !u!114 &1574294077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5136,13 +5323,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b173d5aa75817428c96177a42cb9b2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: []
-  activeSpaceObjects: []
   type: {fileID: 114000012248531524, guid: 340ebb79ba1c9402b860dd02cffe8a2c, type: 2}
-  poolCount: 100
-  activeCount: 10
-  playerController: {fileID: 778002976}
   UI: {fileID: 2016584744}
+  spawnImmediately: 0
+  poolCount: 100
+  activeCount: 4
+  playerController: {fileID: 778002976}
   replaceActive: 1
   avoidCentreDuringGeneration: 1
   needsCleaning: 1
@@ -5153,6 +5339,8 @@ MonoBehaviour:
   speedCheckFrequency: 10
   randomiseTransparency: 0
   randomiseScale: 0
+  pool: []
+  activeSpaceObjects: []
 --- !u!1 &1584124989
 GameObject:
   m_ObjectHideFlags: 0
@@ -5239,7 +5427,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 189, y: -61.229}
+  m_AnchoredPosition: {x: 189, y: -61.228516}
   m_SizeDelta: {x: 334, y: 92.31}
   m_Pivot: {x: 0.4999997, y: 0.5}
 --- !u!1 &1614217610
@@ -5282,13 +5470,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b173d5aa75817428c96177a42cb9b2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: []
-  activeSpaceObjects: []
   type: {fileID: 114000013892145524, guid: 40269323954e54223aa385486ccd4534, type: 2}
+  UI: {fileID: 2016584744}
+  spawnImmediately: 1
   poolCount: 1
   activeCount: 1
   playerController: {fileID: 778002976}
-  UI: {fileID: 2016584744}
   replaceActive: 0
   avoidCentreDuringGeneration: 1
   needsCleaning: 0
@@ -5299,6 +5486,8 @@ MonoBehaviour:
   speedCheckFrequency: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  pool: []
+  activeSpaceObjects: []
 --- !u!1 &1618076810
 GameObject:
   m_ObjectHideFlags: 0
@@ -5467,6 +5656,64 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 1
+--- !u!1 &1652221081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1652221083}
+  - 114: {fileID: 1652221082}
+  m_Layer: 0
+  m_Name: Level2Points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1652221082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1652221081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b173d5aa75817428c96177a42cb9b2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: {fileID: 114000011779550118, guid: 4de0f370d4a77461089b383d9cb672d7, type: 2}
+  UI: {fileID: 2016584744}
+  spawnImmediately: 0
+  poolCount: 100
+  activeCount: 2
+  playerController: {fileID: 778002976}
+  replaceActive: 1
+  avoidCentreDuringGeneration: 1
+  needsCleaning: 1
+  needsPositionCheck: 1
+  cleanFrequency: 5
+  positionCheckFrequency: 5
+  needsSpeedCheck: 1
+  speedCheckFrequency: 10
+  randomiseTransparency: 0
+  randomiseScale: 0
+  pool: []
+  activeSpaceObjects: []
+--- !u!4 &1652221083
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1652221081}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1685053547}
+  m_RootOrder: 1
 --- !u!1 &1668698628
 GameObject:
   m_ObjectHideFlags: 0
@@ -5503,6 +5750,37 @@ RectTransform:
   m_AnchoredPosition: {x: 13.8, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1685053546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1685053547}
+  m_Layer: 0
+  m_Name: PointsPickups
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1685053547
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1685053546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1574294076}
+  - {fileID: 1652221083}
+  - {fileID: 1751870583}
+  m_Father: {fileID: 1555049710}
+  m_RootOrder: 2
 --- !u!1 &1690502447
 GameObject:
   m_ObjectHideFlags: 0
@@ -5648,6 +5926,67 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'High Score:'
+--- !u!1 &1720012992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1720012993}
+  - 114: {fileID: 1720012994}
+  m_Layer: 0
+  m_Name: MediumAsteroids
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1720012993
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1720012992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1763516251}
+  m_RootOrder: 1
+--- !u!114 &1720012994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1720012992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 775bfd76cd047412a95c5df5d03effba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: {fileID: 114000011210211580, guid: 63a06adf54141457b8558d5b8bf3d2f1, type: 2}
+  UI: {fileID: 2016584744}
+  spawnImmediately: 0
+  poolCount: 100
+  activeCount: 15
+  playerController: {fileID: 778002976}
+  replaceActive: 0
+  avoidCentreDuringGeneration: 1
+  needsCleaning: 0
+  needsPositionCheck: 1
+  cleanFrequency: 1
+  positionCheckFrequency: 1
+  needsSpeedCheck: 1
+  speedCheckFrequency: 1
+  randomiseTransparency: 0
+  randomiseScale: 0
+  pool: []
+  activeSpaceObjects: []
+  scale: 1.25
+  minSpeed: 3
+  maxSpeed: 5
 --- !u!1 &1722850887
 GameObject:
   m_ObjectHideFlags: 0
@@ -5797,6 +6136,95 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1740780726}
+--- !u!1 &1751870581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1751870583}
+  - 114: {fileID: 1751870582}
+  m_Layer: 0
+  m_Name: Level3Points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1751870582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1751870581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b173d5aa75817428c96177a42cb9b2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: {fileID: 114000011618139992, guid: a8e5f7ab210874b40a61ce931c81dd15, type: 2}
+  UI: {fileID: 2016584744}
+  spawnImmediately: 0
+  poolCount: 100
+  activeCount: 2
+  playerController: {fileID: 778002976}
+  replaceActive: 1
+  avoidCentreDuringGeneration: 1
+  needsCleaning: 1
+  needsPositionCheck: 1
+  cleanFrequency: 5
+  positionCheckFrequency: 5
+  needsSpeedCheck: 1
+  speedCheckFrequency: 10
+  randomiseTransparency: 0
+  randomiseScale: 0
+  pool: []
+  activeSpaceObjects: []
+--- !u!4 &1751870583
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1751870581}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1685053547}
+  m_RootOrder: 2
+--- !u!1 &1763516250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1763516251}
+  m_Layer: 0
+  m_Name: EnemyController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1763516251
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1763516250}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 476417459}
+  - {fileID: 1720012993}
+  - {fileID: 1431707435}
+  m_Father: {fileID: 468606413}
+  m_RootOrder: 0
 --- !u!1 &1777223931
 GameObject:
   m_ObjectHideFlags: 0
@@ -6659,6 +7087,7 @@ GameObject:
   - 114: {fileID: 1988318430}
   - 60: {fileID: 1988318429}
   - 95: {fileID: 1988318428}
+  - 114: {fileID: 1988318433}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -6881,6 +7310,18 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1988318433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1988318427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28511b277f3544c19d253c3ff0de84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
 --- !u!1 &1994268476
 GameObject:
   m_ObjectHideFlags: 0
@@ -7054,7 +7495,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -185, y: 74}
+  m_AnchoredPosition: {x: -67, y: 74}
   m_SizeDelta: {x: 24.8, y: 21}
   m_Pivot: {x: 0.40161625, y: 0.5000008}
 --- !u!114 &2016662756

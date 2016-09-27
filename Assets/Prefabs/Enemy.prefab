@@ -42,7 +42,6 @@ GameObject:
   - 114: {fileID: 114000010475049956}
   - 114: {fileID: 114000011210211580}
   - 60: {fileID: 60000013315510282}
-  - 114: {fileID: 114000012789753742}
   - 114: {fileID: 114000013297208306}
   - 114: {fileID: 114000010822789082}
   - 58: {fileID: 58000012861015748}
@@ -233,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e28511b277f3544c19d253c3ff0de84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 30
+  force: 5
 --- !u!114 &114000011210211580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -254,17 +253,6 @@ MonoBehaviour:
   destroyOnCollision: 0
   myWidth: 100
   myHeight: 100
---- !u!114 &114000012789753742
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012078122726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6e7f6e807d28489c90c2cb7b8034e52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000013297208306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -279,7 +267,7 @@ MonoBehaviour:
   bonusCircleHigh: {fileID: 4000010018933832}
   bonusCircleMedium: {fileID: 4000010156421622}
   outerLayer: Bonus_Medium
-  highScale: 2.9
+  highScale: 2.6
   mediumScale: 3.6
   recentDamage: 0
   recentPoints: 0

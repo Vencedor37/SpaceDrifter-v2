@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010514532630}
-  - 114: {fileID: 114000010734140264}
   - 114: {fileID: 114000014114338790}
   - 114: {fileID: 114000012248531524}
   - 50: {fileID: 50000011165789998}
@@ -27,7 +26,7 @@ GameObject:
   - 212: {fileID: 212000013164696568}
   - 60: {fileID: 60000013224258338}
   m_Layer: 0
-  m_Name: PointsPickup
+  m_Name: PointsPickupLevel1
   m_TagString: PointsPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,17 +226,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000010734140264
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010269632496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6e7f6e807d28489c90c2cb7b8034e52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000012248531524
 MonoBehaviour:
   m_ObjectHideFlags: 1
