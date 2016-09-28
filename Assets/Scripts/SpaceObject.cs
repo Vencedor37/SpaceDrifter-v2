@@ -11,8 +11,6 @@ public class SpaceObject : MonoBehaviour {
   public bool destroyOnCollision;
   private bool overlapping = false;
   private float overlapTime = 0;
-  public float myWidth;
-  public float myHeight;
 
 	// Use this for initialization
 	void Start () {
@@ -79,7 +77,7 @@ public class SpaceObject : MonoBehaviour {
     }
     overlapTime += Time.deltaTime;
     if (overlapTime > 2) {
-      GetComponent<GameObject>().SetActive(false);  
+      GetComponent<GameObject>().SetActive(false);
     }
   }
 

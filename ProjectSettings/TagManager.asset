@@ -11,6 +11,7 @@ TagManager:
   - ShowOnGameOver
   - PointsPickup
   - VisibleInDebugMode
+  - Blast
   layers:
   - Default
   - TransparentFX
@@ -59,6 +60,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3774764021
+    locked: 0
+  - name: Spaceships
+    uniqueID: 3970194147
     locked: 0
   - name: UI
     uniqueID: 2253139663

@@ -14,9 +14,7 @@ public class SpaceObjectController : MonoBehaviour {
   public bool needsCleaning = false;
   public bool needsPositionCheck = true;
   public float cleanFrequency = 1;
-  public float positionCheckFrequency = 1;
   public bool needsSpeedCheck = true;
-  public float speedCheckFrequency = 1;
   public bool randomiseTransparency = false;
   public bool randomiseScale = false;
   public SpaceObject[] pool;

@@ -16,7 +16,6 @@ public class PlayerController : MonoBehaviour {
   public int activeHealthCount;
   public SpaceObjectController movementPickupController;
   public int activeMovementCount;
-  public SpaceObjectController enemyController;
   public int enemiesPerLevel;
 
   public float maxHealth;
@@ -202,7 +201,6 @@ public class PlayerController : MonoBehaviour {
       scoreCheckpointTracker = 0;
       activeHealthCount = healthPickupController.AddActive(checkPointHealthBonus);
       activeMovementCount = movementPickupController.AddActive(checkPointMovementBonus);
-      enemyController.AddActive(enemiesPerLevel);
       currentHealth = maxHealth;
       currentMoveCapacity = maxMoveCapacity;
       healthLossCounter = 0;
@@ -331,6 +329,15 @@ public class PlayerController : MonoBehaviour {
         other.gameObject.SetActive(false);
       }
       StartBonus(pointsPickupController.getPointsBonus(), "Star Dust");
+    }
+
+    if (other.gameObject.CompareTag("Blast")) {
+      SpaceObject blast = other.gameObject.GetComponent<SpaceObject>();
+      float damage = blast.damage;
+      if (blast.destroyOnCollision) {
+        Destroy(other.gameObject);
+      }
+      TakeDamage(damage, "spaceship");
     }
   }
 
