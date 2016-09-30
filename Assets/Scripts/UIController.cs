@@ -95,7 +95,7 @@ public class UIController : MonoBehaviour {
       ShowGameOverUI();
       if (playerController.causeOfDeath == "oxygen") {
         gameOverSubtitle.text = "Ran out of oxygen";
-      } else if (playerController.causeOfDeath == "enemy") {
+      } else if (playerController.causeOfDeath == "asteroid") {
         gameOverSubtitle.text = "Hit by an asteroid";
       }
     } else {

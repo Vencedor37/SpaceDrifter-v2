@@ -49,6 +49,9 @@ public class PlayerController : MonoBehaviour {
   private float currentMoveCapacity;
   private bool beatHighScore = false;
   public bool isGameOver = false;
+  private bool playerHurt = false;
+  public float hurtTimeLimit = 3;
+  private float hurtTimeCount = 0;
 
   private bool releaseOccurred = false;
 
@@ -210,9 +213,12 @@ public class PlayerController : MonoBehaviour {
 
   private void TakeDamage(float damage, string cause)
   {
-    if (alive) {
+    if (alive && !playerHurt) {
       if ((currentHealth - damage) >= 0) {
         currentHealth -= damage;
+        if (cause != "oxygen") {
+          StartCoroutine(PlayerHurt(cause));
+        }
       } else {
         currentHealth = 0;
       }
@@ -224,6 +230,24 @@ public class PlayerController : MonoBehaviour {
       }
     }
   }
+
+  private IEnumerator PlayerHurt(string cause)
+  {
+    SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer>();
+    float newAlpha = 0;
+    playerHurt = true;
+    hurtTimeCount = 0;
+    while (hurtTimeCount <= hurtTimeLimit) {
+      hurtTimeCount += Time.deltaTime;
+      renderer.color = new Color(1f, 1f, 1f, newAlpha);
+      newAlpha = newAlpha == 0 ? 1 : 0;
+      yield return new WaitForSeconds(0.15f);
+    }
+    renderer.color = new Color(1f, 1f, 1f, 1f);
+    playerHurt = false;
+    yield return null;
+  }
+
 
   private void UpdateMovement(Vector3 movement)
   {
@@ -402,7 +426,7 @@ public class PlayerController : MonoBehaviour {
     dir = -dir.normalized;
     GetComponent<Rigidbody2D>().AddForce(dir*force);
     SpaceObject enemyControl = other.gameObject.GetComponent<SpaceObject>();
-    TakeDamage(enemyControl.getDamage(), "enemy");
+    TakeDamage(enemyControl.getDamage(), "asteroid");
   }
 
   public IEnumerator GameOver()
