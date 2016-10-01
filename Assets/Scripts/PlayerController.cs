@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
+  public float maxForceSingleMove = 0;
 
   public Camera mainCamera;
   public UIController UI;
@@ -54,6 +55,10 @@ public class PlayerController : MonoBehaviour {
   private int bonusAmount;
   private string bonusType;
   private string causeOfDeath;
+
+  private Vector3 lastForceApplied;
+  public bool hasMovementUpgrade;
+  private bool hasHealthUpgrade = false;
 
 
   void Awake() {
@@ -147,10 +152,24 @@ public class PlayerController : MonoBehaviour {
 
     if (releaseOccurred) {
       Vector3 impulse = releasePosition - pressPosition;
-      impulse *= -1;
+      impulse = ClampForce(impulse) * -1;
       UpdateMovement(impulse);
       releaseOccurred = false;
+      releasePosition = Vector3.zero;
+      pressPosition = Vector3.zero;
     }
+  }
+
+  public Vector3 ClampForce(Vector3 force)
+  {
+    float moveCostAmount = magnitudeToMoveCostAmount(force.magnitude);
+    if (currentMoveCapacity > 0) {
+      if (currentMoveCapacity - moveCostAmount <= 0) {
+        float reducedMovementMagnitude = moveCostAmountToMagnitude(currentMoveCapacity);
+        force = Vector3.ClampMagnitude(force, reducedMovementMagnitude);
+      }
+    }
+    return Vector3.ClampMagnitude(force, maxForceSingleMove);
   }
 
   private void UpdateHealth()
@@ -238,29 +257,25 @@ public class PlayerController : MonoBehaviour {
 
   private void UpdateMovement(Vector3 movement)
   {
-    Vector3 force = movement;
-    bool canMove = false;
-    float moveCostAmount = magnitudeToMoveCostAmount(movement.magnitude);
-    if (currentMoveCapacity - moveCostAmount >= 0) {
-      canMove = true;
+    //this should reduce force to accommodate a predefined maximum and
+    //the remaining movement capacity
+    Vector3 force = ClampForce(movement);
+
+    if (currentMoveCapacity > 0) {
+      float moveCostAmount = magnitudeToMoveCostAmount(movement.magnitude);
+      float forceUsed = force.magnitude / 50;
+
       currentMoveCapacity -= moveCostAmount;
       rigidBody.angularVelocity = 0.0f;
-    } else if (currentMoveCapacity > 0) {
-      canMove = true;
-      float reducedMovementMagnitude = moveCostAmountToMagnitude(currentMoveCapacity);
-      force = Vector3.ClampMagnitude(movement, reducedMovementMagnitude);
-      currentMoveCapacity = 0;
-      rigidBody.angularVelocity = 0.0f;
-    }
-    if (canMove) {
-      float forceUsed = force.magnitude / 50;
       sprayAnimator.SetFloat("forceUsed", forceUsed);
+      Debug.Log("starting spray, force: " + forceUsed);
       sprayAnimator.SetTrigger("StartSpray");
-
       StartCoroutine(DelayedForce(force, 0.15f));
       PlaySprayAudio(force.magnitude);
+      lastForceApplied = force;
+    } else {
+      lastForceApplied = Vector3.zero;
     }
-
   }
 
   private void PlaySprayAudio(float magnitude)
@@ -467,9 +482,12 @@ public class PlayerController : MonoBehaviour {
 
   public Vector3[] getLinePoints()
   {
+    Vector3 checkForce = currentPosition - pressPosition;
+    checkForce = ClampForce(checkForce);
+
     Vector3[] points = new Vector3[2];
     points[0] = pressPosition;
-    points[1] = currentPosition;
+    points[1] = (pressPosition + checkForce);
     return points;
   }
 
@@ -621,6 +639,26 @@ public class PlayerController : MonoBehaviour {
   public bool getIsGameOver()
   {
     return isGameOver;
+  }
+
+  public Vector3 getLastForceApplied()
+  {
+    return lastForceApplied;
+  }
+
+  public bool getHasHealthUpgrade()
+  {
+    return hasHealthUpgrade;
+  }
+
+  public bool getHasMovementUpgrade()
+  {
+    return hasMovementUpgrade;
+  }
+
+  public float getMaxForceSingleMove()
+  {
+    return maxForceSingleMove;
   }
 
 

@@ -20,14 +20,19 @@ public class SprayCollisionListener : MonoBehaviour {
 
   public void OnChildTriggerEnter2D(Collider2D other)
   {
-    if (other.gameObject.CompareTag(asteroidTag)) {
-      Debug.Log("sprayed asteroid");
-    } else if (other.gameObject.CompareTag(blastTag)) {
-      Debug.Log("sprayed laser blast");
-    } else if (other.gameObject.CompareTag(movementTag)) {
-      Debug.Log("sprayed fire extinguisher");
-    } else if (other.gameObject.CompareTag(healthTag)) {
-      Debug.Log("sprayed oxygen tank");
+    if (player.getHasMovementUpgrade()) {
+      SpaceObject otherSpace = other.gameObject.GetComponent<SpaceObject>();
+      Debug.Log("Other space: " + otherSpace);
+      if (other.gameObject.CompareTag(asteroidTag)) {
+//        Debug.Log("trying to spray asteroid");
+        otherSpace.StartSpray(player.getLastForceApplied());
+      } else if (other.gameObject.CompareTag(blastTag)) {
+//        Debug.Log("sprayed laser blast");
+      } else if (other.gameObject.CompareTag(movementTag)) {
+//        Debug.Log("sprayed fire extinguisher");
+      } else if (other.gameObject.CompareTag(healthTag)) {
+//        Debug.Log("sprayed oxygen tank");
+      }
     }
   }
 }

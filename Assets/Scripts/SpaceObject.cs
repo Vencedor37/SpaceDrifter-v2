@@ -11,6 +11,8 @@ public class SpaceObject : MonoBehaviour {
   public bool destroyOnCollision;
   private bool overlapping = false;
   private float overlapTime = 0;
+  private bool sprayedRecently = false;
+  public float sprayCooldown = 1f;
 
 	// Use this for initialization
 	void Start () {
@@ -95,11 +97,28 @@ public class SpaceObject : MonoBehaviour {
   public void AdjustSpeed(float minSpeed, float maxSpeed) {
     MAX_SPEED = maxSpeed;
     MIN_SPEED = minSpeed;
-
   }
 
   public void AdjustMass(float mass) {
     GetComponent<Rigidbody2D>().mass = mass;
+  }
+
+  public void StartSpray(Vector3 force)
+  {
+    if (!sprayedRecently) {
+      StartCoroutine(Spray(force));
+    }
+  }
+
+  public IEnumerator Spray(Vector3 force)
+  {
+    Debug.Log("spraying");
+    sprayedRecently = true;
+    Vector3 toApply = force *= -1;
+    GetComponent<Rigidbody2D>().AddForce(toApply);
+    yield return new WaitForSeconds(sprayCooldown);
+    sprayedRecently = false;
+    yield return null;
   }
 
 

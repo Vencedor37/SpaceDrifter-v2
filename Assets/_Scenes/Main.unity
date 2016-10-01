@@ -1352,7 +1352,7 @@ MonoBehaviour:
   - 25
   - 1
   - 120
-  - 1
+  - 0
   - 300
   - 360
   - 420
@@ -1893,7 +1893,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011829657288, guid: 1ca7cbb53b98b4276aed4e4e377b92d9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.058
       objectReference: {fileID: 0}
     - target: {fileID: 4000011829657288, guid: 1ca7cbb53b98b4276aed4e4e377b92d9, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2008,6 +2008,51 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 778002976}
+    - target: {fileID: 68000011614513376, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012455951942, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: hasMovementUpgrade
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012455951942, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: maxForceSingleMove
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000011301914290, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -520203275
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000013879226850, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -520203275
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000014231186434, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -520203275
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000013467944222, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -520203275
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000011552333440, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -520203275
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000011106918092, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -520203275
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 60000012092528596, guid: 1ca7cbb53b98b4276aed4e4e377b92d9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1ca7cbb53b98b4276aed4e4e377b92d9, type: 2}
