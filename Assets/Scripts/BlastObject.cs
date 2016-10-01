@@ -2,13 +2,16 @@
 using System.Collections;
 
 public class BlastObject : SpaceObject {
+  public Transform playerT;
   public float offScreenCheckFrequency = 1;
+  public float accuracyFactor = 1;
   public bool isRepelled = false;
   public bool allCollisions = false;
 
 	// Use this for initialization
 	void Start () {
-    InvokeRepeating("CheckOffScreen", offScreenCheckFrequency, offScreenCheckFrequency);
+    InvokeRepeating("CheckNeedsDestroying", offScreenCheckFrequency, offScreenCheckFrequency);
+//    InvokeRepeating("HomeToPlayer", accuracyFactor, accuracyFactor);
 	}
 
 	// Update is called once per frame
@@ -23,13 +26,23 @@ public class BlastObject : SpaceObject {
           || other.gameObject.CompareTag("MovementPickup")) {
         Destroy(gameObject);
       }
+
+      if (isRepelled) {
+        if (other.gameObject.CompareTag("EnemySpaceship")) {
+          Debug.Log("POW!");
+          Destroy(other.gameObject);
+        }
+      }
     }
   }
 
-  void CheckOffScreen()
+  void CheckNeedsDestroying()
   {
     if (!GetComponent<Renderer>().isVisible) {
       StartCoroutine(DestroyMe());
+    }
+    if (GetComponent<Rigidbody2D>().velocity == Vector2.zero) {
+      Destroy(gameObject);
     }
   }
 
@@ -44,8 +57,9 @@ public class BlastObject : SpaceObject {
   {
     Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
     Vector3 dir = impulse;
-    Vector3 force = dir.normalized *-1 * rigidbody.velocity.magnitude;
+    Vector3 force = dir.normalized *-1.5f * rigidbody.velocity.magnitude;
     rigidbody.velocity = force;
     isRepelled = true;
   }
+
 }

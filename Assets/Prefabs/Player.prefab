@@ -330,7 +330,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010070837652}
-  m_LocalRotation: {x: -0, y: -0, z: 0.6688517, w: 0.7433959}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.05, y: -0.03, z: 0}
   m_LocalScale: {x: 59.378983, y: 36.8, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -919,8 +919,10 @@ MonoBehaviour:
   sprayAnimator: {fileID: 95000012771990326}
   upgradedHealthSprite: {fileID: 21300000, guid: 76b83c04464f24f6f9ce9d41615e5dbb,
     type: 3}
-  upgradedFuelSprite: {fileID: 21300000, guid: 8bde9f434f2c845c3a9d2bc44caee505, type: 3}
+  upgradedMovementSprite: {fileID: 21300000, guid: 8bde9f434f2c845c3a9d2bc44caee505,
+    type: 3}
   upgradedBothSprite: {fileID: 21300000, guid: 2d411f5e4499944dab3752c2db295272, type: 3}
+  noupgradesSprite: {fileID: 21300000, guid: e9d0172a319224435974a4f196f87b64, type: 3}
   debugMode: 0
   maxSpeed: 6.5
   currentHealth: 0
