@@ -4,6 +4,7 @@ using System.Collections;
 public class BlastObject : SpaceObject {
   public float offScreenCheckFrequency = 1;
   public bool isRepelled = false;
+  public bool allCollisions = false;
 
 	// Use this for initialization
 	void Start () {
@@ -17,9 +18,11 @@ public class BlastObject : SpaceObject {
 
   void OnTriggerEnter2D(Collider2D other)
   {
-    if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("HealthPickup")
-       || other.gameObject.CompareTag("MovementPickup")) {
-      Destroy(gameObject);
+    if (allCollisions) {
+      if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("HealthPickup")
+          || other.gameObject.CompareTag("MovementPickup")) {
+        Destroy(gameObject);
+      }
     }
   }
 
@@ -41,7 +44,7 @@ public class BlastObject : SpaceObject {
   {
     Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
     Vector3 dir = impulse;
-    Vector3 force = dir.normalized *-1 * rigidbody.velocity.magnitude; 
+    Vector3 force = dir.normalized *-1 * rigidbody.velocity.magnitude;
     rigidbody.velocity = force;
     isRepelled = true;
   }

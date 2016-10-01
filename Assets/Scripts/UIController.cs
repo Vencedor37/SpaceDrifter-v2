@@ -153,6 +153,13 @@ public class UIController : MonoBehaviour {
       extraMovementSlider.gameObject.SetActive(false);
       movementSlider.value = playerController.getCurrentMoveCapacity();
       movementAnimator.SetFloat("Movement", playerController.getCurrentMoveCapacity());
+      if (movementSlider.value <= 50 && movementSlider.value > 30) {
+        movementFill.color = Color.yellow;
+      } else if (movementSlider.value < 30) {
+        movementFill.color = Color.red;
+      } else if (movementSlider.value > 50) {
+        movementFill.color = fullHealthColour;
+      }
       movementFill.enabled = (movementSlider.value > 0);
     }
     if (playerController.getCurrentMoveCapacity() <= 0) {

@@ -292,14 +292,13 @@ public class PlayerController : MonoBehaviour {
     if (currentMoveCapacity > 0) {
       float moveCostAmount = magnitudeToMoveCostAmount(movement.magnitude);
       float forceUsed = force.magnitude / 50;
-
+      lastForceApplied = force;
       currentMoveCapacity -= moveCostAmount;
       rigidBody.angularVelocity = 0.0f;
       sprayAnimator.SetFloat("forceUsed", forceUsed);
       sprayAnimator.SetTrigger("StartSpray");
       StartCoroutine(DelayedForce(force, 0.15f));
       PlaySprayAudio(force.magnitude);
-      lastForceApplied = force;
     } else {
       lastForceApplied = Vector3.zero;
     }
