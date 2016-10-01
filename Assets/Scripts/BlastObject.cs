@@ -3,6 +3,7 @@ using System.Collections;
 
 public class BlastObject : SpaceObject {
   public Transform playerT;
+  public PlayerController player;
   public float offScreenCheckFrequency = 1;
   public float accuracyFactor = 1;
   public bool isRepelled = false;
@@ -26,20 +27,21 @@ public class BlastObject : SpaceObject {
           || other.gameObject.CompareTag("MovementPickup")) {
         Destroy(gameObject);
       }
-
-      if (isRepelled) {
-        if (other.gameObject.CompareTag("EnemySpaceship")) {
-          Debug.Log("POW!");
-          Destroy(other.gameObject);
-        }
+    }
+    if (isRepelled && GetComponent<Renderer>().isVisible) {
+      if (other.gameObject.CompareTag("EnemySpaceship")) {
+        SpaceObject spaceShip = other.gameObject.GetComponent<SpaceObject>();
+        player.StartBonus(spaceShip.getPointsBonus(), "UFO");
+        other.gameObject.SetActive(false);
+        Destroy(gameObject);
       }
     }
   }
 
   void CheckNeedsDestroying()
   {
-    if (!GetComponent<Renderer>().isVisible) {
-      StartCoroutine(DestroyMe());
+    if (gameObject.activeSelf && !GetComponent<Renderer>().isVisible) {
+      Destroy(gameObject);
     }
     if (GetComponent<Rigidbody2D>().velocity == Vector2.zero) {
       Destroy(gameObject);
@@ -57,7 +59,7 @@ public class BlastObject : SpaceObject {
   {
     Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
     Vector3 dir = impulse;
-    Vector3 force = dir.normalized *-1.5f * rigidbody.velocity.magnitude;
+    Vector3 force = dir.normalized *-1.25f * rigidbody.velocity.magnitude;
     rigidbody.velocity = force;
     isRepelled = true;
   }

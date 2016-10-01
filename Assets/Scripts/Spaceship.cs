@@ -33,6 +33,7 @@ public class Spaceship : SpaceObject {
           BlastObject blast = (BlastObject)Instantiate(primaryBlast, transform.position, transform.rotation);
           blast.transform.SetParent(GetComponent<Transform>(), true);
           blast.playerT = player.transform;
+          blast.player = player.GetComponent<PlayerController>();
           setInitialValues(blast);
           hasFired = true;
         }
