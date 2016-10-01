@@ -22,7 +22,7 @@ public class StatisticRenderer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-    if (!player.alive) {
+    if (!player.getAlive()) {
       string pad = "    ";
       float time = stats.timeLasted;
       string formattedTime;

@@ -39,7 +39,7 @@ public class SpaceObjectController : MonoBehaviour {
 
   void RunChecks()
   {
-    if (playerController.alive) {
+    if (playerController.getAlive()) {
       if (needsCleaning) {
         StartCoroutine("CleanActiveList");
       }

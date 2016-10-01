@@ -70,7 +70,7 @@ public class UIController : MonoBehaviour {
 
 	// Update is called once per frame
   void Update () {
-    if (playerController.alive && !isPaused) {
+    if (playerController.getAlive()&& !isPaused) {
       LineRenderer lineRenderer = GetComponent<LineRenderer>();
       if (playerController.isInputCurrentlyDown()) {
         lineRenderer.SetWidth(lineBaseWidth, lineTopWidth);
@@ -87,15 +87,14 @@ public class UIController : MonoBehaviour {
     UpdateHealthSlider();
     UpdateMovementSlider();
     UpdateScoreText();
-    UpdateCounterText();
     UpdateBonusText();
     UpdatePauseDisplay();
 
-    if (playerController.isGameOver) {
+    if (playerController.getIsGameOver()) {
       ShowGameOverUI();
-      if (playerController.causeOfDeath == "oxygen") {
+      if (playerController.getCauseOfDeath() == "oxygen") {
         gameOverSubtitle.text = "Ran out of oxygen";
-      } else if (playerController.causeOfDeath == "asteroid") {
+      } else if (playerController.getCauseOfDeath() == "asteroid") {
         gameOverSubtitle.text = "Hit by an asteroid";
       }
     } else {
@@ -106,7 +105,7 @@ public class UIController : MonoBehaviour {
 
   private void UpdatePauseDisplay()
   {
-    if (isPaused && !playerController.isGameOver) {
+    if (isPaused && !playerController.getIsGameOver()) {
       pauseText.enabled = true;
     } else {
       pauseText.enabled = false;
@@ -122,8 +121,7 @@ public class UIController : MonoBehaviour {
       healthFill.color = Color.yellow;
     } else if (healthSlider.value < 30) {
       if (!quickHealthLoss) {
-        playerController.healthLossRate *= .4f;
-        playerController.healthLossAmount *= .4f;
+        playerController.RescaleHealthRates(.4f);
         quickHealthLoss = true;
       }
       healthFill.color = Color.red;
@@ -144,11 +142,13 @@ public class UIController : MonoBehaviour {
     }
   }
 
+  /*
   public void UpdateCounterText()
   {
     healthCountText.text = "X " + playerController.activeHealthCount;
     movementCountText.text = "X " + playerController.activeMovementCount;
   }
+  */
 
   public void HideGameOverUI()
   {
@@ -179,7 +179,7 @@ public class UIController : MonoBehaviour {
 
   public void CheckSpeed()
   {
-    if (isPaused || !playerController.alive) {
+    if (isPaused || !playerController.getAlive()) {
       Time.timeScale = 0.0f;
     } else if (isFastForward) {
       Time.timeScale = fastSpeed;
@@ -210,16 +210,16 @@ public class UIController : MonoBehaviour {
   {
     int score = playerController.getCurrentScore();
     scoreText.text = "Score: " + score;
-    levelText.text = "Bonus: x" + playerController.scoreMultiplier;
+    levelText.text = "Bonus: x" + playerController.getScoreMultiplier();
   }
 
   public void UpdateBonusText()
   {
-    if (playerController.showBonus) {
-      if (playerController.bonusAmount > 0) {
-        bonusText.text = playerController.bonusType + " +" + playerController.bonusAmount * playerController.scoreMultiplier;
+    if (playerController.getShowBonus()) {
+      if (playerController.getBonusAmount() > 0) {
+        bonusText.text = playerController.getBonusType() + " +" + playerController.getBonusAmount() * playerController.getScoreMultiplier();
       } else {
-        bonusText.text = playerController.bonusType;
+        bonusText.text = playerController.getBonusType();
       }
       bonusText.enabled = true;
     } else {

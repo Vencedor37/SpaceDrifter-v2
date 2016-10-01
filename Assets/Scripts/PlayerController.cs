@@ -4,67 +4,58 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
   public Camera mainCamera;
-  public bool debugMode;
+  public UIController UI;
+  public AudioTracks audioTracks;
   public StatTracker stats;
-  public bool alive;
-  public float maxSpeed;
-  public float startingMoveCapacity;
-  public float maxMoveCapacity;
-  public float moveCost;
-
-  public SpaceObjectController healthPickupController;
-  public int activeHealthCount;
-  public SpaceObjectController movementPickupController;
-  public int activeMovementCount;
-  public int enemiesPerLevel;
-
-  public float maxHealth;
-  public float startingHealth;
-  public float healthLossRate;
-  public float healthLossAmount;
-  private float healthLossCounter = 0;
-  private float currentHealth;
-
-  public int startingScore;
-  public float scoreIncreaseRate;
-  public int scoreIncreaseAmount;
-  public int scoreCheckpoint;
-  public int scoreMultiplier = 1;
-
-  public int checkPointHealthBonus;
-  public int checkPointMovementBonus;
-  private float scoreIncreaseCounter = 0;
-  private int currentScore;
-  private int scoreCheckpointTracker = 0;
-  private int highScore;
-  string highScoreKey = "HighScore";
-
+  public GameObject itemDrawZone;
+  public GameObject safetyZone;
   public Transform spraySprite;
   public Animator sprayAnimator;
+  public bool debugMode;
+  public float maxSpeed;
+  public float currentHealth;
+  public float currentMoveCapacity;
+  public int scoreCheckpoint;
+
+  private bool alive = true;
+  private bool isGameOver = false;
+  private bool beatHighScore = false;
+  private bool playerHurt = false;
+  private bool releaseOccurred = false;
+  private bool showBonus = false;
+
+  private float startingMoveCapacity = 100;
+  private float maxMoveCapacity = 100;
+  private float moveCost = 5;
+
+  private float maxHealth = 100;
+  private float startingHealth = 100;
+  private float healthLossRate = 2;
+  private float healthLossAmount = 2;
+  private float healthLossCounter = 0;
+
+  private int startingScore = 0;
+  private float scoreIncreaseRate = 1;
+  private int scoreIncreaseAmount = 1;
+  private float scoreIncreaseCounter = 0;
+  private int scoreCheckpointTracker = 0;
+  private int scoreMultiplier = 1;
+  private int currentScore;
+  private int highScore;
+  private string highScoreKey = "HighScore";
 
   private Rigidbody2D rigidBody;
   private Vector3 pressPosition;
   private Vector3 releasePosition;
   private Vector3 currentPosition;
-  private float currentMoveCapacity;
-  private bool beatHighScore = false;
-  public bool isGameOver = false;
-  private bool playerHurt = false;
-  public float hurtTimeLimit = 3;
   private float hurtTimeCount = 0;
+  private float hurtTimeLimit = 0.225f;
 
-  private bool releaseOccurred = false;
+  private int bonusAmount;
+  private string bonusType;
+  private string causeOfDeath;
 
-  public GameObject itemDrawZone;
-  public GameObject safetyZone;
 
-  public bool showBonus = false;
-  public int bonusAmount;
-  public string bonusType;
-  public string causeOfDeath;
-  public UIController UI;
-
-  public AudioTracks audioTracks;
   void Awake() {
     Application.targetFrameRate = 60;
   }
@@ -79,8 +70,6 @@ public class PlayerController : MonoBehaviour {
     currentMoveCapacity = startingMoveCapacity;
     currentScore = startingScore;
     highScore = PlayerPrefs.GetInt(highScoreKey,0);
-    activeHealthCount = healthPickupController.activeCount;
-    activeMovementCount = movementPickupController.activeCount;
 
     GameObject[] debugVisible = GameObject.FindGameObjectsWithTag("VisibleInDebugMode");
     if (!debugMode) {
@@ -202,8 +191,6 @@ public class PlayerController : MonoBehaviour {
       StartBonus(0, "Level Up!");
       audioTracks.levelUpSource.Play();
       scoreCheckpointTracker = 0;
-      activeHealthCount = healthPickupController.AddActive(checkPointHealthBonus);
-      activeMovementCount = movementPickupController.AddActive(checkPointMovementBonus);
       currentHealth = maxHealth;
       currentMoveCapacity = maxMoveCapacity;
       healthLossCounter = 0;
@@ -315,7 +302,6 @@ public class PlayerController : MonoBehaviour {
       SpaceObject healthController = other.gameObject.GetComponent<SpaceObject>();
       if (healthController.destroyOnCollision) {
         other.gameObject.SetActive(false);
-        activeHealthCount --;
       }
       if (currentHealth + healthController.getHealthBonus() <= maxHealth) {
         currentHealth += healthController.getHealthBonus();
@@ -333,7 +319,6 @@ public class PlayerController : MonoBehaviour {
       SpaceObject movementPickupController = other.gameObject.GetComponent<SpaceObject>();
       if (movementPickupController.destroyOnCollision) {
         other.gameObject.SetActive(false);
-        activeMovementCount --;
       }
       if (currentMoveCapacity + movementPickupController.getMovementBonus() <= maxMoveCapacity) {
         currentMoveCapacity += movementPickupController.getMovementBonus();
@@ -595,6 +580,47 @@ public class PlayerController : MonoBehaviour {
     itemDrawZoneScale.x = itemDrawZoneScale.x * (oldWidth/newWidth);
     itemDrawZoneScale.y = itemDrawZoneScale.y * (oldHeight/newHeight);
     itemDrawZone.transform.localScale = itemDrawZoneScale;
+  }
+
+  public void RescaleHealthRates(float scale)
+  {
+    healthLossRate *= scale;
+    healthLossAmount *= scale;
+  }
+
+  public string getBonusType()
+  {
+    return bonusType;
+  }
+
+  public float getBonusAmount()
+  {
+    return bonusAmount;
+  }
+
+  public float getScoreMultiplier()
+  {
+    return scoreMultiplier;
+  }
+
+  public string getCauseOfDeath()
+  {
+    return causeOfDeath;
+  }
+
+  public bool getShowBonus()
+  {
+    return showBonus;
+  }
+
+  public bool getAlive()
+  {
+    return alive;
+  }
+
+  public bool getIsGameOver()
+  {
+    return isGameOver;
   }
 
 
