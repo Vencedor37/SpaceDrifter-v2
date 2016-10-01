@@ -32,11 +32,13 @@ public class UIController : MonoBehaviour {
   public Color fullHealthColour;
   public Shader lineShader;
   public Slider healthSlider;
+  public Slider extraHealthSlider;
   public Image healthFill;
   public Animator healthAnimator;
 
 
   public Slider movementSlider;
+  public Slider extraMovementSlider;
   public Image movementFill;
   public Animator movementAnimator;
 
@@ -115,26 +117,44 @@ public class UIController : MonoBehaviour {
 
   private void UpdateHealthSlider()
   {
-    healthSlider.value = playerController.getCurrentHealth();
-    healthAnimator.SetFloat("Health", playerController.getCurrentHealth());
-    if (healthSlider.value <= 50 && healthSlider.value > 30) {
-      healthFill.color = Color.yellow;
-    } else if (healthSlider.value < 30) {
-      if (!quickHealthLoss) {
-        playerController.RescaleHealthRates(.4f);
-        quickHealthLoss = true;
+    if (playerController.HasExtraHealthBar()) {
+      extraHealthSlider.gameObject.SetActive(true);
+      healthSlider.value = playerController.getStartingMaxHealth();
+      extraHealthSlider.value = playerController.GetExtraHealthAmount();
+    } else {
+      extraHealthSlider.gameObject.SetActive(false);
+      healthSlider.value = playerController.getCurrentHealth();
+      healthAnimator.SetFloat("Health", playerController.getCurrentHealth());
+      if (healthSlider.value <= 50 && healthSlider.value > 30) {
+        healthFill.color = Color.yellow;
+      } else if (healthSlider.value < 30) {
+        if (!quickHealthLoss) {
+          playerController.RescaleHealthRates(.4f);
+          quickHealthLoss = true;
+        }
+        healthFill.color = Color.red;
+      } else if (healthSlider.value > 50) {
+        healthFill.color = fullHealthColour;
       }
-      healthFill.color = Color.red;
-    } else if (healthSlider.value > 50) {
-      healthFill.color = fullHealthColour;
+    }
+    if (healthSlider.value > 30 && quickHealthLoss) {
+      playerController.RescaleHealthRates(2.5f);
     }
   }
 
+
   private void UpdateMovementSlider()
   {
-    movementSlider.value = playerController.getCurrentMoveCapacity();
-    movementAnimator.SetFloat("Movement", playerController.getCurrentMoveCapacity());
-    movementFill.enabled = (movementSlider.value > 0);
+    if (playerController.HasExtraMovementBar()) {
+      extraMovementSlider.gameObject.SetActive(true);
+      movementSlider.value = playerController.getStartingMaxMoveCapacity();
+      extraMovementSlider.value = playerController.GetExtraMoveAmount();
+    } else {
+      extraMovementSlider.gameObject.SetActive(false);
+      movementSlider.value = playerController.getCurrentMoveCapacity();
+      movementAnimator.SetFloat("Movement", playerController.getCurrentMoveCapacity());
+      movementFill.enabled = (movementSlider.value > 0);
+    }
     if (playerController.getCurrentMoveCapacity() <= 0) {
       lineRenderer.SetColors(Color.red, Color.black);
     } else {

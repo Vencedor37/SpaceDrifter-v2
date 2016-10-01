@@ -22,16 +22,16 @@ public class SprayCollisionListener : MonoBehaviour {
   {
     if (player.getHasMovementUpgrade()) {
       SpaceObject otherSpace = other.gameObject.GetComponent<SpaceObject>();
-      Debug.Log("Other space: " + otherSpace);
       if (other.gameObject.CompareTag(asteroidTag)) {
-//        Debug.Log("trying to spray asteroid");
         otherSpace.StartSpray(player.getLastForceApplied());
       } else if (other.gameObject.CompareTag(blastTag)) {
-//        Debug.Log("sprayed laser blast");
+        //probably need smarter blast handling
+        BlastObject otherBlast = (BlastObject)otherSpace;
+        otherBlast.Repel(player.getLastForceApplied());
       } else if (other.gameObject.CompareTag(movementTag)) {
-//        Debug.Log("sprayed fire extinguisher");
+        otherSpace.StartSpray(player.getLastForceApplied());
       } else if (other.gameObject.CompareTag(healthTag)) {
-//        Debug.Log("sprayed oxygen tank");
+        otherSpace.StartSpray(player.getLastForceApplied());
       }
     }
   }

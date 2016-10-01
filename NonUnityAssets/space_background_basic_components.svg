@@ -22,6 +22,30 @@
      id="defs4">
     <linearGradient
        inkscape:collect="always"
+       id="linearGradient6415">
+      <stop
+         style="stop-color:#ffdc72;stop-opacity:1"
+         offset="0"
+         id="stop6417" />
+      <stop
+         style="stop-color:#ffeb7c;stop-opacity:0"
+         offset="1"
+         id="stop6419" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6367"
+       inkscape:collect="always">
+      <stop
+         id="stop6369"
+         offset="0"
+         style="stop-color:#ffdc72;stop-opacity:1" />
+      <stop
+         id="stop6371"
+         offset="1"
+         style="stop-color:#ffeb7c;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
        id="linearGradient6395">
       <stop
          style="stop-color:#ef3e35;stop-opacity:1;"
@@ -1744,6 +1768,26 @@
          stdDeviation="3.6468485"
          id="feGaussianBlur6829-9-6-3" />
     </filter>
+    <linearGradient
+       gradientTransform="matrix(1.0083962,0,0,1.0061881,396.68742,20.544346)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient6367"
+       id="linearGradient5419-9"
+       x1="304.93979"
+       y1="392.76413"
+       x2="360.1825"
+       y2="391.65927"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6415"
+       id="linearGradient5737-6-3-1"
+       x1="-166.89592"
+       y1="131.06239"
+       x2="-108.46873"
+       y2="131.84364"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(967.21191,278.29671)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -1752,9 +1796,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.45254834"
-     inkscape:cx="-1594.0191"
-     inkscape:cy="426.83084"
+     inkscape:zoom="1.28"
+     inkscape:cx="709.64203"
+     inkscape:cy="707.65669"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -10258,5 +10302,135 @@
          style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#2e2e2e;stroke-width:1.49994922;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99607843"
          sodipodi:type="star" />
     </g>
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5475-5"
+       width="12.5"
+       height="29.6875"
+       x="717.66193"
+       y="246.74088"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:1;fill:#bea700;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60453641;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5472-2"
+       sodipodi:type="arc"
+       sodipodi:cx="723.50452"
+       sodipodi:cy="526.63513"
+       sodipodi:rx="41.465794"
+       sodipodi:ry="20.419182"
+       sodipodi:start="0"
+       sodipodi:end="3.1354601"
+       d="m 764.97031,526.63513 a 41.465794,20.419182 0 0 1 -41.33865,20.41909 41.465794,20.419182 0 0 1 -41.59216,-20.29387 l 41.46502,-0.12522 z"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <circle
+       style="opacity:1;fill:#448560;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5409-3"
+       cx="723.19482"
+       cy="302.68375"
+       r="40.879612"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#726300;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5411-7-4"
+       width="81.759224"
+       height="223.18057"
+       x="683.14386"
+       y="304.89343"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:url(#linearGradient5419-9);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5411-9"
+       width="82.445694"
+       height="224.56165"
+       x="681.90497"
+       y="304.56982"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#afafaf;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.86017579px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 729.81517,235.96501 0.80747,16.77845 -43.60317,5.5928 -0.2365,-18.14512 z"
+       id="path5362-6-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#b49e00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5656-2-2-3"
+       width="13.258252"
+       height="23.754368"
+       x="827.96667"
+       y="275.59863"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#686868;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.86226064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 841.16365,258.8838 0.81147,16.7768 -43.81911,5.59225 -0.23767,-18.14333 z"
+       id="path5362-7-0-3-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="opacity:1;fill:#bea700;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5661-1-5-3"
+       cx="832.97473"
+       cy="512.32935"
+       rx="43.244965"
+       ry="21.484375"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="opacity:1;fill:#bea700;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5661-5-7"
+       cx="832.97473"
+       cy="308.32947"
+       rx="43.244965"
+       ry="21.484375"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#685c00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5659-0-2"
+       width="86.71875"
+       height="205.46875"
+       x="789.60193"
+       y="308.79361"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:url(#linearGradient5737-6-3-1);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5659-6-8-8-3"
+       width="86.71875"
+       height="205.46875"
+       x="790.15979"
+       y="308.18723"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.08480513px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 789.58598,360.63595 0,50.96779 86.45304,0 0,-50.96779 z"
+       id="path5366-4-6-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>

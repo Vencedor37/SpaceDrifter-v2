@@ -12,6 +12,8 @@ TagManager:
   - PointsPickup
   - VisibleInDebugMode
   - Blast
+  - HealthPickupUpgrade
+  - MovementPickupUpgrade
   layers:
   - Default
   - TransparentFX

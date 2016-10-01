@@ -215,10 +215,11 @@ MonoBehaviour:
   MAX_SPEED: 8
   MIN_SPEED: 8
   destroyOnCollision: 0
+  sprayCooldown: 1
   minShootDistance: 12
   blastDamage: 3
   blastFrequency: 1.5
-  blastSpeed: 11
+  blastSpeed: 9
   primaryBlast: {fileID: 114000013523221746, guid: ca1a48c2f9cd948f99b702d418156397,
     type: 2}
 --- !u!212 &212000010496919912

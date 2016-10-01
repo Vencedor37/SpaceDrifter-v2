@@ -2,7 +2,11 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-  public float maxForceSingleMove = 0;
+  private float maxForceSingleMove = 200;
+  private bool giveExtraHealth = false;
+  public bool giveExtraMovement = false;
+  private bool hasHealthUpgrade = false;
+  private bool hasMovementUpgrade = false;
 
   public Camera mainCamera;
   public UIController UI;
@@ -26,10 +30,14 @@ public class PlayerController : MonoBehaviour {
   private bool showBonus = false;
 
   private float startingMoveCapacity = 100;
+  private float startingMaxMoveCapacity = 100;
   private float maxMoveCapacity = 100;
   private float moveCost = 5;
+  private float extraMoveCapacityAmount = 100;
 
   private float maxHealth = 100;
+  private float startingMaxHealth = 100;
+  private float extraHealthAmount = 100;
   private float startingHealth = 100;
   private float healthLossRate = 2;
   private float healthLossAmount = 2;
@@ -57,8 +65,6 @@ public class PlayerController : MonoBehaviour {
   private string causeOfDeath;
 
   private Vector3 lastForceApplied;
-  public bool hasMovementUpgrade;
-  private bool hasHealthUpgrade = false;
 
 
   void Awake() {
@@ -136,6 +142,15 @@ public class PlayerController : MonoBehaviour {
       releaseOccurred = true;
     }
 
+    if (giveExtraMovement) {
+      maxMoveCapacity += extraMoveCapacityAmount;
+      currentMoveCapacity = maxMoveCapacity;
+      giveExtraMovement = false;
+      hasMovementUpgrade = true;
+      maxForceSingleMove += maxForceSingleMove * .2f;
+      maxSpeed += maxSpeed * .2f;
+    }
+
     UpdateHealth();
     UpdateScore();
 	}
@@ -174,6 +189,13 @@ public class PlayerController : MonoBehaviour {
 
   private void UpdateHealth()
   {
+    if (giveExtraHealth) {
+      maxHealth += extraHealthAmount;
+      currentHealth = maxHealth;
+      giveExtraHealth = false;
+      hasHealthUpgrade = true;
+    }
+
     healthLossCounter += Time.deltaTime;
     if (healthLossCounter >= healthLossRate) {
       healthLossCounter = 0;
@@ -268,7 +290,6 @@ public class PlayerController : MonoBehaviour {
       currentMoveCapacity -= moveCostAmount;
       rigidBody.angularVelocity = 0.0f;
       sprayAnimator.SetFloat("forceUsed", forceUsed);
-      Debug.Log("starting spray, force: " + forceUsed);
       sprayAnimator.SetTrigger("StartSpray");
       StartCoroutine(DelayedForce(force, 0.15f));
       PlaySprayAudio(force.magnitude);
@@ -362,6 +383,32 @@ public class PlayerController : MonoBehaviour {
         Destroy(other.gameObject);
       }
       TakeDamage(damage, "spaceship");
+    }
+
+    if (other.gameObject.CompareTag("HealthPickupUpgrade")) {
+      if (HasExtraHealthBar()) {
+        Debug.LogError("Can't get extra health twice");
+      }
+      audioTracks.levelUpSource.Play();
+      SpaceObject healthUpgrade = other.gameObject.GetComponent<SpaceObject>();
+      if (healthUpgrade.destroyOnCollision) {
+        other.gameObject.SetActive(false);
+      }
+      giveExtraHealth = true;
+      StartBonus(healthUpgrade.getPointsBonus(), "Oxygen Upgrade!");
+    }
+
+    if (other.gameObject.CompareTag("MovementPickupUpgrade")) {
+      if (HasExtraMovementBar()) {
+        Debug.LogError("Can't get extra movement twice");
+      }
+      audioTracks.levelUpSource.Play();
+      SpaceObject movementUpgrade = other.gameObject.GetComponent<SpaceObject>();
+      if (movementUpgrade.destroyOnCollision) {
+        other.gameObject.SetActive(false);
+      }
+      giveExtraMovement = true;
+      StartBonus(movementUpgrade.getPointsBonus(), "Fuel Upgrade!");
     }
   }
 
@@ -646,9 +693,39 @@ public class PlayerController : MonoBehaviour {
     return lastForceApplied;
   }
 
-  public bool getHasHealthUpgrade()
+  public float getMaxForceSingleMove()
   {
-    return hasHealthUpgrade;
+    return maxForceSingleMove;
+  }
+
+  public float getStartingMaxHealth()
+  {
+    return startingMaxHealth;
+  }
+
+  public bool HasExtraHealthBar()
+  {
+    return currentHealth > startingMaxHealth;
+  }
+
+  public float GetExtraHealthAmount()
+  {
+    return currentHealth - startingMaxHealth;
+  }
+
+  public bool HasExtraMovementBar()
+  {
+    return currentMoveCapacity > startingMaxMoveCapacity;
+  }
+
+  public float GetExtraMoveAmount()
+  {
+    return currentMoveCapacity - startingMaxMoveCapacity;
+  }
+
+  public float getStartingMaxMoveCapacity()
+  {
+    return startingMaxMoveCapacity;
   }
 
   public bool getHasMovementUpgrade()
@@ -656,9 +733,9 @@ public class PlayerController : MonoBehaviour {
     return hasMovementUpgrade;
   }
 
-  public float getMaxForceSingleMove()
+  public bool getHasHealthUpgrade()
   {
-    return maxForceSingleMove;
+    return hasHealthUpgrade;
   }
 
 
