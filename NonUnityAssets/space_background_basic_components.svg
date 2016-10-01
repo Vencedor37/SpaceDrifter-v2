@@ -1796,9 +1796,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.28"
-     inkscape:cx="709.64203"
-     inkscape:cy="707.65669"
+     inkscape:zoom="0.64"
+     inkscape:cx="348.63649"
+     inkscape:cy="358.61778"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -10309,7 +10309,7 @@
        height="29.6875"
        x="717.66193"
        y="246.74088"
-       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -10323,7 +10323,7 @@
        sodipodi:start="0"
        sodipodi:end="3.1354601"
        d="m 764.97031,526.63513 a 41.465794,20.419182 0 0 1 -41.33865,20.41909 41.465794,20.419182 0 0 1 -41.59216,-20.29387 l 41.46502,-0.12522 z"
-       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <circle
@@ -10332,7 +10332,7 @@
        cx="723.19482"
        cy="302.68375"
        r="40.879612"
-       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -10342,7 +10342,7 @@
        height="223.18057"
        x="683.14386"
        y="304.89343"
-       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -10352,7 +10352,7 @@
        height="224.56165"
        x="681.90497"
        y="304.56982"
-       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -10361,7 +10361,7 @@
        id="path5362-6-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -10371,7 +10371,7 @@
        height="23.754368"
        x="827.96667"
        y="275.59863"
-       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -10380,7 +10380,7 @@
        id="path5362-7-0-3-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <ellipse
@@ -10390,7 +10390,7 @@
        cy="512.32935"
        rx="43.244965"
        ry="21.484375"
-       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <ellipse
@@ -10400,7 +10400,7 @@
        cy="308.32947"
        rx="43.244965"
        ry="21.484375"
-       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -10410,7 +10410,7 @@
        height="205.46875"
        x="789.60193"
        y="308.79361"
-       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -10420,7 +10420,7 @@
        height="205.46875"
        x="790.15979"
        y="308.18723"
-       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
@@ -10429,7 +10429,7 @@
        id="path5366-4-6-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher.png"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>

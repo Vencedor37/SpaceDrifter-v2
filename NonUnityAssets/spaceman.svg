@@ -101,6 +101,121 @@
          stdDeviation="2.3410501"
          id="feGaussianBlur5756-6-2" />
     </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6415"
+       id="linearGradient5737-6-3-1"
+       x1="-166.89592"
+       y1="131.06239"
+       x2="-108.46873"
+       y2="131.84364"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(197.10799,372.3195)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6415">
+      <stop
+         style="stop-color:#ffdc72;stop-opacity:1"
+         offset="0"
+         id="stop6417" />
+      <stop
+         style="stop-color:#ffeb7c;stop-opacity:0"
+         offset="1"
+         id="stop6419" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6370"
+       id="radialGradient6376-8"
+       cx="541.43207"
+       cy="406.90567"
+       fx="541.43207"
+       fy="406.90567"
+       r="91.172188"
+       gradientTransform="matrix(0.74100541,-0.16411431,0.15953244,0.72031743,505.34011,206.98775)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="matrix(1.0083962,0,0,1.0061881,-88.354101,228.45177)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient6415"
+       id="linearGradient5419-9-0"
+       x1="304.93979"
+       y1="392.76413"
+       x2="360.1825"
+       y2="391.65927"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="matrix(1.0083962,0,0,1.0061881,454.09782,249.79253)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient6415"
+       id="linearGradient5419-9-2"
+       x1="304.93979"
+       y1="392.76413"
+       x2="360.1825"
+       y2="391.65927"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6370"
+       id="radialGradient6376-4"
+       cx="541.43207"
+       cy="406.90567"
+       fx="541.43207"
+       fy="406.90567"
+       r="91.172188"
+       gradientTransform="matrix(0.74100541,-0.16411431,0.15953244,0.72031743,919.63778,224.17688)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="matrix(1.0073623,0,0,0.62584162,857.40286,435.65715)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient5413"
+       id="linearGradient5419-9"
+       x1="304.93979"
+       y1="392.76413"
+       x2="360.1825"
+       y2="391.65927"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6415"
+       id="linearGradient5737-6-3-1-0"
+       x1="-166.89592"
+       y1="131.06239"
+       x2="-108.46873"
+       y2="131.84364"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(1689.4058,537.51236)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6370"
+       id="radialGradient6376-4-9"
+       cx="541.43207"
+       cy="406.90567"
+       fx="541.43207"
+       fy="406.90567"
+       r="91.172188"
+       gradientTransform="matrix(0.74100541,-0.16411431,0.15953244,0.72031743,1438.9782,226.19718)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6415"
+       id="linearGradient5737-6-3-1-0-4"
+       x1="-166.89592"
+       y1="131.06239"
+       x2="-108.46873"
+       y2="131.84364"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(1689.4058,537.51236)" />
+    <linearGradient
+       gradientTransform="matrix(1.0083962,0,0,1.0061881,454.09782,249.79253)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient6415"
+       id="linearGradient5419-9-2-5"
+       x1="304.93979"
+       y1="392.76413"
+       x2="360.1825"
+       y2="391.65927"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -109,16 +224,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="889.90532"
-     inkscape:cy="950.63414"
+     inkscape:zoom="0.35"
+     inkscape:cx="1002.3823"
+     inkscape:cy="682.63039"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer13"
      showgrid="false"
      inkscape:window-width="1680"
      inkscape:window-height="951"
-     inkscape:window-x="45"
-     inkscape:window-y="47"
+     inkscape:window-x="13"
+     inkscape:window-y="0"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
@@ -136,6 +251,125 @@
      inkscape:groupmode="layer"
      id="layer13"
      inkscape:label="Fire Existinguisher">
+    <g
+       id="g7685-4"
+       transform="matrix(0.72151915,-0.06691987,0.08046041,0.60009591,1154.7158,244.89378)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+         d="m 822.38071,755.8833 a 41.465794,20.419182 0 0 1 -41.33865,20.41909 41.465794,20.419182 0 0 1 -41.59216,-20.29387 l 41.46502,-0.12522 z"
+         sodipodi:end="3.1354601"
+         sodipodi:start="0"
+         sodipodi:ry="20.419182"
+         sodipodi:rx="41.465794"
+         sodipodi:cy="755.8833"
+         sodipodi:cx="780.91492"
+         sodipodi:type="arc"
+         id="path5472-2-4-6"
+         style="opacity:1;fill:#bea700;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60453641;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="40.879612"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+         cy="531.93195"
+         cx="780.60522"
+         id="path5409-3-4-4"
+         style="opacity:1;fill:#448560;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+         y="534.1416"
+         x="740.55426"
+         height="223.18057"
+         width="81.759224"
+         id="rect5411-7-4-1-9"
+         style="opacity:1;fill:#726300;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+         y="533.81799"
+         x="739.31537"
+         height="224.56165"
+         width="82.445694"
+         id="rect5411-9-0-8"
+         style="opacity:1;fill:url(#linearGradient5419-9-2-5);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g7685"
+       transform="matrix(0.72151915,-0.06691987,0.08046041,0.60009591,223.6112,226.90431)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+         d="m 822.38071,755.8833 a 41.465794,20.419182 0 0 1 -41.33865,20.41909 41.465794,20.419182 0 0 1 -41.59216,-20.29387 l 41.46502,-0.12522 z"
+         sodipodi:end="3.1354601"
+         sodipodi:start="0"
+         sodipodi:ry="20.419182"
+         sodipodi:rx="41.465794"
+         sodipodi:cy="755.8833"
+         sodipodi:cx="780.91492"
+         sodipodi:type="arc"
+         id="path5472-2-4"
+         style="opacity:1;fill:#bea700;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60453641;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="40.879612"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+         cy="531.93195"
+         cx="780.60522"
+         id="path5409-3-4"
+         style="opacity:1;fill:#448560;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+         y="534.1416"
+         x="740.55426"
+         height="223.18057"
+         width="81.759224"
+         id="rect5411-7-4-1"
+         style="opacity:1;fill:#726300;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+         y="533.81799"
+         x="739.31537"
+         height="224.56165"
+         width="82.445694"
+         id="rect5411-9-0"
+         style="opacity:1;fill:url(#linearGradient5419-9-2);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5475-5-1"
+       width="12.5"
+       height="29.6875"
+       x="232.62039"
+       y="454.64828"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <circle
+       style="opacity:1;fill:#448560;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5409-3-7"
+       cx="238.396"
+       cy="520.54016"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       r="40.879612" />
     <path
        style="opacity:1;fill:#a40000;fill-opacity:0.99607843;stroke:#020202;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 652.50595,507.86231 c -1.04938,-0.38926 -2.20656,0.1417 -2.59583,1.19108 l -5.28344,14.24304 c -10.87431,-1.91348 -21.87981,1.1251 -29.22313,8.44158 -0.47625,0.21376 -0.87224,0.61047 -1.06898,1.14083 l -0.0149,0.0403 c -2.32906,2.57933 -4.1347,5.5366 -5.33979,8.74547 -1.18186,3.2217 1.42917,-3.28053 0.25782,-0.004 l -49.00636,137.06964 c -0.37677,1.05393 0.3422,1.86919 1.19291,2.59651 12.10683,10.35084 24.94334,20.28308 54.93037,20.37635 1.11924,0.003 2.18489,-0.15005 2.59766,-1.1904 l 50.68067,-127.73465 c 1.603,-4.04017 1.20898,-3.62312 2.69894,-7.61275 5.15974,-13.91214 -1.74212,-29.62735 -15.60627,-37.51585 l 5.23928,-14.12402 c 0.38927,-1.04937 -0.14353,-2.20724 -1.19291,-2.5965 l -8.26602,-3.06627 z"
@@ -168,6 +402,1235 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc"
        inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#b49e00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5656-2-2-3"
+       width="13.258252"
+       height="23.754368"
+       x="57.862759"
+       y="369.62143"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#686868;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.86226064px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 71.059735,352.90659 0.81147,16.7768 -43.819111,5.59225 -0.23767,-18.14333 z"
+       id="path5362-7-0-3-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="opacity:1;fill:#bea700;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5661-1-5-3"
+       cx="62.870815"
+       cy="606.35211"
+       rx="43.244965"
+       ry="21.484375"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="opacity:1;fill:#bea700;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5661-5-7"
+       cx="62.870815"
+       cy="402.35226"
+       rx="43.244965"
+       ry="21.484375"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#685c00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5659-0-2"
+       width="86.71875"
+       height="205.46875"
+       x="19.498013"
+       y="402.81641"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:url(#linearGradient5737-6-3-1);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5659-6-8-8-3"
+       width="86.71875"
+       height="205.46875"
+       x="20.055874"
+       y="402.21002"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.08480513px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 19.482064,454.65873 0,50.96779 86.453036,0 0,-50.96779 z"
+       id="path5366-4-6-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:1;fill:#a40000;fill-opacity:0.99607843;stroke:#020202;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1075.4064,514.67895 c -1.0494,-0.38926 -2.2065,0.1417 -2.5958,1.19108 l -5.2835,14.24304 c -10.8743,-1.91348 -21.8798,1.1251 -29.2231,8.44158 -0.4762,0.21376 -0.8722,0.61047 -1.069,1.14083 l -0.015,0.0403 c -2.329,2.57933 -4.1347,5.5366 -5.3398,8.74547 -1.1818,3.2217 1.4292,-3.28053 0.2579,-0.004 l -49.0064,137.06964 c -0.37677,1.05393 0.3422,1.86919 1.19291,2.59651 12.10683,10.35084 24.94339,20.28308 54.93039,20.37635 1.1192,0.003 2.1849,-0.15005 2.5976,-1.1904 l 50.6807,-127.73465 c 1.603,-4.04017 1.209,-3.62312 2.699,-7.61275 5.1597,-13.91214 -1.7422,-29.62735 -15.6063,-37.51585 l 5.2393,-14.12402 c 0.3892,-1.04937 -0.1436,-2.20724 -1.1929,-2.5965 l -8.2661,-3.06627 z"
+       id="rect6402-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-opacity:0.99607843;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1018.1157,589.00859 -16.5692,46.89712 58.9259,22.75105 18.3202,-47.50986 z"
+       id="path6425-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#a5a5a5;fill-opacity:0.99607843;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1084.7358,519.66236 6.7561,-16.15909 -64.0475,-14.23524 -6.3725,18.20595 z"
+       id="path6430-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#000000;fill-opacity:0.99607843;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1070.7804,521.34222 c -65.1196,-19.70294 -35.5439,55.12552 -25.9367,75.82158 l 46.9958,12.6026 -2.9138,-35.03751 -39.2269,12.42728 c -2.9283,-13.06763 -21.7667,-75.60086 17.3444,-58.81994 z"
+       id="path6432-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.89310932px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 928.74479,666.89874 7.89217,50.5926 35.6578,8.29703 12.24484,-46.91134 z"
+       id="path6214-3-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#7e7e7e;fill-opacity:1;fill-rule:evenodd;stroke:#020202;stroke-width:0.95789516px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 939.21187,728.82133 c 1.75958,3.06735 4.52389,5.58577 7.60286,6.92653 l 0.40579,0.70916 2.69435,0.20428 c 0.57337,0.0896 1.1388,0.1318 1.69097,0.12625 l 41.06328,3.10271 c 2.99298,1.14336 18.81368,-2.43539 21.14878,-3.29754 21.9693,-19.90444 -18.95684,-48.94811 -36.27183,-25.00653 -15.8428,2.54383 -47.48049,-1.78365 -38.3342,17.23514 z"
+       id="path6220-7-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="display:inline;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5475-3"
+       width="12.487185"
+       height="18.465406"
+       x="769.26416"
+       y="523.90057"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,0)" />
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.83581954px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 917.89315,617.31769 c -0.3547,40.01608 9.99262,48.15477 15.99828,63.3629 l 50.30054,1.99307 4.38714,-44.23785 c -2.72742,-9.11486 -4.84789,-19.43171 -10.08995,-25.04364 z"
+       id="path6210-1-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="translate(422.90046,6.8166398)"
+       id="g6382-8"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <ellipse
+         transform="matrix(0.99999643,0.00267291,-0.00287062,0.99999588,0,0)"
+         cx="523.17163"
+         cy="672.68774"
+         rx="13.665894"
+         ry="5.3916502"
+         id="path6212-9-9-7"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.80157626;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         cx="544.47736"
+         cy="670.31219"
+         rx="21.418476"
+         ry="13.14416"
+         id="path6212-8-3"
+         style="opacity:1;fill:#6c6969;fill-opacity:1;stroke:#000000;stroke-width:1.45891297;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.89310932px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 874.52387,678.59997 11.3121,48.84119 36.51923,3.98724 9.2449,-47.57734 z"
+       id="path6214-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#7e7e7e;fill-opacity:1;fill-rule:evenodd;stroke:#020202;stroke-width:0.95789516px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 884.60275,734.93865 c 1.18973,3.33245 3.4651,6.30354 6.25813,8.17159 l 0.27406,0.77028 2.61529,0.68096 c 0.54837,0.19029 1.09733,0.33256 1.64166,0.42543 l 39.85995,10.36776 c 2.74326,1.65845 18.94354,0.95394 21.39372,0.52131 25.13419,-15.6779 -10.00896,-51.55359 -31.27625,-31.07314 -16.03927,-0.31807 -46.40772,-10.21249 -40.76656,10.13581 z"
+       id="path6220-72"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.83581954px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 867.49195,614.24574 c -6.5608,39.67429 2.44439,48.76946 6.04434,64.45233 l 56.24846,3.53275 6.57926,-39.86956 c -1.29226,-9.31352 -3.80055,-19.95899 -8.13167,-26.04407 z"
+       id="path6210-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="translate(422.90046,6.8166398)"
+       id="g6378-1"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <ellipse
+         transform="matrix(0.99999591,0.00286158,-0.00268135,0.99999641,0,0)"
+         cx="465.33884"
+         cy="672.50171"
+         rx="12.794551"
+         ry="5.4041843"
+         id="path6212-9-7"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.77650201;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         transform="matrix(0.99999341,0.00362905,-0.0021143,0.99999776,0,0)"
+         cx="487.79089"
+         cy="669.55646"
+         rx="24.346478"
+         ry="13.04149"
+         id="path6212-1"
+         style="opacity:1;fill:#6c6969;fill-opacity:1;stroke:#000000;stroke-width:1.6639744;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g6201-7"
+       transform="matrix(1.6831051,0,0,1.8423727,-5.5524786,-435.39199)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6056-2-3"
+         d="m 605.03122,513.64119 8.25721,-0.98063 1.54823,9.47943 -7.74113,0.32688 z"
+         style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.81319004px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6058-1-2"
+         d="m 615.19838,521.46712 -7.60959,-7.91976 29.4964,-17.52456 10.69419,10.48945 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.93201226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="scccs"
+         inkscape:connector-curvature="0"
+         id="path6060-7-7"
+         d="m 616.39421,511.19441 16.20811,-0.39006 0.69486,6.46497 -15.58888,2.71306 c -5.98841,-1.43462 -4.25582,-8.71717 -1.31409,-8.78797 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.87434226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g6031-9-9"
+       transform="matrix(0.57855168,-0.77805552,1.0017212,0.71367502,131.55322,352.53473)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path5948-7-6-8"
+         d="m 340.38259,652.79502 40.28635,9.28378 16.02613,-10.0441 -46.57544,-29.0687"
+         style="fill:#e9e9e9;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.68356359px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6014-3-0-9"
+         d="m 336.60471,652.33643 c 0,0 9.917,-16.88603 16.67566,-28.50278 l 4.03596,4.44231 c -3.87582,4.07317 -7.99691,13.90345 -14.14563,26.58586 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.55498093px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 867.10335,626.20198 c 43.35211,11.42904 77.16093,3.78792 117.73891,-3.07513 3.51137,-38.21857 0.47164,-123.93259 10.5341,-114.6557 -50.13311,29.33282 -100.30199,21.94389 -140.86309,0.49764 z"
+       id="path5943-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#e9e9e9;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.70744717px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 889.93255,577.54869 45.02832,34.27479 9.57919,-38.33596 -48.54706,-42.31777"
+       id="path5948-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="opacity:1;fill:#6c6969;fill-opacity:1;stroke:#000000;stroke-width:1.70959234;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5946-8"
+       cx="965.63184"
+       cy="469.51877"
+       rx="17.943901"
+       ry="24.899483"
+       transform="matrix(0.99567296,0.09292665,-0.14582163,0.9893109,0,0)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g6093-0"
+       transform="matrix(1.5087578,0,0,1.4162932,130.76241,-243.58446)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6056-0"
+         d="m 567.70573,591.25083 8.08122,-1.51523 1.51523,14.64721 -7.57614,0.50508 z"
+         style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6058-2"
+         d="m 577.30218,606.40311 -2.0203,-18.68782 22.22335,-3.53553 3.03046,25.25381 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="scccs"
+         inkscape:connector-curvature="0"
+         id="path6060-6"
+         d="m 581.7831,585.21593 3.83798,-15.75199 6.42326,1.01015 -1.43388,15.7581 c -2.94245,5.40936 -9.52394,1.84268 -8.82736,-1.01626 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.87434226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6062-4"
+         d="m 595.16914,584.96321 17.38021,-5.86837 7.86594,27.89148 -18.84093,2.22356 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39656723px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g6031-6"
+       transform="matrix(0.96367735,-0.25834344,0.32557028,1.2144481,399.50279,-94.02576)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path5948-7-3"
+         d="M 340.38259,652.79502 390.14178,666.6813 393.1846,649.02539 350.11963,622.966"
+         style="fill:#e9e9e9;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.68356359px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6014-3-6"
+         d="m 336.60471,652.33643 c 0,0 9.917,-16.88603 16.67566,-28.50278 l 4.03596,4.44231 c -3.87582,4.07317 -7.99691,13.90345 -14.14563,26.58586 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 930.5305,608.53601 c 0.0327,-12.0357 1.73592,-24.51926 9.51426,-38.63142 l 5.82927,4.1893 c -4.63298,13.87158 -6.82438,25.57755 -9.28798,37.52495 z"
+       id="path6014-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="opacity:1;fill:#e2e2e2;fill-opacity:0.98823529;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4151-5"
+       cx="931.32788"
+       cy="424.97186"
+       rx="115.68092"
+       ry="103.43895"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="display:inline;opacity:1;fill:#44438f;fill-opacity:1;stroke:none;stroke-width:6.73525095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4136-1-4"
+       cx="945.65442"
+       cy="426.84671"
+       rx="87.804565"
+       ry="89.242134"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="display:inline;opacity:1;fill:url(#radialGradient6376-8);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4136-0"
+       cx="946.20502"
+       cy="425.37442"
+       rx="87.804565"
+       ry="89.242134"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="display:inline;opacity:1;fill:#448560;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 834.36473,482.49285 c -8.47705,-3.4018 -19.63239,46.01233 -0.60136,55.85594 l 96.59499,-25.48571 c 0.93429,-20.50855 -14.60187,-23.10312 -14.87035,-23.62095 -22.68427,6.21604 -49.38927,13.05369 -58.24219,19.26972 -4.9179,-5.61638 0,0 -22.88109,-26.019 z"
+       id="path5740-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_health.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:1;fill:#bea700;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60453641;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5472-2-1"
+       sodipodi:type="arc"
+       sodipodi:cx="238.46298"
+       sodipodi:cy="734.54254"
+       sodipodi:rx="41.465794"
+       sodipodi:ry="20.419182"
+       sodipodi:start="0"
+       sodipodi:end="3.1354601"
+       d="m 279.92878,734.54254 a 41.465794,20.419182 0 0 1 -41.33865,20.41909 41.465794,20.419182 0 0 1 -41.59216,-20.29387 l 41.46501,-0.12522 z"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <circle
+       style="opacity:1;fill:#448560;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5409-3-1"
+       cx="155.32079"
+       cy="546.95667"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       r="0" />
+    <rect
+       style="opacity:1;fill:#726300;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5411-7-4-9"
+       width="81.759224"
+       height="223.18057"
+       x="198.10234"
+       y="512.80084"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:url(#linearGradient5419-9-0);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5411-9-5"
+       width="82.445694"
+       height="224.56165"
+       x="196.86345"
+       y="512.47723"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#afafaf;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.86017579px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 244.77365,443.87243 0.80747,16.77845 -43.60317,5.5928 -0.2365,-18.14512 z"
+       id="path5362-6-3-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <circle
+       style="opacity:1;fill:#448560;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5409-3-6"
+       cx="271.90015"
+       cy="557.10834"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       r="0" />
+    <circle
+       style="opacity:1;fill:#448560;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5409-3-9"
+       cx="271.90015"
+       cy="557.10834"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       r="0" />
+    <circle
+       style="opacity:1;fill:#448560;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5409-3-3"
+       cx="271.90015"
+       cy="557.10834"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/oxygen_tank_gold.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       r="0" />
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.89310932px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1343.0424,684.08787 7.8922,50.5926 35.6578,8.29703 12.2449,-46.91134 z"
+       id="path6214-3-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#7e7e7e;fill-opacity:1;fill-rule:evenodd;stroke:#020202;stroke-width:0.95789516px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1353.5095,746.01046 c 1.7596,3.06735 4.5239,5.58577 7.6029,6.92653 l 0.4058,0.70916 2.6943,0.20428 c 0.5734,0.0896 1.1388,0.1318 1.691,0.12625 l 41.0633,3.10271 c 2.993,1.14336 18.8136,-2.43539 21.1488,-3.29754 21.9692,-19.90444 -18.9569,-48.94811 -36.2719,-25.00653 -15.8428,2.54383 -47.4805,-1.78365 -38.3342,17.23514 z"
+       id="path6220-7-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="display:inline;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5475-6"
+       width="12.487185"
+       height="18.465406"
+       x="1178.0482"
+       y="576.83563"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,0)" />
+    <path
+       style="display:inline;opacity:1;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.47653231;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5472-9"
+       sodipodi:type="arc"
+       sodipodi:cx="1183.8848"
+       sodipodi:cy="750.92786"
+       sodipodi:rx="41.423279"
+       sodipodi:ry="12.700582"
+       sodipodi:start="0"
+       sodipodi:end="3.1354601"
+       d="m 1225.308,750.92786 a 41.423279,12.700582 0 0 1 -41.2962,12.70052 41.423279,12.700582 0 0 1 -41.5495,-12.62264 l 41.4225,-0.0779 z"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,0)" />
+    <ellipse
+       style="display:inline;opacity:1;fill:#448560;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.47689775;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5409-8"
+       cx="1183.5754"
+       cy="611.63171"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       rx="40.837696"
+       ry="25.426819"
+       transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,0)" />
+    <rect
+       style="display:inline;opacity:1;fill:#555555;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5411-7-5"
+       width="81.675392"
+       height="138.81668"
+       x="1143.5656"
+       y="613.00616"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,0)" />
+    <rect
+       style="display:inline;opacity:1;fill:url(#linearGradient5419-9);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.47689775;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5411-3"
+       width="82.361168"
+       height="139.6757"
+       x="1142.3279"
+       y="612.31891"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,0)" />
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.83581954px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1332.1908,634.50682 c -0.3547,40.01608 9.9926,48.15477 15.9983,63.3629 l 50.3005,1.99307 4.3872,-44.23785 c -2.7275,-9.11486 -4.8479,-19.43171 -10.09,-25.04364 z"
+       id="path6210-1-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="translate(837.19813,24.005777)"
+       id="g6382-7"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <ellipse
+         transform="matrix(0.99999643,0.00267291,-0.00287062,0.99999588,0,0)"
+         cx="523.17163"
+         cy="672.68774"
+         rx="13.665894"
+         ry="5.3916502"
+         id="path6212-9-9-4"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.80157626;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         cx="544.47736"
+         cy="670.31219"
+         rx="21.418476"
+         ry="13.14416"
+         id="path6212-8-0"
+         style="opacity:1;fill:#6c6969;fill-opacity:1;stroke:#000000;stroke-width:1.45891297;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.89310932px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1288.8215,695.7891 11.3121,48.84119 36.5193,3.98724 9.2449,-47.57734 z"
+       id="path6214-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#7e7e7e;fill-opacity:1;fill-rule:evenodd;stroke:#020202;stroke-width:0.95789516px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1298.9004,752.12778 c 1.1897,3.33245 3.4651,6.30354 6.2581,8.17159 l 0.2741,0.77028 2.6153,0.68096 c 0.5484,0.19029 1.0973,0.33256 1.6416,0.42543 l 39.86,10.36776 c 2.7433,1.65845 18.9435,0.95394 21.3937,0.52131 25.1342,-15.6779 -10.0089,-51.55359 -31.2762,-31.07314 -16.0393,-0.31807 -46.4078,-10.21249 -40.7666,10.13581 z"
+       id="path6220-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.83581954px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1281.7896,631.43487 c -6.5608,39.67429 2.4444,48.76946 6.0443,64.45233 l 56.2485,3.53275 6.5793,-39.86956 c -1.2923,-9.31352 -3.8006,-19.95899 -8.1317,-26.04407 z"
+       id="path6210-16"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="translate(837.19813,24.005777)"
+       id="g6378-6"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <ellipse
+         transform="matrix(0.99999591,0.00286158,-0.00268135,0.99999641,0,0)"
+         cx="465.33884"
+         cy="672.50171"
+         rx="12.794551"
+         ry="5.4041843"
+         id="path6212-9-77"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.77650201;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         transform="matrix(0.99999341,0.00362905,-0.0021143,0.99999776,0,0)"
+         cx="487.79089"
+         cy="669.55646"
+         rx="24.346478"
+         ry="13.04149"
+         id="path6212-98"
+         style="opacity:1;fill:#6c6969;fill-opacity:1;stroke:#000000;stroke-width:1.6639744;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g6031-9-8"
+       transform="matrix(0.57855168,-0.77805552,1.0017212,0.71367502,545.85089,369.72386)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path5948-7-6-1"
+         d="m 340.38259,652.79502 40.28635,9.28378 16.02613,-10.0441 -46.57544,-29.0687"
+         style="fill:#e9e9e9;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.68356359px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6014-3-0-91"
+         d="m 336.60471,652.33643 c 0,0 9.917,-16.88603 16.67566,-28.50278 l 4.03596,4.44231 c -3.87582,4.07317 -7.99691,13.90345 -14.14563,26.58586 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g7903"
+       transform="matrix(0.72444308,0.22676919,-0.22676919,0.72444308,482.22753,-200.57843)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+         y="534.81433"
+         x="1550.1605"
+         height="23.754368"
+         width="13.258252"
+         id="rect5656-2-2-3-0"
+         style="opacity:1;fill:#b49e00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#a5a5a5;fill-opacity:0.99607843;fill-rule:evenodd;stroke:#000000;stroke-width:1.31733894px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 1562.0014,534.12776 0.8121,-23.05836 -85.5599,12.2407 0.6126,25.40276 z"
+         id="path6430-7-5"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <ellipse
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+         ry="21.484375"
+         rx="43.244965"
+         cy="771.54498"
+         cx="1555.1686"
+         id="path5661-1-5-3-0"
+         style="opacity:1;fill:#bea700;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+         ry="21.484375"
+         rx="43.244965"
+         cy="567.54517"
+         cx="1555.1686"
+         id="path5661-5-7-3"
+         style="opacity:1;fill:#bea700;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+         y="568.00928"
+         x="1511.7958"
+         height="205.46875"
+         width="86.71875"
+         id="rect5659-0-2-5"
+         style="opacity:1;fill:#685c00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+         y="567.40289"
+         x="1512.3536"
+         height="205.46875"
+         width="86.71875"
+         id="rect5659-6-8-8-3-6"
+         style="opacity:1;fill:url(#linearGradient5737-6-3-1-0);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path5366-4-6-7-8"
+         d="m 1512.1067,658.39977 0,50.96779 86.453,0 0,-50.96779 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.08480513px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g6201-0"
+       transform="matrix(1.6831051,0,0,1.8423727,408.74519,-418.20286)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6056-2-5"
+         d="m 605.03122,513.64119 8.25721,-0.98063 1.54823,9.47943 -7.74113,0.32688 z"
+         style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.81319004px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6058-1-5"
+         d="m 615.19838,521.46712 -7.60959,-7.91976 29.4964,-17.52456 10.69419,10.48945 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.93201226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="scccs"
+         inkscape:connector-curvature="0"
+         id="path6060-7-5"
+         d="m 616.39421,511.19441 16.20811,-0.39006 0.69486,6.46497 -15.58888,2.71306 c -5.98841,-1.43462 -4.25582,-8.71717 -1.31409,-8.78797 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.87434226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.55498093px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1281.401,643.39111 c 43.3521,11.42904 77.1609,3.78792 117.7389,-3.07513 3.5114,-38.21857 0.4717,-123.93259 10.5341,-114.6557 -50.1331,29.33282 -100.302,21.94389 -140.8631,0.49764 z"
+       id="path5943-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#e9e9e9;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.70744717px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1304.2302,594.73782 45.0283,34.27479 9.5792,-38.33596 -48.547,-42.31777"
+       id="path5948-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="opacity:1;fill:#6c6969;fill-opacity:1;stroke:#000000;stroke-width:1.70959234;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5946-6"
+       cx="1378.5936"
+       cy="448.10385"
+       rx="17.943901"
+       ry="24.899483"
+       transform="matrix(0.99567296,0.09292665,-0.14582163,0.9893109,0,0)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#000000;fill-opacity:0.99607843;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1483.1208,540.17285 c -67.041,-17.50693 -34.3443,54.74671 -24.7371,75.44277 l 46.9958,12.6026 -2.9137,-35.03751 -39.227,12.42728 c -2.9283,-13.06763 -25.1774,-70.76477 18.039,-59.26188 z"
+       id="path6432-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g6093-00"
+       transform="matrix(1.5087578,0,0,1.4162932,545.06008,-226.39533)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6056-08"
+         d="m 567.70573,591.25083 8.08122,-1.51523 1.51523,14.64721 -7.57614,0.50508 z"
+         style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6058-26"
+         d="m 577.30218,606.40311 -2.0203,-18.68782 22.22335,-3.53553 3.03046,25.25381 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="scccs"
+         inkscape:connector-curvature="0"
+         id="path6060-2"
+         d="m 581.7831,585.21593 3.83798,-15.75199 6.42326,1.01015 -1.43388,15.7581 c -2.94245,5.40936 -9.52394,1.84268 -8.82736,-1.01626 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.87434226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6062-0"
+         d="m 595.16914,584.96321 17.38021,-5.86837 7.86594,27.89148 -18.84093,2.22356 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39656723px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g6031-61"
+       transform="matrix(0.96367735,-0.25834344,0.32557028,1.2144481,813.80046,-76.836628)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path5948-7-64"
+         d="M 340.38259,652.79502 390.14178,666.6813 393.1846,649.02539 350.11963,622.966"
+         style="fill:#e9e9e9;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.68356359px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6014-3-8"
+         d="m 336.60471,652.33643 c 0,0 9.917,-16.88603 16.67566,-28.50278 l 4.03596,4.44231 c -3.87582,4.07317 -7.99691,13.90345 -14.14563,26.58586 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1344.8282,625.72514 c 0.033,-12.0357 1.7359,-24.51926 9.5142,-38.63142 l 5.8293,4.1893 c -4.633,13.87158 -6.8244,25.57755 -9.288,37.52495 z"
+       id="path6014-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="opacity:1;fill:#e2e2e2;fill-opacity:0.98823529;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4151-7"
+       cx="1345.6255"
+       cy="442.16101"
+       rx="115.68092"
+       ry="103.43895"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="display:inline;opacity:1;fill:#44438f;fill-opacity:1;stroke:none;stroke-width:6.73525095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4136-1-5"
+       cx="1359.952"
+       cy="444.03586"
+       rx="87.804565"
+       ry="89.242134"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="display:inline;opacity:1;fill:url(#radialGradient6376-4);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4136-02"
+       cx="1360.5027"
+       cy="442.56357"
+       rx="87.804565"
+       ry="89.242134"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="display:inline;opacity:1;fill:#448560;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1248.6624,499.68198 c -8.4771,-3.4018 -19.6324,46.01233 -0.6014,55.85594 l 96.595,-25.48571 c 0.9343,-20.50855 -14.6019,-23.10312 -14.8703,-23.62095 -22.6843,6.21604 -49.3893,13.05369 -58.2422,19.26972 -4.9179,-5.61638 0,0 -22.8811,-26.019 z"
+       id="path5740-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_fuel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.89310932px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1862.3828,686.10817 7.8922,50.5926 35.6578,8.29703 12.2449,-46.91134 z"
+       id="path6214-3-9-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#7e7e7e;fill-opacity:1;fill-rule:evenodd;stroke:#020202;stroke-width:0.95789516px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1872.8499,748.03076 c 1.7596,3.06735 4.5239,5.58577 7.6029,6.92653 l 0.4058,0.70916 2.6943,0.20428 c 0.5734,0.0896 1.1388,0.1318 1.691,0.12625 l 41.0633,3.10271 c 2.993,1.14336 18.8136,-2.43539 21.1488,-3.29754 21.9692,-19.90444 -18.9569,-48.94811 -36.2719,-25.00653 -15.8428,2.54383 -47.4805,-1.78365 -38.3342,17.23514 z"
+       id="path6220-7-5-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="display:inline;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.60500002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5475-6-5"
+       width="12.487185"
+       height="18.465406"
+       x="1693.0764"
+       y="623.71649"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.99626964,-0.08629484,0.13296376,0.9911209,0,0)" />
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.83581954px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1851.5312,636.52712 c -0.3547,40.01608 9.9926,48.15477 15.9983,63.3629 l 50.3005,1.99307 4.3872,-44.23785 c -2.7275,-9.11486 -4.8479,-19.43171 -10.09,-25.04364 z"
+       id="path6210-1-2-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="translate(1356.5385,26.026082)"
+       id="g6382-7-3"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <ellipse
+         transform="matrix(0.99999643,0.00267291,-0.00287062,0.99999588,0,0)"
+         cx="523.17163"
+         cy="672.68774"
+         rx="13.665894"
+         ry="5.3916502"
+         id="path6212-9-9-4-9"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.80157626;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         cx="544.47736"
+         cy="670.31219"
+         rx="21.418476"
+         ry="13.14416"
+         id="path6212-8-0-6"
+         style="opacity:1;fill:#6c6969;fill-opacity:1;stroke:#000000;stroke-width:1.45891297;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.89310932px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1808.1619,697.8094 11.3121,48.84119 36.5193,3.98724 9.2449,-47.57734 z"
+       id="path6214-5-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#7e7e7e;fill-opacity:1;fill-rule:evenodd;stroke:#020202;stroke-width:0.95789516px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1818.2408,754.14808 c 1.1897,3.33245 3.4651,6.30354 6.2581,8.17159 l 0.2741,0.77028 2.6153,0.68096 c 0.5484,0.19029 1.0973,0.33256 1.6416,0.42543 l 39.86,10.36776 c 2.7433,1.65845 18.9435,0.95394 21.3937,0.52131 25.1342,-15.6779 -10.0089,-51.55359 -31.2762,-31.07314 -16.0393,-0.31807 -46.4078,-10.21249 -40.7666,10.13581 z"
+       id="path6220-8-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.83581954px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1801.13,633.45517 c -6.5608,39.67429 2.4444,48.76946 6.0443,64.45233 l 56.2485,3.53275 6.5793,-39.86956 c -1.2923,-9.31352 -3.8006,-19.95899 -8.1317,-26.04407 z"
+       id="path6210-16-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="translate(1356.5385,26.026082)"
+       id="g6378-6-4"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <ellipse
+         transform="matrix(0.99999591,0.00286158,-0.00268135,0.99999641,0,0)"
+         cx="465.33884"
+         cy="672.50171"
+         rx="12.794551"
+         ry="5.4041843"
+         id="path6212-9-77-3"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.77650201;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         transform="matrix(0.99999341,0.00362905,-0.0021143,0.99999776,0,0)"
+         cx="487.79089"
+         cy="669.55646"
+         rx="24.346478"
+         ry="13.04149"
+         id="path6212-98-9"
+         style="opacity:1;fill:#6c6969;fill-opacity:1;stroke:#000000;stroke-width:1.6639744;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g6031-9-8-1"
+       transform="matrix(0.57855168,-0.77805552,1.0017212,0.71367502,1065.1913,371.74416)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path5948-7-6-1-1"
+         d="m 340.38259,652.79502 40.28635,9.28378 16.02613,-10.0441 -46.57544,-29.0687"
+         style="fill:#e9e9e9;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.68356359px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6014-3-0-91-2"
+         d="m 336.60471,652.33643 c 0,0 9.917,-16.88603 16.67566,-28.50278 l 4.03596,4.44231 c -3.87582,4.07317 -7.99691,13.90345 -14.14563,26.58586 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g7903-7"
+       transform="matrix(0.72444308,0.22676919,-0.22676919,0.72444308,1001.5679,-198.55813)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+         y="534.81433"
+         x="1550.1605"
+         height="23.754368"
+         width="13.258252"
+         id="rect5656-2-2-3-0-1"
+         style="opacity:1;fill:#b49e00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#a5a5a5;fill-opacity:0.99607843;fill-rule:evenodd;stroke:#000000;stroke-width:1.31733894px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 1562.0014,534.12776 0.8121,-23.05836 -85.5599,12.2407 0.6126,25.40276 z"
+         id="path6430-7-5-0"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <ellipse
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+         ry="21.484375"
+         rx="43.244965"
+         cy="771.54498"
+         cx="1555.1686"
+         id="path5661-1-5-3-0-1"
+         style="opacity:1;fill:#bea700;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+         ry="21.484375"
+         rx="43.244965"
+         cy="567.54517"
+         cx="1555.1686"
+         id="path5661-5-7-3-4"
+         style="opacity:1;fill:#bea700;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+         y="568.00928"
+         x="1511.7958"
+         height="205.46875"
+         width="86.71875"
+         id="rect5659-0-2-5-2"
+         style="opacity:1;fill:#685c00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+         y="567.40289"
+         x="1512.3536"
+         height="205.46875"
+         width="86.71875"
+         id="rect5659-6-8-8-3-6-6"
+         style="opacity:1;fill:url(#linearGradient5737-6-3-1-0-4);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path5366-4-6-7-8-6"
+         d="m 1512.1067,658.39977 0,50.96779 86.453,0 0,-50.96779 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.08480513px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g6201-0-1"
+       transform="matrix(1.6831051,0,0,1.8423727,928.08558,-416.18256)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6056-2-5-5"
+         d="m 605.03122,513.64119 8.25721,-0.98063 1.54823,9.47943 -7.74113,0.32688 z"
+         style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.81319004px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6058-1-5-7"
+         d="m 615.19838,521.46712 -7.60959,-7.91976 29.4964,-17.52456 10.69419,10.48945 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.93201226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="scccs"
+         inkscape:connector-curvature="0"
+         id="path6060-7-5-7"
+         d="m 616.39421,511.19441 16.20811,-0.39006 0.69486,6.46497 -15.58888,2.71306 c -5.98841,-1.43462 -4.25582,-8.71717 -1.31409,-8.78797 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.87434226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:0.55498093px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1800.7414,645.41141 c 43.3521,11.42904 77.1609,3.78792 117.7389,-3.07513 3.5114,-38.21857 0.4717,-123.93259 10.5341,-114.6557 -50.1331,29.33282 -100.302,21.94389 -140.8631,0.49764 z"
+       id="path5943-9-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#e9e9e9;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.70744717px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1823.5706,596.75812 45.0283,34.27479 9.5792,-38.33596 -48.547,-42.31777"
+       id="path5948-4-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="opacity:1;fill:#6c6969;fill-opacity:1;stroke:#000000;stroke-width:1.70959234;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5946-6-1"
+       cx="1893.408"
+       cy="401.78912"
+       rx="17.943901"
+       ry="24.899483"
+       transform="matrix(0.99567296,0.09292665,-0.14582163,0.9893109,0,0)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#000000;fill-opacity:0.99607843;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 2002.4612,542.19315 c -67.041,-17.50693 -34.3443,54.74671 -24.7371,75.44277 l 46.9958,12.6026 -2.9137,-35.03751 -39.227,12.42728 c -2.9283,-13.06763 -25.1774,-70.76477 18.039,-59.26188 z"
+       id="path6432-8-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g6093-00-7"
+       transform="matrix(1.5087578,0,0,1.4162932,1064.4005,-224.37503)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6056-08-5"
+         d="m 567.70573,591.25083 8.08122,-1.51523 1.51523,14.64721 -7.57614,0.50508 z"
+         style="fill:#e2e2e2;fill-opacity:0.98823529;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6058-26-3"
+         d="m 577.30218,606.40311 -2.0203,-18.68782 22.22335,-3.53553 3.03046,25.25381 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="scccs"
+         inkscape:connector-curvature="0"
+         id="path6060-2-3"
+         d="m 581.7831,585.21593 3.83798,-15.75199 6.42326,1.01015 -1.43388,15.7581 c -2.94245,5.40936 -9.52394,1.84268 -8.82736,-1.01626 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.87434226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6062-0-8"
+         d="m 595.16914,584.96321 17.38021,-5.86837 7.86594,27.89148 -18.84093,2.22356 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.39656723px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g6031-61-0"
+       transform="matrix(0.96367735,-0.25834344,0.32557028,1.2144481,1333.1409,-74.816328)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path5948-7-64-2"
+         d="M 340.38259,652.79502 390.14178,666.6813 393.1846,649.02539 350.11963,622.966"
+         style="fill:#e9e9e9;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.68356359px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6014-3-8-2"
+         d="m 336.60471,652.33643 c 0,0 9.917,-16.88603 16.67566,-28.50278 l 4.03596,4.44231 c -3.87582,4.07317 -7.99691,13.90345 -14.14563,26.58586 z"
+         style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#6c6969;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1864.1686,627.74544 c 0.033,-12.0357 1.7359,-24.51926 9.5142,-38.63142 l 5.8293,4.1893 c -4.633,13.87158 -6.8244,25.57755 -9.288,37.52495 z"
+       id="path6014-2-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="opacity:1;fill:#e2e2e2;fill-opacity:0.98823529;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4151-7-8"
+       cx="1864.9659"
+       cy="444.1813"
+       rx="115.68092"
+       ry="103.43895"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="display:inline;opacity:1;fill:#44438f;fill-opacity:1;stroke:none;stroke-width:6.73525095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4136-1-5-1"
+       cx="1879.2925"
+       cy="446.05615"
+       rx="87.804565"
+       ry="89.242134"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="display:inline;opacity:1;fill:url(#radialGradient6376-4-9);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4136-02-6"
+       cx="1879.8431"
+       cy="444.58386"
+       rx="87.804565"
+       ry="89.242134"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="display:inline;opacity:1;fill:#448560;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1768.0028,501.70228 c -8.4771,-3.4018 -19.6324,46.01233 -0.6014,55.85594 l 96.595,-25.48571 c 0.9343,-20.50855 -14.6019,-23.10312 -14.8703,-23.62095 -22.6843,6.21604 -49.3893,13.05369 -58.2422,19.26972 -4.9179,-5.61638 0,0 -22.8811,-26.019 z"
+       id="path5740-2-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/spaceman_v2_gold_both.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>
@@ -639,7 +2102,7 @@
        inkscape:export-ydpi="90" />
     <g
        id="g7794"
-       transform="matrix(1.0013483,0,0,0.99764478,-1.1632064,0.55682387)"
+       transform="matrix(1.0013483,0,0,0.99764478,-635.539,-548.96616)"
        inkscape:export-filename="/Users/campbelldavis/Desktop/spaceman_head_large.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">

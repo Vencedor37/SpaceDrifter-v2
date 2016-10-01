@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour {
   public GameObject safetyZone;
   public Transform spraySprite;
   public Animator sprayAnimator;
+  public Sprite upgradedHealthSprite;
+  public Sprite upgradedMovementSprite;
+  public Sprite upgradedBothSprite;
+  public Sprite noupgradesSprite;
   public bool debugMode;
   public float maxSpeed;
   public float currentHealth;
@@ -149,6 +153,7 @@ public class PlayerController : MonoBehaviour {
       hasMovementUpgrade = true;
       maxForceSingleMove += maxForceSingleMove * .2f;
       maxSpeed += maxSpeed * .2f;
+      CheckUpgradeSprites();
     }
 
     UpdateHealth();
@@ -194,6 +199,7 @@ public class PlayerController : MonoBehaviour {
       currentHealth = maxHealth;
       giveExtraHealth = false;
       hasHealthUpgrade = true;
+      CheckUpgradeSprites();
     }
 
     healthLossCounter += Time.deltaTime;
@@ -651,6 +657,20 @@ public class PlayerController : MonoBehaviour {
   {
     healthLossRate *= scale;
     healthLossAmount *= scale;
+  }
+
+  private void CheckUpgradeSprites()
+  {
+    SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+    if (hasHealthUpgrade && hasMovementUpgrade) {
+      spriteRenderer.sprite = upgradedBothSprite;
+    } else if (hasHealthUpgrade) {
+      spriteRenderer.sprite = upgradedHealthSprite;
+    } else if (hasMovementUpgrade) {
+      spriteRenderer.sprite = upgradedMovementSprite;
+    } else {
+      spriteRenderer.sprite = noupgradesSprite;
+    }
   }
 
   public string getBonusType()
