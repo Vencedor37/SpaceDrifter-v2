@@ -404,6 +404,59 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 22644384}
+--- !u!1 &23677412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 23677413}
+  - 114: {fileID: 23677414}
+  m_Layer: 0
+  m_Name: Checkpoint 15
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &23677413
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23677412}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 15
+--- !u!114 &23677414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23677412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 500
+  largeAsteroids: 1
+  mediumAsteroids: 1
+  smallAsteroids: 2
+  spaceships: 0
+  healthPickups: 0
+  movementPickups: 0
+  pointsPickupsLevel1: 0
+  pointsPickupsLevel2: 0
+  pointsPickupsLevel3: 0
+  healthUpgrades: 1
+  movementUpgrades: 1
+  lifePickups: 1
 --- !u!1 &40364679
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 1
-  largeAsteroids: 5
+  largeAsteroids: 10
   mediumAsteroids: 0
   smallAsteroids: 0
   spaceships: 0
@@ -831,18 +884,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 10
+  spawnTime: 30
   largeAsteroids: 5
   mediumAsteroids: 0
   smallAsteroids: 0
   spaceships: 0
-  healthPickups: 100
+  healthPickups: 2
   movementPickups: 0
   pointsPickupsLevel1: 0
   pointsPickupsLevel2: 0
   pointsPickupsLevel3: 0
   healthUpgrades: 0
   movementUpgrades: 0
+  lifePickups: 0
+--- !u!1 &197175963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 197175964}
+  - 114: {fileID: 197175965}
+  m_Layer: 0
+  m_Name: Checkpoint 11 - movement upgrade
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &197175964
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 197175963}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 11
+--- !u!114 &197175965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 197175963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 370
+  largeAsteroids: 0
+  mediumAsteroids: 0
+  smallAsteroids: 0
+  spaceships: 2
+  healthPickups: 0
+  movementPickups: 0
+  pointsPickupsLevel1: 0
+  pointsPickupsLevel2: 0
+  pointsPickupsLevel3: 0
+  healthUpgrades: 1
+  movementUpgrades: 1
   lifePickups: 0
 --- !u!1 &209621038
 GameObject:
@@ -1033,7 +1139,7 @@ MonoBehaviour:
   type: {fileID: 114000010962907792, guid: b6af0abdd859f4966be114f109993b41, type: 2}
   UI: {fileID: 2016584744}
   spawnImmediately: 0
-  poolCount: 20
+  poolCount: 1
   targetActiveCount: 0
   startingActiveCount: 0
   playerController: {fileID: 778002976}
@@ -1157,6 +1263,59 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 256854625}
+--- !u!1 &264669025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 264669026}
+  - 114: {fileID: 264669027}
+  m_Layer: 0
+  m_Name: Checkpoint 9
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &264669026
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264669025}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 9
+--- !u!114 &264669027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264669025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 240
+  largeAsteroids: 0
+  mediumAsteroids: 0
+  smallAsteroids: 0
+  spaceships: 2
+  healthPickups: 0
+  movementPickups: 0
+  pointsPickupsLevel1: 0
+  pointsPickupsLevel2: 1
+  pointsPickupsLevel3: 0
+  healthUpgrades: 0
+  movementUpgrades: 0
+  lifePickups: 0
 --- !u!1 &267452632
 GameObject:
   m_ObjectHideFlags: 0
@@ -2064,6 +2223,59 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &388679291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 388679292}
+  - 114: {fileID: 388679293}
+  m_Layer: 0
+  m_Name: Checkpoint 5
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &388679292
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 388679291}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 5
+--- !u!114 &388679293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 388679291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 120
+  largeAsteroids: 2
+  mediumAsteroids: 0
+  smallAsteroids: 2
+  spaceships: 0
+  healthPickups: 0
+  movementPickups: 0
+  pointsPickupsLevel1: 1
+  pointsPickupsLevel2: 0
+  pointsPickupsLevel3: 0
+  healthUpgrades: 0
+  movementUpgrades: 0
+  lifePickups: 0
 --- !u!1 &401975851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2356,6 +2568,19 @@ Transform:
   - {fileID: 40364680}
   - {fileID: 1811279646}
   - {fileID: 117923306}
+  - {fileID: 1325285823}
+  - {fileID: 1391465776}
+  - {fileID: 388679292}
+  - {fileID: 745320729}
+  - {fileID: 783701124}
+  - {fileID: 539797104}
+  - {fileID: 264669026}
+  - {fileID: 2120188134}
+  - {fileID: 197175964}
+  - {fileID: 1085140228}
+  - {fileID: 967383088}
+  - {fileID: 1378154952}
+  - {fileID: 23677413}
   m_Father: {fileID: 468606413}
   m_RootOrder: 0
 --- !u!1 &468606411
@@ -2385,19 +2610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f02afa54635346fd9d586d7e517b12a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnableObjects:
-  - {fileID: 476417460}
-  - {fileID: 1563592273}
-  - {fileID: 851514724}
-  - {fileID: 1720012994}
-  - {fileID: 1574294077}
-  - {fileID: 1429182245}
-  - {fileID: 1652221082}
-  - {fileID: 1431707436}
-  - {fileID: 1751870582}
-  - {fileID: 283006231}
-  - {fileID: 444866631}
-  - {fileID: 246282216}
+  player: {fileID: 778002976}
   objectSpawnTimes:
   - 1
   - 15
@@ -2425,6 +2638,19 @@ MonoBehaviour:
   healthUpgrades: {fileID: 283006231}
   movementUpgrades: {fileID: 444866631}
   lifePickups: {fileID: 246282216}
+  spawnableObjects:
+  - {fileID: 476417460}
+  - {fileID: 1563592273}
+  - {fileID: 851514724}
+  - {fileID: 1720012994}
+  - {fileID: 1574294077}
+  - {fileID: 1429182245}
+  - {fileID: 1652221082}
+  - {fileID: 1431707436}
+  - {fileID: 1751870582}
+  - {fileID: 283006231}
+  - {fileID: 444866631}
+  - {fileID: 246282216}
 --- !u!4 &468606413
 Transform:
   m_ObjectHideFlags: 0
@@ -2484,7 +2710,7 @@ MonoBehaviour:
   type: {fileID: 114000011210211580, guid: 63a06adf54141457b8558d5b8bf3d2f1, type: 2}
   UI: {fileID: 2016584744}
   spawnImmediately: 0
-  poolCount: 100
+  poolCount: 50
   targetActiveCount: 0
   startingActiveCount: 0
   playerController: {fileID: 778002976}
@@ -2575,6 +2801,59 @@ RectTransform:
   m_AnchoredPosition: {x: 63, y: 1.24}
   m_SizeDelta: {x: 199, y: 139}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &539797103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 539797104}
+  - 114: {fileID: 539797105}
+  m_Layer: 0
+  m_Name: Checkpoint 8 - first spaceship
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &539797104
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539797103}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 8
+--- !u!114 &539797105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539797103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 210
+  largeAsteroids: 0
+  mediumAsteroids: 0
+  smallAsteroids: 0
+  spaceships: 1
+  healthPickups: 0
+  movementPickups: 1
+  pointsPickupsLevel1: 0
+  pointsPickupsLevel2: 1
+  pointsPickupsLevel3: 0
+  healthUpgrades: 0
+  movementUpgrades: 0
+  lifePickups: 0
 --- !u!1 &553583399
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,6 +3423,59 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 728806675}
+--- !u!1 &745320728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 745320729}
+  - 114: {fileID: 745320730}
+  m_Layer: 0
+  m_Name: Checkpoint 6
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &745320729
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745320728}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 6
+--- !u!114 &745320730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745320728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 150
+  largeAsteroids: 2
+  mediumAsteroids: 5
+  smallAsteroids: 1
+  spaceships: 0
+  healthPickups: 0
+  movementPickups: 0
+  pointsPickupsLevel1: 1
+  pointsPickupsLevel2: 0
+  pointsPickupsLevel3: 0
+  healthUpgrades: 0
+  movementUpgrades: 0
+  lifePickups: 0
 --- !u!1 &769383710
 GameObject:
   m_ObjectHideFlags: 0
@@ -3311,6 +3643,59 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 683133122}
   m_Script: {fileID: 11500000, guid: f8792fc1ca7cb4e4182d506b7d035f48, type: 3}
+--- !u!1 &783701123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 783701124}
+  - 114: {fileID: 783701125}
+  m_Layer: 0
+  m_Name: Checkpoint 7 - first bonus life
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &783701124
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 783701123}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 7
+--- !u!114 &783701125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 783701123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 180
+  largeAsteroids: 0
+  mediumAsteroids: 0
+  smallAsteroids: 10
+  spaceships: 0
+  healthPickups: 0
+  movementPickups: 1
+  pointsPickupsLevel1: 1
+  pointsPickupsLevel2: 0
+  pointsPickupsLevel3: 0
+  healthUpgrades: 0
+  movementUpgrades: 0
+  lifePickups: 1
 --- !u!1 &789713965
 GameObject:
   m_ObjectHideFlags: 0
@@ -3825,6 +4210,59 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 955914140}
+--- !u!1 &967383087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 967383088}
+  - 114: {fileID: 967383089}
+  m_Layer: 0
+  m_Name: Checkpoint 13
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &967383088
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 967383087}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 13
+--- !u!114 &967383089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 967383087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 430
+  largeAsteroids: 0
+  mediumAsteroids: 0
+  smallAsteroids: 0
+  spaceships: 2
+  healthPickups: 0
+  movementPickups: 0
+  pointsPickupsLevel1: 0
+  pointsPickupsLevel2: 0
+  pointsPickupsLevel3: 0
+  healthUpgrades: 1
+  movementUpgrades: 1
+  lifePickups: 1
 --- !u!1 &968001648
 GameObject:
   m_ObjectHideFlags: 0
@@ -4219,6 +4657,59 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1085140227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1085140228}
+  - 114: {fileID: 1085140229}
+  m_Layer: 0
+  m_Name: Checkpoint 12
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1085140228
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1085140227}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 12
+--- !u!114 &1085140229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1085140227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 400
+  largeAsteroids: 0
+  mediumAsteroids: 0
+  smallAsteroids: 5
+  spaceships: 0
+  healthPickups: 0
+  movementPickups: 0
+  pointsPickupsLevel1: 0
+  pointsPickupsLevel2: 2
+  pointsPickupsLevel3: 0
+  healthUpgrades: 1
+  movementUpgrades: 1
+  lifePickups: 0
 --- !u!1 &1093218336
 GameObject:
   m_ObjectHideFlags: 0
@@ -5532,6 +6023,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 85673441}
   m_RootOrder: 4
+--- !u!1 &1325285822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1325285823}
+  - 114: {fileID: 1325285824}
+  m_Layer: 0
+  m_Name: Checkpoint 3
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1325285823
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1325285822}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 3
+--- !u!114 &1325285824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1325285822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 60
+  largeAsteroids: 0
+  mediumAsteroids: 8
+  smallAsteroids: 0
+  spaceships: 0
+  healthPickups: 0
+  movementPickups: 0
+  pointsPickupsLevel1: 0
+  pointsPickupsLevel2: 0
+  pointsPickupsLevel3: 0
+  healthUpgrades: 0
+  movementUpgrades: 0
+  lifePickups: 0
 --- !u!1 &1343130331
 GameObject:
   m_ObjectHideFlags: 0
@@ -5770,8 +6314,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -36, y: 0}
-  m_SizeDelta: {x: 72, y: 0}
+  m_AnchoredPosition: {x: -47, y: 0}
+  m_SizeDelta: {x: 93, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359349233
 MonoBehaviour:
@@ -5799,7 +6343,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -5949,6 +6493,112 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1378154951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1378154952}
+  - 114: {fileID: 1378154953}
+  m_Layer: 0
+  m_Name: Checkpoint 14
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1378154952
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1378154951}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 14
+--- !u!114 &1378154953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1378154951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 460
+  largeAsteroids: 1
+  mediumAsteroids: 0
+  smallAsteroids: 0
+  spaceships: 0
+  healthPickups: 0
+  movementPickups: 0
+  pointsPickupsLevel1: 0
+  pointsPickupsLevel2: 0
+  pointsPickupsLevel3: 2
+  healthUpgrades: 1
+  movementUpgrades: 1
+  lifePickups: 0
+--- !u!1 &1391465775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1391465776}
+  - 114: {fileID: 1391465777}
+  m_Layer: 0
+  m_Name: Checkpoint 4 - first points bonus
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1391465776
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1391465775}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 4
+--- !u!114 &1391465777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1391465775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 90
+  largeAsteroids: 0
+  mediumAsteroids: 5
+  smallAsteroids: 0
+  spaceships: 0
+  healthPickups: 0
+  movementPickups: 0
+  pointsPickupsLevel1: 1
+  pointsPickupsLevel2: 0
+  pointsPickupsLevel3: 0
+  healthUpgrades: 0
+  movementUpgrades: 0
+  lifePickups: 0
 --- !u!1 &1400272591
 GameObject:
   m_ObjectHideFlags: 0
@@ -6209,9 +6859,9 @@ MonoBehaviour:
   playerController: {fileID: 778002976}
   replaceActive: 1
   avoidCentreDuringGeneration: 1
-  needsCleaning: 0
+  needsCleaning: 1
   needsPositionCheck: 1
-  cleanFrequency: 10
+  cleanFrequency: 5
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
@@ -6349,7 +6999,7 @@ MonoBehaviour:
   type: {fileID: 114000011210211580, guid: 63a06adf54141457b8558d5b8bf3d2f1, type: 2}
   UI: {fileID: 2016584744}
   spawnImmediately: 0
-  poolCount: 100
+  poolCount: 50
   targetActiveCount: 0
   startingActiveCount: 0
   playerController: {fileID: 778002976}
@@ -7522,7 +8172,7 @@ MonoBehaviour:
   type: {fileID: 114000011210211580, guid: 63a06adf54141457b8558d5b8bf3d2f1, type: 2}
   UI: {fileID: 2016584744}
   spawnImmediately: 0
-  poolCount: 100
+  poolCount: 50
   targetActiveCount: 0
   startingActiveCount: 0
   playerController: {fileID: 778002976}
@@ -8094,13 +8744,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 5
+  spawnTime: 15
   largeAsteroids: 0
   mediumAsteroids: 0
-  smallAsteroids: 20
+  smallAsteroids: 0
   spaceships: 0
-  healthPickups: 0
-  movementPickups: 0
+  healthPickups: 1
+  movementPickups: 3
   pointsPickupsLevel1: 0
   pointsPickupsLevel2: 0
   pointsPickupsLevel3: 0
@@ -8608,7 +9258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1926306212
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9239,6 +9889,59 @@ RectTransform:
   m_AnchoredPosition: {x: -185.49994, y: -63}
   m_SizeDelta: {x: 371, y: 94}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2120188133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2120188134}
+  - 114: {fileID: 2120188135}
+  m_Layer: 0
+  m_Name: Checkpoint 10 - health upgrade
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2120188134
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2120188133}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 10
+--- !u!114 &2120188135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2120188133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 270
+  largeAsteroids: 0
+  mediumAsteroids: 0
+  smallAsteroids: 0
+  spaceships: 0
+  healthPickups: 0
+  movementPickups: 0
+  pointsPickupsLevel1: 0
+  pointsPickupsLevel2: 0
+  pointsPickupsLevel3: 0
+  healthUpgrades: 1
+  movementUpgrades: 0
+  lifePickups: 0
 --- !u!1 &2142976883
 GameObject:
   m_ObjectHideFlags: 0

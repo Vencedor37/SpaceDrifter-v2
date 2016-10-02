@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour {
   private float extraHealthAmount = 100;
   private float startingHealth = 100;
   private float healthLossRate = 2;
-  private float healthLossAmount = 2;
+  private float healthLossAmount = 3;
   private float healthLossCounter = 0;
 
   private int startingScore = 0;
@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour {
   private Vector3 lastForceApplied;
   private int standardStarDustPoints = 20;
   public int currentLives;
-  private int startingLives = 3;
+  private int startingLives = 1;
   public bool newLife = false;
 
 
@@ -161,8 +161,8 @@ public class PlayerController : MonoBehaviour {
       currentMoveCapacity = maxMoveCapacity;
       giveExtraMovement = false;
       hasMovementUpgrade = true;
-      maxForceSingleMove += maxForceSingleMove * .2f;
-      maxSpeed += maxSpeed * .2f;
+      maxForceSingleMove *= 1.25f;
+      maxSpeed += maxSpeed *= 1.25f;
       CheckUpgradeSprites();
     }
 
@@ -262,7 +262,7 @@ public class PlayerController : MonoBehaviour {
   private void IncreaseScoreMultiplierTracker(float time)
   {
     scoreMultiplierTracker += time;
-    if (scoreMultiplierTracker >= scoreMultiplierCheckpoint) {
+    if (scoreMultiplierTracker >= scoreMultiplierCheckpoint * (scoreMultiplier*.75f) + 1) {
       scoreMultiplier ++;
       scoreMultiplierTracker = 0;
     }
@@ -454,7 +454,7 @@ public class PlayerController : MonoBehaviour {
       if (lifePickup.destroyOnCollision) {
         other.gameObject.SetActive(false);
       }
-      StartBonus(lifePickup.getPointsBonus(), "1UP");
+      StartBonus(lifePickup.getPointsBonus(), "1-UP");
       currentLives += 1;
       UI.UpdateLivesText();
     }
@@ -755,8 +755,12 @@ public class PlayerController : MonoBehaviour {
     GameObject[] backgroundObjects = GameObject.FindGameObjectsWithTag("Background");
     scoreMultiplier = 1;
     maxHealth = startingMaxHealth;
-    maxMoveCapacity = startingMaxMoveCapacity;
     currentHealth = maxHealth;
+    if (hasMovementUpgrade) {
+      maxMoveCapacity = startingMaxMoveCapacity;
+      maxForceSingleMove *= .80f;
+      maxSpeed += maxSpeed *= .80f;
+    }
     currentMoveCapacity = maxMoveCapacity;
     hasHealthUpgrade = false;
     hasMovementUpgrade = false;
@@ -780,6 +784,9 @@ public class PlayerController : MonoBehaviour {
     timeKeeper.RestoreNonRenewableObjects();
     lostLife = false;
     alive = true;
+    if (UI.isFastForward) {
+      UI.fastForwardToggle.isOn = false;
+    }
     UI.HideLostLifeUI();
     UI.UpdateLivesText();
     StartCoroutine(PlayerHurt("new life"));
@@ -878,6 +885,11 @@ public class PlayerController : MonoBehaviour {
   public bool getLostLife()
   {
     return lostLife;
+  }
+
+  public bool getIsInvincible()
+  {
+    return playerHurt;
   }
 
 

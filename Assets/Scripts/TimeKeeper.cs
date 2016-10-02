@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class TimeKeeper : MonoBehaviour {
 
-  public SpaceObjectController[] spawnableObjects = new SpaceObjectController[1];
+  public PlayerController player;
   public float[] objectSpawnTimes = new float[1];
   public List<SpaceObjectCheckpoint> spawnCheckpoints;
   public List<bool>hasSpawned;
@@ -21,20 +21,24 @@ public class TimeKeeper : MonoBehaviour {
   public SpaceObjectController movementUpgrades;
   public SpaceObjectController lifePickups;
 
+  public SpaceObjectController[] spawnableObjects;
+  private float recurringCheckpointTime = 60f;
 
 
 	// Use this for initialization
 	void Start () {
     InitialisePools();
-    GameObject[] checkpointGameObjects = GameObject.FindGameObjectsWithTag("SpawnCheckpoint"); 
+    GameObject[] checkpointGameObjects = GameObject.FindGameObjectsWithTag("SpawnCheckpoint");
     foreach (GameObject checkpointGameObject in checkpointGameObjects) {
       spawnCheckpoints.Add(checkpointGameObject.GetComponent<SpaceObjectCheckpoint>());
       hasSpawned.Add(false);
     }
     spawnCheckpoints.Sort((a, b) => a.spawnTime.CompareTo(b.spawnTime));
+    spawnableObjects = new SpaceObjectController[]{largeAsteroids, mediumAsteroids, smallAsteroids, spaceships, healthPickups, movementPickups, pointsPickupsLevel1, pointsPickupsLevel2, pointsPickupsLevel3, healthUpgrades, movementUpgrades, lifePickups};
+
     InvokeRepeating("CheckSpawners", 1f, 1f);
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	}
@@ -57,11 +61,17 @@ public class TimeKeeper : MonoBehaviour {
 
   public void CheckSpawners()
   {
+    SpaceObjectCheckpoint lastCheckpoint = null;
     for (int i = 0; i < spawnCheckpoints.Count; i ++) {
+      lastCheckpoint = spawnCheckpoints[i];
       if (Time.time > spawnCheckpoints[i].spawnTime && !hasSpawned[i]) {
-        SpawnCheckpoint(spawnCheckpoints[i]);      
+        SpawnCheckpoint(spawnCheckpoints[i]);
         hasSpawned[i] = true;
       }
+    }
+    if (Time.time > lastCheckpoint.spawnTime + recurringCheckpointTime) {
+      SpawnCheckpoint(lastCheckpoint);
+      recurringCheckpointTime += 60;
     }
   }
 
@@ -76,8 +86,12 @@ public class TimeKeeper : MonoBehaviour {
     pointsPickupsLevel1.AddActive(checkpoint.pointsPickupsLevel1);
     pointsPickupsLevel2.AddActive(checkpoint.pointsPickupsLevel2);
     pointsPickupsLevel3.AddActive(checkpoint.pointsPickupsLevel3);
-    healthUpgrades.AddActive(checkpoint.healthUpgrades);
-    movementUpgrades.AddActive(checkpoint.movementUpgrades);
+    if (!player.getHasHealthUpgrade()) {
+      healthUpgrades.AddActive(checkpoint.healthUpgrades);
+    }
+    if (!player.getHasMovementUpgrade()) {
+      movementUpgrades.AddActive(checkpoint.movementUpgrades);
+    }
     lifePickups.AddActive(checkpoint.lifePickups);
   }
 
@@ -85,7 +99,7 @@ public class TimeKeeper : MonoBehaviour {
   public void ClearCentre()
   {
     foreach (SpaceObjectController spawner in spawnableObjects) {
-      spawner.ClearCentre(); 
+      spawner.ClearCentre();
     }
   }
 

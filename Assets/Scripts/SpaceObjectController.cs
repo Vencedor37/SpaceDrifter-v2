@@ -229,12 +229,14 @@ public class SpaceObjectController : MonoBehaviour {
 
   public int AddActive(int number)
   {
-    if ((targetActiveCount + number) <= poolCount) {
-      targetActiveCount += number;
-      BuildActiveList();
-    } else {
-      targetActiveCount = poolCount;
-      BuildActiveList();
+    if (number > 0) {
+      if ((targetActiveCount + number) <= poolCount) {
+        targetActiveCount += number;
+        BuildActiveList();
+      } else {
+        targetActiveCount = poolCount;
+        BuildActiveList();
+      }
     }
     return targetActiveCount;
   }

@@ -37,7 +37,7 @@ public class BonusCollisionListener : MonoBehaviour {
   public void onChildTriggerExit2D(Collider2D other, string name) {
     if (other.gameObject.CompareTag("Player")) {
       PlayerController player = other.gameObject.GetComponent<PlayerController>();
-      if (!recentDamage && !recentPoints) {
+      if (!recentDamage && !recentPoints && !player.getIsInvincible()) {
         if (name == "Bonus_High") {
           recentPoints = true;
           player.StartBonus(highBonus, "Tight Squeeze");
