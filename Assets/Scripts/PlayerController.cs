@@ -756,6 +756,7 @@ public class PlayerController : MonoBehaviour {
     lostLife = false;
     alive = true;
     UI.HideLostLifeUI();
+    UI.UpdateLivesText();
     StartCoroutine(PlayerHurt("new life"));
   }
 

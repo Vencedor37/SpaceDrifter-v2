@@ -49,6 +49,7 @@ public class UIController : MonoBehaviour {
   public Text levelText;
   public Text gameOverSubtitle;
   public Text pauseText;
+  public Text livesText;
 
   public Text movementCountText;
   public Text healthCountText;
@@ -71,6 +72,7 @@ public class UIController : MonoBehaviour {
     bonusText.enabled = false;
     HideGameOverUI();
     HideLostLifeUI();
+    UpdateLivesText();
 	}
 
 	// Update is called once per frame
@@ -269,6 +271,11 @@ public class UIController : MonoBehaviour {
     } else {
       bonusText.enabled = false;
     }
+  }
+
+  public void UpdateLivesText()
+  {
+    livesText.text = "x " + playerController.getCurrentLives();
   }
 
   public float getLeftBoundary()
