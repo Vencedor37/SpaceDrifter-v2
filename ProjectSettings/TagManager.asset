@@ -17,6 +17,7 @@ TagManager:
   - EnemySpaceship
   - Background
   - ShowOnPlayerDeath
+  - LifePickup
   layers:
   - Default
   - TransparentFX

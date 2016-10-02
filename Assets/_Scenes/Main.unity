@@ -884,6 +884,64 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 221409568}
+--- !u!1 &246282214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 246282215}
+  - 114: {fileID: 246282216}
+  m_Layer: 0
+  m_Name: LifePickup1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &246282215
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 246282214}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 554441521}
+  m_RootOrder: 0
+--- !u!114 &246282216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 246282214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b173d5aa75817428c96177a42cb9b2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: {fileID: 114000010962907792, guid: b6af0abdd859f4966be114f109993b41, type: 2}
+  UI: {fileID: 2016584744}
+  spawnImmediately: 0
+  poolCount: 1
+  activeCount: 1
+  playerController: {fileID: 778002976}
+  replaceActive: 0
+  avoidCentreDuringGeneration: 1
+  needsCleaning: 0
+  needsPositionCheck: 1
+  cleanFrequency: 1
+  needsSpeedCheck: 1
+  randomiseTransparency: 0
+  randomiseScale: 0
+  resetRotation: 0
+  pool: []
+  activeSpaceObjects: []
+  canBeDepleted: 1
 --- !u!1 &256429613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2199,6 +2257,7 @@ MonoBehaviour:
   - {fileID: 1751870582}
   - {fileID: 283006231}
   - {fileID: 444866631}
+  - {fileID: 246282216}
   objectSpawnTimes:
   - 1
   - 15
@@ -2211,6 +2270,7 @@ MonoBehaviour:
   - 420
   - 1
   - 1
+  - 5
 --- !u!4 &468606413
 Transform:
   m_ObjectHideFlags: 0
@@ -2486,6 +2546,35 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 553583399}
+--- !u!1 &554441520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 554441521}
+  m_Layer: 0
+  m_Name: LifePickups
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &554441521
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 554441520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 246282215}
+  m_Father: {fileID: 1555049710}
+  m_RootOrder: 3
 --- !u!1 &558396335
 GameObject:
   m_ObjectHideFlags: 0
@@ -6410,6 +6499,7 @@ Transform:
   - {fileID: 851514723}
   - {fileID: 1563592272}
   - {fileID: 1685053547}
+  - {fileID: 554441521}
   m_Father: {fileID: 468606413}
   m_RootOrder: 1
 --- !u!1 &1555521507

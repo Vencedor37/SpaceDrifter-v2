@@ -433,6 +433,17 @@ public class PlayerController : MonoBehaviour {
       giveExtraMovement = true;
       StartBonus(movementUpgrade.getPointsBonus(), "Fuel Upgrade!");
     }
+
+    if (other.gameObject.CompareTag("LifePickup")) {
+      audioTracks.pointsSource.Play();
+      SpaceObject lifePickup = other.gameObject.GetComponent<SpaceObject>();
+      if (lifePickup.destroyOnCollision) {
+        other.gameObject.SetActive(false);
+      }
+      StartBonus(lifePickup.getPointsBonus(), "1UP");
+      currentLives += 1;
+      UI.UpdateLivesText();
+    }
   }
 
   public void StartBonus(int amount, string type)
