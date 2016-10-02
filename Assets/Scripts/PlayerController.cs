@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour {
   public float currentHealth;
   public float currentMoveCapacity;
   public int scoreCheckpoint;
+  public float scoreMultiplierCheckpoint;
 
   private bool alive = true;
   private bool isGameOver = false;
@@ -53,6 +54,7 @@ public class PlayerController : MonoBehaviour {
   private int scoreIncreaseAmount = 1;
   private float scoreIncreaseCounter = 0;
   private int scoreCheckpointTracker = 0;
+  private float scoreMultiplierTracker = 0;
   private int scoreMultiplier = 1;
   private int currentScore;
   private int highScore;
@@ -167,6 +169,7 @@ public class PlayerController : MonoBehaviour {
     if (alive) {
       UpdateHealth();
       UpdateScore();
+      IncreaseScoreMultiplierTracker(Time.deltaTime);
     } else {
       CheckLives();
     }
@@ -238,7 +241,7 @@ public class PlayerController : MonoBehaviour {
     yield return new WaitForSeconds(time);
     currentScore += modifiedScore;
     showBonus = false;
-    IncreaseScoreCheckpointTracker(modifiedScore);
+    //IncreaseScoreCheckpointTracker(modifiedScore);
     yield return null;
   }
 
@@ -256,6 +259,15 @@ public class PlayerController : MonoBehaviour {
     }
   }
 
+  private void IncreaseScoreMultiplierTracker(float time)
+  {
+    scoreMultiplierTracker += time;
+    if (scoreMultiplierTracker >= scoreMultiplierCheckpoint) {
+      scoreMultiplier ++;
+      scoreMultiplierTracker = 0;
+    }
+  }
+
 
   private void TakeDamage(float damage, string cause)
   {
@@ -263,6 +275,8 @@ public class PlayerController : MonoBehaviour {
       if ((currentHealth - damage) >= 0) {
         currentHealth -= damage;
         if (cause != "oxygen") {
+          scoreMultiplierTracker = 0;
+          scoreMultiplier = 1;
           StartCoroutine(PlayerHurt(cause));
         }
       } else {

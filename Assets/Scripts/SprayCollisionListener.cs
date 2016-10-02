@@ -7,6 +7,7 @@ public class SprayCollisionListener : MonoBehaviour {
   private string asteroidTag = "Enemy";
   private string healthTag = "HealthPickup";
   private string movementTag = "MovementPickup";
+  private string spaceshipTag = "EnemySpaceship";
 
 	// Use this for initialization
 	void Start () {
@@ -31,6 +32,8 @@ public class SprayCollisionListener : MonoBehaviour {
       } else if (other.gameObject.CompareTag(movementTag)) {
         otherSpace.StartSpray(player.getLastForceApplied());
       } else if (other.gameObject.CompareTag(healthTag)) {
+        otherSpace.StartSpray(player.getLastForceApplied());
+      } else if (other.gameObject.CompareTag(spaceshipTag)) {
         otherSpace.StartSpray(player.getLastForceApplied());
       }
     }

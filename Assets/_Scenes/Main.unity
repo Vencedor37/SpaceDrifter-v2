@@ -2829,6 +2829,11 @@ Prefab:
       propertyPath: timeKeeper
       value: 
       objectReference: {fileID: 468606412}
+    - target: {fileID: 114000012455951942, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: scoreMultiplierCheckpoint
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 68000012599074450, guid: 1ca7cbb53b98b4276aed4e4e377b92d9, type: 2}
     - {fileID: 68000011200663012, guid: 1ca7cbb53b98b4276aed4e4e377b92d9, type: 2}
