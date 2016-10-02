@@ -26,9 +26,9 @@ TagManager:
   - 
   - GameOverScreen
   - Spaceships
-  - 
-  - 
-  - 
+  - Player
+  - Pickups
+  - Asteroids
   - 
   - 
   - 

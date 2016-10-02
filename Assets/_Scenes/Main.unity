@@ -991,6 +991,7 @@ MonoBehaviour:
   needsSpeedCheck: 0
   randomiseTransparency: 0
   randomiseScale: 0
+  resetRotation: 0
   pool: []
   activeSpaceObjects: []
 --- !u!4 &283006232
@@ -1149,6 +1150,148 @@ SpriteRenderer:
   m_Color: {r: 0.9044118, g: 0.9044118, b: 0.9044118, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &322544838 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012958690952, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+    type: 2}
+  m_PrefabInternal: {fileID: 683133122}
+--- !u!60 &322544839
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 322544838}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 0.515, y: -2.03}
+      - {x: 0.60499996, y: -2.01}
+      - {x: 0.655, y: -1.99}
+      - {x: 0.695, y: -1.9499999}
+      - {x: 0.72499996, y: -1.79}
+      - {x: 0.675, y: -1.73}
+      - {x: 0.905, y: -1.7199999}
+      - {x: 0.935, y: -1.6899999}
+      - {x: 1.1949999, y: -1.04}
+      - {x: 1.3349999, y: -0.71999997}
+      - {x: 1.405, y: -0.72999996}
+      - {x: 1.435, y: -0.71999997}
+      - {x: 1.425, y: -0.51}
+      - {x: 1.4649999, y: -0.35999998}
+      - {x: 1.4649999, y: -0.13}
+      - {x: 1.425, y: -0.04}
+      - {x: 1.3249999, y: 0.049999997}
+      - {x: 1.385, y: 0.22999999}
+      - {x: 1.435, y: 0.35}
+      - {x: 1.165, y: 0.63}
+      - {x: 1.145, y: 0.63}
+      - {x: 0.91499996, y: 0.48999998}
+      - {x: 0.79499996, y: 0.56}
+      - {x: 0.85499996, y: 0.64}
+      - {x: 0.91499996, y: 0.77}
+      - {x: 0.965, y: 0.89}
+      - {x: 0.98499995, y: 1.0699999}
+      - {x: 0.98499995, y: 1.3}
+      - {x: 0.955, y: 1.42}
+      - {x: 0.91499996, y: 1.5}
+      - {x: 0.805, y: 1.7099999}
+      - {x: 0.72499996, y: 1.81}
+      - {x: 0.585, y: 1.9399999}
+      - {x: 0.45499998, y: 2.03}
+      - {x: 0.305, y: 2.1}
+      - {x: 0.13499999, y: 2.1699998}
+      - {x: 0.044999998, y: 2.18}
+      - {x: -0.45499998, y: 2.18}
+      - {x: -0.60499996, y: 2.1499999}
+      - {x: -0.85499996, y: 2.04}
+      - {x: -1.035, y: 1.9}
+      - {x: -1.145, y: 1.78}
+      - {x: -1.2149999, y: 1.6999999}
+      - {x: -1.3149999, y: 1.53}
+      - {x: -1.355, y: 1.39}
+      - {x: -1.385, y: 1.23}
+      - {x: -1.385, y: 1.04}
+      - {x: -1.375, y: 0.96}
+      - {x: -1.3149999, y: 0.72999996}
+      - {x: -1.385, y: 0.69}
+      - {x: -1.4649999, y: 0.62}
+      - {x: -1.4649999, y: 0.22999999}
+      - {x: -1.4449999, y: 0.089999996}
+      - {x: -1.405, y: -0.13}
+      - {x: -1.375, y: -0.44}
+      - {x: -1.345, y: -0.58}
+      - {x: -1.3349999, y: -0.72999996}
+      - {x: -1.3149999, y: -0.88}
+      - {x: -1.275, y: -0.95}
+      - {x: -1.225, y: -0.98999995}
+      - {x: -1.0749999, y: -1.02}
+      - {x: -0.885, y: -1.1}
+      - {x: -0.865, y: -1.22}
+      - {x: -0.815, y: -1.37}
+      - {x: -0.72499996, y: -1.7199999}
+      - {x: -0.695, y: -1.8399999}
+      - {x: -0.695, y: -2}
+      - {x: -0.60499996, y: -2.09}
+      - {x: -0.33499998, y: -2.1599998}
+      - {x: -0.225, y: -2.18}
+      - {x: 0.085, y: -2.18}
+      - {x: 0.16499999, y: -2.09}
+      - {x: 0.175, y: -2.02}
+      - {x: 0.305, y: -2.03}
+    - - {x: -0.235, y: -1.79}
+      - {x: -0.225, y: -1.78}
+      - {x: -0.205, y: -1.68}
+      - {x: -0.205, y: -1.64}
+      - {x: -0.195, y: -1.63}
+      - {x: -0.205, y: -1.5799999}
+      - {x: -0.21499999, y: -1.5999999}
+      - {x: -0.205, y: -1.61}
+      - {x: -0.205, y: -1.66}
+      - {x: -0.195, y: -1.7199999}
+      - {x: -0.185, y: -1.73}
+      - {x: -0.225, y: -1.79}
+      - {x: -0.24499999, y: -1.81}
+      - {x: -0.235, y: -1.81}
+    - - {x: 0.305, y: -1.62}
+      - {x: 0.315, y: -1.62}
+      - {x: 0.39499998, y: -1.5999999}
+      - {x: 0.415, y: -1.5999999}
+      - {x: 0.465, y: -1.63}
+      - {x: 0.445, y: -1.5999999}
+      - {x: 0.42499998, y: -1.5999999}
+      - {x: 0.415, y: -1.61}
+      - {x: 0.36499998, y: -1.61}
+      - {x: 0.295, y: -1.64}
+      - {x: 0.285, y: -1.66}
+      - {x: 0.295, y: -1.66}
+    - - {x: 0.385, y: -1.23}
+      - {x: 0.385, y: -1.14}
+      - {x: 0.39499998, y: -1.13}
+      - {x: 0.415, y: -1.03}
+      - {x: 0.39499998, y: -0.9}
+      - {x: 0.49499997, y: -0.82}
+      - {x: 0.405, y: -1.1}
+      - {x: 0.385, y: -1.18}
+      - {x: 0.36499998, y: -1.2099999}
+      - {x: 0.36499998, y: -1.25}
+      - {x: 0.375, y: -1.25}
+    - - {x: 0.66499996, y: 0.07}
+      - {x: 0.755, y: 0.049999997}
+      - {x: 0.72499996, y: -0.22}
+      - {x: 0.615, y: -0.19999999}
+      - {x: 0.565, y: -0.29}
+      - {x: 0.465, y: -0.45999998}
+      - {x: 0.385, y: -0.5}
+    - - {x: 0.515, y: 0.28}
+      - {x: 0.575, y: 0.32999998}
+      - {x: 0.585, y: 0.32999998}
+      - {x: 0.575, y: 0.31}
+      - {x: 0.505, y: 0.28}
 --- !u!1 &327702628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,6 +1798,7 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  resetRotation: 0
   pool: []
   activeSpaceObjects: []
 --- !u!1 &468606411
@@ -1777,6 +1921,7 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  resetRotation: 0
   pool: []
   activeSpaceObjects: []
   scale: 2
@@ -2185,6 +2330,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1913327029}
     - target: {fileID: 68000012599074450, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 68000010830181088, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
         type: 2}
       propertyPath: m_Enabled
       value: 0
@@ -2710,6 +2860,7 @@ MonoBehaviour:
   needsSpeedCheck: 0
   randomiseTransparency: 0
   randomiseScale: 0
+  resetRotation: 0
   pool: []
   activeSpaceObjects: []
 --- !u!1 &867728519
@@ -2946,6 +3097,7 @@ MonoBehaviour:
   needsSpeedCheck: 0
   randomiseTransparency: 1
   randomiseScale: 0
+  resetRotation: 0
   pool: []
   activeSpaceObjects: []
 --- !u!1 &1024193722
@@ -4204,6 +4356,7 @@ MonoBehaviour:
   needsSpeedCheck: 0
   randomiseTransparency: 1
   randomiseScale: 1
+  resetRotation: 0
   pool: []
   activeSpaceObjects: []
 --- !u!1 &1323997947
@@ -4794,6 +4947,7 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  resetRotation: 1
   pool: []
   activeSpaceObjects: []
 --- !u!4 &1429182246
@@ -4937,6 +5091,7 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  resetRotation: 0
   pool: []
   activeSpaceObjects: []
   scale: 0.5
@@ -5302,6 +5457,7 @@ MonoBehaviour:
   needsSpeedCheck: 0
   randomiseTransparency: 0
   randomiseScale: 0
+  resetRotation: 0
   pool: []
   activeSpaceObjects: []
 --- !u!1 &1574294075
@@ -5358,6 +5514,7 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  resetRotation: 0
   pool: []
   activeSpaceObjects: []
 --- !u!1 &1584124989
@@ -5540,6 +5697,7 @@ MonoBehaviour:
   needsSpeedCheck: 0
   randomiseTransparency: 0
   randomiseScale: 0
+  resetRotation: 0
   pool: []
   activeSpaceObjects: []
 --- !u!1 &1618076810
@@ -5751,6 +5909,7 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  resetRotation: 0
   pool: []
   activeSpaceObjects: []
 --- !u!4 &1652221083
@@ -6032,6 +6191,7 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  resetRotation: 0
   pool: []
   activeSpaceObjects: []
   scale: 1.25
@@ -6227,6 +6387,7 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  resetRotation: 0
   pool: []
   activeSpaceObjects: []
 --- !u!4 &1751870583

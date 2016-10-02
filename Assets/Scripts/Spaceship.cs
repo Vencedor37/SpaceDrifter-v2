@@ -18,16 +18,17 @@ public class Spaceship : SpaceObject {
       InvokeRepeating("Shoot", blastFrequency, blastFrequency);
     }
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
   void Shoot ()
   {
     if (!hasFired || !fireOnceOnly) {
-      if (GetComponent<Renderer>().isVisible) {
+
+      if (GetComponent<Renderer>().isVisible && gameObject.transform.rotation == Quaternion.identity) {
         float dist = Vector3.Distance(player.transform.position, transform.position);
         if (dist > minShootDistance) {
           BlastObject blast = (BlastObject)Instantiate(primaryBlast, transform.position, transform.rotation);
@@ -65,7 +66,7 @@ public class Spaceship : SpaceObject {
     float newTimeToPlayer = TimeToReachTarget(predictedPoint, origin, force);
 
     int i = 0;
-    while (!(Mathf.Abs(newTimeToPlayer - timeToPlayer) < timeThreshold) || i < 5) {
+    while (!(Mathf.Abs(newTimeToPlayer - timeToPlayer) < timeThreshold) && i < 5) {
       timeToPlayer = newTimeToPlayer;
       predictedPoint = EstimatePlayerPosition(timeToPlayer);
       newDir = predictedPoint - origin;

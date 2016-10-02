@@ -17,6 +17,7 @@ public class SpaceObjectController : MonoBehaviour {
   public bool needsSpeedCheck = true;
   public bool randomiseTransparency = false;
   public bool randomiseScale = false;
+  public bool resetRotation = false;
   public SpaceObject[] pool;
   public List<SpaceObject> activeSpaceObjects;
 
@@ -164,7 +165,12 @@ public class SpaceObjectController : MonoBehaviour {
       Bounds bounds = spriteRenderer.bounds;
       if (!bounds.Intersects(playerController.getDrawBounds())) {
         Vector3 newPosition = playerController.getRandomPosition(true);
-        activeObject.GetComponent<Transform>().position = newPosition;
+        Transform transform = activeObject.GetComponent<Transform>();
+        transform.position = newPosition;
+        if (resetRotation) {
+          transform.rotation = Quaternion.identity;
+          activeObject.GetComponent<Rigidbody2D>().angularVelocity = 0;
+        }
         activeObject.startMoving();
       }
     }

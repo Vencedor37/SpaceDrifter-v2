@@ -26,7 +26,7 @@ GameObject:
   - 61: {fileID: 61000012616307778}
   - 114: {fileID: 114000011572261270}
   - 60: {fileID: 60000013664401388}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HealthPickup 1
   m_TagString: HealthPickupUpgrade
   m_Icon: {fileID: 0}

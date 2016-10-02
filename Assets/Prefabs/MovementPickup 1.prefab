@@ -26,7 +26,7 @@ GameObject:
   - 60: {fileID: 60000012078367138}
   - 61: {fileID: 61000010683765246}
   - 114: {fileID: 114000013321076916}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MovementPickup 1
   m_TagString: MovementPickupUpgrade
   m_Icon: {fileID: 0}

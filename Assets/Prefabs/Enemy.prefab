@@ -22,7 +22,7 @@ GameObject:
   - 212: {fileID: 212000013187919420}
   - 58: {fileID: 58000014062377674}
   - 114: {fileID: 114000013991339504}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bonus_High
   m_TagString: VisibleInDebugMode
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - 114: {fileID: 114000013297208306}
   - 114: {fileID: 114000010822789082}
   - 58: {fileID: 58000012861015748}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   - 212: {fileID: 212000010646150318}
   - 58: {fileID: 58000011013718392}
   - 114: {fileID: 114000014146045526}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bonus_Medium
   m_TagString: VisibleInDebugMode
   m_Icon: {fileID: 0}
@@ -251,8 +251,7 @@ MonoBehaviour:
   MAX_SPEED: 4
   MIN_SPEED: 2
   destroyOnCollision: 0
-  myWidth: 100
-  myHeight: 100
+  sprayCooldown: 1
 --- !u!114 &114000013297208306
 MonoBehaviour:
   m_ObjectHideFlags: 1

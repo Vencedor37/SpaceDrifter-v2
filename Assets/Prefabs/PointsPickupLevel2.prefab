@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013100662332}
   - 212: {fileID: 212000014243870602}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: white_star_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011588086568}
   - 212: {fileID: 212000014098742490}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011922174388}
   - 212: {fileID: 212000014112319292}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: yellow_star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - 95: {fileID: 95000010508539276}
   - 212: {fileID: 212000010953458726}
   - 60: {fileID: 60000014039342522}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PointsPickupLevel2
   m_TagString: PointsPickup
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010107527402}
   - 212: {fileID: 212000011806372234}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: white_star_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,8 +256,7 @@ MonoBehaviour:
   MAX_SPEED: 4
   MIN_SPEED: 2
   destroyOnCollision: 1
-  myWidth: 200
-  myHeight: 200
+  sprayCooldown: 1
 --- !u!212 &212000010953458726
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -88,6 +88,7 @@ GameObject:
   - 95: {fileID: 95000013226480620}
   - 114: {fileID: 114000011501276676}
   - 68: {fileID: 68000010103596754}
+  - 114: {fileID: 114000012682367022}
   m_Layer: 9
   m_Name: EnemySpaceship
   m_TagString: EnemySpaceship
@@ -190,7 +191,7 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
@@ -254,6 +255,18 @@ MonoBehaviour:
   blastSpeed: 9
   primaryBlast: {fileID: 114000013523221746, guid: ca1a48c2f9cd948f99b702d418156397,
     type: 2}
+--- !u!114 &114000012682367022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013512200464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28511b277f3544c19d253c3ff0de84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
 --- !u!212 &212000010496919912
 SpriteRenderer:
   m_ObjectHideFlags: 1
