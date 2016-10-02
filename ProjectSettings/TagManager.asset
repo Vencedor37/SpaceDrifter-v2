@@ -15,6 +15,7 @@ TagManager:
   - HealthPickupUpgrade
   - MovementPickupUpgrade
   - EnemySpaceship
+  - Background
   layers:
   - Default
   - TransparentFX

@@ -985,7 +985,7 @@ MonoBehaviour:
   playerController: {fileID: 778002976}
   replaceActive: 0
   avoidCentreDuringGeneration: 1
-  needsCleaning: 0
+  needsCleaning: 1
   needsPositionCheck: 1
   cleanFrequency: 1
   needsSpeedCheck: 0
@@ -994,6 +994,7 @@ MonoBehaviour:
   resetRotation: 0
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 1
 --- !u!4 &283006232
 Transform:
   m_ObjectHideFlags: 0
@@ -1854,7 +1855,7 @@ MonoBehaviour:
   playerController: {fileID: 778002976}
   replaceActive: 0
   avoidCentreDuringGeneration: 1
-  needsCleaning: 0
+  needsCleaning: 1
   needsPositionCheck: 1
   cleanFrequency: 1
   needsSpeedCheck: 1
@@ -1863,6 +1864,7 @@ MonoBehaviour:
   resetRotation: 0
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 1
 --- !u!1 &468606411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,6 +1988,7 @@ MonoBehaviour:
   resetRotation: 0
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 0
   scale: 2
   minSpeed: 0.5
   maxSpeed: 1
@@ -2402,6 +2405,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012455951942, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
+        type: 2}
+      propertyPath: timeKeeper
+      value: 
+      objectReference: {fileID: 468606412}
     m_RemovedComponents:
     - {fileID: 68000012599074450, guid: 1ca7cbb53b98b4276aed4e4e377b92d9, type: 2}
     - {fileID: 68000011200663012, guid: 1ca7cbb53b98b4276aed4e4e377b92d9, type: 2}
@@ -3084,6 +3092,7 @@ MonoBehaviour:
   resetRotation: 0
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 1
 --- !u!1 &867728519
 GameObject:
   m_ObjectHideFlags: 0
@@ -3275,7 +3284,7 @@ GameObject:
   - 114: {fileID: 968001650}
   m_Layer: 0
   m_Name: Suns
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3321,6 +3330,7 @@ MonoBehaviour:
   resetRotation: 0
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 1
 --- !u!1 &1024193722
 GameObject:
   m_ObjectHideFlags: 0
@@ -4694,7 +4704,7 @@ GameObject:
   - 114: {fileID: 1308929312}
   m_Layer: 0
   m_Name: Stars
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4740,6 +4750,7 @@ MonoBehaviour:
   resetRotation: 0
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 1
 --- !u!1 &1323997947
 GameObject:
   m_ObjectHideFlags: 0
@@ -5320,7 +5331,7 @@ MonoBehaviour:
   poolCount: 20
   activeCount: 10
   playerController: {fileID: 778002976}
-  replaceActive: 0
+  replaceActive: 1
   avoidCentreDuringGeneration: 1
   needsCleaning: 0
   needsPositionCheck: 1
@@ -5331,6 +5342,7 @@ MonoBehaviour:
   resetRotation: 1
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 1
 --- !u!4 &1429182246
 Transform:
   m_ObjectHideFlags: 0
@@ -5475,6 +5487,7 @@ MonoBehaviour:
   resetRotation: 0
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 0
   scale: 0.5
   minSpeed: 8
   maxSpeed: 10
@@ -5841,6 +5854,7 @@ MonoBehaviour:
   resetRotation: 0
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 1
 --- !u!1 &1574294075
 GameObject:
   m_ObjectHideFlags: 0
@@ -5898,6 +5912,7 @@ MonoBehaviour:
   resetRotation: 0
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 1
 --- !u!1 &1584124989
 GameObject:
   m_ObjectHideFlags: 0
@@ -6097,7 +6112,7 @@ GameObject:
   - 114: {fileID: 1614217612}
   m_Layer: 0
   m_Name: Planets
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6143,6 +6158,7 @@ MonoBehaviour:
   resetRotation: 0
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 1
 --- !u!1 &1618076810
 GameObject:
   m_ObjectHideFlags: 0
@@ -6355,6 +6371,7 @@ MonoBehaviour:
   resetRotation: 0
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 1
 --- !u!4 &1652221083
 Transform:
   m_ObjectHideFlags: 0
@@ -6637,6 +6654,7 @@ MonoBehaviour:
   resetRotation: 0
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 0
   scale: 1.25
   minSpeed: 3
   maxSpeed: 5
@@ -6833,6 +6851,7 @@ MonoBehaviour:
   resetRotation: 0
   pool: []
   activeSpaceObjects: []
+  canBeDepleted: 1
 --- !u!4 &1751870583
 Transform:
   m_ObjectHideFlags: 0
@@ -6915,7 +6934,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 79}
+  m_AnchoredPosition: {x: 0, y: 92}
   m_SizeDelta: {x: 0, y: 158}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1777223933

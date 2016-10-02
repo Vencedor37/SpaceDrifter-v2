@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
   public UIController UI;
   public AudioTracks audioTracks;
   public StatTracker stats;
+  public TimeKeeper timeKeeper;
   public GameObject itemDrawZone;
   public GameObject safetyZone;
   public Transform spraySprite;
@@ -70,6 +71,9 @@ public class PlayerController : MonoBehaviour {
 
   private Vector3 lastForceApplied;
   private int standardStarDustPoints = 20;
+  public int currentLives;
+  private int startingLives = 3;
+  public bool newLife = false;
 
 
   void Awake() {
@@ -81,10 +85,12 @@ public class PlayerController : MonoBehaviour {
     sprayAnimator = GetComponent<Animator>();
     Time.timeScale = 1.0F;
     alive = true;
+
     rigidBody = GetComponent<Rigidbody2D>();
     currentHealth = startingHealth;
     currentMoveCapacity = startingMoveCapacity;
     currentScore = startingScore;
+    currentLives = startingLives;
     highScore = PlayerPrefs.GetInt(highScoreKey,0);
 
     GameObject[] debugVisible = GameObject.FindGameObjectsWithTag("VisibleInDebugMode");
@@ -159,6 +165,12 @@ public class PlayerController : MonoBehaviour {
 
     UpdateHealth();
     UpdateScore();
+    if (!alive) {
+      CheckLives();
+    }
+    if (newLife) {
+      NewLife();
+    }
 	}
 
 
@@ -261,7 +273,6 @@ public class PlayerController : MonoBehaviour {
         causeOfDeath = cause;
         alive = false;
         audioTracks.spraySource.Stop();
-        StartCoroutine(GameOver());
       }
     }
   }
@@ -281,6 +292,12 @@ public class PlayerController : MonoBehaviour {
     renderer.color = new Color(1f, 1f, 1f, 1f);
     playerHurt = false;
     yield return null;
+  }
+
+  public void ShowSprite()
+  {
+    SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer>();
+    renderer.color = new Color(1f, 1f, 1f, 1f);
   }
 
 
@@ -685,6 +702,47 @@ public class PlayerController : MonoBehaviour {
     } else {
       spriteRenderer.sprite = noupgradesSprite;
     }
+  }
+
+  public void CheckLives()
+  {
+    if (currentLives > 0) {
+    } else {
+      StartCoroutine(GameOver());
+    }
+  }
+
+  public void NewLife()
+  {
+    GameObject[] backgroundObjects = GameObject.FindGameObjectsWithTag("Background");
+    currentLives -= 1;
+    scoreMultiplier = 1;
+    maxHealth = startingMaxHealth;
+    maxMoveCapacity = startingMaxMoveCapacity;
+    currentHealth = maxHealth;
+    currentMoveCapacity = maxMoveCapacity;
+    hasHealthUpgrade = false;
+    hasMovementUpgrade = false;
+    transform.position = Vector3.zero;
+    transform.rotation = Quaternion.identity;
+    GetComponent<Rigidbody2D>().angularVelocity = 0;
+    GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+
+    newLife = false;
+    CheckUpgradeSprites();
+    foreach (GameObject backgroundObject in backgroundObjects) {
+      SpaceObjectController backgroundController = backgroundObject.GetComponent<SpaceObjectController>();
+      if (backgroundController != null && !backgroundController.avoidCentreDuringGeneration) {
+        backgroundController.ResetPosition();
+      }
+    }
+    Vector3 newCamPosition = mainCamera.transform.position;
+    newCamPosition.x = 0f;
+    newCamPosition.y = 0f;
+    mainCamera.transform.position = newCamPosition;
+    timeKeeper.ClearCentre();
+    timeKeeper.RestoreNonRenewableObjects();
+    StartCoroutine(PlayerHurt("new life"));
   }
 
   public string getBonusType()

@@ -226,6 +226,9 @@ public class UIController : MonoBehaviour {
     if (isPaused && isFastForward) {
       fastForwardToggle.isOn = false;
     }
+    if (isPaused) {
+      playerController.ShowSprite();
+    }
   }
 
   public void RestartGame()

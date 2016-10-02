@@ -26,6 +26,22 @@ public class TimeKeeper : MonoBehaviour {
     }
   }
 
+  public void ClearCentre()
+  {
+    foreach (SpaceObjectController spawner in spawnableObjects) {
+      spawner.ClearCentre(); 
+    }
+  }
+
+  public void RestoreNonRenewableObjects()
+  {
+    foreach (SpaceObjectController spawner in spawnableObjects) {
+      if (spawner.canBeDepleted && !spawner.replaceActive) {
+        spawner.StartCoroutine("RestoreObjects");
+      }
+    }
+  }
+
 
 
 }

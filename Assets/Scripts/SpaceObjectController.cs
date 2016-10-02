@@ -23,6 +23,7 @@ public class SpaceObjectController : MonoBehaviour {
 
   private bool firstBuild = true;
   private bool initialised = false;
+  public bool canBeDepleted = true;
 
 
 
@@ -100,6 +101,12 @@ public class SpaceObjectController : MonoBehaviour {
     }
   }
 
+  IEnumerator RestoreObjects()
+  {
+    yield return CleanActiveList();
+    BuildActiveList();
+  }
+
 
   IEnumerator CleanActiveList()
   {
@@ -111,9 +118,7 @@ public class SpaceObjectController : MonoBehaviour {
       }
     }
 
-    if (!replaceActive) {
-      activeCount = activeSpaceObjects.Count;
-    } else {
+    if (replaceActive) {
       BuildActiveList();
     }
     yield return null;
@@ -123,6 +128,7 @@ public class SpaceObjectController : MonoBehaviour {
   {
     int currentActive = activeSpaceObjects.Count;
     int activeRequired = activeCount - currentActive;
+    Debug.Log("requires activating: " + activeRequired);
     for (int i = 0; i < pool.Length; i++) {
       if (activeRequired > 0) {
         SpaceObject spaceObject = pool[i];
@@ -173,6 +179,36 @@ public class SpaceObjectController : MonoBehaviour {
         }
         activeObject.startMoving();
       }
+    }
+  }
+
+  public void ClearCentre()
+  {
+    List<SpaceObject> currentActiveSpaceObjects = new List<SpaceObject>(activeSpaceObjects);
+    foreach (SpaceObject activeObject in currentActiveSpaceObjects) {
+      SpriteRenderer spriteRenderer = activeObject.GetComponent<SpriteRenderer>();
+      Bounds bounds = spriteRenderer.bounds;
+      if (bounds.Intersects(playerController.getSafetyBounds())) {
+        Vector3 newPosition = playerController.getRandomPosition(true);
+        Transform transform = activeObject.GetComponent<Transform>();
+        transform.position = newPosition;
+        if (resetRotation) {
+          transform.rotation = Quaternion.identity;
+          activeObject.GetComponent<Rigidbody2D>().angularVelocity = 0;
+        }
+        activeObject.startMoving();
+      }
+    }
+  }
+
+  public void ResetPosition()
+  {
+    Debug.Log("resetting centre");
+    List<SpaceObject> currentActiveSpaceObjects = new List<SpaceObject>(activeSpaceObjects);
+    foreach (SpaceObject activeObject in currentActiveSpaceObjects) {
+      Vector3 newPos = playerController.getRandomPosition(false);
+      activeObject.GetComponent<Transform>().position = newPos;
+      activeObject.startMoving();
     }
   }
 

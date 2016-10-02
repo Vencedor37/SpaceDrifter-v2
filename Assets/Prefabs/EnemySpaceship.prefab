@@ -326,8 +326,8 @@ MonoBehaviour:
   destroyOnCollision: 0
   sprayCooldown: 1
   minShootDistance: 12
-  blastDamage: 3
-  blastFrequency: 1.5
+  blastDamage: 10
+  blastFrequency: 2
   blastSpeed: 9
   primaryBlast: {fileID: 114000013523221746, guid: ca1a48c2f9cd948f99b702d418156397,
     type: 2}
