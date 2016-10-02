@@ -16,6 +16,7 @@ TagManager:
   - MovementPickupUpgrade
   - EnemySpaceship
   - Background
+  - ShowOnPlayerDeath
   layers:
   - Default
   - TransparentFX

@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour {
   private int bonusAmount;
   private string bonusType;
   private string causeOfDeath;
+  private bool lostLife = false;
 
   private Vector3 lastForceApplied;
   private int standardStarDustPoints = 20;
@@ -163,13 +164,11 @@ public class PlayerController : MonoBehaviour {
       CheckUpgradeSprites();
     }
 
-    UpdateHealth();
-    UpdateScore();
-    if (!alive) {
+    if (alive) {
+      UpdateHealth();
+      UpdateScore();
+    } else {
       CheckLives();
-    }
-    if (newLife) {
-      NewLife();
     }
 	}
 
@@ -272,6 +271,7 @@ public class PlayerController : MonoBehaviour {
       if (currentHealth <= 0) {
         causeOfDeath = cause;
         alive = false;
+        currentLives -= 1;
         audioTracks.spraySource.Stop();
       }
     }
@@ -405,7 +405,7 @@ public class PlayerController : MonoBehaviour {
       if (blast.destroyOnCollision) {
         Destroy(other.gameObject);
       }
-      TakeDamage(damage, "spaceship");
+      TakeDamage(damage, "spaceship_blast");
     }
 
     if (other.gameObject.CompareTag("HealthPickupUpgrade")) {
@@ -528,6 +528,18 @@ public class PlayerController : MonoBehaviour {
       PlayerPrefs.Save();
     }
     yield return null;
+  }
+
+  public IEnumerator LostLife()
+  {
+    float time = 1.5f;
+    float start = Time.realtimeSinceStartup;
+    while (Time.realtimeSinceStartup < start + time) {
+      yield return null;
+    }
+    if (!alive) {
+      lostLife = true;
+    }
   }
 
   public bool isInputPressed()
@@ -706,16 +718,16 @@ public class PlayerController : MonoBehaviour {
 
   public void CheckLives()
   {
-    if (currentLives > 0) {
-    } else {
+    if (currentLives < 0) {
       StartCoroutine(GameOver());
+    } else {
+      StartCoroutine(LostLife());
     }
   }
 
   public void NewLife()
   {
     GameObject[] backgroundObjects = GameObject.FindGameObjectsWithTag("Background");
-    currentLives -= 1;
     scoreMultiplier = 1;
     maxHealth = startingMaxHealth;
     maxMoveCapacity = startingMaxMoveCapacity;
@@ -728,7 +740,6 @@ public class PlayerController : MonoBehaviour {
     GetComponent<Rigidbody2D>().angularVelocity = 0;
     GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 
-    newLife = false;
     CheckUpgradeSprites();
     foreach (GameObject backgroundObject in backgroundObjects) {
       SpaceObjectController backgroundController = backgroundObject.GetComponent<SpaceObjectController>();
@@ -742,6 +753,9 @@ public class PlayerController : MonoBehaviour {
     mainCamera.transform.position = newCamPosition;
     timeKeeper.ClearCentre();
     timeKeeper.RestoreNonRenewableObjects();
+    lostLife = false;
+    alive = true;
+    UI.HideLostLifeUI();
     StartCoroutine(PlayerHurt("new life"));
   }
 
@@ -828,6 +842,16 @@ public class PlayerController : MonoBehaviour {
   public bool getHasHealthUpgrade()
   {
     return hasHealthUpgrade;
+  }
+
+  public int getCurrentLives()
+  {
+    return currentLives;
+  }
+
+  public bool getLostLife()
+  {
+    return lostLife;
   }
 
 

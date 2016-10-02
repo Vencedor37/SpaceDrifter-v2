@@ -42,8 +42,6 @@ public class StatisticRenderer : MonoBehaviour {
       string row3 = "Close Calls: " + stats.closeCallsMedium + pad + "Tight Squeezes: " + stats.closeCallsHigh;
       timeText.text = row1;
       closeCallText.text = row3;
-//      levelText.text = "Level: " + stats.highestLevel;
-//      scoreText.text = "Score: " + stats.score;
     }
 	}
 }

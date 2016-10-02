@@ -18,6 +18,7 @@ public class UIController : MonoBehaviour {
   public float BOTTOM_SAFETY   = -10;
 
   private GameObject[] gameOverUI;
+  private GameObject[] lostLifeUI;
 
   public bool isFastForward = false;
   public bool isPaused = false;
@@ -66,8 +67,10 @@ public class UIController : MonoBehaviour {
     lineRenderer.sortingLayerName = "UI";
 
     gameOverUI = GameObject.FindGameObjectsWithTag("ShowOnGameOver");
+    lostLifeUI = GameObject.FindGameObjectsWithTag("ShowOnPlayerDeath");
     bonusText.enabled = false;
     HideGameOverUI();
+    HideLostLifeUI();
 	}
 
 	// Update is called once per frame
@@ -94,11 +97,8 @@ public class UIController : MonoBehaviour {
 
     if (playerController.getIsGameOver()) {
       ShowGameOverUI();
-      if (playerController.getCauseOfDeath() == "oxygen") {
-        gameOverSubtitle.text = "Ran out of oxygen";
-      } else if (playerController.getCauseOfDeath() == "asteroid") {
-        gameOverSubtitle.text = "Hit by an asteroid";
-      }
+    } else if (playerController.getLostLife()) {
+      ShowLostLifeUI();
     } else {
       CheckSpeed();
     }
@@ -107,7 +107,7 @@ public class UIController : MonoBehaviour {
 
   private void UpdatePauseDisplay()
   {
-    if (isPaused && !playerController.getIsGameOver()) {
+    if (isPaused && !playerController.getIsGameOver() && playerController.getAlive()) {
       pauseText.enabled = true;
     } else {
       pauseText.enabled = false;
@@ -180,6 +180,20 @@ public class UIController : MonoBehaviour {
   public void HideGameOverUI()
   {
     foreach (GameObject gameObject in gameOverUI) {
+      gameObject.SetActive(false);
+    }
+  }
+
+  public void ShowLostLifeUI()
+  {
+    foreach (GameObject gameObject in lostLifeUI) {
+      gameObject.SetActive(true);
+    }
+  }
+
+  public void HideLostLifeUI()
+  {
+    foreach (GameObject gameObject in lostLifeUI) {
       gameObject.SetActive(false);
     }
   }

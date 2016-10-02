@@ -128,7 +128,6 @@ public class SpaceObjectController : MonoBehaviour {
   {
     int currentActive = activeSpaceObjects.Count;
     int activeRequired = activeCount - currentActive;
-    Debug.Log("requires activating: " + activeRequired);
     for (int i = 0; i < pool.Length; i++) {
       if (activeRequired > 0) {
         SpaceObject spaceObject = pool[i];
@@ -203,7 +202,6 @@ public class SpaceObjectController : MonoBehaviour {
 
   public void ResetPosition()
   {
-    Debug.Log("resetting centre");
     List<SpaceObject> currentActiveSpaceObjects = new List<SpaceObject>(activeSpaceObjects);
     foreach (SpaceObject activeObject in currentActiveSpaceObjects) {
       Vector3 newPos = playerController.getRandomPosition(false);
