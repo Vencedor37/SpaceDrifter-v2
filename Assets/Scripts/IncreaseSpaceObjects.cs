@@ -24,7 +24,7 @@ public class IncreaseSpaceObjects : MonoBehaviour {
   {
     timer += Time.deltaTime; 
     if (timer >= incrementTime) {
-      if (incrementAmount + controller.activeCount <= objectLimit) {
+      if (incrementAmount + controller.targetActiveCount <= objectLimit) {
         controller.AddActive(incrementAmount);
       }
       timer = 0;

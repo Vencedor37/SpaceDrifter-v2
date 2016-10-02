@@ -404,6 +404,59 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 22644384}
+--- !u!1 &40364679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 40364680}
+  - 114: {fileID: 40364681}
+  m_Layer: 0
+  m_Name: Checkpoint 0
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &40364680
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40364679}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 0
+--- !u!114 &40364681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40364679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 1
+  largeAsteroids: 5
+  mediumAsteroids: 0
+  smallAsteroids: 0
+  spaceships: 0
+  healthPickups: 0
+  movementPickups: 0
+  pointsPickupsLevel1: 0
+  pointsPickupsLevel2: 0
+  pointsPickupsLevel3: 0
+  healthUpgrades: 0
+  movementUpgrades: 0
+  lifePickups: 0
 --- !u!1 &60169487
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +791,59 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 97024062}
+--- !u!1 &117923305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 117923306}
+  - 114: {fileID: 117923307}
+  m_Layer: 0
+  m_Name: Checkpoint 2
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &117923306
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117923305}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 2
+--- !u!114 &117923307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117923305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 10
+  largeAsteroids: 5
+  mediumAsteroids: 0
+  smallAsteroids: 0
+  spaceships: 0
+  healthPickups: 100
+  movementPickups: 0
+  pointsPickupsLevel1: 0
+  pointsPickupsLevel2: 0
+  pointsPickupsLevel3: 0
+  healthUpgrades: 0
+  movementUpgrades: 0
+  lifePickups: 0
 --- !u!1 &209621038
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,7 +1000,7 @@ GameObject:
   - 4: {fileID: 246282215}
   - 114: {fileID: 246282216}
   m_Layer: 0
-  m_Name: LifePickup1
+  m_Name: LifePickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -911,8 +1017,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 554441521}
-  m_RootOrder: 0
+  m_Father: {fileID: 1555049710}
+  m_RootOrder: 3
 --- !u!114 &246282216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -927,8 +1033,9 @@ MonoBehaviour:
   type: {fileID: 114000010962907792, guid: b6af0abdd859f4966be114f109993b41, type: 2}
   UI: {fileID: 2016584744}
   spawnImmediately: 0
-  poolCount: 1
-  activeCount: 1
+  poolCount: 20
+  targetActiveCount: 0
+  startingActiveCount: 0
   playerController: {fileID: 778002976}
   replaceActive: 0
   avoidCentreDuringGeneration: 1
@@ -1187,7 +1294,8 @@ MonoBehaviour:
   UI: {fileID: 2016584744}
   spawnImmediately: 0
   poolCount: 1
-  activeCount: 1
+  targetActiveCount: 0
+  startingActiveCount: 0
   playerController: {fileID: 778002976}
   replaceActive: 0
   avoidCentreDuringGeneration: 1
@@ -2204,7 +2312,8 @@ MonoBehaviour:
   UI: {fileID: 2016584744}
   spawnImmediately: 0
   poolCount: 1
-  activeCount: 1
+  targetActiveCount: 0
+  startingActiveCount: 0
   playerController: {fileID: 778002976}
   replaceActive: 0
   avoidCentreDuringGeneration: 1
@@ -2218,6 +2327,37 @@ MonoBehaviour:
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 1
+--- !u!1 &465466604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 465466605}
+  m_Layer: 0
+  m_Name: Checkpoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &465466605
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465466604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 40364680}
+  - {fileID: 1811279646}
+  - {fileID: 117923306}
+  m_Father: {fileID: 468606413}
+  m_RootOrder: 0
 --- !u!1 &468606411
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,6 +2411,20 @@ MonoBehaviour:
   - 1
   - 1
   - 5
+  spawnCheckpoints: []
+  hasSpawned: 
+  largeAsteroids: {fileID: 476417460}
+  mediumAsteroids: {fileID: 1720012994}
+  smallAsteroids: {fileID: 1431707436}
+  spaceships: {fileID: 1429182245}
+  healthPickups: {fileID: 851514724}
+  movementPickups: {fileID: 1563592273}
+  pointsPickupsLevel1: {fileID: 1574294077}
+  pointsPickupsLevel2: {fileID: 1652221082}
+  pointsPickupsLevel3: {fileID: 1751870582}
+  healthUpgrades: {fileID: 283006231}
+  movementUpgrades: {fileID: 444866631}
+  lifePickups: {fileID: 246282216}
 --- !u!4 &468606413
 Transform:
   m_ObjectHideFlags: 0
@@ -2282,6 +2436,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 465466605}
   - {fileID: 1763516251}
   - {fileID: 1555049710}
   m_Father: {fileID: 0}
@@ -2330,7 +2485,8 @@ MonoBehaviour:
   UI: {fileID: 2016584744}
   spawnImmediately: 0
   poolCount: 100
-  activeCount: 10
+  targetActiveCount: 0
+  startingActiveCount: 0
   playerController: {fileID: 778002976}
   replaceActive: 0
   avoidCentreDuringGeneration: 1
@@ -2546,35 +2702,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 553583399}
---- !u!1 &554441520
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 554441521}
-  m_Layer: 0
-  m_Name: LifePickups
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &554441521
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 554441520}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 246282215}
-  m_Father: {fileID: 1555049710}
-  m_RootOrder: 3
 --- !u!1 &558396335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3503,7 +3630,8 @@ MonoBehaviour:
   UI: {fileID: 2016584744}
   spawnImmediately: 0
   poolCount: 50
-  activeCount: 3
+  targetActiveCount: 0
+  startingActiveCount: 0
   playerController: {fileID: 778002976}
   replaceActive: 1
   avoidCentreDuringGeneration: 1
@@ -3741,7 +3869,8 @@ MonoBehaviour:
   UI: {fileID: 2016584744}
   spawnImmediately: 1
   poolCount: 2
-  activeCount: 2
+  targetActiveCount: 0
+  startingActiveCount: 2
   playerController: {fileID: 778002976}
   replaceActive: 0
   avoidCentreDuringGeneration: 1
@@ -5285,7 +5414,8 @@ MonoBehaviour:
   UI: {fileID: 2016584744}
   spawnImmediately: 1
   poolCount: 300
-  activeCount: 300
+  targetActiveCount: 0
+  startingActiveCount: 300
   playerController: {fileID: 778002976}
   replaceActive: 0
   avoidCentreDuringGeneration: 0
@@ -6074,7 +6204,8 @@ MonoBehaviour:
   UI: {fileID: 2016584744}
   spawnImmediately: 0
   poolCount: 20
-  activeCount: 10
+  targetActiveCount: 0
+  startingActiveCount: 0
   playerController: {fileID: 778002976}
   replaceActive: 1
   avoidCentreDuringGeneration: 1
@@ -6219,7 +6350,8 @@ MonoBehaviour:
   UI: {fileID: 2016584744}
   spawnImmediately: 0
   poolCount: 100
-  activeCount: 15
+  targetActiveCount: 0
+  startingActiveCount: 0
   playerController: {fileID: 778002976}
   replaceActive: 0
   avoidCentreDuringGeneration: 1
@@ -6504,9 +6636,9 @@ Transform:
   - {fileID: 851514723}
   - {fileID: 1563592272}
   - {fileID: 1685053547}
-  - {fileID: 554441521}
+  - {fileID: 246282215}
   m_Father: {fileID: 468606413}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &1555521507
 GameObject:
   m_ObjectHideFlags: 0
@@ -6587,7 +6719,8 @@ MonoBehaviour:
   UI: {fileID: 2016584744}
   spawnImmediately: 0
   poolCount: 50
-  activeCount: 3
+  targetActiveCount: 0
+  startingActiveCount: 0
   playerController: {fileID: 778002976}
   replaceActive: 1
   avoidCentreDuringGeneration: 1
@@ -6644,8 +6777,9 @@ MonoBehaviour:
   type: {fileID: 114000012248531524, guid: 340ebb79ba1c9402b860dd02cffe8a2c, type: 2}
   UI: {fileID: 2016584744}
   spawnImmediately: 0
-  poolCount: 100
-  activeCount: 4
+  poolCount: 20
+  targetActiveCount: 0
+  startingActiveCount: 0
   playerController: {fileID: 778002976}
   replaceActive: 1
   avoidCentreDuringGeneration: 1
@@ -6891,7 +7025,8 @@ MonoBehaviour:
   UI: {fileID: 2016584744}
   spawnImmediately: 1
   poolCount: 1
-  activeCount: 1
+  targetActiveCount: 0
+  startingActiveCount: 1
   playerController: {fileID: 778002976}
   replaceActive: 0
   avoidCentreDuringGeneration: 1
@@ -7103,8 +7238,9 @@ MonoBehaviour:
   type: {fileID: 114000011779550118, guid: 4de0f370d4a77461089b383d9cb672d7, type: 2}
   UI: {fileID: 2016584744}
   spawnImmediately: 0
-  poolCount: 100
-  activeCount: 2
+  poolCount: 20
+  targetActiveCount: 0
+  startingActiveCount: 0
   playerController: {fileID: 778002976}
   replaceActive: 1
   avoidCentreDuringGeneration: 1
@@ -7387,7 +7523,8 @@ MonoBehaviour:
   UI: {fileID: 2016584744}
   spawnImmediately: 0
   poolCount: 100
-  activeCount: 15
+  targetActiveCount: 0
+  startingActiveCount: 0
   playerController: {fileID: 778002976}
   replaceActive: 0
   avoidCentreDuringGeneration: 1
@@ -7583,8 +7720,9 @@ MonoBehaviour:
   type: {fileID: 114000011618139992, guid: a8e5f7ab210874b40a61ce931c81dd15, type: 2}
   UI: {fileID: 2016584744}
   spawnImmediately: 0
-  poolCount: 100
-  activeCount: 2
+  poolCount: 20
+  targetActiveCount: 0
+  startingActiveCount: 0
   playerController: {fileID: 778002976}
   replaceActive: 1
   avoidCentreDuringGeneration: 1
@@ -7642,7 +7780,7 @@ Transform:
   - {fileID: 1431707435}
   - {fileID: 1429182246}
   m_Father: {fileID: 468606413}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &1777223931
 GameObject:
   m_ObjectHideFlags: 0
@@ -7916,6 +8054,59 @@ SpriteRenderer:
   m_Color: {r: 0.9019608, g: 0.9019608, b: 0.9019608, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1811279645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1811279646}
+  - 114: {fileID: 1811279647}
+  m_Layer: 0
+  m_Name: Checkpoint 1
+  m_TagString: SpawnCheckpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1811279646
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1811279645}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 465466605}
+  m_RootOrder: 1
+--- !u!114 &1811279647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1811279645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 5
+  largeAsteroids: 0
+  mediumAsteroids: 0
+  smallAsteroids: 20
+  spaceships: 0
+  healthPickups: 0
+  movementPickups: 0
+  pointsPickupsLevel1: 0
+  pointsPickupsLevel2: 0
+  pointsPickupsLevel3: 0
+  healthUpgrades: 0
+  movementUpgrades: 0
+  lifePickups: 0
 --- !u!1 &1811415777
 GameObject:
   m_ObjectHideFlags: 0

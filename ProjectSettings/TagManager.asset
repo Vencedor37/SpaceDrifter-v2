@@ -18,6 +18,7 @@ TagManager:
   - Background
   - ShowOnPlayerDeath
   - LifePickup
+  - SpawnCheckpoint
   layers:
   - Default
   - TransparentFX

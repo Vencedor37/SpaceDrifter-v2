@@ -7,7 +7,8 @@ public class SpaceObjectController : MonoBehaviour {
   public UIController UI;
   public bool spawnImmediately;
   public int poolCount = 0;
-  public int activeCount = 0;
+  public int targetActiveCount = 0;
+  public int startingActiveCount = 0;
   public PlayerController playerController;
   public bool replaceActive = false;
   public bool avoidCentreDuringGeneration = true;
@@ -30,6 +31,7 @@ public class SpaceObjectController : MonoBehaviour {
 
 	// Use this for initialization
 	public void Start () {
+    targetActiveCount = startingActiveCount;
     if (spawnImmediately) {
       Spawn();
     }
@@ -120,6 +122,8 @@ public class SpaceObjectController : MonoBehaviour {
 
     if (replaceActive) {
       BuildActiveList();
+    } else {
+      targetActiveCount = activeSpaceObjects.Count;
     }
     yield return null;
   }
@@ -127,7 +131,7 @@ public class SpaceObjectController : MonoBehaviour {
   void BuildActiveList()
   {
     int currentActive = activeSpaceObjects.Count;
-    int activeRequired = activeCount - currentActive;
+    int activeRequired = targetActiveCount - currentActive;
     for (int i = 0; i < pool.Length; i++) {
       if (activeRequired > 0) {
         SpaceObject spaceObject = pool[i];
@@ -225,9 +229,14 @@ public class SpaceObjectController : MonoBehaviour {
 
   public int AddActive(int number)
   {
-    activeCount += number;
-    BuildActiveList();
-    return activeCount;
+    if ((targetActiveCount + number) <= poolCount) {
+      targetActiveCount += number;
+      BuildActiveList();
+    } else {
+      targetActiveCount = poolCount;
+      BuildActiveList();
+    }
+    return targetActiveCount;
   }
 
 
