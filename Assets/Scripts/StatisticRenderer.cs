@@ -8,6 +8,7 @@ public class StatisticRenderer : MonoBehaviour {
   public Text healthText;
   public Text movementText;
   public Text pointsText;
+  public Text spaceshipText;
   public Text closeCallText;
   public Text tightSqueezeText;
   public Text timeText;
@@ -17,9 +18,9 @@ public class StatisticRenderer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
     if (!player.getAlive()) {
@@ -31,9 +32,10 @@ public class StatisticRenderer : MonoBehaviour {
       } else {
         formattedTime = System.TimeSpan.FromSeconds((int)time).ToString();
       }
-      healthText.text = "x " + stats.healthPickupsCollected;	
+      healthText.text = "x " + stats.healthPickupsCollected;
       movementText.text = "x " + stats.movementPickupsCollected;
       pointsText.text = "x " + stats.pointsPickupsCollected;
+      spaceshipText.text = "x " + stats.spaceshipsDestroyed;
       closeCallText.text = "Close Calls: " + stats.closeCallsMedium;
       tightSqueezeText.text = "Tight Squeezes: " + stats.closeCallsHigh;
       string row1 = "Time: " + formattedTime + pad + "Bonus: x" + stats.highestLevel + pad + "Score: " + stats.score;

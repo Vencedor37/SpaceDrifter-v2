@@ -69,6 +69,7 @@ public class PlayerController : MonoBehaviour {
   private string causeOfDeath;
 
   private Vector3 lastForceApplied;
+  private int standardStarDustPoints = 20;
 
 
   void Awake() {
@@ -419,7 +420,15 @@ public class PlayerController : MonoBehaviour {
 
   public void StartBonus(int amount, string type)
   {
-    IncreaseBonusStats(type);
+    if (type == "Star Dust") {
+      int newAmount = amount;
+      while (newAmount > 0) {
+        IncreaseBonusStats(type);
+        newAmount -= standardStarDustPoints;
+      }
+    } else {
+      IncreaseBonusStats(type);
+    }
     showBonus = true;
     bonusAmount = amount;
     bonusType = type;
@@ -449,6 +458,9 @@ public class PlayerController : MonoBehaviour {
       case "Level Up!":
         stats.highestLevel ++;
         break;
+      case "UFO":
+        stats.spaceshipsDestroyed ++;
+        break;
       default:
         Debug.Log("unknown bonus: " + type);
         break;
@@ -465,20 +477,23 @@ public class PlayerController : MonoBehaviour {
   {
     if (other.gameObject.CompareTag("Enemy")) {
       audioTracks.enemySource.Play();
-      EnemyCollision(other);
+      EnemyCollision(other, "asteroid");
+    } else if (other.gameObject.CompareTag("EnemySpaceship")) {
+      audioTracks.enemySource.Play();
+      EnemyCollision(other, "spaceship");
     }
   }
 
 
-  void EnemyCollision(Collision2D other)
+  void EnemyCollision(Collision2D other, string type)
   {
-    float force = 50;
-    Transform transform = GetComponent<Transform>();
-    Vector3 dir = (Vector3)other.contacts[0].point - (Vector3)transform.position;
-    dir = -dir.normalized;
-    GetComponent<Rigidbody2D>().AddForce(dir*force);
+    //float force = 50;
+    //Transform transform = GetComponent<Transform>();
+    //Vector3 dir = (Vector3)other.contacts[0].point - (Vector3)transform.position;
+    //dir = -dir.normalized;
+    //GetComponent<Rigidbody2D>().AddForce(dir*force);
     SpaceObject enemyControl = other.gameObject.GetComponent<SpaceObject>();
-    TakeDamage(enemyControl.getDamage(), "asteroid");
+    TakeDamage(enemyControl.getDamage(), type);
   }
 
   public IEnumerator GameOver()

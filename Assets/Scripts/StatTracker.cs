@@ -9,6 +9,7 @@ public class StatTracker : MonoBehaviour {
   public int score = 0;
   public int closeCallsMedium = 0;
   public int closeCallsHigh = 0;
+  public int spaceshipsDestroyed;
   public float timeLasted = 0;
 
 
