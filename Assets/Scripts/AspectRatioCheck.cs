@@ -8,18 +8,18 @@ public class AspectRatioCheck : MonoBehaviour {
   public float targetAspect;
   public GameObject safeZone;
 
-  void Start () 
+  void Start ()
   {
     screenWidth = Screen.width;
     screenHeight = Screen.height;
     ResizeCamera();
     ResizeSafeZone();
     InvokeRepeating("CheckResolutionChange", 0.5f, 0.5f);
-  }	
+  }
 
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
   void ResizeCamera()
@@ -65,8 +65,8 @@ public class AspectRatioCheck : MonoBehaviour {
     float worldScreenWidth = worldScreenHeight / Screen.height * Screen.width;
 
     safeZone.transform.localScale = new Vector3(
-      worldScreenWidth / spriteRenderer.sprite.bounds.size.x * 1.15f,
-      worldScreenHeight / spriteRenderer.sprite.bounds.size.y * 1.15f, 1);
+      worldScreenWidth / spriteRenderer.sprite.bounds.size.x * 1.20f,
+      worldScreenHeight / spriteRenderer.sprite.bounds.size.y * 1.20f, 1);
 
   }
 

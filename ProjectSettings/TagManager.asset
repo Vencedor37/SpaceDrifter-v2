@@ -19,6 +19,7 @@ TagManager:
   - ShowOnPlayerDeath
   - LifePickup
   - SpawnCheckpoint
+  - Audio
   layers:
   - Default
   - TransparentFX

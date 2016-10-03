@@ -11,6 +11,10 @@ public class AsteroidController : SpaceObjectController {
     spaceObject.AdjustSize(scale);
     spaceObject.AdjustSpeed(minSpeed, maxSpeed);
     spaceObject.AdjustMass(scale);
+    if (overrideSprite != null) {
+      SpriteRenderer spriteRenderer = spaceObject.GetComponent<SpriteRenderer>();
+      spriteRenderer.sprite = overrideSprite;
+    }
   }
 
 }

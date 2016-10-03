@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class SpaceObjectController : MonoBehaviour {
   public SpaceObject type;
   public UIController UI;
+  public Sprite overrideSprite;
   public bool spawnImmediately;
   public int poolCount = 0;
   public int targetActiveCount = 0;
@@ -100,6 +101,10 @@ public class SpaceObjectController : MonoBehaviour {
     if (randomiseScale) {
       float newScale = Random.Range(.5f, 1f);
       spaceObject.AdjustSize(newScale);
+    }
+    if (overrideSprite != null) {
+      SpriteRenderer spriteRenderer = spaceObject.GetComponent<SpriteRenderer>();
+      spriteRenderer.sprite = overrideSprite;
     }
   }
 

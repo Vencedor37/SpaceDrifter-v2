@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Spaceship : SpaceObject {
+  public AudioTracks audioTracks;
   public float minShootDistance;
   public float blastDamage;
   public float blastFrequency = 0;
@@ -14,6 +15,7 @@ public class Spaceship : SpaceObject {
 	// Use this for initialization
 	void Start () {
     player = GameObject.FindWithTag("Player");
+    audioTracks = GameObject.FindWithTag("Audio").GetComponent<AudioTracks>();
     if (blastFrequency > 0) {
       InvokeRepeating("Shoot", blastFrequency, blastFrequency);
     }
@@ -31,6 +33,7 @@ public class Spaceship : SpaceObject {
       if (GetComponent<Renderer>().isVisible && gameObject.transform.rotation == Quaternion.identity) {
         float dist = Vector3.Distance(player.transform.position, transform.position);
         if (dist > minShootDistance) {
+          audioTracks.spaceshipBlast.Play();
           BlastObject blast = (BlastObject)Instantiate(primaryBlast, transform.position, transform.rotation);
           blast.transform.SetParent(GetComponent<Transform>(), true);
           blast.playerT = player.transform;
@@ -84,7 +87,7 @@ public class Spaceship : SpaceObject {
     // time = distance / velocity
     float distance = Vector3.Distance(target, origin);
     float time = distance / velocity.magnitude;
-    return time; 
+    return time;
   }
 
   Vector2 EstimatePlayerPosition(float time)
@@ -96,6 +99,7 @@ public class Spaceship : SpaceObject {
 
   public IEnumerator BlowUp( )
   {
+    audioTracks.spaceshipExplosionSource.Play();
     int points = gameObject.GetComponent<SpaceObject>().getPointsBonus();
     float newAlpha = 0;
     float dieTimeLimit = 0.15f;

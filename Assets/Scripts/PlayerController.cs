@@ -414,6 +414,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     if (other.gameObject.CompareTag("Blast")) {
+      audioTracks.hitFromBlastSource.Play();
       SpaceObject blast = other.gameObject.GetComponent<SpaceObject>();
       float damage = blast.damage;
       if (blast.destroyOnCollision) {
@@ -423,6 +424,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     if (other.gameObject.CompareTag("HealthPickupUpgrade")) {
+      audioTracks.upgradePowerUpSource.Play();
       if (HasExtraHealthBar()) {
         Debug.LogError("Can't get extra health twice");
       }
@@ -436,6 +438,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     if (other.gameObject.CompareTag("MovementPickupUpgrade")) {
+      audioTracks.upgradePowerUpSource.Play();
       if (HasExtraMovementBar()) {
         Debug.LogError("Can't get extra movement twice");
       }
@@ -449,7 +452,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     if (other.gameObject.CompareTag("LifePickup")) {
-      audioTracks.pointsSource.Play();
+      audioTracks.newLifeSource.Play();
       SpaceObject lifePickup = other.gameObject.GetComponent<SpaceObject>();
       if (lifePickup.destroyOnCollision) {
         other.gameObject.SetActive(false);

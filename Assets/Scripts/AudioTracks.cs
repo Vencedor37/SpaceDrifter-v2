@@ -8,6 +8,12 @@ public class AudioTracks : MonoBehaviour {
   public AudioSource fuelSource;
   public AudioSource oxygenSource;
   public AudioSource pointsSource;
+  public AudioSource spaceshipBlast;
+  public AudioSource upgradePowerUpSource;
+  public AudioSource hitFromBlastSource;
+  public AudioSource spaceshipExplosionSource;
+  public AudioSource newLifeSource;
+
   public AudioSource backgroundMusic;
 
 
