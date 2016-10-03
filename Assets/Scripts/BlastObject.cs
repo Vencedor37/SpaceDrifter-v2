@@ -30,9 +30,8 @@ public class BlastObject : SpaceObject {
     }
     if (isRepelled && GetComponent<Renderer>().isVisible) {
       if (other.gameObject.CompareTag("EnemySpaceship")) {
-        SpaceObject spaceShip = other.gameObject.GetComponent<SpaceObject>();
-        player.StartBonus(spaceShip.getPointsBonus(), "UFO");
-        other.gameObject.SetActive(false);
+        other.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+        other.gameObject.GetComponent<Spaceship>().StartCoroutine("BlowUp");
         Destroy(gameObject);
       }
     }

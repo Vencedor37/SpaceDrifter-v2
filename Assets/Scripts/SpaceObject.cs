@@ -112,7 +112,6 @@ public class SpaceObject : MonoBehaviour {
 
   public IEnumerator Spray(Vector3 force)
   {
-    Debug.Log("spraying");
     sprayedRecently = true;
     Vector3 toApply = force *= -1;
     GetComponent<Rigidbody2D>().AddForce(toApply);
@@ -120,6 +119,5 @@ public class SpaceObject : MonoBehaviour {
     sprayedRecently = false;
     yield return null;
   }
-
 
 }

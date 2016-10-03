@@ -611,6 +611,7 @@ MonoBehaviour:
   fuelSource: {fileID: 1618076811}
   oxygenSource: {fileID: 1323997948}
   pointsSource: {fileID: 1811415779}
+  backgroundMusic: {fileID: 836515637}
 --- !u!4 &85673441
 Transform:
   m_ObjectHideFlags: 0
@@ -628,6 +629,7 @@ Transform:
   - {fileID: 1618076812}
   - {fileID: 1323997949}
   - {fileID: 1811415778}
+  - {fileID: 836515636}
   m_Father: {fileID: 0}
   m_RootOrder: 5
 --- !u!1 &86069095
@@ -890,7 +892,7 @@ MonoBehaviour:
   smallAsteroids: 0
   spaceships: 0
   healthPickups: 2
-  movementPickups: 0
+  movementPickups: 1
   pointsPickupsLevel1: 0
   pointsPickupsLevel2: 0
   pointsPickupsLevel3: 0
@@ -1054,7 +1056,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.7603176}
   m_AnchorMax: {x: 0.5, y: 0.7603176}
-  m_AnchoredPosition: {x: 2.7999887, y: -2.2000122}
+  m_AnchoredPosition: {x: 2.7999887, y: -2.2001953}
   m_SizeDelta: {x: 262, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &221409570
@@ -1547,7 +1549,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 107e91211fb454897a5cde399a25daf9, type: 3}
-    m_FontSize: 36
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -1558,7 +1560,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: +20
+  m_Text: Tight Squeeze +100
 --- !u!1 &321368494
 GameObject:
   m_ObjectHideFlags: 0
@@ -3573,7 +3575,7 @@ Transform:
   m_GameObject: {fileID: 772244392}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -30, y: 0.7, z: -725.76825}
-  m_LocalScale: {x: 5.6272697, y: 11.265232, z: 14.495366}
+  m_LocalScale: {x: 6, y: 8, z: 14.495366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1079403166}
@@ -3970,6 +3972,109 @@ RectTransform:
   m_AnchoredPosition: {x: 66, y: 32}
   m_SizeDelta: {x: 217, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &836515635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 836515636}
+  - 82: {fileID: 836515637}
+  m_Layer: 0
+  m_Name: BackgroundMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &836515636
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 836515635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 85673441}
+  m_RootOrder: 6
+--- !u!82 &836515637
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 836515635}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a916293ab9f1542268f58cc96499a88f, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.4
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &851514722
 GameObject:
   m_ObjectHideFlags: 0
@@ -4652,7 +4757,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2041827633
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300002, guid: 511de975d06fd4b87922c8cc0fe79234, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5076,15 +5181,15 @@ RectTransform:
   m_GameObject: {fileID: 1193476518}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -3.000024}
-  m_LocalScale: {x: 14, y: 11, z: 19.466663}
+  m_LocalScale: {x: 14, y: 10, z: 19.466663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1555521508}
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -31.6, y: -1.95}
-  m_SizeDelta: {x: 1.6, y: 3.9}
+  m_AnchoredPosition: {x: -31.600002, y: -1.2}
+  m_SizeDelta: {x: 1.6, y: 2.5}
   m_Pivot: {x: 0.5000001, y: 0.5}
 --- !u!212 &1193476520
 SpriteRenderer:
@@ -5512,7 +5617,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2041827633
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300006, guid: 511de975d06fd4b87922c8cc0fe79234, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5948,7 +6053,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b2ae74db6f3ea4de480b8c258141043e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 0.15
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -6069,7 +6174,7 @@ MonoBehaviour:
   smallAsteroids: 0
   spaceships: 0
   healthPickups: 0
-  movementPickups: 0
+  movementPickups: 1
   pointsPickupsLevel1: 0
   pointsPickupsLevel2: 0
   pointsPickupsLevel3: 0
@@ -6591,8 +6696,8 @@ MonoBehaviour:
   mediumAsteroids: 5
   smallAsteroids: 0
   spaceships: 0
-  healthPickups: 0
-  movementPickups: 0
+  healthPickups: 1
+  movementPickups: 1
   pointsPickupsLevel1: 1
   pointsPickupsLevel2: 0
   pointsPickupsLevel3: 0
@@ -7321,7 +7426,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 47.399994, y: 0.5000003}
+  m_AnchoredPosition: {x: 55.8, y: 0.5000003}
   m_SizeDelta: {x: 94.8, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1563592271
@@ -7626,7 +7731,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2041827633
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300008, guid: 511de975d06fd4b87922c8cc0fe79234, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8007,7 +8112,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1690502447}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.000022411346}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00004673004}
   m_LocalScale: {x: 14, y: 12, z: 19.466663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -8015,9 +8120,9 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -41, y: 0.7}
+  m_AnchoredPosition: {x: -34.700005, y: 0.7000019}
   m_SizeDelta: {x: 0.9, y: 1.4}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1.0000005, y: 0.5}
 --- !u!212 &1690502449
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9631,6 +9736,7 @@ MonoBehaviour:
   healthCountText: {fileID: 19528389}
   fastForwardToggle: {fileID: 2016662756}
   pauseToggle: {fileID: 1214803555}
+  audioTracks: {fileID: 85673440}
 --- !u!1 &2016662754
 GameObject:
   m_ObjectHideFlags: 0

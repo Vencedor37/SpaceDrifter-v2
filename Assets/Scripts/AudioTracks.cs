@@ -8,6 +8,7 @@ public class AudioTracks : MonoBehaviour {
   public AudioSource fuelSource;
   public AudioSource oxygenSource;
   public AudioSource pointsSource;
+  public AudioSource backgroundMusic;
 
 
 	// Use this for initialization

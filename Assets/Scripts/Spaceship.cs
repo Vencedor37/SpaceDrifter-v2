@@ -94,4 +94,22 @@ public class Spaceship : SpaceObject {
     return playerPos + rigidbody.velocity * time;
   }
 
+  public IEnumerator BlowUp( )
+  {
+    int points = gameObject.GetComponent<SpaceObject>().getPointsBonus();
+    float newAlpha = 0;
+    float dieTimeLimit = 0.15f;
+    float dieTimeCount = 0;
+    while (dieTimeCount < dieTimeLimit) {
+      dieTimeCount += Time.deltaTime;
+      GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, newAlpha);
+      newAlpha = newAlpha == 0 ? 1 : 0;
+      yield return new WaitForSeconds(0.10f);
+    }
+    GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+    GetComponent<Rigidbody2D>().isKinematic = false;
+    gameObject.SetActive(false);
+    player.GetComponent<PlayerController>().StartBonus(points, "UFO");
+  }
+
 }

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
   private float maxForceSingleMove = 200;
-  private bool giveExtraHealth = false;
+  public bool giveExtraHealth = false;
   public bool giveExtraMovement = false;
   private bool hasHealthUpgrade = false;
   private bool hasMovementUpgrade = false;
@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour {
   private Vector3 lastForceApplied;
   private int standardStarDustPoints = 20;
   public int currentLives;
-  private int startingLives = 1;
+  private int startingLives = 2;
   public bool newLife = false;
 
 

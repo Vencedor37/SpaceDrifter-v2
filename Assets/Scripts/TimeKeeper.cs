@@ -64,12 +64,12 @@ public class TimeKeeper : MonoBehaviour {
     SpaceObjectCheckpoint lastCheckpoint = null;
     for (int i = 0; i < spawnCheckpoints.Count; i ++) {
       lastCheckpoint = spawnCheckpoints[i];
-      if (Time.time > spawnCheckpoints[i].spawnTime && !hasSpawned[i]) {
+      if (Time.timeSinceLevelLoad > spawnCheckpoints[i].spawnTime && !hasSpawned[i]) {
         SpawnCheckpoint(spawnCheckpoints[i]);
         hasSpawned[i] = true;
       }
     }
-    if (Time.time > lastCheckpoint.spawnTime + recurringCheckpointTime) {
+    if (Time.timeSinceLevelLoad > lastCheckpoint.spawnTime + recurringCheckpointTime) {
       SpawnCheckpoint(lastCheckpoint);
       recurringCheckpointTime += 60;
     }

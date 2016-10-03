@@ -56,6 +56,7 @@ public class UIController : MonoBehaviour {
 
   public Toggle fastForwardToggle;
   public Toggle pauseToggle;
+  public AudioTracks audioTracks;
 
 
 	// Use this for initialization
@@ -96,6 +97,7 @@ public class UIController : MonoBehaviour {
     UpdateScoreText();
     UpdateBonusText();
     UpdatePauseDisplay();
+    ControlMusic();
 
     if (playerController.getIsGameOver()) {
       ShowGameOverUI();
@@ -115,6 +117,18 @@ public class UIController : MonoBehaviour {
       pauseText.enabled = false;
     }
 
+
+  }
+
+  private void ControlMusic() 
+  {
+    if (isPaused) {
+      audioTracks.backgroundMusic.Pause();
+    } else if (!playerController.getAlive()) {
+      audioTracks.backgroundMusic.Stop(); 
+    } else if (!audioTracks.backgroundMusic.isPlaying) {
+      audioTracks.backgroundMusic.Play();
+    } 
   }
 
   private void UpdateHealthSlider()
