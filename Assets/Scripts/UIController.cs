@@ -53,6 +53,8 @@ public class UIController : MonoBehaviour {
 
   public Text movementCountText;
   public Text healthCountText;
+  public Text tutorialText;
+  public string dragOrSwipe = "Swipe";
 
   public Toggle fastForwardToggle;
   public Toggle pauseToggle;
@@ -120,17 +122,17 @@ public class UIController : MonoBehaviour {
 
   }
 
-  private void ControlMusic() 
+  private void ControlMusic()
   {
     if (isPaused) {
       audioTracks.backgroundMusic.Pause();
     } else if (!playerController.getAlive()) {
       audioTracks.BackgroundFadeOut();
-    } else if (!audioTracks.backgroundMusic.isPlaying) {
+    } else if (playerController.getHasStarted() && !audioTracks.backgroundMusic.isPlaying) {
       audioTracks.backgroundMusic.Play();
     } else if (playerController.getAlive() && audioTracks.backgroundMusic.volume < .4) {
       audioTracks.ResetBackgroundVolume();
-    } 
+    }
   }
 
   private void UpdateHealthSlider()
@@ -231,7 +233,7 @@ public class UIController : MonoBehaviour {
 
   void OnApplicationFocus( bool focusStatus )
 	{
-    if (!focusStatus && !isPaused) {
+    if (!focusStatus && !isPaused && playerController.getHasStarted()) {
       pauseToggle.isOn = true;
     }
 	}
@@ -288,6 +290,27 @@ public class UIController : MonoBehaviour {
     } else {
       bonusText.enabled = false;
     }
+  }
+
+  public IEnumerator FadeOutTutorialText()
+  {
+    float newAlpha = 1f;
+    yield return new WaitForSeconds(3.50f);
+    while (newAlpha > 0) {
+      newAlpha -= .1f;
+      tutorialText.color = new Color(1f, 1f, 1f, newAlpha);
+      yield return new WaitForSeconds(0.15f);
+    }
+    tutorialText.text = "";
+  }
+
+  public void ShowTutorialText(string message)
+  {
+    if (message != "") {
+      tutorialText.text = message;
+      tutorialText.color = new Color(1f, 1f, 1f, 1f);
+    }
+    StartCoroutine("FadeOutTutorialText");
   }
 
   public void UpdateLivesText()

@@ -1797,15 +1797,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.28"
-     inkscape:cx="468.80766"
-     inkscape:cy="1019.3737"
+     inkscape:zoom="2.56"
+     inkscape:cx="1037.0285"
+     inkscape:cy="1596.0577"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g5866"
      showgrid="false"
      units="px"
-     inkscape:window-width="1680"
-     inkscape:window-height="951"
+     inkscape:window-width="1280"
+     inkscape:window-height="756"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0" />
@@ -2684,7 +2684,7 @@
     </g>
     <g
        id="g5758"
-       transform="translate(554.6875,-343.75)"
+       transform="translate(537.5,-484.375)"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -2784,23 +2784,49 @@
        transform="translate(956.25,-621.875)"
        inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/ringed_planet.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
+       inkscape:export-ydpi="90"
+       style="opacity:0.97">
+      <path
+         style="opacity:0.97000002;fill:#646464;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M -14.638938,130.79937 5.8497239,118.3737 A 14.828488,63.529894 59.780998 0 1 3.8868323,116.72799 14.828488,63.529894 59.780998 0 1 51.31992,71.941328 a 14.828488,63.529894 59.780998 0 1 62.36091,-19.160053 14.828488,63.529894 59.780998 0 1 0.0528,0.162027 l 20.54152,-12.460907 a 20.439267,87.568228 59.780998 0 0 -85.777938,26.60982 20.439267,87.568228 59.780998 0 0 -65.380942,61.737165 20.439267,87.568228 59.780998 0 0 2.244722,1.96992 z"
+         id="path5833-6-0-3"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/ringed_planet.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <path
+         style="opacity:0.97000002;fill:#646464;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 18.188902,109.5234 11.3555,-6.88672 a 8.2184428,35.210387 59.780998 0 1 -1.0879,-0.91211 8.2184428,35.210387 59.780998 0 1 26.288998,-24.822255 8.2184428,35.210387 59.780998 0 1 34.5625,-10.61914 8.2184428,35.210387 59.780998 0 1 0.0293,0.0898 l 11.3848,-6.90625 a 11.328124,48.533236 59.780998 0 0 -47.540998,14.74805 11.328124,48.533236 59.780998 0 0 -36.2363,34.216795 11.328124,48.533236 59.780998 0 0 1.2441,1.09179 z"
+         id="path5833-6-0"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/ringed_planet.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
       <circle
          r="28.125"
-         cy="80.487175"
-         cx="59.375"
+         cy="85.955925"
+         cx="60.9375"
          id="path5794"
-         style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path5833"
-         d="M 47.981013,64.052924 A 19.921875,85.351562 59.780998 0 0 -15.745138,124.22557 19.921875,85.351562 59.780998 0 0 68.034632,98.482221 19.921875,85.351562 59.780998 0 0 131.76078,38.309575 19.921875,85.351562 59.780998 0 0 47.981013,64.052924 Z m 2.752458,4.72559 A 14.453125,61.921722 59.780998 0 1 111.51501,50.101887 14.453125,61.921722 59.780998 0 1 65.282176,93.756634 14.453125,61.921722 59.780998 0 1 4.500641,112.43326 14.453125,61.921722 59.780998 0 1 50.733471,68.778514 Z"
-         style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         id="path5833-6"
-         d="M 52.306299,71.478845 A 11.328124,48.533236 59.780998 0 0 16.069864,105.69466 11.328124,48.533236 59.780998 0 0 63.709336,91.056286 11.328124,48.533236 59.780998 0 0 99.94577,56.840469 11.328124,48.533236 59.780998 0 0 52.306299,71.478845 Z m 1.565123,2.687101 A 8.2184428,35.210387 59.780998 0 1 88.433472,63.545902 8.2184428,35.210387 59.780998 0 1 62.144214,88.369188 8.2184428,35.210387 59.780998 0 1 27.582169,98.989229 8.2184428,35.210387 59.780998 0 1 53.871422,74.165946 Z"
          style="fill:#ffffff;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:connector-curvature="0" />
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/ringed_planet.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <path
+         style="fill:#646464;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 99.287113,58.287113 -11.3555,6.88672 a 8.2184428,35.210387 59.780998 0 1 1.0879,0.91211 8.2184428,35.210387 59.780998 0 1 -26.289,24.82226 8.2184428,35.210387 59.780998 0 1 -34.5625,10.619137 8.2184428,35.210387 59.780998 0 1 -0.0293,-0.0898 l -11.3848,6.90625 a 11.328124,48.533236 59.780998 0 0 47.541,-14.748047 11.328124,48.533236 59.780998 0 0 36.236297,-34.2168 11.328124,48.533236 59.780998 0 0 -1.244097,-1.09179 z"
+         id="path5833-6"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/ringed_planet.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <path
+         style="opacity:0.97000002;fill:#646464;fill-opacity:0.99607843;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 133.10731,39.45252 -20.46568,12.411728 a 14.811852,63.458621 59.780998 0 1 1.96068,1.643869 A 14.811852,63.458621 59.780998 0 1 67.222434,98.24453 14.811852,63.458621 59.780998 0 1 4.931479,117.3831 14.811852,63.458621 59.780998 0 1 4.878673,117.22124 l -20.518482,12.44694 A 20.416338,87.469989 59.780998 0 0 70.041906,103.08819 20.416338,87.469989 59.780998 0 0 135.3495,41.420292 20.416338,87.469989 59.780998 0 0 133.10731,39.452593 Z"
+         id="path5833-6-2"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/ringed_planet.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
     </g>
     <path
        style="fill:#484229;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"

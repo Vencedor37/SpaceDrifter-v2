@@ -19,7 +19,10 @@ public class SpaceObjectController : MonoBehaviour {
   public bool needsSpeedCheck = true;
   public bool randomiseTransparency = false;
   public bool randomiseScale = false;
+  public bool randomiseColour = false;
+  public bool randomiseRotation = false;
   public bool resetRotation = false;
+  public List<Color> permittedColours;
   public SpaceObject[] pool;
   public List<SpaceObject> activeSpaceObjects;
 
@@ -143,6 +146,8 @@ public class SpaceObjectController : MonoBehaviour {
         if (!spaceObject.gameObject.activeInHierarchy) {
           Vector3 newPos = playerController.getRandomPosition(!(firstBuild && !avoidCentreDuringGeneration));
           spaceObject.GetComponent<Transform>().position = newPos;
+          CheckColour(spaceObject);
+          CheckRotation(spaceObject);
           spaceObject.gameObject.SetActive(true);
           spaceObject.startMoving();
           activeSpaceObjects.Add(spaceObject);
@@ -181,13 +186,24 @@ public class SpaceObjectController : MonoBehaviour {
         Vector3 newPosition = playerController.getRandomPosition(true);
         Transform transform = activeObject.GetComponent<Transform>();
         transform.position = newPosition;
-        if (resetRotation) {
-          transform.rotation = Quaternion.identity;
-          activeObject.GetComponent<Rigidbody2D>().angularVelocity = 0;
-        }
+        CheckRotation(activeObject);
         activeObject.startMoving();
+        CheckColour(activeObject);
       }
     }
+  }
+
+  public void CheckColour (SpaceObject spaceObject)
+  {
+    if (randomiseColour) {
+      spaceObject.GetComponent<SpriteRenderer>().color = RandomColour();
+    }
+  }
+
+  public Color RandomColour()
+  {
+    int index = Random.Range(0, permittedColours.Count);
+    return permittedColours[index];
   }
 
   public void ClearCentre()
@@ -200,12 +216,24 @@ public class SpaceObjectController : MonoBehaviour {
         Vector3 newPosition = playerController.getRandomPosition(true);
         Transform transform = activeObject.GetComponent<Transform>();
         transform.position = newPosition;
-        if (resetRotation) {
-          transform.rotation = Quaternion.identity;
-          activeObject.GetComponent<Rigidbody2D>().angularVelocity = 0;
-        }
+
+        CheckRotation(activeObject);
         activeObject.startMoving();
       }
+    }
+  }
+
+  private void CheckRotation(SpaceObject spaceObject)
+  {
+    if (randomiseRotation) {
+     transform.rotation = Random.rotation;
+     Vector3 euler = transform.eulerAngles;
+     euler.z = Random.Range(0.0f, 360.0f);
+     transform.eulerAngles = euler;
+    }
+    if (resetRotation) {
+      transform.rotation = Quaternion.identity;
+      spaceObject.GetComponent<Rigidbody2D>().angularVelocity = 0;
     }
   }
 

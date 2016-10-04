@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class TimeKeeper : MonoBehaviour {
 
   public PlayerController player;
+  public UIController UI;
   public float[] objectSpawnTimes = new float[1];
   public List<SpaceObjectCheckpoint> spawnCheckpoints;
   public List<bool>hasSpawned;
@@ -23,6 +24,7 @@ public class TimeKeeper : MonoBehaviour {
 
   public SpaceObjectController[] spawnableObjects;
   private float recurringCheckpointTime = 60f;
+  private float timeBeforeStart = 0f;
 
 
 	// Use this for initialization
@@ -61,19 +63,25 @@ public class TimeKeeper : MonoBehaviour {
 
   public void CheckSpawners()
   {
-    SpaceObjectCheckpoint lastCheckpoint = null;
-    float spawnTime = 0;
-    for (int i = 0; i < spawnCheckpoints.Count; i ++) {
-      spawnTime += spawnCheckpoints[i].spawnTime;
-      lastCheckpoint = spawnCheckpoints[i];
-      if (Time.timeSinceLevelLoad > spawnTime && !hasSpawned[i]) {
-        SpawnCheckpoint(spawnCheckpoints[i]);
-        hasSpawned[i] = true;
+    if (player.getHasStarted() && !UI.isPaused) {
+      float timeSinceStart = Time.timeSinceLevelLoad - timeBeforeStart;
+      SpaceObjectCheckpoint lastCheckpoint = null;
+      float spawnTime = 0;
+      for (int i = 0; i < spawnCheckpoints.Count; i ++) {
+        spawnTime += spawnCheckpoints[i].spawnTime;
+        lastCheckpoint = spawnCheckpoints[i];
+        if (timeSinceStart > spawnTime && !hasSpawned[i]) {
+          SpawnCheckpoint(spawnCheckpoints[i]);
+          UI.ShowTutorialText(spawnCheckpoints[i].tutorialMessage);
+          hasSpawned[i] = true;
+        }
       }
-    }
-    if (Time.timeSinceLevelLoad > spawnTime + recurringCheckpointTime) {
-      SpawnCheckpoint(lastCheckpoint);
-      recurringCheckpointTime += 60;
+      if (timeSinceStart > spawnTime + recurringCheckpointTime) {
+        SpawnCheckpoint(lastCheckpoint);
+        recurringCheckpointTime += 60;
+      }
+    } else {
+      timeBeforeStart += 1f;
     }
   }
 

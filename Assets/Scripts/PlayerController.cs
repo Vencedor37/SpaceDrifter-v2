@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-  private int debugCounter = 0;
   private float maxForceSingleMove = 200;
   public bool giveExtraHealth = false;
   public bool giveExtraMovement = false;
@@ -31,6 +30,7 @@ public class PlayerController : MonoBehaviour {
 
   private bool alive = true;
   private bool isGameOver = false;
+  public bool hasStarted = false;
   private bool beatHighScore = false;
   private bool playerHurt = false;
   private bool releaseOccurred = false;
@@ -87,7 +87,6 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
     sprayAnimator = GetComponent<Animator>();
-    Time.timeScale = 1.0F;
     alive = true;
 
     rigidBody = GetComponent<Rigidbody2D>();
@@ -113,7 +112,6 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
   {
-    IncreaseGeneralStats();
 
     if (isInputPressed()) {
       pressPosition = Input.mousePosition;
@@ -152,27 +150,36 @@ public class PlayerController : MonoBehaviour {
       }
     }
 
-    if (isInputReleased()) {
+    if (isInputReleased() && !UI.isPaused) {
       releasePosition = Input.mousePosition;
       releaseOccurred = true;
+      if (!hasStarted) {
+        Time.timeScale = 1.0F;
+        hasStarted = true;
+        UI.tutorialText.text = "";
+        audioTracks.backgroundMusic.Play();
+      }
     }
 
-    if (giveExtraMovement) {
-      maxMoveCapacity += extraMoveCapacityAmount;
-      currentMoveCapacity = maxMoveCapacity;
-      giveExtraMovement = false;
-      hasMovementUpgrade = true;
-      maxForceSingleMove *= 1.25f;
-      maxSpeed += maxSpeed *= 1.25f;
-      CheckUpgradeSprites();
-    }
+    if (hasStarted) {
+      IncreaseGeneralStats();
+      if (giveExtraMovement) {
+        maxMoveCapacity += extraMoveCapacityAmount;
+        currentMoveCapacity = maxMoveCapacity;
+        giveExtraMovement = false;
+        hasMovementUpgrade = true;
+        maxForceSingleMove *= 1.25f;
+        maxSpeed += maxSpeed *= 1.25f;
+        CheckUpgradeSprites();
+      }
 
-    if (alive) {
-      UpdateHealth();
-      UpdateScore();
-      IncreaseScoreMultiplierTracker(Time.deltaTime);
-    } else {
-      CheckLives();
+      if (alive) {
+        UpdateHealth();
+        UpdateScore();
+        IncreaseScoreMultiplierTracker(Time.deltaTime);
+      } else {
+        CheckLives();
+      }
     }
 	}
 
@@ -899,6 +906,11 @@ public class PlayerController : MonoBehaviour {
   public bool getIsInvincible()
   {
     return playerHurt;
+  }
+
+  public bool getHasStarted()
+  {
+    return hasStarted;
   }
 
 

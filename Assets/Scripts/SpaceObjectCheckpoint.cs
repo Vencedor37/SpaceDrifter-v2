@@ -16,6 +16,7 @@ public class SpaceObjectCheckpoint : MonoBehaviour {
   public int healthUpgrades = 0;
   public int movementUpgrades = 0;
   public int lifePickups = 0;
+  public string tutorialMessage = "";
 
 	// Use this for initialization
 	void Start () {

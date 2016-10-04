@@ -204,7 +204,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7eb23b72c506b434e8a9c85ed41608ec, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -561,6 +561,7 @@ MonoBehaviour:
   healthUpgrades: 1
   movementUpgrades: 1
   lifePickups: 1
+  tutorialMessage: 
 --- !u!1 &40364679
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,7 +603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sequence: 0
-  spawnTime: 1
+  spawnTime: 5
   largeAsteroids: 10
   mediumAsteroids: 0
   smallAsteroids: 0
@@ -615,6 +616,7 @@ MonoBehaviour:
   healthUpgrades: 0
   movementUpgrades: 0
   lifePickups: 0
+  tutorialMessage: Avoid asteroids.
 --- !u!1 &60169487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,6 +1017,7 @@ MonoBehaviour:
   healthUpgrades: 0
   movementUpgrades: 0
   lifePickups: 0
+  tutorialMessage: Survive.
 --- !u!1 &197175963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,6 +1072,7 @@ MonoBehaviour:
   healthUpgrades: 1
   movementUpgrades: 1
   lifePickups: 0
+  tutorialMessage: 
 --- !u!1 &209621038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,7 +1275,10 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  randomiseColour: 0
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours: []
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 1
@@ -1437,6 +1444,7 @@ MonoBehaviour:
   healthUpgrades: 0
   movementUpgrades: 0
   lifePickups: 0
+  tutorialMessage: 
 --- !u!1 &267452632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,7 +1594,10 @@ MonoBehaviour:
   needsSpeedCheck: 0
   randomiseTransparency: 0
   randomiseScale: 0
+  randomiseColour: 0
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours: []
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 1
@@ -2399,6 +2410,7 @@ MonoBehaviour:
   healthUpgrades: 0
   movementUpgrades: 0
   lifePickups: 0
+  tutorialMessage: 
 --- !u!1 &401975851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,7 +2671,10 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  randomiseColour: 0
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours: []
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 1
@@ -2735,6 +2750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 778002976}
+  UI: {fileID: 2016584744}
   objectSpawnTimes:
   - 1
   - 15
@@ -2847,7 +2863,10 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  randomiseColour: 0
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours: []
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 0
@@ -2980,6 +2999,7 @@ MonoBehaviour:
   healthUpgrades: 0
   movementUpgrades: 0
   lifePickups: 0
+  tutorialMessage: Watch out!
 --- !u!1 &553583399
 GameObject:
   m_ObjectHideFlags: 0
@@ -3134,8 +3154,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5f7843ead5e544a6ac58e446f77de86, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
-  m_Pitch: 2.5
+  m_Volume: 0.8
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -3612,6 +3632,7 @@ MonoBehaviour:
   healthUpgrades: 0
   movementUpgrades: 0
   lifePickups: 0
+  tutorialMessage: 
 --- !u!1 &769383710
 GameObject:
   m_ObjectHideFlags: 0
@@ -3833,6 +3854,7 @@ MonoBehaviour:
   healthUpgrades: 0
   movementUpgrades: 0
   lifePickups: 1
+  tutorialMessage: 
 --- !u!1 &789713965
 GameObject:
   m_ObjectHideFlags: 0
@@ -4146,8 +4168,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a916293ab9f1542268f58cc96499a88f, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_PlayOnAwake: 0
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4267,7 +4289,10 @@ MonoBehaviour:
   needsSpeedCheck: 0
   randomiseTransparency: 0
   randomiseScale: 0
+  randomiseColour: 0
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours: []
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 1
@@ -4505,6 +4530,7 @@ MonoBehaviour:
   healthUpgrades: 1
   movementUpgrades: 1
   lifePickups: 1
+  tutorialMessage: 
 --- !u!1 &968001648
 GameObject:
   m_ObjectHideFlags: 0
@@ -4560,8 +4586,19 @@ MonoBehaviour:
   cleanFrequency: 10
   needsSpeedCheck: 0
   randomiseTransparency: 1
-  randomiseScale: 0
+  randomiseScale: 1
+  randomiseColour: 1
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours:
+  - {r: 0.8602941, g: 1, b: 0.91328603, a: 1}
+  - {r: 0.72794116, g: 0.79736304, b: 1, a: 1}
+  - {r: 1, g: 0.99264705, b: 0.99264705, a: 1}
+  - {r: 0.974645, g: 1, b: 0.8161765, a: 1}
+  - {r: 0.9638945, g: 1, b: 0.3455882, a: 1}
+  - {r: 0.97794116, g: 0.9015705, b: 0.47458908, a: 1}
+  - {r: 0.9705882, g: 0.66061026, b: 0.49243078, a: 1}
+  - {r: 0.7647059, g: 0.11075051, b: 0, a: 1}
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 1
@@ -4954,6 +4991,7 @@ MonoBehaviour:
   healthUpgrades: 1
   movementUpgrades: 1
   lifePickups: 0
+  tutorialMessage: 
 --- !u!1 &1093218336
 GameObject:
   m_ObjectHideFlags: 0
@@ -5028,7 +5066,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 63e7e62a8bcf24635b668238927a2c25, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5327,7 +5365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1184382681
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6260,11 +6298,24 @@ MonoBehaviour:
   avoidCentreDuringGeneration: 0
   needsCleaning: 0
   needsPositionCheck: 1
-  cleanFrequency: 0.5
+  cleanFrequency: 2
   needsSpeedCheck: 0
   randomiseTransparency: 1
   randomiseScale: 1
+  randomiseColour: 1
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours:
+  - {r: 1, g: 0.9191176, b: 0.9191176, a: 1}
+  - {r: 0.9939148, g: 1, b: 0.8897059, a: 1}
+  - {r: 0.875, g: 0.9275862, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 1
@@ -6295,7 +6346,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b2ae74db6f3ea4de480b8c258141043e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.9
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6425,6 +6476,7 @@ MonoBehaviour:
   healthUpgrades: 0
   movementUpgrades: 0
   lifePickups: 0
+  tutorialMessage: 
 --- !u!1 &1343130331
 GameObject:
   m_ObjectHideFlags: 0
@@ -6532,6 +6584,7 @@ RectTransform:
   - {fileID: 402993538}
   - {fileID: 686144872}
   - {fileID: 510507}
+  - {fileID: 1464969023}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
@@ -6896,6 +6949,7 @@ MonoBehaviour:
   healthUpgrades: 1
   movementUpgrades: 1
   lifePickups: 0
+  tutorialMessage: 
 --- !u!1 &1391465775
 GameObject:
   m_ObjectHideFlags: 0
@@ -6950,6 +7004,7 @@ MonoBehaviour:
   healthUpgrades: 0
   movementUpgrades: 0
   lifePickups: 0
+  tutorialMessage: 
 --- !u!1 &1400272591
 GameObject:
   m_ObjectHideFlags: 0
@@ -7217,7 +7272,10 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  randomiseColour: 0
+  randomiseRotation: 0
   resetRotation: 1
+  permittedColours: []
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 1
@@ -7364,7 +7422,10 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  randomiseColour: 0
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours: []
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 0
@@ -7444,6 +7505,80 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1447439963}
+--- !u!1 &1464969022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1464969023}
+  - 222: {fileID: 1464969025}
+  - 114: {fileID: 1464969024}
+  m_Layer: 5
+  m_Name: Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1464969023
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464969022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1356659145}
+  m_RootOrder: 11
+  m_AnchorMin: {x: 0.5, y: 0.30973813}
+  m_AnchorMax: {x: 0.5, y: 0.30973813}
+  m_AnchoredPosition: {x: 0, y: 4}
+  m_SizeDelta: {x: 593, y: 125}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1464969024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464969022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 1226a82e83ea84c3783e82f484f7414e, type: 3}
+    m_FontSize: 28
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Swipe to start.
+--- !u!222 &1464969025
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464969022}
 --- !u!1 &1503763092
 GameObject:
   m_ObjectHideFlags: 0
@@ -7484,7 +7619,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b29f35c0debb44ceb8084ba884dfe2ed, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7837,7 +7972,10 @@ MonoBehaviour:
   needsSpeedCheck: 0
   randomiseTransparency: 0
   randomiseScale: 0
+  randomiseColour: 0
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours: []
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 1
@@ -7897,7 +8035,10 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  randomiseColour: 0
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours: []
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 1
@@ -8144,8 +8285,17 @@ MonoBehaviour:
   cleanFrequency: 10
   needsSpeedCheck: 0
   randomiseTransparency: 0
-  randomiseScale: 0
+  randomiseScale: 1
+  randomiseColour: 1
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours:
+  - {r: 0.29411763, g: 0.20081136, b: 0, a: 1}
+  - {r: 0.25735295, g: 0.3239349, b: 1, a: 1}
+  - {r: 0.71323526, g: 0.71323526, b: 0.71323526, a: 1}
+  - {r: 0.8235294, g: 0.3918864, b: 0, a: 1}
+  - {r: 1, g: 0.6764706, b: 0.9910751, a: 1}
+  - {r: 0, g: 0.6838235, b: 0.06130831, a: 1}
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 1
@@ -8176,7 +8326,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9e82c3b9bb09c4cecb5d1a37ca93cd41, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.25
   m_Pitch: 1.93
   Loop: 0
   Mute: 0
@@ -8360,7 +8510,10 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  randomiseColour: 0
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours: []
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 1
@@ -8645,7 +8798,10 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  randomiseColour: 0
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours: []
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 0
@@ -8844,7 +9000,10 @@ MonoBehaviour:
   needsSpeedCheck: 1
   randomiseTransparency: 0
   randomiseScale: 0
+  randomiseColour: 0
+  randomiseRotation: 0
   resetRotation: 0
+  permittedColours: []
   pool: []
   activeSpaceObjects: []
   canBeDepleted: 1
@@ -9073,7 +9232,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: da123025843754e39a2b8abba8b1a7ac, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9310,7 +9469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sequence: 1
-  spawnTime: 15
+  spawnTime: 10
   largeAsteroids: 0
   mediumAsteroids: 0
   smallAsteroids: 0
@@ -9323,6 +9482,7 @@ MonoBehaviour:
   healthUpgrades: 0
   movementUpgrades: 0
   lifePickups: 0
+  tutorialMessage: Collect oxygen and fuel.
 --- !u!1 &1811415777
 GameObject:
   m_ObjectHideFlags: 0
@@ -9363,7 +9523,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0def870473fdd4bcea0639a46011729c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 0.9
   Loop: 0
   Mute: 0
@@ -9824,7 +9984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1926306212
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9940,7 +10100,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a2b0fd40f310b4c73babf454bae06ba0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10298,6 +10458,8 @@ MonoBehaviour:
   livesText: {fileID: 22644386}
   movementCountText: {fileID: 1516645503}
   healthCountText: {fileID: 19528389}
+  tutorialText: {fileID: 1464969024}
+  dragOrSwipe: Drag and release
   fastForwardToggle: {fileID: 2016662756}
   pauseToggle: {fileID: 1214803555}
   audioTracks: {fileID: 85673440}
@@ -10613,6 +10775,7 @@ MonoBehaviour:
   healthUpgrades: 1
   movementUpgrades: 0
   lifePickups: 0
+  tutorialMessage: 
 --- !u!1 &2142976883
 GameObject:
   m_ObjectHideFlags: 0

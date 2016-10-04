@@ -41,10 +41,10 @@ GameObject:
   - 50: {fileID: 50000014185550120}
   - 114: {fileID: 114000010475049956}
   - 114: {fileID: 114000011210211580}
-  - 60: {fileID: 60000013315510282}
   - 114: {fileID: 114000013297208306}
   - 114: {fileID: 114000010822789082}
   - 58: {fileID: 58000012861015748}
+  - 61: {fileID: 61000012069352492}
   m_Layer: 12
   m_Name: Enemy
   m_TagString: Enemy
@@ -140,7 +140,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.920846
+  m_Radius: 0.9877472
 --- !u!58 &58000014062377674
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -155,8 +155,8 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!60 &60000013315510282
-PolygonCollider2D:
+--- !u!61 &61000012069352492
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -166,49 +166,9 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.555, y: -0.81}
-      - {x: 0.705, y: -0.63}
-      - {x: 0.815, y: -0.62}
-      - {x: 1.005, y: -0.51}
-      - {x: 1.115, y: -0.38}
-      - {x: 1.125, y: -0.34}
-      - {x: 0.98499995, y: -0.14}
-      - {x: 1.035, y: 0.089999996}
-      - {x: 1.225, y: 0.21}
-      - {x: 1.225, y: 0.31}
-      - {x: 1.2049999, y: 0.39}
-      - {x: 1.0849999, y: 0.55}
-      - {x: 0.955, y: 0.66999996}
-      - {x: 0.805, y: 0.74}
-      - {x: 0.53499997, y: 0.76}
-      - {x: 0.355, y: 0.88}
-      - {x: 0.265, y: 0.9}
-      - {x: 0.125, y: 0.81}
-      - {x: 0.015, y: 0.81}
-      - {x: -0.185, y: 1}
-      - {x: -0.515, y: 1}
-      - {x: -0.60499996, y: 0.97999996}
-      - {x: -0.835, y: 0.87}
-      - {x: -0.835, y: 0.69}
-      - {x: -0.935, y: 0.56}
-      - {x: -1.185, y: 0.53}
-      - {x: -1.225, y: 0.41}
-      - {x: -1.225, y: 0.04}
-      - {x: -1.2049999, y: -0.02}
-      - {x: -1.0849999, y: -0.25}
-      - {x: -1.115, y: -0.42}
-      - {x: -1.095, y: -0.53}
-      - {x: -1.005, y: -0.69}
-      - {x: -0.84499997, y: -0.84}
-      - {x: -0.635, y: -0.95}
-      - {x: -0.435, y: -1}
-      - {x: -0.175, y: -1}
-      - {x: 0.015, y: -0.76}
-      - {x: 0.16499999, y: -0.76}
-      - {x: 0.345, y: -0.91999996}
+  m_Offset: {x: 0.090408325, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2.2691803, y: 1.5841217}
 --- !u!114 &114000010475049956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -403,7 +363,7 @@ RectTransform:
   m_GameObject: {fileID: 1000012078122726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000010018933832}
@@ -412,6 +372,6 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40.299065, y: -20.747728}
+  m_AnchoredPosition: {x: 61.847847, y: -30.128475}
   m_SizeDelta: {x: 1.1, y: 1.1}
   m_Pivot: {x: 0.7172523, y: 0.5}

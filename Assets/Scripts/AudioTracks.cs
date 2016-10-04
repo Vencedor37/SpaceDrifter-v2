@@ -16,11 +16,13 @@ public class AudioTracks : MonoBehaviour {
 
   public AudioSource backgroundMusic;
   private float backgroundVolume = 1;
+  private float backgroundMax = 0;
 
 
 	// Use this for initialization
 	void Start () {
-    backgroundVolume = backgroundMusic.volume;
+    backgroundMax = backgroundMusic.volume;
+    backgroundVolume = backgroundMax;
 	}
 	
 	// Update is called once per frame
@@ -30,7 +32,7 @@ public class AudioTracks : MonoBehaviour {
 
   public void ResetBackgroundVolume()
   {
-    backgroundVolume = .4f;
+    backgroundVolume = backgroundMax;
     backgroundMusic.volume = backgroundVolume;
   }
 
@@ -38,7 +40,7 @@ public class AudioTracks : MonoBehaviour {
   public void BackgroundFadeOut()
   {
     if (backgroundMusic.volume > 0) {
-      backgroundVolume -= .2f * Time.unscaledDeltaTime;
+      backgroundVolume -= .1f * Time.unscaledDeltaTime;
       backgroundMusic.volume = backgroundVolume;
     } else if (backgroundMusic.volume <= 0) {
       backgroundMusic.Stop();
