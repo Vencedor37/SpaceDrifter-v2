@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class SpaceObjectCheckpoint : MonoBehaviour {
+  public float sequence = 0;
   public float spawnTime = 1;
   public int largeAsteroids = 0;
   public int mediumAsteroids = 0;

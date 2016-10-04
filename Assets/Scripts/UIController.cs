@@ -125,9 +125,11 @@ public class UIController : MonoBehaviour {
     if (isPaused) {
       audioTracks.backgroundMusic.Pause();
     } else if (!playerController.getAlive()) {
-      audioTracks.backgroundMusic.Stop(); 
+      audioTracks.BackgroundFadeOut();
     } else if (!audioTracks.backgroundMusic.isPlaying) {
       audioTracks.backgroundMusic.Play();
+    } else if (playerController.getAlive() && audioTracks.backgroundMusic.volume < .4) {
+      audioTracks.ResetBackgroundVolume();
     } 
   }
 
@@ -155,6 +157,7 @@ public class UIController : MonoBehaviour {
     }
     if (healthSlider.value > 30 && quickHealthLoss) {
       playerController.RescaleHealthRates(2.5f);
+      quickHealthLoss = false;
     }
   }
 

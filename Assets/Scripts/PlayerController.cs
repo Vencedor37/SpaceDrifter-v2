@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
+  private int debugCounter = 0;
   private float maxForceSingleMove = 200;
   public bool giveExtraHealth = false;
   public bool giveExtraMovement = false;
@@ -45,7 +46,7 @@ public class PlayerController : MonoBehaviour {
   private float startingMaxHealth = 100;
   private float extraHealthAmount = 100;
   private float startingHealth = 100;
-  private float healthLossRate = 2;
+  public float healthLossRate = 2;
   private float healthLossAmount = 3;
   private float healthLossCounter = 0;
 
@@ -264,6 +265,9 @@ public class PlayerController : MonoBehaviour {
     scoreMultiplierTracker += time;
     if (scoreMultiplierTracker >= scoreMultiplierCheckpoint * (scoreMultiplier*.75f) + 1) {
       scoreMultiplier ++;
+      if (scoreMultiplier > stats.highestLevel) {
+        stats.highestLevel = scoreMultiplier;
+      }
       scoreMultiplierTracker = 0;
     }
   }
@@ -271,6 +275,8 @@ public class PlayerController : MonoBehaviour {
 
   private void TakeDamage(float damage, string cause)
   {
+    //Debug.Log("#" + debugCounter + " - " + "alive: " + alive + ", invincible: " + playerHurt);
+    //debugCounter ++;
     if (alive && !playerHurt) {
       if ((currentHealth - damage) >= 0) {
         currentHealth -= damage;

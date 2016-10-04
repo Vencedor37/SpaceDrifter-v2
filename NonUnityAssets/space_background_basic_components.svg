@@ -17,7 +17,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="space_background_basic_components.svg">
+   sodipodi:docname="space_background_basic_components.svg"
+   enable-background="new">
   <defs
      id="defs4">
     <linearGradient
@@ -1796,17 +1797,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.64"
-     inkscape:cx="348.63649"
-     inkscape:cy="358.61778"
+     inkscape:zoom="1.28"
+     inkscape:cx="468.80766"
+     inkscape:cy="1019.3737"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:window-width="1680"
      inkscape:window-height="951"
-     inkscape:window-x="21"
-     inkscape:window-y="29"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
@@ -1823,7 +1824,8 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     style="">
     <ellipse
        style="opacity:0.506;fill:#ffffff;fill-opacity:0.99215686;fill-rule:nonzero;stroke:#000000;stroke-width:2.57644582;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path6393"
@@ -2801,20 +2803,23 @@
          inkscape:connector-curvature="0" />
     </g>
     <path
-       style="fill:#65614f;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 450 -32.013672 A 98.4375 78.125 0 0 0 393.31055 -17.699219 A 29.829546 31.25 0 0 1 393.89258 -11.701172 A 29.829546 31.25 0 0 1 364.0625 19.548828 A 29.829546 31.25 0 0 1 357.81641 18.841797 A 98.4375 78.125 0 0 0 351.5625 46.111328 A 98.4375 78.125 0 0 0 368.87891 90.222656 A 91.40625 61.71875 0 0 0 365.625 106.26758 A 91.40625 61.71875 0 0 0 453.37109 167.89844 A 29.829546 31.25 0 0 1 482.8125 141.42383 A 29.829546 31.25 0 0 1 508.6582 157.14844 A 91.40625 61.71875 0 0 0 542.1875 128.51758 A 62.5 67.1875 0 0 0 585.23242 102.92578 A 29.829546 31.25 0 0 1 570.16992 75.798828 A 29.829546 31.25 0 0 1 596.3457 44.824219 A 62.5 67.1875 0 0 0 535.9375 -5.4511719 A 62.5 67.1875 0 0 0 524.96484 -4.3886719 A 98.4375 78.125 0 0 0 502.74805 -19.775391 A 29.829546 31.25 0 0 1 481.25 -10.138672 A 29.829546 31.25 0 0 1 452.85352 -31.935547 A 98.4375 78.125 0 0 0 450 -32.013672 z "
+       style="fill:#484229;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 450,-48.419922 a 98.4375,84.536509 0 0 0 -56.68945,15.489202 29.829546,33.814604 0 0 1 0.58203,6.49029 A 29.829546,33.814604 0 0 1 364.0625,7.3741739 29.829546,33.814604 0 0 1 357.81641,6.6091187 98.4375,84.536509 0 0 0 351.5625,36.116587 98.4375,84.536509 0 0 0 368.87891,83.848013 91.40625,66.783842 0 0 0 365.625,101.2097 91.40625,66.783842 0 0 0 453.37109,167.89844 29.829546,33.814604 0 0 1 482.8125,139.25113 29.829546,33.814604 0 0 1 508.6582,156.26622 91.40625,66.783842 0 0 0 542.1875,125.2857 62.5,72.701398 0 0 0 585.23242,97.593648 29.829546,33.814604 0 0 1 570.16992,68.24046 29.829546,33.814604 0 0 1 596.3457,34.723848 62.5,72.701398 0 0 0 535.9375,-19.677509 62.5,72.701398 0 0 0 524.96484,-18.527812 98.4375,84.536509 0 0 0 502.74805,-35.177278 29.829546,33.814604 0 0 1 481.25,-24.7497 29.829546,33.814604 0 0 1 452.85352,-48.335386 98.4375,84.536509 0 0 0 450,-48.419922 Z"
        id="path4386"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_large.png" />
     <ellipse
        style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4393-183-2-3"
-       cx="417.1875"
-       cy="24.237204"
+       cx="426.5625"
+       cy="6.2684536"
        rx="11.71875"
        ry="12.276786"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_large.png" />
     <ellipse
        style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4393-183-2-4"
@@ -2823,7 +2828,8 @@
        rx="11.71875"
        ry="12.276786"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_large.png" />
     <ellipse
        style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4393-183-2-1"
@@ -2832,7 +2838,8 @@
        rx="11.71875"
        ry="12.276786"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_large.png" />
     <ellipse
        style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4393-183-2-0"
@@ -2841,25 +2848,28 @@
        rx="11.71875"
        ry="12.276786"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_large.png" />
     <ellipse
        style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4393-183-9"
-       cx="400"
-       cy="28.924704"
+       cx="424.21875"
+       cy="8.6122036"
        rx="16.40625"
        ry="17.1875"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_large.png" />
     <ellipse
        style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4393-183-1"
        cx="478.125"
-       cy="0.79970419"
+       cy="6.2684541"
        rx="16.40625"
        ry="17.1875"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_large.png" />
     <ellipse
        style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4393-183-8"
@@ -2868,7 +2878,8 @@
        rx="16.40625"
        ry="17.1875"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_large.png" />
     <ellipse
        style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4393-183-14"
@@ -2877,16 +2888,18 @@
        rx="16.40625"
        ry="17.1875"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_large.png" />
     <ellipse
        style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4393-183-0-94"
-       cx="406.25"
-       cy="86.737206"
+       cx="403.125"
+       cy="89.862206"
        rx="29.829546"
        ry="31.25"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_large.png" />
     <g
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -10432,5 +10445,202 @@
        inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fire_extinguisher_gold.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
+    <path
+       style="fill:#6c6348;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 792.7041,-1.109476 a 98.4375,84.536509 0 0 1 56.68945,15.489202 29.829546,33.814604 0 0 0 -0.58203,6.49029 29.829546,33.814604 0 0 0 29.83008,33.814604 29.829546,33.814604 0 0 0 6.24609,-0.765055 98.4375,84.536509 0 0 1 6.25391,29.507465 98.4375,84.536509 0 0 1 -17.31641,47.73143 91.40625,66.783842 0 0 1 3.25391,17.36168 91.40625,66.783842 0 0 1 -87.74609,66.68874 29.829546,33.814604 0 0 0 -29.44141,-28.64731 29.829546,33.814604 0 0 0 -25.8457,17.01509 91.40625,66.783842 0 0 1 -33.5293,-30.98052 62.5,72.701398 0 0 1 -43.04492,-27.69205 29.829546,33.814604 0 0 0 15.0625,-29.35319 29.829546,33.814604 0 0 0 -26.17578,-33.51661 62.5,72.701398 0 0 1 60.4082,-54.401353 62.5,72.701398 0 0 1 10.97266,1.149697 98.4375,84.536509 0 0 1 22.21679,-16.649466 29.829546,33.814604 0 0 0 21.49805,10.427578 29.829546,33.814604 0 0 0 28.39648,-23.585686 98.4375,84.536509 0 0 1 2.85352,-0.08454 z"
+       id="path4386-9"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_medium.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-2-3-5"
+       cx="736.20215"
+       cy="49.672653"
+       rx="11.71875"
+       ry="12.276786"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_medium.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-2-4-8"
+       cx="851.82715"
+       cy="92.641403"
+       rx="11.71875"
+       ry="12.276786"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_medium.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-2-1-6"
+       cx="742.45215"
+       cy="177.01639"
+       rx="11.71875"
+       ry="12.276786"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_medium.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-2-0-4"
+       cx="748.70215"
+       cy="109.8289"
+       rx="11.71875"
+       ry="12.276786"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_medium.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-9-4"
+       cx="733.8584"
+       cy="52.016403"
+       rx="16.40625"
+       ry="17.1875"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_medium.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-1-2"
+       cx="787.76465"
+       cy="49.672653"
+       rx="16.40625"
+       ry="17.1875"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_medium.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-8-5"
+       cx="823.70215"
+       cy="136.3914"
+       rx="16.40625"
+       ry="17.1875"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_medium.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-14-3"
+       cx="704.95215"
+       cy="141.0789"
+       rx="16.40625"
+       ry="17.1875"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_medium.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-0-94-8"
+       cx="758.07715"
+       cy="112.9539"
+       rx="29.829546"
+       ry="31.25"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_medium.png" />
+    <path
+       style="fill:#4b3525;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 547.13965,-307.35948 c -20.30439,0.0186 -40.10534,5.42876 -56.68945,15.48921 0.37808,2.13711 -15.83325,30.0919 -15.82422,32.27154 0,18.67552 3.05078,8.03368 -13.42383,8.03335 -2.09998,-0.005 2.83763,13.01973 0.78516,12.51619 -4.11592,9.43709 -13.26514,6.1489 -13.28516,16.22622 0.0365,17.04589 6.07269,33.68413 17.31641,47.73143 -2.12364,5.65769 -3.21769,11.49515 -3.25391,17.36168 0.0305,35.82726 38.74906,65.254128 87.74609,66.688744 2.24634,-16.468184 13.17887,-17.688694 27.87891,-17.709814 10.68121,0.0171 22.10165,-4.43059 27.4082,6.07759 15.19588,-7.62082 26.88354,-18.42002 33.5293,-30.98052 16.99914,-1.99867 32.55376,-12.00541 43.04492,-27.69205 -9.30501,-6.00991 -7.24139,-20.33811 -7.25,-32.47819 0.0193,-17.05704 3.4297,-28.30234 18.36328,-30.39161 -7.15602,-32.00463 -31.97909,-54.35934 -60.4082,-54.40135 -3.67952,0.007 -7.35133,0.39149 -10.97266,1.14969 -6.39021,-6.47627 -13.87981,-12.08904 -22.21679,-16.64946 -5.61549,6.64764 -20.41003,1.81946 -28.5293,1.83383 -12.98512,-0.0175 -17.43724,-0.9617 -21.36523,-14.99194 -0.95065,-0.04 -1.90192,-0.0682 -2.85352,-0.0845 z"
+       id="path4386-7"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccccccccccc"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_small.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-2-3-2"
+       cx="523.70215"
+       cy="-252.6711"
+       rx="11.71875"
+       ry="12.276786"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_small.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-2-4-4"
+       cx="639.32715"
+       cy="-209.70235"
+       rx="11.71875"
+       ry="12.276786"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_small.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-2-1-3"
+       cx="529.95215"
+       cy="-125.32735"
+       rx="11.71875"
+       ry="12.276786"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_small.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-2-0-7"
+       cx="536.20215"
+       cy="-192.51485"
+       rx="11.71875"
+       ry="12.276786"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_small.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-9-46"
+       cx="521.3584"
+       cy="-250.32735"
+       rx="16.40625"
+       ry="17.1875"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_small.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-1-8"
+       cx="575.26465"
+       cy="-252.6711"
+       rx="16.40625"
+       ry="17.1875"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_small.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-8-0"
+       cx="579.1709"
+       cy="-148.76485"
+       rx="16.40625"
+       ry="17.1875"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_small.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-14-1"
+       cx="492.45215"
+       cy="-161.26485"
+       rx="16.40625"
+       ry="17.1875"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_small.png" />
+    <ellipse
+       style="opacity:0.20800003;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4393-183-0-94-4"
+       cx="579.95215"
+       cy="-241.7336"
+       rx="29.829546"
+       ry="31.25"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_small.png" />
   </g>
 </svg>

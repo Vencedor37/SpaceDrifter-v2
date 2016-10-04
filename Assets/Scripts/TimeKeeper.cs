@@ -33,7 +33,7 @@ public class TimeKeeper : MonoBehaviour {
       spawnCheckpoints.Add(checkpointGameObject.GetComponent<SpaceObjectCheckpoint>());
       hasSpawned.Add(false);
     }
-    spawnCheckpoints.Sort((a, b) => a.spawnTime.CompareTo(b.spawnTime));
+    spawnCheckpoints.Sort((a, b) => a.sequence.CompareTo(b.sequence));
     spawnableObjects = new SpaceObjectController[]{largeAsteroids, mediumAsteroids, smallAsteroids, spaceships, healthPickups, movementPickups, pointsPickupsLevel1, pointsPickupsLevel2, pointsPickupsLevel3, healthUpgrades, movementUpgrades, lifePickups};
 
     InvokeRepeating("CheckSpawners", 1f, 1f);
@@ -62,14 +62,16 @@ public class TimeKeeper : MonoBehaviour {
   public void CheckSpawners()
   {
     SpaceObjectCheckpoint lastCheckpoint = null;
+    float spawnTime = 0;
     for (int i = 0; i < spawnCheckpoints.Count; i ++) {
+      spawnTime += spawnCheckpoints[i].spawnTime;
       lastCheckpoint = spawnCheckpoints[i];
-      if (Time.timeSinceLevelLoad > spawnCheckpoints[i].spawnTime && !hasSpawned[i]) {
+      if (Time.timeSinceLevelLoad > spawnTime && !hasSpawned[i]) {
         SpawnCheckpoint(spawnCheckpoints[i]);
         hasSpawned[i] = true;
       }
     }
-    if (Time.timeSinceLevelLoad > lastCheckpoint.spawnTime + recurringCheckpointTime) {
+    if (Time.timeSinceLevelLoad > spawnTime + recurringCheckpointTime) {
       SpawnCheckpoint(lastCheckpoint);
       recurringCheckpointTime += 60;
     }

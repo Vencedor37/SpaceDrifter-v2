@@ -547,7 +547,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 500
+  sequence: 15
+  spawnTime: 60
   largeAsteroids: 0
   mediumAsteroids: 1
   smallAsteroids: 2
@@ -600,6 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sequence: 0
   spawnTime: 1
   largeAsteroids: 10
   mediumAsteroids: 0
@@ -999,9 +1001,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sequence: 2
   spawnTime: 30
   largeAsteroids: 5
-  mediumAsteroids: 0
+  mediumAsteroids: 5
   smallAsteroids: 0
   spaceships: 0
   healthPickups: 2
@@ -1052,7 +1055,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 370
+  sequence: 11
+  spawnTime: 90
   largeAsteroids: 0
   mediumAsteroids: 0
   smallAsteroids: 0
@@ -1419,7 +1423,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 240
+  sequence: 9
+  spawnTime: 30
   largeAsteroids: 0
   mediumAsteroids: 0
   smallAsteroids: 0
@@ -2350,7 +2355,7 @@ GameObject:
   - 4: {fileID: 388679292}
   - 114: {fileID: 388679293}
   m_Layer: 0
-  m_Name: Checkpoint 5
+  m_Name: Checkpoint 5 - first small asteroids
   m_TagString: SpawnCheckpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2380,7 +2385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 120
+  sequence: 5
+  spawnTime: 60
   largeAsteroids: 2
   mediumAsteroids: 0
   smallAsteroids: 2
@@ -2960,7 +2966,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 210
+  sequence: 8
+  spawnTime: 90
   largeAsteroids: 0
   mediumAsteroids: 0
   smallAsteroids: 0
@@ -3357,7 +3364,7 @@ Prefab:
     - target: {fileID: 114000012455951942, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
         type: 2}
       propertyPath: scoreMultiplierCheckpoint
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114000012455951942, guid: 1ca7cbb53b98b4276aed4e4e377b92d9,
         type: 2}
@@ -3591,7 +3598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 150
+  sequence: 6
+  spawnTime: 40
   largeAsteroids: 2
   mediumAsteroids: 5
   smallAsteroids: 1
@@ -3811,7 +3819,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 180
+  sequence: 7
+  spawnTime: 60
   largeAsteroids: 0
   mediumAsteroids: 0
   smallAsteroids: 10
@@ -4482,10 +4491,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 430
+  sequence: 13
+  spawnTime: 60
   largeAsteroids: 0
   mediumAsteroids: 0
-  smallAsteroids: 0
+  smallAsteroids: 2
   spaceships: 2
   healthPickups: 0
   movementPickups: 0
@@ -4930,7 +4940,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 400
+  sequence: 12
+  spawnTime: 90
   largeAsteroids: 0
   mediumAsteroids: 0
   smallAsteroids: 5
@@ -6400,7 +6411,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 60
+  sequence: 3
+  spawnTime: 30
   largeAsteroids: 0
   mediumAsteroids: 8
   smallAsteroids: 0
@@ -6870,7 +6882,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 460
+  sequence: 14
+  spawnTime: 60
   largeAsteroids: 1
   mediumAsteroids: 0
   smallAsteroids: 0
@@ -6923,6 +6936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sequence: 4
   spawnTime: 90
   largeAsteroids: 0
   mediumAsteroids: 5
@@ -9295,6 +9309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sequence: 1
   spawnTime: 15
   largeAsteroids: 0
   mediumAsteroids: 0
@@ -10584,7 +10599,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e731dcdcbdd4fe7838259349eb281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 270
+  sequence: 10
+  spawnTime: 30
   largeAsteroids: 0
   mediumAsteroids: 0
   smallAsteroids: 0
