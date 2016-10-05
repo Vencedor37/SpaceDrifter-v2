@@ -188,7 +188,9 @@ public class SpaceObjectController : MonoBehaviour {
         transform.position = newPosition;
         CheckRotation(activeObject);
         activeObject.startMoving();
-        CheckColour(activeObject);
+        if (targetActiveCount < 10) {
+          CheckColour(activeObject);
+        }
       }
     }
   }

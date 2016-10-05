@@ -5,6 +5,9 @@ using System.Collections;
 
 public class UIController : MonoBehaviour {
   private LineRenderer lineRenderer;
+  private string muteKey = "MuteStatus";
+  public float muteStatus = 1;
+  public bool disableAutoPause = false;
   public float lineBaseWidth;
   public float lineTopWidth;
   public float LEFT_BOUNDARY   = -100;
@@ -58,11 +61,15 @@ public class UIController : MonoBehaviour {
 
   public Toggle fastForwardToggle;
   public Toggle pauseToggle;
+  public Toggle muteToggle;
   public AudioTracks audioTracks;
 
 
 	// Use this for initialization
 	void Start () {
+    int mute = PlayerPrefs.GetInt(muteKey, 0);
+    muteToggle.isOn = mute == 1 ? false : true;
+
     lineRenderer = gameObject.AddComponent<LineRenderer>();
     lineRenderer.SetColors(lineColour1, lineColour2);
     lineRenderer.material = new Material(lineShader);
@@ -102,8 +109,10 @@ public class UIController : MonoBehaviour {
     ControlMusic();
 
     if (playerController.getIsGameOver()) {
+      lineRenderer.SetWidth(0.0F, 0.0F);
       ShowGameOverUI();
     } else if (playerController.getLostLife()) {
+      lineRenderer.SetWidth(0.0F, 0.0F);
       ShowLostLifeUI();
     } else {
       CheckSpeed();
@@ -130,7 +139,7 @@ public class UIController : MonoBehaviour {
       audioTracks.BackgroundFadeOut();
     } else if (playerController.getHasStarted() && !audioTracks.backgroundMusic.isPlaying) {
       audioTracks.backgroundMusic.Play();
-    } else if (playerController.getAlive() && audioTracks.backgroundMusic.volume < .4) {
+    } else if (playerController.getAlive() && audioTracks.backgroundMusic.volume < audioTracks.backgroundMax && muteStatus != 0) {
       audioTracks.ResetBackgroundVolume();
     }
   }
@@ -233,7 +242,7 @@ public class UIController : MonoBehaviour {
 
   void OnApplicationFocus( bool focusStatus )
 	{
-    if (!focusStatus && !isPaused && playerController.getHasStarted()) {
+    if (!disableAutoPause && !focusStatus && !isPaused && playerController.getHasStarted()) {
       pauseToggle.isOn = true;
     }
 	}
@@ -356,6 +365,14 @@ public class UIController : MonoBehaviour {
   public float getBottomSafety()
   {
     return BOTTOM_SAFETY;
+  }
+
+  public void ToggleMute()
+  {
+    muteStatus = muteStatus == 0 ? 1 : 0;
+
+    PlayerPrefs.SetInt(muteKey, (int)muteStatus);
+    PlayerPrefs.Save();
   }
 
 }
