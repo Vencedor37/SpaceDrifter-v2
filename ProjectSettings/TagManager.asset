@@ -20,6 +20,7 @@ TagManager:
   - LifePickup
   - SpawnCheckpoint
   - Audio
+  - HideForLiteVersion
   layers:
   - Default
   - TransparentFX

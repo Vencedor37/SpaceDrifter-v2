@@ -22,6 +22,7 @@ public class UIController : MonoBehaviour {
 
   private GameObject[] gameOverUI;
   private GameObject[] lostLifeUI;
+  private GameObject[] liteUI;
 
   public bool isFastForward = false;
   public bool isPaused = false;
@@ -47,12 +48,14 @@ public class UIController : MonoBehaviour {
   public Animator movementAnimator;
 
   public Text scoreText;
+  public Text liteScoreText;
   public Text bonusText;
   public Text highScoreText;
   public Text levelText;
   public Text gameOverSubtitle;
   public Text pauseText;
   public Text livesText;
+  public Image livesImage;
 
   public Text movementCountText;
   public Text healthCountText;
@@ -79,10 +82,12 @@ public class UIController : MonoBehaviour {
 
     gameOverUI = GameObject.FindGameObjectsWithTag("ShowOnGameOver");
     lostLifeUI = GameObject.FindGameObjectsWithTag("ShowOnPlayerDeath");
+    liteUI = GameObject.FindGameObjectsWithTag("HideForLiteVersion");
     bonusText.enabled = false;
     HideGameOverUI();
     HideLostLifeUI();
     UpdateLivesText();
+    HideLiteUI();
 	}
 
 	// Update is called once per frame
@@ -111,11 +116,14 @@ public class UIController : MonoBehaviour {
     if (playerController.getIsGameOver()) {
       lineRenderer.SetWidth(0.0F, 0.0F);
       ShowGameOverUI();
+      muteToggle.gameObject.SetActive(false);
     } else if (playerController.getLostLife()) {
       lineRenderer.SetWidth(0.0F, 0.0F);
       ShowLostLifeUI();
+      muteToggle.gameObject.SetActive(false);
     } else {
       CheckSpeed();
+      muteToggle.gameObject.SetActive(true);
     }
 
 	}
@@ -129,6 +137,15 @@ public class UIController : MonoBehaviour {
     }
 
 
+  }
+
+  private void HideLiteUI()
+  {
+    if (playerController.isLiteVersion) {
+      foreach (GameObject gameObject in liteUI) {
+        gameObject.SetActive(false);
+      }
+    }
   }
 
   private void ControlMusic()
@@ -284,6 +301,7 @@ public class UIController : MonoBehaviour {
   {
     int score = playerController.getCurrentScore();
     scoreText.text = "Score: " + score;
+    liteScoreText.text = "Score: " + score;
     levelText.text = "Bonus: x" + playerController.getScoreMultiplier();
   }
 
@@ -373,6 +391,14 @@ public class UIController : MonoBehaviour {
 
     PlayerPrefs.SetInt(muteKey, (int)muteStatus);
     PlayerPrefs.Save();
+  }
+
+  public void ShowFullGameDialog()
+  {
+    bool android = Application.platform == RuntimePlatform.Android;
+    if (android) {
+      Application.OpenURL("market://details?id=com.visigames.spacedrifter");
+    }
   }
 
 }

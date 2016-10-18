@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
+  [HideInInspector] public bool isLiteVersion = true;
   private float maxForceSingleMove = 200;
   public bool giveExtraHealth = false;
   public bool giveExtraMovement = false;
@@ -93,7 +94,11 @@ public class PlayerController : MonoBehaviour {
     currentHealth = startingHealth;
     currentMoveCapacity = startingMoveCapacity;
     currentScore = startingScore;
-    currentLives = startingLives;
+    if (!isLiteVersion) {
+      currentLives = startingLives;
+    } else {
+      currentLives = 0;
+    }
     highScore = PlayerPrefs.GetInt(highScoreKey,0);
 
     GameObject[] debugVisible = GameObject.FindGameObjectsWithTag("VisibleInDebugMode");

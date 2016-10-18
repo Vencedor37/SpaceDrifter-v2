@@ -1797,11 +1797,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.56"
-     inkscape:cx="1037.0285"
-     inkscape:cy="1596.0577"
+     inkscape:zoom="0.22627417"
+     inkscape:cx="-188.37843"
+     inkscape:cy="2314.4278"
      inkscape:document-units="px"
-     inkscape:current-layer="g5866"
+     inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:window-width="1280"
@@ -1906,9 +1906,9 @@
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4454"
        width="1181.25"
-       height="2718.75"
-       x="887.5"
-       y="-428.88782" />
+       height="880.2724"
+       x="1638.8009"
+       y="-1295.0936" />
     <g
        id="g4533"
        transform="translate(584.69562,-1477.1505)"
@@ -10668,5 +10668,81 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"
        inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/asteroid_small.png" />
+    <g
+       transform="matrix(1.2973414,0,0,1.2973414,-605.47524,-253.30987)"
+       id="g5422-2-5"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/shopping_cart.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       style="stroke:#dbdbdb;stroke-opacity:1;stroke-width:4.62484277;stroke-miterlimit:4;stroke-dasharray:none">
+      <circle
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/fast_forward_activated"
+         r="86.178642"
+         cy="-242.52708"
+         cx="6.6291261"
+         id="path5350-8-9"
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#dbdbdb;stroke-width:4.62484277;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g6507"
+       transform="matrix(0.89904595,0,0,1.0021703,-57.072258,-2.7469804)"
+       inkscape:export-filename="/Users/campbelldavis/projects/UnityProjects/SpaceDrifter/Assets/Sprites/shopping_cart.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       style="stroke:#dbdbdb;stroke-opacity:1">
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path6473"
+         d="m -655.66406,-585.91904 -6.64063,-28.90625 -22.26563,0.39062"
+         style="fill:none;fill-rule:evenodd;stroke:#dbdbdb;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path6418"
+         d="m -616.01562,-517.16904 -14.45313,-75.78125"
+         style="fill:none;fill-rule:evenodd;stroke:#dbdbdb;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path6418-7-4"
+         d="m -580.01341,-517.03601 15.10494,-74.48483"
+         style="fill:none;fill-rule:evenodd;stroke:#dbdbdb;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6418-7-43"
+         d="m -598.20452,-516.1971 -0.46596,-77.72511"
+         style="fill:none;fill-rule:evenodd;stroke:#dbdbdb;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6456"
+         d="m -651.17188,-565.60655 111.71875,-1.17187"
+         style="fill:none;fill-rule:evenodd;stroke:#dbdbdb;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6414"
+         d="m -657.42187,-593.34091 19.14062,77.73437 82.8125,0 24.21875,-78.51562 z"
+         style="fill:none;fill-rule:evenodd;stroke:#dbdbdb;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6456-6"
+         d="m -642.56031,-538.45403 94.49563,-1.18003"
+         style="fill:none;fill-rule:evenodd;stroke:#dbdbdb;stroke-width:5.53734303;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="7.2344904"
+         cy="-497.83307"
+         cx="-626.17188"
+         id="path6475"
+         style="opacity:1;fill:#dbdbdb;fill-opacity:1;fill-rule:nonzero;stroke:#dbdbdb;stroke-width:7.93726921;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="7.2344904"
+         cy="-497.83307"
+         cx="-568.75"
+         id="path6475-5"
+         style="opacity:1;fill:#dbdbdb;fill-opacity:1;fill-rule:nonzero;stroke:#dbdbdb;stroke-width:7.93726921;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
   </g>
 </svg>
